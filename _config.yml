@@ -1,0 +1,21 @@
+title: "Derivation of Value"
+description: "A working program in mechanism design and the philosophy of value."
+
+# Project-page hosting at idl3o.github.io/derivation-of-value requires the
+# baseurl prefix. If switching to a custom domain or user/org page, set to "".
+baseurl: "/derivation-of-value"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+permalink: pretty
+
+exclude:
+  - README.md
+  - .gitignore
+  - vendor/
+  - Gemfile
+  - Gemfile.lock

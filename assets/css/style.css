@@ -1,0 +1,391 @@
+/* ============================================
+   Derivation of Value — editorial stylesheet
+   EB Garamond · cream / ink / oxblood
+   ============================================ */
+
+:root {
+  /* Palette */
+  --cream:        #f4ecd8;
+  --cream-deep:   #ede2c4;
+  --ink:          #1a1612;
+  --ink-soft:     #3a342c;
+  --ink-faint:    #6b5f4f;
+  --oxblood:      #6b1d1d;
+  --oxblood-deep: #4a1414;
+  --rule:         rgba(26, 22, 18, 0.16);
+  --rule-soft:    rgba(26, 22, 18, 0.08);
+
+  /* Typography */
+  --serif: 'EB Garamond', 'Garamond', 'Times New Roman', Georgia, serif;
+  --measure: 36rem;
+  --leading: 1.62;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (min-width: 768px) {
+  html { font-size: 19px; }
+}
+
+body {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: var(--leading);
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+}
+
+/* Subtle paper texture via radial gradient */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at top left, rgba(107, 29, 29, 0.025), transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(26, 22, 18, 0.02), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 5rem;
+}
+
+@media (min-width: 768px) {
+  .page { padding: 6.5rem 2rem 7rem; }
+}
+
+/* ============================================
+   Masthead
+   ============================================ */
+
+.masthead {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.masthead--home {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.masthead .series {
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+  font-feature-settings: "lnum" 1;
+}
+
+.masthead h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+@media (min-width: 768px) {
+  .masthead h1 { font-size: 3rem; }
+}
+
+.masthead .volume {
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 0.75rem;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+
+/* ============================================
+   Prose
+   ============================================ */
+
+.prose p {
+  margin: 0 0 1.05em;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* First paragraph after a heading or section title: no indent */
+.prose p:first-child,
+.prose h1 + p,
+.prose h2 + p,
+.prose h3 + p,
+.prose hr + p,
+.prose .section-title + p {
+  text-indent: 0;
+}
+
+/* Subsequent paragraphs: gentle indent */
+.prose p + p {
+  text-indent: 1.4em;
+  margin-top: -0.2em;
+}
+
+/* Lede paragraph (first in lede-section) */
+.lede-section p:first-child {
+  font-size: 1.06rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* Headings inside prose */
+.prose h2 {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.35rem;
+  text-align: center;
+  margin: 3rem 0 1.6rem;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+.prose h3 {
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 2.2rem 0 0.8rem;
+  color: var(--ink);
+}
+
+/* Italic centered section titles (the anthology's house style) */
+.prose .section-title,
+.prose p.section-title {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.18rem;
+  color: var(--ink);
+  margin: 2.8rem 0 1.6rem;
+  text-indent: 0;
+}
+
+/* Ornamental dividers (kramdown renders --- as <hr>) */
+.prose hr {
+  border: none;
+  text-align: center;
+  margin: 2.6rem 0;
+  height: 1.2em;
+  overflow: visible;
+  position: relative;
+}
+
+.prose hr::after {
+  content: "❦";
+  color: var(--oxblood);
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+/* Emphasis */
+.prose em { font-style: italic; }
+.prose strong { font-weight: 600; }
+
+/* Block quotes */
+.prose blockquote {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--oxblood);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* Code */
+.prose code {
+  font-family: "Iowan Old Style", "Charter", Georgia, serif;
+  font-size: 0.92em;
+  background: var(--cream-deep);
+  padding: 0.05em 0.3em;
+  border-radius: 2px;
+}
+
+.prose pre {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  background: var(--cream-deep);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border-left: 2px solid var(--oxblood);
+}
+
+.prose pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Lists */
+.prose ul, .prose ol {
+  margin: 0 0 1.2rem 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+/* Links */
+a {
+  color: var(--oxblood);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(107, 29, 29, 0.3);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: var(--oxblood);
+  color: var(--oxblood-deep);
+}
+
+/* ============================================
+   Contents (home page document list)
+   ============================================ */
+
+.contents {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+.contents li {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.7rem 0;
+  list-style: none;
+}
+
+.contents li:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.contents .item-label {
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.contents .item-title {
+  font-size: 1.55rem;
+  font-weight: 500;
+  display: block;
+  color: var(--ink);
+  border-bottom: none;
+  line-height: 1.2;
+  margin-bottom: 0.55rem;
+}
+
+.contents .item-title:hover {
+  color: var(--oxblood);
+  border-bottom: none;
+}
+
+.contents .item-meta {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.contents .item-status {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  color: var(--ink-faint);
+  font-style: normal;
+}
+
+/* ============================================
+   Return navigation
+   ============================================ */
+
+.return {
+  margin-top: 4.5rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+
+.return a {
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  border-bottom: none;
+}
+
+.return a:hover {
+  color: var(--oxblood);
+}
+
+/* ============================================
+   Colophon (site footer)
+   ============================================ */
+
+.colophon {
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+.colophon p {
+  margin-bottom: 0.3rem;
+}
+
+.colophon a {
+  color: var(--ink-faint);
+  border-bottom-color: rgba(26, 22, 18, 0.15);
+}
+
+.colophon a:hover {
+  color: var(--oxblood);
+}
+
+/* ============================================
+   Placeholder (for drafts in progress)
+   ============================================ */
+
+.placeholder {
+  margin: 2rem 0;
+  padding: 2rem 1.5rem;
+  border: 1px dashed var(--rule);
+  text-align: center;
+  font-style: italic;
+  color: var(--ink-soft);
+  background: rgba(237, 226, 196, 0.3);
+}
+
+.placeholder code {
+  font-style: normal;
+}
+
+/* Selection */
+::selection {
+  background: var(--oxblood);
+  color: var(--cream);
+}
