@@ -17,28 +17,6 @@ Four working documents, in reading order:
 
 All are working drafts. Comments welcome via issues or pull requests.
 
-## Repo layout
-
-```
-.
-├── _config.yml                 Jekyll config
-├── _layouts/                   Page templates
-│   ├── default.html
-│   ├── home.html
-│   └── document.html
-├── assets/css/style.css        Editorial stylesheet (EB Garamond, cream/ink/oxblood)
-├── index.md                    Landing page
-├── anthology/
-│   └── derivation-of-value-i.md        Volume I
-├── whitepaper/
-│   └── index.md                        v0.2 whitepaper
-├── papers/
-│   └── gauge-fixing-the-section-space.md   Anchoring paper (v0.1)
-├── onboarding/
-│   └── index.md                        Companion
-└── README.md
-```
-
 ## License
 
 The writing in this repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Share and adapt freely, with attribution.
