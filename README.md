@@ -39,31 +39,6 @@ All are working drafts. Comments welcome via issues or pull requests.
 └── README.md
 ```
 
-## Editing
-
-Markdown is canonical. GitHub Pages builds the site on every push to `main` (or `gh-pages`, depending on settings). Local preview:
-
-```
-bundle exec jekyll serve
-```
-
-To swap in updated content, replace the body of the relevant `index.md` and leave the front matter (the block between the `---` markers) in place.
-
-### Section titles
-
-The anthology uses italic centered section titles. The kramdown syntax is:
-
-```
-*The First Derivation*
-{:.section-title}
-```
-
-Three hyphens on their own line render as an ornamental divider (❦).
-
-## Hosting
-
-Repository hosted at `<user>.github.io/<repo>` requires setting `baseurl: "/<repo>"` in `_config.yml`. User/organization page or custom domain: leave `baseurl: ""`.
-
 ## License
 
 The writing in this repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Share and adapt freely, with attribution.
