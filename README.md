@@ -2,78 +2,74 @@
 
 A working program in mechanism design and the philosophy of value, presented as an open anthology.
 
-**Site:** [idl3o.github.io/derivation-of-value](https://idl3o.github.io/derivation-of-value/)
+The question the series turns around is a single operator: the move from staking contingent quantities — energy, capital — to staking what such quantities are derived *from*: structural agreement, negentropy, dimensional integrity. Each volume applies the operator once and records what survives.
 
-## What this is
+**Site:** [Set `baseurl` in `_config.yml` once hosting URL is known.]
 
-This repository carries four working drafts:
+## Contents
 
-- **Anthology, Volume I — *Derivation of Value*.** The opening essay, naming the operator the series turns around: the move from staking contingent quantities (energy, capital) to staking what such quantities are derived from (structural agreement, negentropy, dimensional integrity). Borges-register essayistic.
-- **Framework — *Combination Proofs*.** A framework paper formalising the property that distinguishes Goodhart-asymptotic mechanisms: reward gated on the conjunction of verifiably independent projections of a structural substrate. Establishes the multiplication claim and the publicity-positive security claim. PoC + PbR is the worked instance.
-- **Whitepaper — *Proof of Coherence* (v0.2).** A Goodhart-asymptotic incentive mechanism for decentralised inference. Sheaf-theoretic, with a spectral extension via *Proof by Resonance*. The technical core of the program.
-- **Companion — *Onboarding*.** A reader's path into the whitepaper. Intuitions and motivations before the formalism.
+Four working documents, in reading order:
 
-All four are working drafts — stable enough for circulation, not yet for citation. Versioning is tracked in `CHANGELOG.md`.
+- **Anthology, Volume I — *Derivation of Value*.** The opening essay. Names the operator and fixes the register for everything that follows.
+- **Whitepaper — *Proof of Coherence* (v0.2).** A Goodhart-asymptotic incentive mechanism for decentralized inference. Sheaf-theoretic: local judgments as sections of a cellular sheaf, global reward conditioned on the vanishing of the obstruction. Includes the spectral extension via Proof by Resonance, and an unresolved fork at §4.2 (Shapley vs. provenance) that later work closes.
+- **Paper — *Gauge-Fixing the Section Space* (v0.1).** Anchoring architectures for negentropy-attested mechanisms. Establishes that coherence certifies consistency, not truth; recasts copy-symmetry, grinding, backdating, and Sybil multiplicity as gauge freedoms of the section space; and composes four anchors — astrophysical beacon, verifiable delay chain, unique encoding, dissipation floor — to quotient them away. Resolves the §4.2 fork toward provenance.
+- **Companion — *Onboarding*.** A reader's path through the whitepaper. Intuitions before formalism, in order.
+
+All are working drafts. Comments welcome via issues or pull requests.
 
 ## Repo layout
 
 ```
 .
-├── _config.yml                 Jekyll config (baseurl set for project-page hosting)
+├── _config.yml                 Jekyll config
 ├── _layouts/                   Page templates
 │   ├── default.html
 │   ├── home.html
 │   └── document.html
 ├── assets/css/style.css        Editorial stylesheet (EB Garamond, cream/ink/oxblood)
-├── index.md                    Landing
+├── index.md                    Landing page
 ├── anthology/
-│   └── derivation-of-value-i.md    Volume I
-├── combination-proofs/
-│   └── index.md                Framework paper
+│   └── derivation-of-value-i.md        Volume I
 ├── whitepaper/
-│   └── index.md                Proof of Coherence v0.2
+│   └── index.md                        v0.2 whitepaper
+├── papers/
+│   └── gauge-fixing-the-section-space.md   Anchoring paper (v0.1)
 ├── onboarding/
-│   └── index.md                Companion to the whitepaper
-├── CHANGELOG.md
-├── LICENSE                     CC BY 4.0
-├── Gemfile
+│   └── index.md                        Companion
 └── README.md
 ```
 
 ## Editing
 
-Markdown is canonical. GitHub Pages builds the site on every push to `main`.
+Markdown is canonical. GitHub Pages builds the site on every push to `main` (or `gh-pages`, depending on settings). Local preview:
 
-Local preview (requires Ruby + bundler):
-
-```bash
-bundle install
+```
 bundle exec jekyll serve
 ```
 
-To revise a document, edit its `index.md` in place — leave the front matter (between the `---` markers at the top) intact. Section breaks render as ornamental glyphs from three hyphens on their own line; italic centered section titles use the kramdown class syntax:
+To swap in updated content, replace the body of the relevant `index.md` and leave the front matter (the block between the `---` markers) in place.
 
-```markdown
+### Section titles
+
+The anthology uses italic centered section titles. The kramdown syntax is:
+
+```
 *The First Derivation*
 {:.section-title}
 ```
 
-## Hosting configuration
+Three hyphens on their own line render as an ornamental divider (❦).
 
-`_config.yml` is set for project-page hosting at `idl3o.github.io/derivation-of-value`. If switching to a custom domain or a user/org root, change `baseurl: "/derivation-of-value"` to `baseurl: ""`.
+## Hosting
+
+Repository hosted at `<user>.github.io/<repo>` requires setting `baseurl: "/<repo>"` in `_config.yml`. User/organization page or custom domain: leave `baseurl: ""`.
 
 ## License
 
 The writing in this repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Share and adapt freely, with attribution.
 
-See `LICENSE` for the full text. Source code added later may carry its own permissive licence (MIT or Apache 2.0) noted in the relevant directory.
+See `LICENSE` for the full text. Any source code added later may carry its own permissive license (e.g. MIT or Apache 2.0) noted in the relevant directory.
 
-## Versioning
+## Status
 
-Tracked in `CHANGELOG.md`. The scheme:
-
-- **Patch** — typos, prose polish, single-paragraph clarifications. No new claims, no structural change.
-- **Minor** — new sections, sharpened theorems, added worked examples, reframed claims that don't contradict the previous version.
-- **Major** — the document graduates from working draft. Claims would be defended to a hostile reader.
-
-Each document carries its own version, noted in its front matter and inside the document.
+Working drafts. The volumes are stable enough for circulation; not yet for citation. Versioning will tighten as the corpus settles.
