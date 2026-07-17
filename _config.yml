@@ -5,6 +5,12 @@ description: "A working program in mechanism design and the philosophy of value.
 # baseurl prefix. If switching to a custom domain or user/org page, set to "".
 baseurl: "/derivation-of-value"
 
+# Every document lives in _papers/. Add a file there and it appears on the
+# home page (sorted by `order`) and gets its own page — no other edits needed.
+collections:
+  papers:
+    output: true
+
 markdown: kramdown
 kramdown:
   input: GFM

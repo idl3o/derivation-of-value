@@ -4,6 +4,10 @@ title: "Combination Proofs"
 subtitle: "A Framework for Goodhart-Asymptotic Mechanism Design"
 eyebrow: "Framework · v0.1"
 permalink: /combination-proofs/
+label: "Framework"
+blurb: "A framework for Goodhart-asymptotic mechanism design. Reward gated on the conjunction of verifiably independent projections of a structural substrate."
+status: "v0.1 · working draft"
+order: 2
 ---
 
 *v0.1 · working draft. Initial statement of the framework. Definitions established; multiplication and publicity-positive claims stated with conditions; substrate richness defined; Proof of Coherence with its spectral extension introduced as the worked instance; open problems and program outlined.*

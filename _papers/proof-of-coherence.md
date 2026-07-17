@@ -4,6 +4,10 @@ title: "Proof of Coherence"
 subtitle: "A Sheaf-Theoretic Mechanism for Goodhart-Asymptotic Incentivization of Distributed Intelligence"
 eyebrow: "Whitepaper · v0.2 · working draft"
 permalink: /whitepaper/
+label: "Whitepaper"
+blurb: "A Goodhart-asymptotic incentive mechanism for decentralized inference. Sheaf-theoretic, with a spectral extension via Proof by Resonance."
+status: "v0.2 · working draft"
+order: 3
 ---
 
 *Revision history: v0.1 (research register, four-condition synthesis recovered as cohomology). v0.1.1 (Revision A: §4.2 copy-symmetry surfaced and forked between Shapley and provenance-weighted resolutions). v0.2 (this revision: Hodge-Laplacian spectral framing in §3.5; Proof by Resonance as the natural spectral extension of the discrete-derivative reward in §4.5; §1.2 Goodhart-asymptotic reframe; §6 promoted from skippable speculative frame to load-bearing motivation for the spectral generalization).*

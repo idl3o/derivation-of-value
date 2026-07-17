@@ -1,17 +1,17 @@
 ---
-layout: paper
+layout: document
 title: "Gauge-Fixing the Section Space"
 subtitle: "Anchoring Architectures for Negentropy-Attested Mechanisms"
+eyebrow: "An Anthology · Paper · v0.1"
+permalink: /gauge-fixing-the-section-space/
 anthology: "Derivation of Value"
 version: "v0.1"
 date: 2026-07-17
 license: "CC BY 4.0"
----
-
-# Gauge-Fixing the Section Space
-### Anchoring Architectures for Negentropy-Attested Mechanisms
-*Derivation of Value — v0.1*
-
+label: "Anthology · Paper"
+blurb: "Certifying negentropy by composition rather than proof — four anchors, each eliminating one gauge freedom of the adversary, until only honest sections survive the quotient."
+status: "v0.1 · working draft"
+order: 5
 ---
 
 ## Abstract

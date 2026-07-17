@@ -10,6 +10,20 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-07-17
+
+### Repository — papers collection
+
+Restructured the site so every document lives in a single `_papers/` Jekyll collection instead of scattered top-level folders. The home page now generates its contents list by looping over the collection (sorted by each paper's `order`), so adding a paper is a one-file operation — drop a Markdown file in `_papers/` with `label` / `blurb` / `status` / `order` front matter and it appears on the home page and gets its own page. Set `hidden: true` to publish a page while keeping it off the home list. All existing permalinks preserved (`/whitepaper/`, `/combination-proofs/`, `/onboarding/`, `/anthology/derivation-of-value-i/`), so no links break.
+
+### Gauge-Fixing the Section Space — v0.1
+
+Brought into the site. Previously uploaded with a non-existent `layout: paper` and never linked from the contents, so it did not render; switched to `layout: document`, given permalink `/gauge-fixing-the-section-space/`, and added to the collection. Composes four independent anchors — astrophysical randomness beacon, VDF chain, replication-style unique encoding, and a dissipation floor — as a conjunction that gauge-fixes the section space so only honest global sections survive the quotient.
+
+Path: `_papers/gauge-fixing-the-section-space.md` · Permalink: `/gauge-fixing-the-section-space/`
+
+---
+
 ## 2026-05-12
 
 ### Proof of Coherence — Whitepaper v0.2

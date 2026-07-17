@@ -4,6 +4,11 @@ title: "Proof of Coherence"
 subtitle: "An Onboarding"
 eyebrow: "Companion · v0.1 · working draft"
 permalink: /onboarding/
+label: "Companion"
+short_title: "Onboarding"
+blurb: "A reader's guide to the whitepaper. Intuitions, motivations, and the path through the formalism."
+status: "v0.1 · working draft"
+order: 4
 ---
 
 *A companion to the working draft. The whitepaper is dense by design; this piece is the front door — enough context to know what the technical document is for, before you walk into the math.*

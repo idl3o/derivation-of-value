@@ -4,6 +4,10 @@ title: "Derivation of Value"
 subtitle: "Volume I"
 eyebrow: "An Anthology · Volume I"
 permalink: /anthology/derivation-of-value-i/
+label: "Anthology · Volume I"
+blurb: "Naming the operator the series turns around — the move from staking contingent quantities to staking what such quantities are derived from."
+status: "Working draft"
+order: 1
 ---
 
 A blockchain burns electricity to remember what it has agreed upon. The fact that this works at all is the strangest economic discovery of the last fifty years; that it works *only* because the burning is real is stranger still. Take away the heat and the ledger forgets itself. Subtract the cost and the consensus dissolves. The flame is not incidental to the bookkeeping — it is what the bookkeeping is made of.
