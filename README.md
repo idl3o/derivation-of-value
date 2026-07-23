@@ -11,7 +11,7 @@ The site is a static Jekyll build set in EB Garamond, published to GitHub Pages:
 
 ## Contents
 
-Six working documents, in reading order. Each has its own page on the site.
+Seven working documents, in reading order. Each has its own page on the site.
 
 1. **[Derivation of Value — Volume I](https://idl3o.github.io/derivation-of-value/anthology/derivation-of-value-i/)** *(Anthology · working draft)*
    The opening essay. Names the operator the series turns around and fixes the register for everything that follows.
@@ -25,6 +25,8 @@ Six working documents, in reading order. Each has its own page on the site.
    The negentropy derivation. Order is the one substrate the second law guarantees is scarce and refuses to attest: Landauer certifies that energy was *spent*, never that order was *made here*. Reframes preservation as certified by gauge-fixing the adversary's freedoms rather than by proof, and sets up the anchoring construction that follows.
 6. **[Gauge-Fixing the Section Space](https://idl3o.github.io/derivation-of-value/gauge-fixing-the-section-space/)** *(Anthology paper · v0.1)*
    Anchoring architectures for negentropy-attested mechanisms. Composes four independent anchors — an astrophysical randomness beacon, a verifiable-delay-function chain, replication-style unique encoding and a dissipation floor — so that only honest global sections survive the quotient.
+7. **[Omnium — Volume II](https://idl3o.github.io/derivation-of-value/anthology/omnium/)** *(Anthology · v0.1)*
+   The value-as-vector derivation, paired with *Proof of Preservation*. The scalar price is a lossy projection of a vector whose coordinates — time, locality, purpose, provenance — fall into five algebraic kinds; the same entropy law that negentropy stakes against the world reappears here as the asymmetric price of erasing information inside money. Draws on the sibling [`vectorised-money`](https://github.com/idl3o/vectorised-money) and [`omnium`](https://github.com/idl3o/omnium) implementations.
 
 ## Reading it
 
