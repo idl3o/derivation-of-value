@@ -11,7 +11,7 @@ The site is a static Jekyll build set in EB Garamond, published to GitHub Pages:
 
 ## Contents
 
-Nine working documents, in reading order. Each has its own page on the site.
+Ten working documents, in reading order. Each has its own page on the site.
 
 1. **[Derivation of Value — Volume I](https://idl3o.github.io/derivation-of-value/anthology/derivation-of-value-i/)** *(Anthology · working draft)*
    The opening essay. Names the operator the series turns around and fixes the register for everything that follows.
@@ -31,6 +31,8 @@ Nine working documents, in reading order. Each has its own page on the site.
    The civilizational-capacity derivation, completing the Volume II triptych. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act. The grandest substrate in the program and, minted naively against oracle-measured energy, the least intrinsically verifiable; its long-horizon nature is what forces the program's closing question of post-quantum durability. Draws on the sibling [`kar-coin`](https://github.com/idl3o/kar-coin) whitepaper.
 9. **[Admitted or Refused — Volume III](https://idl3o.github.io/derivation-of-value/anthology/admitted-or-refused/)** *(Anthology · v0.1)*
    The turn from derivation to construction, and the opener of Volume III — the reserved "working examples" milestone. A running mechanism is a claim that can be false: what the vectorised-money kernel already shows (the thermodynamics — conservation, entropy-direction, substrate-independence) and what it does not yet prove (the Goodhart-asymptotic security, which needs an adversary in the loop). Records the Gauge-Fixing test suite as a challenge written before its respondent exists. Designed to stay open and accrue further examples.
+10. **[Borrowed Hardness — Volume IV](https://idl3o.github.io/derivation-of-value/anthology/borrowed-hardness/)** *(Anthology · v0.1)*
+    The durability volume, with post-quantum as its lens. Shor dissolves *structured* (borrowed) hardness; Grover only taxes *unstructured* (derived) hardness — so the post-quantum migration is the anthology's founding operator applied to cryptographic hardness itself. A substrate-by-substrate audit of what survives the machine, whose sharpest finding is that the negentropy construction's VDF temporal anchor is the program's most quantum-fragile load-bearing piece. Closes the visible spine (name → apply → construct → endure).
 
 ## Reading it
 
