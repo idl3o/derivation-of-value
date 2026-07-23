@@ -10,6 +10,18 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-07-23
+
+### Anthology, Volume II — *Proof of Preservation* — v0.1
+
+Initial draft. Takes up the negentropy derivation named but undeveloped in Volume I. Departs from the Volume I coda's provisional schedule, which slotted coherence "in full" as Volume II — that material already lives in the whitepaper, so the anthology jumps to the first genuinely unworked derivation; the entry's opening paragraph acknowledges the reordering in-register. Runs the Maxwell–Szilard–Landauer–Bennett resolution of the demon, then pivots on the point that carries the volume: Landauer certifies that free energy was *spent*, never that order was *made here, by this hand* — the relocation attack against any entropy boundary makes created order structurally unwitnessable. Reframes preservation as certified not by proof but by gauge-fixing: four shadows order casts (time, uniqueness, coherence, entry cost) composed as a conjunction that quotients away the forger's freedoms (backdating, grinding, duplication, free identity minting). Seats this as the essayistic front door to the companion paper *Gauge-Fixing the Section Space*, and reads the four-anchor construction as a Combination Proof on the negentropy substrate — publicity-positive, fake-cost multiplicative across anchors. Load-bearing correction to the substrate's own first temptation: negentropy is the least inflatable substrate in the program *and* the one that refuses to attest itself; honest value is built in that gap. Borges-register essayistic, matching Volume I. Coda points to omnium / vectorised-money and kar-coin as the remaining named derivations and to the post-quantum durability volume.
+
+Placed at `order: 5` (immediately before its companion paper, mirroring the Volume I → whitepaper arc); *Gauge-Fixing the Section Space* bumped from `order: 5` to `order: 6` to seat the motivating essay ahead of the construction.
+
+Path: `_papers/proof-of-preservation.md` · Permalink: `/anthology/proof-of-preservation/`
+
+---
+
 ## 2026-07-17
 
 ### Repository — papers collection

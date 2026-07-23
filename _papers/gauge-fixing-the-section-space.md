@@ -11,7 +11,7 @@ license: "CC BY 4.0"
 label: "Anthology · Paper"
 blurb: "Certifying negentropy by composition rather than proof — four anchors, each eliminating one gauge freedom of the adversary, until only honest sections survive the quotient."
 status: "v0.1 · working draft"
-order: 5
+order: 6
 ---
 
 ## Abstract

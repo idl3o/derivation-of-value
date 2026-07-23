@@ -11,7 +11,7 @@ The site is a static Jekyll build set in EB Garamond, published to GitHub Pages:
 
 ## Contents
 
-Five working documents, in reading order. Each has its own page on the site.
+Six working documents, in reading order. Each has its own page on the site.
 
 1. **[Derivation of Value — Volume I](https://idl3o.github.io/derivation-of-value/anthology/derivation-of-value-i/)** *(Anthology · working draft)*
    The opening essay. Names the operator the series turns around and fixes the register for everything that follows.
@@ -21,7 +21,9 @@ Five working documents, in reading order. Each has its own page on the site.
    A sheaf-theoretic incentive mechanism for decentralised inference, with coherence recovered as the vanishing of sheaf cohomology and a spectral extension — *Proof by Resonance* — via the sheaf Hodge Laplacian.
 4. **[Proof of Coherence — An Onboarding](https://idl3o.github.io/derivation-of-value/onboarding/)** *(Companion · v0.1)*
    A reader's path into the whitepaper: intuitions and motivations before the formalism.
-5. **[Gauge-Fixing the Section Space](https://idl3o.github.io/derivation-of-value/gauge-fixing-the-section-space/)** *(Anthology paper · v0.1)*
+5. **[Proof of Preservation — Volume II](https://idl3o.github.io/derivation-of-value/anthology/proof-of-preservation/)** *(Anthology · v0.1)*
+   The negentropy derivation. Order is the one substrate the second law guarantees is scarce and refuses to attest: Landauer certifies that energy was *spent*, never that order was *made here*. Reframes preservation as certified by gauge-fixing the adversary's freedoms rather than by proof, and sets up the anchoring construction that follows.
+6. **[Gauge-Fixing the Section Space](https://idl3o.github.io/derivation-of-value/gauge-fixing-the-section-space/)** *(Anthology paper · v0.1)*
    Anchoring architectures for negentropy-attested mechanisms. Composes four independent anchors — an astrophysical randomness beacon, a verifiable-delay-function chain, replication-style unique encoding and a dissipation floor — so that only honest global sections survive the quotient.
 
 ## Reading it
