@@ -11,7 +11,7 @@ The site is a static Jekyll build set in EB Garamond, published to GitHub Pages:
 
 ## Contents
 
-Eight working documents, in reading order. Each has its own page on the site.
+Nine working documents, in reading order. Each has its own page on the site.
 
 1. **[Derivation of Value — Volume I](https://idl3o.github.io/derivation-of-value/anthology/derivation-of-value-i/)** *(Anthology · working draft)*
    The opening essay. Names the operator the series turns around and fixes the register for everything that follows.
@@ -29,6 +29,8 @@ Eight working documents, in reading order. Each has its own page on the site.
    The value-as-vector derivation, paired with *Proof of Preservation*. The scalar price is a lossy projection of a vector whose coordinates — time, locality, purpose, provenance — fall into five algebraic kinds; the same entropy law that negentropy stakes against the world reappears here as the asymmetric price of erasing information inside money. Draws on the sibling [`vectorised-money`](https://github.com/idl3o/vectorised-money) and [`omnium`](https://github.com/idl3o/omnium) implementations.
 8. **[Kar-Coin — Volume II](https://idl3o.github.io/derivation-of-value/anthology/kar-coin/)** *(Anthology · v0.1)*
    The civilizational-capacity derivation, completing the Volume II triptych. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act. The grandest substrate in the program and, minted naively against oracle-measured energy, the least intrinsically verifiable; its long-horizon nature is what forces the program's closing question of post-quantum durability. Draws on the sibling [`kar-coin`](https://github.com/idl3o/kar-coin) whitepaper.
+9. **[Admitted or Refused — Volume III](https://idl3o.github.io/derivation-of-value/anthology/admitted-or-refused/)** *(Anthology · v0.1)*
+   The turn from derivation to construction, and the opener of Volume III — the reserved "working examples" milestone. A running mechanism is a claim that can be false: what the vectorised-money kernel already shows (the thermodynamics — conservation, entropy-direction, substrate-independence) and what it does not yet prove (the Goodhart-asymptotic security, which needs an adversary in the loop). Records the Gauge-Fixing test suite as a challenge written before its respondent exists. Designed to stay open and accrue further examples.
 
 ## Reading it
 
