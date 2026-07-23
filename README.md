@@ -11,7 +11,7 @@ The site is a static Jekyll build set in EB Garamond, published to GitHub Pages:
 
 ## Contents
 
-Seven working documents, in reading order. Each has its own page on the site.
+Eight working documents, in reading order. Each has its own page on the site.
 
 1. **[Derivation of Value — Volume I](https://idl3o.github.io/derivation-of-value/anthology/derivation-of-value-i/)** *(Anthology · working draft)*
    The opening essay. Names the operator the series turns around and fixes the register for everything that follows.
@@ -27,6 +27,8 @@ Seven working documents, in reading order. Each has its own page on the site.
    Anchoring architectures for negentropy-attested mechanisms. Composes four independent anchors — an astrophysical randomness beacon, a verifiable-delay-function chain, replication-style unique encoding and a dissipation floor — so that only honest global sections survive the quotient.
 7. **[Omnium — Volume II](https://idl3o.github.io/derivation-of-value/anthology/omnium/)** *(Anthology · v0.1)*
    The value-as-vector derivation, paired with *Proof of Preservation*. The scalar price is a lossy projection of a vector whose coordinates — time, locality, purpose, provenance — fall into five algebraic kinds; the same entropy law that negentropy stakes against the world reappears here as the asymmetric price of erasing information inside money. Draws on the sibling [`vectorised-money`](https://github.com/idl3o/vectorised-money) and [`omnium`](https://github.com/idl3o/omnium) implementations.
+8. **[Kar-Coin — Volume II](https://idl3o.github.io/derivation-of-value/anthology/kar-coin/)** *(Anthology · v0.1)*
+   The civilizational-capacity derivation, completing the Volume II triptych. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act. The grandest substrate in the program and, minted naively against oracle-measured energy, the least intrinsically verifiable; its long-horizon nature is what forces the program's closing question of post-quantum durability. Draws on the sibling [`kar-coin`](https://github.com/idl3o/kar-coin) whitepaper.
 
 ## Reading it
 
