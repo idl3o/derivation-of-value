@@ -73,7 +73,10 @@ function of ι — as is the multiplication claim, as is richness once Def 5.1 i
 as a packing number, as is P0's amplification ceiling. The program now has *three
 independent reasons* to formalise ι and no formalisation. **A3 (information
 geometry) is therefore promoted from mid-plan to critical path.** Revised order for
-what remains: **A3 → B1 → C1 → B2 → A2 → A4 → C-tier.**
+what remains was **A3 → B1 → C1 → B2 → A2 → A4 → C-tier**. C1 has since been
+drafted and A3's premise turned out to be open (see P6), so the live order is
+**B1 → B2 → A2 → A4 → C-tier**, with A3 waiting on a workable third attack design
+or a decision to write it as an unresolved fork.
 
 ---
 
@@ -154,7 +157,7 @@ Do **not** let the quantum connection become mystical; §6 is explicitly specula
 
 ---
 
-### P2 · Autopoiesis — `order: 14` — *planned*
+### P2 · Autopoiesis — `order: 15` — *planned*
 
 **Title** "A Consistent Fiction" · **Subtitle** "Organizational Closure and the Limit of Coherence-Based Attestation"
 
@@ -199,7 +202,15 @@ wholesale. The claim is about closure and coupling, nothing more.
 
 ---
 
-### P3 · Requisite variety — `order: 15` — *planned*
+### P3 · Requisite variety — `order: 14` — **v0.1 drafted** → `requisite-richness.md`
+
+*Drafted with the Conant–Ashby hedge built in: the theorem is contested and shows
+only that regulators maximally simple among optimal ones are homomorphic images,
+not that every good regulator is a model. Claim 5.1 states the conditional and
+does not discharge it. Principal weakness, flagged in §7: the commensurability of
+H(D) with ρ via a per-projection variety bound h — §8.1 is to make h precise.*
+
+*Original plan entry follows.*
 
 **Title** "Requisite Richness" · **Subtitle** "Variety as a Lower Bound on Substrate Richness"
 
@@ -295,7 +306,15 @@ composition operation is chosen.
 
 ---
 
-### P6 · Information geometry — `order: 18` — *planned* — **CRITICAL PATH**
+### P6 · Information geometry — `order: 18` — *planned* — **CRITICAL PATH, premise now OPEN**
+
+*`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
+ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
+(sparsification shatters the complex and contaminates the kernel proxy with
+component count; degree-preserving rewiring keeps it connected but moves d_s only
+8% of the way). So the metric-vs-divergence fork is unresolved and this paper
+cannot yet claim either branch. Draft it as the fork plus the failed attempts, or
+find a third attack design first.*
 
 **Title** "The Metric on the Projections" · **Subtitle** "Fisher Information and the Richness Measure"
 
