@@ -12,6 +12,36 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### Paper — *No Global Section* — v0.1
+
+`order: 13`. Contextuality as the general form of composition failure. Removes the weak point of *Gluing the Gates*: its cohomological criterion assumed gate conditions are affine on stalks, which **the program's own worked instance violates** — a threshold on a spectral quantity is not affine, so the theory was stated for a case the program does not have.
+
+**The identification (§2).** Local sections everywhere with no global section is *contextuality*, characterised by Abramsky & Brandenburger for quantum non-locality. Definition 2.1 gives the translation: holons are measurements, interfaces are contexts, gate-satisfying states are outcomes. Claim 2.2 — non-compositionality *is* contextuality of the gate model. The departments stand to the firm as local measurement outcomes stand to an absent joint distribution.
+
+**The route past affineness (§3, Conjecture 3.1).** Abramsky, Mansfield & Barbosa recover an abelian object by working with presheaves of **distributions over admissible outcomes** rather than the outcome sets themselves — linearity without linearising the constraints. Conjectured to transfer to gate scenarios. **This is the paper's load-bearing and unestablished claim**; §7 says so and §8.1 specifies the computation that would settle it. Named failure mode: in the quantum case the distributions are given by physics, whereas a designer would have to choose them, so the obstruction may be an artefact of the choice.
+
+**Three strengths (§4).** *Gluing the Gates* had a binary; contextuality grades it. Probabilistic = frequencies irreconcilable across runs → recalibrate thresholds. Logical = some admissible local configuration extends to none globally → **the regime an adversary wants**, since it can steer there, satisfy its own gate honestly, and guarantee the whole fails → redesign interfaces. Strong = nothing extends → specification error, abandon the composition.
+
+**What vanishing certifies (§5).** The established obstruction is *sufficient and not necessary*: there are contextual models cohomology does not see. So it is a **detector of composition failure, not a certificate of composition safety**. Names the pattern: the negentropy paper found H¹ = 0 certifies coherence and not truth; this is the same disappointment one level out, and vanishing cohomology is twice now weaker evidence than it looks.
+
+§6 asks, marked explicitly as speculation, whether economic contextuality is *harvestable* the way quantum contextuality is a resource — the logical-contextuality configurations that an adversary can steer toward are also *distinguishing*. Declines any quantum claim about economic systems: the shared object is a sheaf-theoretic obstruction and nothing else.
+
+### Paper — *The Multiplicity Freedom* — v0.1
+
+`order: 12`. Sybil-asymptotic security as the provable fragment. The program had named this problem four times — Proof of Preservation's *multiplicity freedom*, Gauge-Fixing's *identity gauge*, Proof of Coherence §4.2's *copy-symmetry problem*, and the dissipation floor that exists to price identity minting — without once using the word Sybil.
+
+**Why this fragment proves (§2).** Goodhart-asymptotic security is unproven because fake-cost rests on *capability*, which is a relation between an adversary's models and a substrate's structure and resists formalisation — hence Vol III's demand for an adversary in the loop. **Sybil cost is arithmetic.** Splitting a budget across N identities is division; it needs no model of anything. So this fragment yields to derivation, and proving it shrinks the unproven remainder.
+
+**Three hypotheses, each an anchor already built (§3).** H1 duplication-non-invariance (without it a copy is free and cost is independent of N) = the identity gauge. H2 a positive resource floor (without it Γ = 0) = the dissipation floor, and Douceur's impossibility in the program's own notation. H3 graded independence ι. Three of the four forger freedoms Proof of Preservation enumerated appear here as hypotheses; the anchors were not designed as a Sybil proof, and naming the problem is what lets them be read as one.
+
+**T1 (§4).** N ≤ ⌊C/Γ⌋ rewarded identities. **T2 (§5).** Γ = γ(1 + (K−1)ι), so conjunction-gating amplifies the floor by a factor scaling with order — and since K ≤ ρ, **richness bounds Sybil resistance and Goodhart resistance alike, the same ceiling for two properties**. Corollary 5.2: at ι = 0 richness buys *nothing*. Corollary 5.3: under compounding recoverability the amplification saturates at 1/(1−ι), so the cap never falls below C(1−ι)/γ however rich the substrate. The two recoverability models diverge by a factor of two at K = 8, and a mechanism designed on the optimistic one would have half the resistance its designer believed, invisibly.
+
+**T3 (§6), the least expected.** The gate caps the fleet but does *not* disincentivise splitting within it — that needs f convex above the gate. Linear is exactly Sybil-neutral; **strictly concave is Sybil-positive**, and diminishing returns is the conventional anti-whale choice. A √v reward pays an adversary 2.83× for splitting into eight. The curve chosen to prevent concentration subsidises fragmentation.
+
+Declines: that Douceur is escaped (he is quantified, not escaped — the floor's height is still set by the weakest honest participant); that convexity is costless (it buys Sybil resistance with an unpriced honest-concentration cost); and above all **that H1 holds anywhere** — no concrete mechanism in the program has been shown duplication-non-invariant, so every theorem is conditional on a property the program has demanded and never verified. §8.2 names settling it as small work with disproportionate payoff.
+
+Proofs and verification: `code/sybil_bound.py`, `_plan/sybil-proof-notes.md`.
+
 ### Paper — *Gluing the Gates* — v0.1
 
 New technical paper, `order: 11`. First entry of the "harvest an outside research topic into a paper" line; the topic is **holarchy**. Supplies the composition theory the framework has never had — Definition 5.2's ≼ orders substrates by *substitutability*, not by *nesting*, so nothing in Combination Proofs rules on whether a Combination Proof of Combination Proofs is one.

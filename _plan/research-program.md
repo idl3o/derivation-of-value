@@ -61,16 +61,51 @@ harvest line does not discharge them and should not pretend to.
         A4 renormalization ──> GtG §8.3 (depth vs span) + Vol IV coda formalised
 ```
 
-**Recommended order: A1 → B1 → C1 → B2 → A3 → A2 → A4 → C-tier.**
-A1 first because it closes the most and its literature is solid. B1 second because
-it attacks a weakness the corpus named itself and never studied. C1 third because it
-has the highest chance of yielding a crisp theorem.
+**Superseded — see §3 for current status.** Original recommendation was
+A1 → B1 → C1 → B2 → A3 → A2 → A4 → C-tier.
+
+**What changed.** P0 (Sybil) was not in the original map and jumped the queue: it
+targets Vol III's *largest* named debt rather than a framework subtlety, and its
+core results proved outright. P0 and A1 are now drafted.
+
+**And the proofs moved the critical path.** Every quantitative claim in P0 is a
+function of ι — as is the multiplication claim, as is richness once Def 5.1 is read
+as a packing number, as is P0's amplification ceiling. The program now has *three
+independent reasons* to formalise ι and no formalisation. **A3 (information
+geometry) is therefore promoted from mid-plan to critical path.** Revised order for
+what remains: **A3 → B1 → C1 → B2 → A2 → A4 → C-tier.**
 
 ---
 
 ## 3. Papers
 
-### P1 · Contextuality — `order: 12` — *researched*
+### P0 · Sybil — `order: 12` — **v0.1 drafted** → `the-multiplicity-freedom.md`
+
+*"The Multiplicity Freedom" · "Sybil-Asymptotic Security as the Provable Fragment"*
+
+Not in the original map. Added and drafted because it targets Vol III's largest
+debt: Goodhart-asymptotic security is unproven because fake-cost rests on
+*capability*, which resists formalisation — but **Sybil cost is arithmetic**, so
+that fragment yields to proof without an adversary in the loop.
+
+Three theorems, proved and verified (`code/sybil_bound.py`, `_plan/sybil-proof-notes.md`):
+T1 the cap N ≤ ⌊C/Γ⌋; T2 amplification Γ = γ(1+(K−1)ι) with a saturation ceiling
+of 1/(1−ι) under compounding recoverability; T3 only convexity above the gate
+punishes splitting, and concave rewards are strictly Sybil-*positive*.
+
+The structural find: all three hypotheses are anchors the program had already
+built — duplication-non-invariance (identity gauge), a resource floor (dissipation
+floor), graded independence (ι). Does **not** escape Douceur; quantifies him.
+
+**Remaining debts this paper names.** §8.1 which recoverability model holds — the
+two diverge by a factor of two at K=8 and the framework cannot choose between them.
+§8.2 settle H1: Shapley vs provenance-weighting has sat unresolved in PoC §4.2
+since v0.1.1, and without H1 there is **no Sybil bound at all**. Small work,
+disproportionate payoff — do this before building further on P0.
+
+---
+
+### P1 · Contextuality — `order: 13` — **v0.1 drafted** → `no-global-section.md`
 
 **Title** "No Global Section" · **Subtitle** "Contextuality as the General Form of Composition Failure"
 *(alternatives: "Every Level Healthy", "The Contextual Mechanism")*
@@ -119,7 +154,7 @@ Do **not** let the quantum connection become mystical; §6 is explicitly specula
 
 ---
 
-### P2 · Autopoiesis — `order: 13` — *planned*
+### P2 · Autopoiesis — `order: 14` — *planned*
 
 **Title** "A Consistent Fiction" · **Subtitle** "Organizational Closure and the Limit of Coherence-Based Attestation"
 
@@ -164,7 +199,7 @@ wholesale. The claim is about closure and coupling, nothing more.
 
 ---
 
-### P3 · Requisite variety — `order: 14` — *planned*
+### P3 · Requisite variety — `order: 15` — *planned*
 
 **Title** "Requisite Richness" · **Subtitle** "Variety as a Lower Bound on Substrate Richness"
 
@@ -201,7 +236,7 @@ if none exists the claim degrades to an analogy and should be dropped.
 
 ---
 
-### P4 · Stigmergy — `order: 15` — *planned*
+### P4 · Stigmergy — `order: 16` — *planned*
 
 **Title** "What the Work Leaves" · **Subtitle** "Stigmergy, Residue, and the Formation of Interfaces"
 
@@ -240,7 +275,7 @@ that claim, and it is testable.
 
 ---
 
-### P5 · Open games — `order: 16` — *planned* — **depends on P1**
+### P5 · Open games — `order: 17` — *planned* — P1 now drafted, so unblocked
 
 **Title** "Coutility" · **Subtitle** "Open Games and the Composition Operation"
 
@@ -260,7 +295,7 @@ composition operation is chosen.
 
 ---
 
-### P6 · Information geometry — `order: 17` — *planned*
+### P6 · Information geometry — `order: 18` — *planned* — **CRITICAL PATH**
 
 **Title** "The Metric on the Projections" · **Subtitle** "Fisher Information and the Richness Measure"
 
@@ -278,7 +313,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 18` — *planned*
+### P7 · Renormalization — `order: 19` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -299,7 +334,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 19+`, all *planned*
+### C-tier — grounding papers, `order: 20+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|
