@@ -375,7 +375,48 @@ composition operation is chosen.
 
 ---
 
-### P6 · Information geometry — `order: 19` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P12 · Signatures — `order: 19` — **v0.1 drafted** → `borrowed-again.md`
+
+*"Borrowed Again" · "Post-Quantum Signatures and the Structure the Migration Keeps".
+Added mid-session and drafted immediately, because it carries a correction to a
+load-bearing sentence in Vol IV.*
+
+**The correction.** Vol IV identifies the PQ migration with the founding operator —
+"away from structured hardness that Shor unravels, toward unstructured and physical
+hardness." The conceptual sorting stands; the empirical claim about the field does
+not. NIST's **primary** signature standard is ML-DSA on Module-LWE/Module-SIS —
+structure — and SLH-DSA, the one that fits the volume's description, is designated
+a **backup** "in case ML-DSA proves vulnerable." FN-DSA is lattice over NTRU. Two of
+three rest on algebraic structure. **The migration moves between structures, not
+from structure to bulk.** Compensating find: NIST's stated reason for holding a
+hash-only scheme in reserve *is* the volume's argument — the standards body ran the
+sorting without the vocabulary, and got hedging rather than migration.
+
+**The sorting runs inside the lattice family.** plain LWE → Module-LWE → Ring-LWE is
+a gradient of increasing algebraic structure and increasing efficiency, and
+Module-LWE exists precisely as a hedge against ring-structure attacks. **Efficiency
+is bought with structure, and structure is what the volume calls borrowed.** Price of
+derivation, measured: SLH-DSA 7,856–49,856 bytes vs ML-DSA 2,420–4,595 — two to ten
+times the bandwidth, and the first number the program has attached to its own
+preference for derived over borrowed.
+
+**τ for a signature is two numbers.** τ ≈ 1 for "the holder of this key assented"
+(that *is* unforgeability); τ ≈ 0 for anything broader — did the work, holds the
+stake, is a distinct person. The gap is where mechanisms leak, and it means Vol IV
+filed the signature layer as *plumbing* when the Sybil bound's hypotheses live there.
+
+**The hybrid was the operator.** Kar-Coin's lattice-plus-hash straddles the program's
+own line — borrowed half carries traffic, derived half carries the guarantee — and is
+the only place in the corpus where the right answer preceded the argument for it.
+
+*Open: §7.2 is the sharp one — the VDF repairs on offer (class groups, isogenies) are
+ALSO structured, so the program's two most exposed components would both re-base onto
+structure. Is an unstructured delay function possible at all? A negative answer would
+be worth having explicitly.*
+
+---
+
+### P6 · Information geometry — `order: 20` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -401,7 +442,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 20` — *planned*
+### P7 · Renormalization — `order: 21` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -422,7 +463,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 21+`, all *planned*
+### C-tier — grounding papers, `order: 22+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|

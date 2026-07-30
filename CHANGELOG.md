@@ -12,6 +12,24 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### Paper — *Borrowed Again* — v0.1
+
+`order: 19`. A signatures paper, added to the plan mid-session and drafted at once because it corrects a load-bearing sentence in Volume IV.
+
+**The correction.** *Borrowed Hardness* identifies the post-quantum migration with the founding operator: "away from structured hardness that Shor unravels, toward unstructured and physical hardness that Grover can only make more expensive." The conceptual sorting stands. The empirical claim about the field does not. NIST's **primary** signature standard is ML-DSA (FIPS 204), resting on Module-LWE and Module-SIS — structure. SLH-DSA (FIPS 205), the one scheme that fits the volume's description, rests solely on collision-resistant hashing and is designated a **backup** "in case ML-DSA proves vulnerable." FN-DSA (FIPS 206, draft) is lattice over NTRU. Two of three rest on algebraic structure, and the structured one is the default. **The migration abandons the structure Shor exploits and adopts different structure; it moves between structures rather than from structure to bulk.**
+
+**The compensating find.** NIST's stated reason for standardising a hash-only scheme in reserve *is* the volume's argument — diversify away from structure in case the structure is a loan. The standards body performed the program's sorting without the vocabulary, and arrived at **hedging rather than migration.**
+
+**The sorting runs inside the lattice family.** Ring-LWE rests on ideal lattices, whose algebraic structure both delivers the efficiency and has yielded characterised weak instances not covered by the worst-case hardness theorems. Module-LWE exists as a hedge that "can resist potential attacks exploiting the algebraic structure of rings." So plain LWE → Module-LWE → Ring-LWE is a gradient of increasing structure and increasing efficiency: **efficiency is bought with structure, and structure is what the volume calls borrowed.** Choice of primitive is a case of the framework's own substrate-selection problem, not an implementation detail.
+
+**The price of derivation, measured.** SLH-DSA signatures run 7,856–49,856 bytes against ML-DSA's 2,420–4,595 — two to ten times the bandwidth, per signature, forever. The first number the program has attached to its preference for derived over borrowed, which had been an argument and is now a cost. Side effect worth noting: signature size is part of the identity-minting cost, so choosing the derived primitive raises the Sybil floor of *The Multiplicity Freedom*'s hypothesis H2.
+
+**What a signature attests, in Sign and Work's notation.** τ has *two values* depending on the claim. For "the holder of this key assented to this message," τ ≈ 1 — that is precisely what unforgeability means, and signatures are excellent residue for exactly one proposition. For anything broader — did the work, holds the stake, is a distinct person — τ ≈ 0, since the key operation is unrelated to the labour. **The gap between the two is where mechanisms leak**, and it means Vol IV filed "the signatures that bind an identity to a stake" under *plumbing* when the Sybil bound's hypotheses live exactly there.
+
+**The hybrid was the operator all along.** Kar-Coin's lattice-plus-hash construction, presented as prudence, straddles the program's own line: the borrowed half carries traffic and the derived half carries the guarantee. The only place in the corpus where the right answer preceded the argument for it. Recommendation the corpus should carry: not *migrate to post-quantum*, which the standards make ambiguous between two very different bets, but sign with a structured scheme where throughput demands it and anchor with an unstructured one wherever security claims are load-bearing.
+
+Declined: that lattice cryptography is unsound (it has worst-case reductions number theory never had; the claim is only about *category*); that Vol IV's sorting is wrong (only its claim about the field's chosen direction); any quantitative comparison of break likelihoods. §7.2 is the sharp open problem: the VDF repairs Vol IV offers — class groups, isogenies — are **also** structured, so the program's two most exposed components would both re-base onto structure, and whether an unstructured delay function is possible at all deserves an explicit answer.
+
 ### Paper — *Coutility* — v0.1
 
 `order: 18`. Takes up the composition operation *Gluing the Gates* §7 declined to supply. Ghani, Hedges, Winschel & Zahn's **open games** are morphisms of a symmetric monoidal category, built from lenses, carrying **coutility** — the utility a game returns to its environment.
