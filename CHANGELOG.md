@@ -12,6 +12,22 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### Paper — *Coutility* — v0.1
+
+`order: 18`. Takes up the composition operation *Gluing the Gates* §7 declined to supply. Ghani, Hedges, Winschel & Zahn's **open games** are morphisms of a symmetric monoidal category, built from lenses, carrying **coutility** — the utility a game returns to its environment.
+
+**The literature was stronger than expected**, and it changed the paper's thesis. The plan anticipated that categorical composition would be total while equilibrium failed to compose. The reverse holds: the authors' stated distinctive feature is that **the Nash equilibrium condition is itself compositional.**
+
+**Which fixes one of Gluing's two failure modes and not the other.** Prop 4.1 there — a super-mechanism aggregating constituent scores passes while a constituent fails — turns out to describe an *error of construction*, not a fact about composition. An aggregate reads what a sub-mechanism paid its own participants, a quantity its gate has already acted on; coutility is what it hands upward, and lens composition composes backward legs. **Claim 3.1: a super-mechanism gating on constituent coutility rather than utility inherits every constituent gate.** Aggregation was never the composition operation — it was the absence of one.
+
+**Prop 4.2 survives untouched, and why is the contribution.** Equilibrium is a fixed point of best responses: a condition on *strategy profiles*, local by construction, which is why it composes. Admissibility — what conjunction-gating actually asks — is a constraint-satisfaction condition on *states*, and a global existence question. Prop 4.1 (this paper): **the compositionality of an equilibrium predicate does not imply the compositionality of an admissibility predicate.** The counterexample is nearly trivial and that is the point — give the contextuality cycle trivial strategy sets and every profile is vacuously an equilibrium, so equilibrium composes while carrying no information at all. The most developed compositional theory in game theory composes exactly the thing this framework does not use.
+
+**§5 names a pattern the program has produced three times and never remarked on.** Volume V: residue relocates the attestation problem rather than solving it, which is why *Sign and Work* had to define τ. *No Global Section*: the cohomological invariant detects failure and certifies nothing. And here: the composition operation exists, is well-typed, and preserves the predicate the framework does not gate on. Each import was worth making; each made the difficulty sharper and none made it smaller. **That is what a mature formalism does to an immature one, and the program should expect the next import to do the same.**
+
+Declined: that Claim 3.1 is proved (it needs a Combination Proof actually exhibited as an open game — §7.1, the paper's first debt); that the equilibrium claim has been verified from the proof rather than reported; that admissibility *could not* be made to compose; and that open games are the only candidate — §7.3 flags Canetti's simulation-based notion as more promising, since it quantifies over what an adversary can achieve rather than what a player prefers, which is nearer to admissibility.
+
+§7.2 carries the largest payoff: if faking a conjunction could be restated as *a deviation no player prefers* rather than *an expense no player can meet*, the property becomes equilibrium-shaped and open games hand over compositionality for free. The obstacle is that fake-cost is denominated in capability and capability is not a preference.
+
 ### Paper — *A Consistent Fiction* — v0.1
 
 `order: 17`. Takes up the failure mode the program named in its own whitepaper and never studied. *Proof of Coherence* §2 records against coherentism that "a consistent fiction is consistent" and that coherence-of-coherence "collapses to autopoietic-cult attractors" — borrowing a word from theoretical biology, then never defining it or taking a single result from it. This takes the results.

@@ -341,7 +341,21 @@ that claim, and it is testable.
 
 ---
 
-### P5 · Open games — `order: 18` — *planned* — P1 now drafted, so unblocked
+### P5 · Open games — `order: 18` — **v0.1 drafted** → `coutility.md`
+
+*Thesis changed on contact with the literature. The plan expected composition to
+be total while equilibrium failed to compose; the reverse is true — Ghani et al.
+report the **Nash condition is itself compositional**. So the paper splits Gluing
+the Gates' two failure modes: **coutility fixes Prop 4.1** (aggregation was never
+a composition operation — read the backward leg of the lens and the gate
+propagates), and **Prop 4.2 survives untouched** because the framework gates on
+ADMISSIBILITY, a constraint-satisfaction condition on states, not on EQUILIBRIUM,
+a fixed point of best responses. Prop 4.1 (this paper) shows the two predicates
+are of different logical shape, via a trivial-strategy counterexample. §7.2 is the
+high-payoff open problem: restate Goodhart-asymptotic security as an equilibrium
+property and open games hand over compositionality free.*
+
+*Original plan entry follows.*
 
 **Title** "Coutility" · **Subtitle** "Open Games and the Composition Operation"
 
