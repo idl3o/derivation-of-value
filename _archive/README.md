@@ -56,14 +56,31 @@ It ships with the source and never becomes a site page. The same holds for
 
 ## Contents
 
-| paper | archived |
-|---|---|
-| `admitted-or-refused` | v0.1 |
-| `borrowed-hardness` | v0.1 |
-| `combination-proofs` | v0.1, v0.2 |
-| `kar-coin` | v0.1 |
+| paper | archived | note |
+|---|---|---|
+| `admitted-or-refused` | v0.1 | published state, 2026-07-23 |
+| `borrowed-hardness` | v0.1 | published state, 2026-07-23 |
+| `combination-proofs` | v0.1, v0.2 | v0.2 never published — see below |
+| `kar-coin` | v0.1 | published state, 2026-07-23 |
+| `proof-of-coherence` | v0.2, v0.3 | v0.3 never published |
+| `sign-and-work` | v0.1 | never published |
+| `the-multiplicity-freedom` | v0.1, v0.2 | neither published |
 
-All four v0.1 files are the state published to the site as of the 2026-07-23
-commits, recovered from git. `combination-proofs` v0.2 is the Kardashev–Barrow
-and spectral-measurement revision, superseded by v0.3 the same day and never
-pushed.
+The 2026-07-23 v0.1 files are the state the site carried before this session,
+recovered from git.
+
+**Four of these versions never went live**, and they are kept for exactly the
+reason the convention exists. `combination-proofs` v0.2 was the Kardashev–Barrow
+and spectral-measurement revision, superseded by v0.3 within the hour.
+`proof-of-coherence` v0.3 settled the copy-symmetry fork on the rank toy and was
+superseded by v0.4 the same day, when the rank result turned out not to transfer
+to H⁰. `the-multiplicity-freedom` v0.1 and v0.2 track the same discovery from the
+other side: v0.1 stated hypothesis H1 about individual earnings when its own
+theorem needed group totals, v0.2 corrected that and reported H1 discharged, and
+v0.3 had to withdraw the discharge. `sign-and-work` v0.1 predates the first
+measured trace gap.
+
+Reading v0.2 and v0.3 of the Sybil paper side by side is the clearest record the
+program has of a claim being made, corrected, strengthened, and then partly
+withdrawn inside a single day. That sequence is invisible in the current version
+and is the thing this directory exists to keep.

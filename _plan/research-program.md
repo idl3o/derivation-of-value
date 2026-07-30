@@ -12,8 +12,16 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-Fifteen documents, orders 1–15 (was eleven when this plan was written). The visible anthology spine (Vols I–IV) is complete;
-Vol III's ledger stays open by design; Vol V+ is unclaimed.
+**Nineteen documents, orders 1–19** (eleven when this plan was written). Everything
+through order 19 is **published** as of 2026-07-30. The spine is Vols I–V: Vol III's
+ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
+this session with *Sign and Work* as its technical companion.
+
+Eight papers were added: Gluing the Gates(11), The Multiplicity Freedom(12),
+No Global Section(13), Requisite Richness(14), Vol V(15), Sign and Work(16),
+A Consistent Fiction(17), Coutility(18), Borrowed Again(19). Five were revised:
+Combination Proofs→v0.3, Proof of Coherence→v0.4, Kar-Coin→v0.2,
+Admitted or Refused→v0.2, Borrowed Hardness→v0.2.
 
 **Open problems inherited, by reference:**
 
@@ -21,18 +29,39 @@ Vol III's ledger stays open by design; Vol V+ is unclaimed.
 |---|---|
 | CP §7.1 | quantitative independence measure ι |
 | CP §7.2 | the verifiability boundary — which projections admit intrinsic verifiers |
-| CP §7.3 | ρ formally (partly answered: fractional spectral dimension, measured) |
+| CP §7.3 | ρ formally — **partly answered**: fractional spectral dimension, measured |
 | CP §7.4 | universality — are Combination Proofs *necessary*, not just sufficient |
-| GtG §8.1 | non-affine gates — the obstruction in a non-abelian setting |
+| GtG §8.1 | non-affine gates — **route identified** (presheaf of distributions), *untested* |
 | GtG §8.2 | a composition law for ρ |
 | GtG §8.3 | depth versus span |
 | GtG §8.4 | is the verifiability boundary the same boundary as the composition obstruction |
 | GtG §8.5 | adversary-positivity under nesting |
-| Vol III | the Goodhart-asymptotic **security proof** (needs adversary + mechanism) |
+| Vol III | the Goodhart-asymptotic **security proof** — *shrunk* by the Sybil fragment, not closed |
 | Vol III | the **build** — implement the Gauge-Fixing §5 suite |
 
-Two debts are *construction*, not research: the security proof and the build. The
+**New debts this session created, ranked by how much rests on them:**
+
+| ref | problem | why it matters |
+|---|---|---|
+| NGS §8.1 | test Conjecture 3.1 (distributional presheaf) | a *published* paper's quantitative content rests on it |
+| Sybil §8.2 | state C1 (participation) and C2 (tolerance ≤ spectral gap) as framework conditions | without them duplication on H⁰ is unbounded; both currently modelling conventions |
+| Sybil §8.1 | which recoverability model — linear or compounding | they diverge 2× at K=8 and the framework cannot choose |
+| Coutility §7.1 | exhibit a Combination Proof as an open game | Claim 3.1 is a prescription, not a theorem, until this exists |
+| Coutility §7.2 | restate Goodhart-asymptotic security as an *equilibrium* property | if it works, compositionality comes free |
+| ACF §8.2 | can measurement supply content without an oracle? | decides whether closure is escapable at all |
+| RR §8.1 | make the per-projection variety bound h precise | without it Requisite Richness §§3–4 are analogy |
+| BA §7.2 | is an *unstructured* delay function possible? | otherwise both most-exposed components re-base onto structure |
+| S&W §7.1 | measure τ for the spectral projection | one τ measured so far, and it came out at 0 |
+
+Two debts remain *construction*, not research: the security proof and the build. The
 harvest line does not discharge them and should not pretend to.
+
+**Standing methodological finding.** Seven claims were caught wrong before
+publication this session, four of them because an instrument returned an
+*impossible* number rather than a merely surprising one — kernel progress above the
+honest maximum, 67 "gaps" equalling exactly the stalk multiplicity, five vectors
+spanning five dimensions inside a three-dimensional kernel. **Prefer diagnostics
+that can return absurdities over ones that always return something plausible.**
 
 ---
 
@@ -61,22 +90,28 @@ harvest line does not discharge them and should not pretend to.
         A4 renormalization ──> GtG §8.3 (depth vs span) + Vol IV coda formalised
 ```
 
-**Superseded — see §3 for current status.** Original recommendation was
-A1 → B1 → C1 → B2 → A3 → A2 → A4 → C-tier.
+**Superseded — see §3 for current status.** The original recommendation was
+A1 → B1 → C1 → B2 → A3 → A2 → A4 → C-tier, and almost none of it survived contact.
 
-**What changed.** P0 (Sybil) was not in the original map and jumped the queue: it
-targets Vol III's *largest* named debt rather than a framework subtlety, and its
-core results proved outright. P0 and A1 are now drafted.
+**What actually happened.** P0 (Sybil) was not on the map and jumped the queue,
+targeting Vol III's largest debt rather than a framework subtlety; its core results
+proved outright. P12 (signatures) was added mid-session on a user prompt and drafted
+immediately, because it corrected a load-bearing sentence in Vol IV. A3 was promoted
+to critical path on the strength of a premise that then failed to measure. And Vol V
+opened, which the plan had not anticipated at all.
 
-**And the proofs moved the critical path.** Every quantitative claim in P0 is a
-function of ι — as is the multiplication claim, as is richness once Def 5.1 is read
-as a packing number, as is P0's amplification ceiling. The program now has *three
-independent reasons* to formalise ι and no formalisation. **A3 (information
-geometry) is therefore promoted from mid-plan to critical path.** Revised order for
-what remains was **A3 → B1 → C1 → B2 → A2 → A4 → C-tier**. C1 has since been
-drafted and A3's premise turned out to be open (see P6), so the live order is
-**B1 → B2 → A2 → A4 → C-tier**, with A3 waiting on a workable third attack design
-or a decision to write it as an unresolved fork.
+**Drafted: P0, P1, P2, P3, P4, P5, P12, plus Volume V.**
+**Remaining: P6 (critical path, premise open) → P7 → C-tier P8–P11.**
+
+**A3/P6 is the live problem.** Every quantitative claim in P0 is a function of ι, as
+is the multiplication claim, as is richness once Def 5.1 is read as a packing number,
+as is P0's amplification ceiling, and now as is Sign and Work's τ analysis. Five
+independent dependents, no formalisation, and **two failed measurement attempts** —
+sparsification shatters the complex and contaminates the kernel proxy; rewiring stays
+connected but moves d_s only 8%. Either find a third attack design, or write P6 as an
+honest unresolved fork. **What must not happen is the critical path stalling silently
+while easier papers get written around it** — which is precisely what happened this
+session, and is worth naming rather than repeating.
 
 ---
 
