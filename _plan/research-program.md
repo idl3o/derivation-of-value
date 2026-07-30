@@ -162,7 +162,7 @@ Do **not** let the quantum connection become mystical; §6 is explicitly specula
 
 ---
 
-### P2 · Autopoiesis — `order: 15` — *planned*
+### P2 · Autopoiesis — `order: 17` — *planned*
 
 **Title** "A Consistent Fiction" · **Subtitle** "Organizational Closure and the Limit of Coherence-Based Attestation"
 
@@ -252,7 +252,7 @@ if none exists the claim degrades to an analogy and should be dropped.
 
 ---
 
-### P4 · Stigmergy — `order: 16` — *planned* — **now Vol V's technical companion**
+### P4 · Stigmergy — `order: 16` — *planned* — **NEXT: Vol V's promised companion**
 
 *Volume V (*What Cannot Be Helped*, order 15) names residue as the general answer
 to the attestation problem, and per the program's convention each substrate gets a
@@ -302,7 +302,7 @@ that claim, and it is testable.
 
 ---
 
-### P5 · Open games — `order: 17` — *planned* — P1 now drafted, so unblocked
+### P5 · Open games — `order: 18` — *planned* — P1 now drafted, so unblocked
 
 **Title** "Coutility" · **Subtitle** "Open Games and the Composition Operation"
 
@@ -322,7 +322,7 @@ composition operation is chosen.
 
 ---
 
-### P6 · Information geometry — `order: 18` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P6 · Information geometry — `order: 19` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -348,7 +348,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 19` — *planned*
+### P7 · Renormalization — `order: 20` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -369,7 +369,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 20+`, all *planned*
+### C-tier — grounding papers, `order: 21+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|
