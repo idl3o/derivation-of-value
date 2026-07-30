@@ -1,0 +1,185 @@
+---
+layout: document
+title: "The Multiplicity Freedom"
+subtitle: "Sybil-Asymptotic Security as the Provable Fragment"
+eyebrow: "An Anthology · Paper · v0.1"
+permalink: /the-multiplicity-freedom/
+anthology: "Derivation of Value"
+version: "v0.1"
+date: 2026-07-30
+license: "CC BY 4.0"
+label: "Anthology · Paper"
+blurb: "The program has named the Sybil attack four times without using the word. Naming it lets the anchors be read as a proof: conjunction-gating amplifies a resource floor's Sybil resistance by a factor of 1 + (K−1)ι, and by nothing at all if the projections are redundant. The gate caps the adversary's fleet; only convexity above it makes splitting a loss — and diminishing returns, the conventional anti-whale choice, subsidises Sybils."
+status: "v0.1 · working draft"
+order: 12
+---
+
+## Abstract
+
+The program's largest unpaid debt is a security proof: its Goodhart-asymptotic claims rest on fake-cost, and fake-cost rests on *capability* — being able to model a projection well enough to fake it — which is the one quantity the framework declines to formalise. This paper isolates a fragment of that claim which does not need capability, and proves it. Sybil cost is arithmetic: splitting a resource across many identities is division, and division does not require modelling anything. Three results follow. Under duplication-non-invariance and a positive resource floor, an adversary with budget C fields at most ⌊C/Γ⌋ rewarded identities, where Γ is the cost of clearing every gate on one identity. Under graded independence ι, Γ = γ(1 + (K−1)ι), so conjunction-gating amplifies the floor by a factor that scales with the mechanism's order and vanishes when projections are redundant — and since order is bounded by richness, ρ bounds Sybil resistance and Goodhart resistance alike. Under a compounding model of recoverability the amplification saturates at 1/(1−ι) however rich the substrate. Third, and least expected: the gate caps the adversary's fleet but does not disincentivise splitting within it. That requires the reward function to be convex above its gates. Diminishing-returns rewards — the standard choice for limiting concentration — are strictly Sybil-*positive*, paying an adversary 2.83× for splitting into eight identities. The results do not escape Douceur's impossibility; they quantify it. Each of the three hypotheses turns out to be an anchor the program had already built for reasons that had nothing to do with identity.
+
+---
+
+## 1. A Problem Named Four Times
+
+This program has been writing Sybil-resistance theory for four documents without once using the word.
+
+*Proof of Preservation*, enumerating the freedoms a forger enjoys, names it exactly: "the identities that bear sections can themselves be *minted* freely, which makes any bound that quantifies over witnesses vacuous if witnesses are costless." It calls this the **multiplicity freedom**, and assigns it a dedicated anchor — "a thin dissipation floor that prices the minting of identities and does nothing else, so that the count of witnesses means something."
+
+*Gauge-Fixing the Section Space* names it as the **identity gauge**: "a section may be duplicated; informational content does not individuate its bearer," fixed by a unique encoding keyed to the bearer, and tested by the demand that reward be not invariant under duplication.
+
+*Proof of Coherence* §4.2 names it as the **copy-symmetry problem**, exhibits it in a three-miner toy where the honest contributor and its verbatim copy receive identical reward, and offers two candidate resolutions without settling either.
+
+And *Gluing the Gates* names it a fourth time, reading duplication-invariance as Koestler's pathology of excessive integration — a holarchy in which no holon retains a distinguishing interior.
+
+Four treatments, one problem, no name. The name is Douceur's, from 2002 [1]: the **Sybil attack**, in which a single entity presents as many and thereby captures a share of a system disproportionate to what it holds. The purpose of this paper is not to relabel what the program already had. It is to observe that once the problem is named, the four anchors stop looking like four separate defences and start looking like the hypotheses of a theorem.
+
+---
+
+## 2. Why This Fragment Yields to Proof
+
+The program's third volume states its outstanding debt plainly: the mechanisms have been shown to enforce their thermodynamics but not their security, and the security claim needs an adversary in the loop and a mechanism for that adversary to fail against. It has not been proved, and the reason is worth being precise about.
+
+Security in this framework is Goodhart-*asymptotic*: it lives in the distance between what a participant can do and what faking the conjunction would require. That distance is measured by fake-cost, and fake-cost (Definition 2.4) is resource "some mixture of compute, capital, and the rarer resource of *capability* in the sense of being able to model the projection well enough to fake it." Capability is the term that resists formalisation. It is not a quantity of anything; it is a relation between an adversary's models and a substrate's structure, and no amount of algebra extracts it. Hence the adversary in the loop: capability is discovered by someone actually trying, which is why the debt is owed to a construction rather than to a derivation.
+
+**Sybil cost is not of that kind.** Splitting a fixed resource across N identities is division. It requires no model of any projection, no understanding of the substrate, no capability in Definition 2.4's difficult sense — only arithmetic. Whatever an adversary can do with a budget, it can do with a partition of that budget, and the question of how the partition fares is settled by the shape of the reward function and the height of the gates.
+
+So there is a fragment of the security claim that does not wait on an adversary, and this paper proves it. That does not discharge the debt. It shrinks the part of it that remains unproven, and — the more useful outcome — it identifies exactly which quantity the remainder turns on.
+
+**Douceur's result, and what is and is not being claimed against it.** Douceur showed that without a logically centralised authority, Sybil attacks are always possible except under assumptions of resource parity and coordination that he characterised as extreme and unrealistic. The argument turns on *heterogeneity*: entities differ in capability, so any resource test must be calibrated to what the weakest honest participant can pass, and an adversary richer than that participant can mint identities at the weakest participant's price. Nothing below contradicts this, and the reader should be suspicious of any construction claiming to. What follows *quantifies* Douceur — it says how many identities, in terms of what — and then shows that conjunction-gating taxes the count by a factor the framework can design for. The Sybil attack remains possible. It becomes expensive in a way that can be stated.
+
+---
+
+## 3. Three Hypotheses, Each an Anchor Already Built
+
+Fix a Combination Proof M of order K, with reward r(s) = f(π₁(s), …, π_K(s)), f monotonically non-decreasing in each argument and vanishing whenever any πᵢ falls below its threshold tᵢ. Let an adversary A hold budget C in the resource of Definition 2.4, register N identities, allocate its budget among them, and collect the sum of their rewards.
+
+Write γᵢ = C(πᵢ, tᵢ ; A) for the fake-cost of bringing projection i to its threshold on a single identity, γ for the uniform case, and Γ for the minimum expenditure that brings *all* K projections on one identity to their thresholds.
+
+Three hypotheses are needed. The observation that gives this paper its shape is that all three were already in the program, built for other reasons.
+
+**(H1) Duplication-non-invariance.** Reward is not invariant under duplication of a state: a copy does not earn what the original earns.
+
+Without H1 there is nothing to prove. An adversary would pay Γ once, copy the resulting state N times, and field N identities at the price of one — a cost independent of N, and a bound of infinity. H1 is precisely the *Gauge-Fixing* test-suite's second demand, and precisely the copy-symmetry problem of *Proof of Coherence* §4.2. Its role here is to make expenditure **additive across identities**, which is the only thing the counting argument needs.
+
+**(H2) A positive resource floor.** γᵢ > 0 for at least one projection i.
+
+Without H2, Γ = 0 and N is unbounded. This is Douceur's impossibility in the program's own notation: absent a constrained and verifiable resource, identities are free and any bound quantifying over witnesses is vacuous — which is exactly what *Proof of Preservation* said in prose. H2 is the dissipation floor, the anchor whose entire job is to price the minting of identities and do nothing else.
+
+**(H3) Approximate independence, graded.** The independence measure ι ∈ [0,1] of §7.1: the fraction of π_j's fake-cost that is *not* recoverable from having faked πᵢ.
+
+H3 governs how Γ grows with K, and therefore how much richness buys. It is the framework's existing load-bearing assumption, doing a second job.
+
+Three of the four forger freedoms enumerated in *Proof of Preservation* — duplication, multiplicity, and, through ι, the reuse of ground work — appear here as H1, H2 and H3. The fourth, backdating, does not enter. The anchors were not designed as a Sybil proof. Naming the problem is what lets them be read as one.
+
+**Lemma 3.1 (cost of the conjunction).** Under H3, with uniform γ, the cost of clearing all K gates on one identity is Γ = γ₁ + Σ_{k≥2} (marginal cost of π_k given its predecessors already faked). The framework does not fix the marginal term, so two models bracket it:
+
+> *Linear recoverability*, each further projection costing ιγ:  Γ_lin = γ(1 + (K−1)ι)
+>
+> *Compounding recoverability*, the k-th costing ι^{k−1}γ:  Γ_cmp = γ(1 − ι^K)/(1 − ι)
+
+Both agree at ι = 0, where Γ = γ, and at ι = 1, where Γ = γK; and Γ_cmp ≤ Γ_lin between. Which model holds is an empirical question about a substrate, and §5 shows it is not a cosmetic choice.
+
+---
+
+## 4. The Cap
+
+**Theorem 4.1 (Sybil cap).** Under H1 and H2, an adversary with budget C can field at most
+
+> N ≤ ⌊ C / Γ ⌋
+
+identities receiving non-zero reward, under any allocation of its budget.
+
+*Proof.* Let J be the set of identities receiving non-zero reward. For j ∈ J, conjunction-gating requires πᵢ(s_j) ≥ tᵢ for every i, so by the definition of Γ the adversary expended at least Γ on identity j. By H1 a state earning for j does not also earn for j′, so expenditures on distinct identities are additive. Hence |J|·Γ ≤ C. ∎
+
+Taken alone this is close to definitional, and we state it separately for two reasons rather than for its depth. First, it isolates the hypotheses: a bound exists at all only because copies do not pay and identities are not free, and a mechanism lacking either anchor has no Sybil bound whatever its other virtues. Second, its entire content is in what Γ *is*, which is the next section.
+
+The bound is verified in `code/sybil_bound.py`, which searches allocations directly rather than assuming the counting argument, including an exhaustive search over discretised allocations in small cases. No uneven split exceeds the bound.
+
+---
+
+## 5. Amplification, and Its Ceiling
+
+**Theorem 5.1 (richness amplification).** Under H1–H3 with uniform γ and linear recoverability,
+
+> N ≤ C / [ γ (1 + (K−1)ι) ]
+
+and since a Combination Proof cannot have order exceeding the richness of its substrate (§5), the strongest cap achievable on 𝒮 is C / [γ(1 + (ρ(𝒮) − 1)ι)].
+
+*Proof.* Substitute Lemma 3.1 into Theorem 4.1; the second claim is K ≤ ρ. ∎
+
+The consequence is a unification the framework does not currently claim. **Richness bounds Sybil resistance and Goodhart resistance alike** — the same ceiling, two properties. A substrate's ρ has been presented throughout as the limit on how many independent projections a mechanism can gate on, and therefore on how expensive faking the conjunction can be made. It is also, by Theorem 5.1, the limit on how far the adversary's fleet can be divided.
+
+**Corollary 5.2 (independence is the whole of it).** At ι = 1 the cap falls as 1/K: each projection divides the adversary's fleet. At ι = 0 the cap is C/γ for every K: **richness buys nothing at all.** Conjunction-gating amplifies the resource floor by exactly 1 + (K−1)ι and by nothing if the projections are redundant.
+
+**Corollary 5.3 (the amplification saturates).** Under compounding recoverability, Γ_cmp → γ/(1 − ι) as K → ∞, so
+
+> N ≥ C(1 − ι)/γ
+
+regardless of how many projections are added. **No amount of richness drives the Sybil cap below C(1−ι)/γ.** Only at ι = 1 exactly does amplification scale without limit.
+
+The two models are not cosmetically different. At ι = 0.25 with γ = 1 and C = 100, raising K from 4 to 8 moves the compounding cap from 75.3 to 75.0 — saturated — while the linear cap moves from 57.1 to 36.4. A factor of two separates them at K = 8. A mechanism designed on the optimistic model and deployed against the pessimistic one would have half the Sybil resistance its designer believed, and the difference would not be visible in any static audit.
+
+**An uncomfortable measurement.** The program's own instrument has measured ι ≈ 0 in one setting: an adversary colluding along the structure of a nested complex moved the kernel projection and the spectral-dimension projection together, so that faking one delivered the other at no additional cost. If that generalised, Corollary 5.2 says richness would buy no Sybil resistance on that substrate at all. The measurement was of two projections of the *same operator*, which is the worst available case for independence and not evidence about projections chosen to be independent. But it is the program's only direct measurement of ι, it came out at the unfavourable end, and a paper that suppressed it would be doing the thing this program was built not to do.
+
+---
+
+## 6. Only Convexity Punishes Splitting
+
+Theorem 4.1 caps the adversary's fleet. It does not say that splitting is *unprofitable* within the cap, and it should not be read as saying so. Whether an adversary prefers many gated identities to one concentrated identity depends entirely on the shape of f above its gates, and the framework constrains that shape only by monotonicity.
+
+**Theorem 6.1.** Let f be defined on the gated region with f(0) = 0.
+
+1. If f is convex, then N·f(v/N) ≤ f(v) for all N ≥ 1: splitting is never profitable. Strictly convex gives strict inequality.
+2. If f is linear, N·f(v/N) = f(v): splitting is exactly **Sybil-neutral**.
+3. If f is strictly concave, N·f(v/N) > f(v): splitting is strictly **profitable**.
+
+*Proof.* For f convex with f(0) = 0 and λ ∈ [0,1], f(λv) = f(λv + (1−λ)·0) ≤ λf(v) + (1−λ)f(0) = λf(v). Setting λ = 1/N and multiplying by N gives (1). Linearity gives equality throughout; strict concavity reverses each inequality. ∎
+
+Measured at v = 10, the ratios N·f(v/N)/f(v) come out as the algebra requires: v² gives 0.500, 0.250, 0.125 at N = 2, 4, 8 — exactly 1/N; v^1.5 gives 0.707, 0.500, 0.354 — exactly N^{−1/2}; the identity gives 1.000 throughout; √v gives 1.414, 2.000, 2.828 — exactly √N; log(1+v) gives 1.494, 2.090, 2.705.
+
+**Corollary 6.2 (the design warning).** Diminishing-returns reward curves are the conventional choice for limiting the dominance of large holders and encouraging decentralisation. Above the gate they are strictly Sybil-positive. A square-root reward pays an adversary **2.83 times as much** for splitting into eight identities as for concentrating in one. The curve chosen to prevent concentration subsidises fragmentation, and does so by a margin that grows without bound in N.
+
+A conjunction-gated mechanism seeking Sybil resistance therefore needs two things that are usually discussed separately: **a gate at the bottom and convexity above it.** The gate caps the fleet; the convexity makes splitting a loss. Neither does the other's job, and a mechanism with only one of them has only half the property its designer intends.
+
+This is not a free improvement, and §7 records what it costs.
+
+---
+
+## 7. What Is Declined
+
+**That Douceur is escaped.** He is not. Theorem 4.1 is a counting bound conditional on a resource floor whose height is set, exactly as Douceur argued, by what the weakest honest participant can pass. A sufficiently rich adversary still mints identities. The contribution is that the count is now a designed quantity rather than an unknown one.
+
+**That convexity is costless.** Corollary 6.2 recommends a reward convex above the gate, and convexity favours concentration among *honest* participants too. Sybil resistance is being bought with a decentralisation cost, and this paper does not price that trade. A mechanism that is perfectly Sybil-resistant and captured by one honest whale has not obviously improved. Convexity above the gate is a lever, not an answer.
+
+**That H1 holds anywhere.** Every result above is conditional on duplication-non-invariance, and **no concrete mechanism in this program has been shown to possess it.** *Gauge-Fixing* specifies it as a test; *Proof of Coherence* §4.2 offers Shapley credit allocation and provenance-weighting as candidate resolutions and settles neither. The theorems are conditional on a property the program has demanded and never verified, and until that is repaired they describe a mechanism nobody has built.
+
+**Precision beyond Definition 2.4.** Γ inherits the framework's refusal to fix the resource r. These are bounds relative to an attacker class, not absolute numbers, and no claim is made that Γ is measurable for any deployed system.
+
+**Collusion.** Sybils are modelled as an adversary partitioning its own budget. Coalitions between Sybil identities and honest participants are untouched, as are Sybils distributed across the levels of a holarchy — where, by *Gluing the Gates*, the interesting failures should be expected to live.
+
+**Detection.** These are bounds on what an adversary can field. Nothing here helps a mechanism notice that it has.
+
+---
+
+## 8. Open Problems
+
+**8.1. Which recoverability model.** §5 shows linear and compounding recoverability diverge by a factor of two at K = 8, and the framework provides no ground for choosing. Deciding this for a concrete substrate — plausibly by the same adversarial sampling that produced the program's first ι measurement — is the most consequential open question this paper raises.
+
+**8.2. Settle H1.** Shapley credit allocation and provenance-weighting have sat unresolved in *Proof of Coherence* §4.2 since v0.1.1. This paper makes the cost of leaving them unresolved explicit: without H1 there is no Sybil bound at all. The work is small and the payoff is disproportionate.
+
+**8.3. The convexity–decentralisation frontier.** Given a target Sybil resistance and a tolerable honest-concentration level, what is the admissible family of reward shapes? This is a constrained-design question, not a research one, and it should be answerable.
+
+**8.4. Sybils across levels.** A holon presenting as many sub-holons is either legitimate composition or a Sybil attack, and the distinction cannot be made from within either level. The natural criterion — that a refinement is Sybil when the adversary controls both sides of an interface — is precisely the structure that the program's adversarial experiment found effective where random collusion was not. Whether that criterion is checkable is open, and it is where this paper and *Gluing the Gates* meet.
+
+**8.5. ι, again.** Every quantitative claim here is a function of ι. So is the framework's multiplication claim, so is the richness measure once Definition 5.1 is read as a packing number, and so is the amplification ceiling of Corollary 5.3. The program now has three independent reasons to formalise the same quantity, and no formalisation.
+
+---
+
+## References
+
+[1] J. R. Douceur. *The Sybil Attack.* Proceedings of the 1st International Workshop on Peer-to-Peer Systems (IPTPS), Cambridge, March 2002. Springer LNCS 2429, 251–260.
+
+[2] B. N. Levine, C. Shields, and N. B. Margolin. *A Survey of Solutions to the Sybil Attack.* University of Massachusetts Amherst, Tech. Report, 2006.
+
+Proofs and their numerical verification are in `code/sybil_bound.py`; working notes in `_plan/sybil-proof-notes.md`.
