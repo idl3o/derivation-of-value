@@ -2,15 +2,15 @@
 layout: document
 title: "Combination Proofs"
 subtitle: "A Framework for Goodhart-Asymptotic Mechanism Design"
-eyebrow: "Framework · v0.1"
+eyebrow: "Framework · v0.3"
 permalink: /combination-proofs/
 label: "Framework"
 blurb: "A framework for Goodhart-asymptotic mechanism design. Reward gated on the conjunction of verifiably independent projections of a structural substrate."
-status: "v0.1 · working draft"
+status: "v0.3 · working draft"
 order: 2
 ---
 
-*v0.1 · working draft. Initial statement of the framework. Definitions established; multiplication and publicity-positive claims stated with conditions; substrate richness defined; Proof of Coherence with its spectral extension introduced as the worked instance; open problems and program outlined.*
+*v0.3 · working draft. Initial statement of the framework. Definitions established; multiplication and publicity-positive claims stated with conditions; substrate richness defined; Proof of Coherence with its spectral extension introduced as the worked instance; open problems and program outlined. v0.2 splits the civilisational-capacity substrate (§8) into outward and inward projection families and records the resulting attestation asymmetry — extensive projections tend to require an oracle, intensive ones tend to supply their own verifier — placing the verifiability boundary of §7.2 inside a single substrate for the first time. §7.3 records the program's first measurement of ρ — a fractional spectral dimension, continuous in structure — and the refutation of the accompanying gap-hierarchy conjecture. v0.3 extends §4 from publicity-positive to adversary-positive security: residue, harvestable projections, and the conditions under which failed forgery subsidises the substrate it attacks.*
 
 ---
 
@@ -107,6 +107,38 @@ There is a deeper observation hiding here. The standard intuition that "open res
 
 A corollary, perhaps the most distinctive design implication of the framework: in a mature Combination Proof ecosystem the research literature *is* the security accumulator. Closed development of the mechanism slows the rate at which it learns to read its own substrate, which is the only thing protecting it. The framework recommends an open-publication norm not as a matter of community ethics but as a matter of cryptoeconomic engineering.
 
+**Adversary-positive security.** Publicity-positivity concerns what happens when a mechanism is *described*. A further question concerns what happens when it is *attacked*, and for a characterisable class of substrates the framework's answer departs from the standard one.
+
+The standard treatment regards adversarial expenditure as pure loss: resource the mechanism must resist, producing nothing. That treatment is correct for projections attested by report, and incorrect for projections attested by what an attempt leaves behind.
+
+**Definition 4.3 (Residue).** Let π be a projection of 𝒮 and let A expend resource r attempting to produce a state s with π(s) = v. The *residue* of the attempt is the component of s that persists in the substrate independently of whether the mechanism admits or rejects the claim π(s) = v.
+
+**Definition 4.4 (Harvestable projection).** A projection π is *harvestable* if the residue of any attempt to fake it is of the same kind as the residue of honest work on π — that is, if the substrate cannot distinguish, after the fact, effort expended to fake π from effort expended to satisfy it.
+
+Harvestability is a property of the substrate, decided before any mechanism is designed, and it sorts along exactly the line drawn in §8 between outward and inward projections. An outward projection measures a flow and is attested by report: an attempt to fake it produces a false report and nothing else, so that when the report is rejected no residue remains and the projection is not harvestable. An inward projection measures a residue by construction — the attempt to counterfeit an atomically specified structure must place the atoms, and the atoms persist whether or not the claim is admitted. The oracle problem and the harvestability problem are the same problem, seen from the two sides of an attempt.
+
+**Definition 4.5 (Adversary-positive mechanism).** A mechanism M is *adversary-positive* with respect to an attacker class 𝒜 if the honest cost of reaching any given value of M's projections is non-increasing in the volume of failed forgery attempts by 𝒜 against M.
+
+The restriction to *forgery* is not a technicality. Attacks on liveness, censorship, and availability produce no residue of the substrate's kind, and nothing in what follows applies to them.
+
+**Proposition 4.6.** A Combination Proof all of whose projections are harvestable is adversary-positive with respect to any attacker class restricted to forgery.
+
+*Sketch.* By harvestability, an attempt on π produces residue indistinguishable in kind from honest work on π. The mechanism's rejection of the *claim* does not reverse the *residue*. So the substrate's state after a failed attempt is at least as favourable, with respect to π, as before it, and the honest cost of reaching any target value of π is reduced by the residue's contribution. ∎
+
+The proposition is weaker than it looks and stronger than it sounds. Weaker, because it establishes only that failed forgery is not a loss to the substrate, not that it is a net gain to the ecosystem once damage and subsidy are priced. Stronger, because it removes the mechanism's need to determine intent — which is fortunate, intent being precisely the quantity no intrinsic verifier can read.
+
+Four channels of harvest are available, and they differ in how far they stand from the substrate.
+
+*The attempt is the work.* Where projections are harvestable and conjunction-gated, the cheapest route to moving a score is to instantiate the structure the score measures, so a successful attack is a contribution. This sharpens what Goodhart-asymptotic means: the weak reading is that the proxy resists gaming, the strong reading is that gaming the proxy achieves the goal. §4.2 established that honest participation pays no marginal cost for new projections; this establishes that successful dishonest participation is honest participation.
+
+*Local sections come free; price only the gluing.* An adversary colluding on a substrate of the sheaf-theoretic kind produces internally consistent blocks and leaves the cocycle conditions on their overlaps undone. It has computed local sections at its own expense. A mechanism that declines to pay for local coherence and spends its whole reward budget on cross-block gluing is buying the part no attacker has reason to supply — and is simultaneously pricing the scarcer resource, since gluing across blocks requires knowledge of the entire structure rather than of one branch.
+
+*Failed attacks measure ι.* §7.1 seeks a quantitative independence measure and anticipates an information-theoretic formalisation. There is also an empirical route: every attempt is a sample of conditional fake-cost, so a live mechanism carrying a bounty is an estimator of ι over its own projections. The corollary of §4.2 extends accordingly — not only the research literature but the *attack record* is the security accumulator.
+
+*Success certifies capability.* An attempt that clears a threshold demonstrates that its author holds the resource of Definition 2.4, and demonstrates it intrinsically, the attempt being its own witness. Admission of successful attackers as participants is therefore not a concession but a credential test conducted against a live target.
+
+**Remark 4.7 (The recursion does not bottom out except at the substrate).** Rewarding attacks that contribute creates a new proxy — *appearing to be a contributing attack* — and that proxy is gameable in turn. Note that three of the four channels stand one level removed from the substrate: they harvest a byproduct, a signal, or a credential, and each admits its own counterfeit. Only the first bottoms out, because there the contribution *is* the substrate and no gap remains between proxy and property for a counterfeit to occupy. The framework's own recursion recurs here, one layer further out than §3 or §4.2 required it to run, and the discipline is unchanged: a mechanism may harvest adversarial effort exactly to the degree that the harvest is the substrate itself, and no further.
+
 ---
 
 *5. Substrate Richness*
@@ -156,6 +188,8 @@ Four problems are pinned to the framework's v0.1 statement.
 
 **7.3. Richness, formally.** Definition 5.1 of ρ is well-posed but in practice incomputable. Useful lower and upper bounds on ρ for specific substrate classes — sheaf Laplacians, thermodynamic ensembles, integrated-information structures — would convert the substrate order from theoretical scaffolding into design heuristic. A natural conjecture is that ρ grows with the topological complexity of the substrate, but the right notion of topological complexity is itself unsettled.
 
+A first measurement (reported in Anthology III) supplies a candidate for that notion, and an argument against the typing in Definition 5.1. On a toy nested complex — hierarchically modular, and deliberately not geometrically self-similar — the eigenvalue counting function of the sheaf Laplacian grows as N(λ) ~ λ^(d_s/2) with d_s ≈ 1.61, converged in system size and fitting to within a part in a thousand; the coherent sheaf returns the underlying complex's exponent unchanged, as gauge-equivalence requires. The exponent varies *continuously* with coupling density across roughly 1.26–2.23, passing through the integers without pausing at them, which suggests that fractional spectral dimension is the generic case and integer richness the measure-zero exception. Note that Definition 5.1 — a supremum over pairwise ε-independent subsets — already has the form of a packing number, and packing numbers are what define dimensions; the graded independence measure ι of §7.1 is precisely the separation scale such a reading requires, which suggests §7.1 and §7.3 are one problem rather than two. Whether ρ should therefore be re-typed from ℕ ∪ {∞} to ℝ≥0, and whether the spectral dimension is the right dimension among the several a structure carries, is not settled here. A second conjecture tested in the same place — that such spectra carry a *hierarchy* of gaps, so that any single measured spectral gap would price only the coarsest coalition — was refuted: gap hierarchy tracks exact geometric self-similarity, not nesting, and does not survive in this substrate class.
+
 **7.4. The universality question.** The framework names Combination Proofs as a *sufficient* condition for the multiplication and publicity-positive properties. It does not establish them as *necessary*. The strongest form of the framework would be a theorem:
 
 > **Conjecture 7.4 (Universality, tentative).** Every Goodhart-asymptotic mechanism is structurally a Combination Proof: its security in the asymptotic limit factors through a conjunction over verifiably independent projections of some underlying substrate.
@@ -169,7 +203,9 @@ This is almost certainly overreaching in its present form. Even so, partial resu
 
 The framework is substrate-independent, but its claims become testable only on specific substrates. Three substrate classes are particularly worth examining, each illustrating a different dimension of richness.
 
-**Civilisational capacity.** Consider a substrate whose state encodes the order-of-magnitude capacity of a community to act on its environment — its energy capture, its information-processing throughput, its coordination depth, its longevity. Projections of such a substrate are projections of *what a community can do*. Independence is plausible: capacity to capture energy is loosely independent of capacity to coordinate, which is loosely independent of capacity to compute. A Combination Proof on such a substrate would gate reward on demonstrated capacity across the entire vector. The richness ρ of this substrate is presumably high but currently unknown.
+**Civilisational capacity.** Consider a substrate whose state encodes the order-of-magnitude capacity of a community to act on its environment. Projections of such a substrate are projections of *what a community can do*, and they fall into two families that differ in a way more consequential than their contents. *Outward* projections measure magnitude — energy capture, information-processing throughput, coordination depth, longevity — and are the ones a Kardashev-style reading reaches for first. *Inward* projections measure grain: the finest scale at which the community can act with intent, in the sense of Barrow's descending complement to Kardashev, from bulk matter through molecules and atoms to the nucleus and below. Independence within each family is plausible — capacity to capture energy is loosely independent of capacity to coordinate, which is loosely independent of capacity to compute — and independence *across* the families is stronger still, since a community may be vast and crude or exquisite and small, and no monotone transformation carries either reading into the other.
+
+The families diverge sharply under Definition 2.3. An outward projection measures a flow, and a flow leaves nothing behind to inspect; its verifier must consult a meter, an inspector, or a certificate, each of which is an oracle outside the protocol's state, so outward projections are verifiable but not *intrinsically* so. An inward projection measures a residue: fine-scale capability is evidenced by artifacts that persist and can be re-measured by any party holding a sufficient instrument, which is an intrinsic verifier in the exact sense of Definition 2.3. This is the framework's clearest instance of the verifiability boundary (§7.2) falling *within* a single substrate rather than between substrates, and it suggests a general heuristic worth testing elsewhere: extensive projections tend to require attestation, intensive ones tend to supply it. A Combination Proof on capacity should therefore gate across both families — the outward projections carrying the magnitude the substrate is for, the inward ones carrying the verifiability it otherwise lacks. The richness ρ of this substrate is presumably high but currently unknown.
 
 **Multidimensional value.** Consider a substrate whose state encodes the silent dimensions money has always carried but never accounted for: time horizon, locality, purpose, recallability. Each dimension admits its own projection — a token's velocity, its geographical concentration, its purpose-of-use distribution, the strictness of its recall conditions. A mechanism scoring the conjunction of such projections would be denominated against the *vector* of value rather than its scalarisation. The substrate's richness depends on whether the dimensions are genuinely independent or implicitly correlated through underlying economic structure; this is an empirical question.
 
