@@ -12,6 +12,24 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### H1 does NOT transfer to H⁰ — *Proof of Coherence* v0.4, *The Multiplicity Freedom* v0.3, *Sign and Work* v0.2
+
+The H1 result settled earlier today was measured on §4.2's **rank** toy. The deployed mechanism scores **H⁰**. Tested (`code/h1_cohomological.py`), the two functionals part company, and the result overturns a claim made in two papers hours earlier.
+
+A coherent sheaf over a connected complex has dim H⁰ = d exactly — and **d per connected component**. Three regimes, at d = 3:
+
+- **Integrated** (copy attaches to the original's own neighbours): marginal credit +0 at every tolerance. The rank intuition holds.
+- **Scattered** (each copy its own component): credit **+3, +6, +12, +24** for 1, 2, 4, 8 copies — exactly dN, unbounded, identical at machine precision and every tolerance. **Duplication-boundedness fails outright.**
+- **Bridged** (copies chained to the complex by one edge): H⁰ is exactly d, so the property holds *exactly* — yet at ε = 0.05 eight copies register three additional approximate sections. **Neutral in theory, profitable in practice, and the gap is a numerical tolerance.**
+
+**Two unstated security conditions surface.** (C1) *Participation* — every scored vertex must be connected to the honest complex. §3.1's construction already implies it (a miner-task edge exists only if the miner submitted), which is why the exposure went unnoticed; but that is a modelling convention, and an implementation admitting registered-but-inactive miners, or scoring disjoint subnets in one eigendecomposition, reintroduces it. (C2) *Kernel tolerance below the spectral gap* — the score is always #{λ < ε}, never dim ker, and ε must sit below the honest complex's algebraic connectivity. **That is the same quantity the §5 test suite already demands be measured**, so the gap measurement turns out to be not only a coalition-cost check but what makes the kernel score well-defined at all. The two requirements were one and nobody had noticed.
+
+Both conditions read as numerical hygiene and are load-bearing. That is the finding worth keeping: a condition that looks like hygiene and isn't is the kind an implementation drops.
+
+**Consequences.** *Proof of Coherence* gains §4.2.2 and the corrected claim; v0.3's "duplication-for-profit is resisted by the substrate" was true of the toy and false of the mechanism. *The Multiplicity Freedom* v0.3 restates H1 as conditional on C1 and C2 rather than discharged, and §8.2 changes from "settle H1" to "state C1 and C2 as framework conditions" — with the sharper question behind it: which *other* implicit conventions are load-bearing? This one was found by testing a functional the program had never tested, and there are several it has never tested. *Sign and Work* v0.2 records the program's **first measured trace gap, and it is the worst possible value**: the H⁰ projection without a participation requirement has **τ ≈ 0**, since a disconnected vertex adds d at no cost and performs no work at all. By its own Proposition 4.1 the Sybil cap is inflated by 1/τ — without bound — which is C1 reached from the trace side.
+
+Volume V is untouched and vindicated: it named the biconditional's second half a *design obligation, not a gift*, and this is what a mechanism that has not discharged it looks like.
+
 ### Paper — *Sign and Work* — v0.1
 
 `order: 16`. Volume V's promised technical companion, discharging the concession that volume made and could not settle: the biconditional's second half — *no trace without the work* — was named a design obligation rather than a property of residue, since a mechanism scoring a trace an adversary can lay more cheaply than the labour it evidences has built another proxy.
