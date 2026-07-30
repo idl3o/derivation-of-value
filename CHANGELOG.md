@@ -12,6 +12,20 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### H1 settled — *Proof of Coherence* v0.3, *The Multiplicity Freedom* v0.2
+
+The copy-symmetry fork has stood in PoC §4.2 since v0.1.1, declared "not resolvable from the mechanism alone." Every theorem in the Sybil paper was conditional on it. It is now settled, and settling it required correcting the corpus in two places. Measurements reproducible from `code/h1_duplication.py`.
+
+**The Sybil paper stated its own hypothesis wrongly.** H1 was written as "a copy does not earn what the original earns" — a claim about *individual* earnings. Theorem 4.1 never used that. What the counting argument needs is a bound on the **group total**: an adversary owning an original and N−1 duplicates earns no more in sum than the original alone. The two are not equivalent — under a scheme that splits credit symmetrically, each copy earns exactly what the original earns and the theorem holds anyway. H1 restated as **duplication-boundedness**.
+
+**§4.2's literal provenance formula does not work.** Taken as written, r_prov(mᵢ) = r(mᵢ) × p(mᵢ) with r the marginal-removal reward on the full submission set leaves M₁ at *zero* — measured, identical to plain marginal removal. Marginal removal has already driven r(M₁) to zero *because* the copy is present, and 0 × 1 = 0. A provenance factor can only redistribute a reward that still exists. §4.2's claim that it "resolves copy-symmetry asymmetrically (in M₁'s favour)" was wrong. **The repair: provenance must filter the input** — exclude later copies from the functional before evaluating it — **not scale the output.**
+
+**H1 is discharged, and not by any credit rule.** All four schemes tested (marginal removal, Shapley, both provenance forms) satisfy duplication-boundedness at every N up to 5. The reason is structural: the coherence functional is a rank, hence a matroid rank function, and a duplicate adds no rank. **Duplication-for-profit is resisted by the substrate, not purchased from the allocation scheme** — which generalises exactly as far as the submodularity does. The open problem is now narrower and sharper (Sybil §8.2): for which substrate functionals does duplication-boundedness *fail*? A functional rewarding redundancy would break every bound in that paper, and the framework places no condition excluding one.
+
+**So §4.2 had run two problems together.** Duplication-for-profit is not what the schemes differ on; *griefing* is — whether an attacker can damage an honest miner by copying it. There the spread is total: marginal removal and literal provenance cost M₁ 100% of its reward, Shapley 50%, filtered provenance nothing.
+
+**The fork resolves in favour of filtered provenance.** Its stated cost — "reliance on a trusted clock or ordering oracle" — predates *Gauge-Fixing*, whose delay-chain anchor certifies temporal priority without any party being trusted, i.e. supplies an intrinsic verifier for p. The fork was unresolvable *from the mechanism alone*, and is resolvable from the program. Two costs stated with the recommendation: *Borrowed Hardness* names the delay chain the most quantum-fragile load-bearing piece in the program, so the price is now post-quantum fragility rather than centralisation; and filtered provenance is *harsher* than Shapley on honest near-duplicate contributions (collinear submissions score zero under filtering, full value under Shapley). Conformance default set to filtered provenance, Shapley retained as declared alternative.
+
 ### Paper — *No Global Section* — v0.1
 
 `order: 13`. Contextuality as the general form of composition failure. Removes the weak point of *Gluing the Gates*: its cohomological criterion assumed gate conditions are affine on stalks, which **the program's own worked instance violates** — a threshold on a spectral quantity is not affine, so the theory was stated for a case the program does not have.

@@ -102,9 +102,14 @@ floor), graded independence (ι). Does **not** escape Douceur; quantifies him.
 
 **Remaining debts this paper names.** §8.1 which recoverability model holds — the
 two diverge by a factor of two at K=8 and the framework cannot choose between them.
-§8.2 settle H1: Shapley vs provenance-weighting has sat unresolved in PoC §4.2
-since v0.1.1, and without H1 there is **no Sybil bound at all**. Small work,
-disproportionate payoff — do this before building further on P0.
+~~§8.2 settle H1~~ **DONE** — PoC v0.3 §4.2.1, Sybil paper v0.2. H1 was
+mis-stated (individual earnings, should have been group totals → restated as
+*duplication-boundedness*); §4.2's literal provenance formula was shown not to
+work and corrected to input-filtering; and H1 turns out to hold under **every**
+credit rule because the coherence functional is a rank, so duplication-resistance
+is inherited from the substrate rather than bought from the scheme. The fork
+resolved to filtered provenance on the delay-chain anchor. Remaining open form is
+narrower: for which substrate functionals does duplication-boundedness fail?
 
 ---
 
