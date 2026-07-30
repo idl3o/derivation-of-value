@@ -25,3 +25,9 @@ exclude:
   - vendor/
   - Gemfile
   - Gemfile.lock
+  # Working examples, superseded drafts, and planning notes ship with the
+  # source, not as site pages. (_archive and _plan are underscore-prefixed
+  # and so already ignored; named here so the intent survives a refactor.)
+  - code/
+  - _archive/
+  - _plan/

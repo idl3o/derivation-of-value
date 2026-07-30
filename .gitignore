@@ -7,3 +7,7 @@ _site/
 vendor/
 .bundle/
 Gemfile.lock
+
+# Python working examples
+__pycache__/
+*.pyc
