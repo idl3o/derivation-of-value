@@ -252,7 +252,32 @@ if none exists the claim degrades to an analogy and should be dropped.
 
 ---
 
-### P4 · Stigmergy — `order: 16` — *planned* — **NEXT: Vol V's promised companion**
+### P4 · Stigmergy — `order: 16` — **v0.1 drafted** → `sign-and-work.md`
+
+*"Sign and Work" · "Stigmergy, Sematectonic Traces, and the Cost of Forging a Residue".
+Discharges Vol V's concession. Grassé's coinage splits along the volume's own line —
+stigma/marker-based = assertion, ergon/sematectonic = residue — a distinction
+Theraulaz & Bonabeau drew in 1999 and the biology implied in 1959. Defines the
+**trace gap τ = f/w** (forging cost over earning cost); Prop 3.4: Vol V's soundness
+clause is exactly τ ≥ 1; Cor 3.5: τ ≥ 1 ⟹ harvestable, so the biconditional and
+adversary-positivity are one condition from opposite ends; **Prop 4.1: a trace gap
+of τ inflates the Sybil cap by 1/τ** — a mechanism whose traces forge at a tenth
+cost has a ten-times-larger adversary and no static audit reveals it. §5 gives
+interfaces a reason to be neglected (they are stigmergic — grown, not specified)
+and proposes cultivating rather than specifying them, which supplies GtG
+Conjecture 5.2 the mechanism it lacked.*
+
+**Prior art checked.** Paredes García, arXiv:2604.03997 (April 2026), formalises
+ledger-state stigmergy as architectural patterns (State-Flag, Event-Signal,
+Threshold-Trigger, Commit-Reveal) and explicitly does NOT treat incentives,
+security, or trace forgery. Cited; this paper sits underneath it.
+
+**Principal hazard, declined in §6:** sematectonic does NOT imply τ ≥ 1 — a facade
+is sematectonic and forgeable. The entomological distinction is about what provides
+the stimulus, not what counterfeiting costs. Borrowed suggestively, not as a load
+bearer.
+
+*Original plan entry follows.*
 
 *Volume V (*What Cannot Be Helped*, order 15) names residue as the general answer
 to the attestation problem, and per the program's convention each substrate gets a

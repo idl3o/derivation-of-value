@@ -12,6 +12,22 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### Paper — *Sign and Work* — v0.1
+
+`order: 16`. Volume V's promised technical companion, discharging the concession that volume made and could not settle: the biconditional's second half — *no trace without the work* — was named a design obligation rather than a property of residue, since a mechanism scoring a trace an adversary can lay more cheaply than the labour it evidences has built another proxy.
+
+**Grassé's word comes apart along Volume V's line.** *Stigmergie* = *stigma* (sign) + *ergon* (work), and Theraulaz & Bonabeau (1999) separated the two: **sematectonic** stigmergy, where the structure under construction is itself the stimulus, versus **marker-based**, where a distinct signal such as a pheromone carries it. Marker = assertion (separable, hence producible without the action). Sematectonic = residue (the stimulus *is* the work). The security consequence was always implicit in the biology: an adversary redirecting an ant colony need not forage, only lay pheromone — but a half-built column cannot be left without building. Same coordination mechanism, opposite exposure, and the difference lies in whether the thing read is the work or a sign of it. The entomologists drew the line in 1959; the program rediscovered it in four vocabularies without noticing.
+
+**The trace gap.** Def 3.3: τ(π) = f(π)/w(π), forging cost over earning cost — a *ratio*, since a trace expensive to forge in absolute terms is worthless if the work it evidences costs more still. Prop 3.4: Volume V's soundness clause is exactly **τ ≥ 1**, converting "design obligation" into a target a mechanism either meets or does not. Cor 3.5: **τ ≥ 1 ⟹ harvestable** in the sense of CP Def 4.4 — so Volume V's biconditional and the framework's adversary-positivity turn out to be one condition approached from opposite ends, which the volume suspected and could not derive.
+
+**What the gap costs.** Prop 4.1: a trace gap of τ inflates the Sybil cap of *The Multiplicity Freedom* by **1/τ**. Stated plainly — a mechanism whose traces forge at a tenth the cost of earning them does not have a somewhat weaker bound, it has a **ten times larger adversary**, and the dissipation floor it believed it had has been silently divided by ten. No static audit reveals this, because the mechanism's own measurements are of the trace, and the trace is what was cheap. Also sharpens that τ is a property of *the reading*, not of the substrate: two mechanisms on one substrate, one measuring a lattice and one accepting a certificate about it, have wildly different τ and identical ρ.
+
+**Interfaces are grown, not specified (§5).** *Gluing the Gates* located every composition failure at interfaces without saying why they should be structurally neglected. Stigmergy answers it: an interface is designed by neither holon nor by anything above them — it is what accumulated interaction wore into place. Suggests **cultivating** an interface rather than specifying one (fix the medium and the reading rule, let density find itself), which supplies GtG Conjecture 5.2 the mechanism it lacked. Two cautions attached: cultivation surrenders control exactly where contextuality lives, and a cultivated interface with low τ is an invitation.
+
+**Prior art checked before claiming novelty**, per the plan's checklist. Paredes García (arXiv:2604.03997, April 2026) formalises ledger-state stigmergy as architectural patterns and explicitly treats neither incentives, forgery resistance, nor trace-laying cost. Cited; this paper sits underneath that one.
+
+Declined in §6, principal hazard first: **sematectonic does not imply τ ≥ 1** — a facade is sematectonic and forgeable, and Theraulaz & Bonabeau's distinction concerns what provides the stimulus, not what counterfeiting costs. The borrowing is suggestive, not load-bearing. Also declined: that τ is measurable (it inherits every imprecision of Def 2.4), that any mechanism here attains τ ≥ 1, denial (traces answer forgery, and stigmergic coordination is if anything *more* exposed to withdrawal), and that cultivation is safe.
+
 ### Anthology, Volume V — *What Cannot Be Helped* — v0.1
 
 `order: 15`. Opens Volume V, which Vol IV's coda reserved for "the substrates the program has not yet learned to name." Named here: the line between what an action **asserts** and what it **cannot help but leave**.
