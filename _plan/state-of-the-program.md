@@ -1,235 +1,222 @@
 # State of the program — 2026-07-30
 
-Working document. Not published to the site.
+Working document. Not published to the site. Written to be read cold, by someone
+who wants to know what is actually established.
 
-A collation after the session that added four papers, revised five, and put 1,219
-lines of runnable code behind claims that had been prose. Written to be read cold,
-by someone who wants to know what is actually established.
+Supersedes the mid-session version of this file, which was written before Volume V
+and four of the papers below, and before the finding that reversed one of them.
 
 ---
 
 ## 1. Shape
 
-Fourteen documents, orders 1–14. Six code modules. Eight archived versions.
+**Nineteen documents, orders 1–19, all published.** Nine code modules, ~1,900 lines.
+Twelve archived versions, four of which never went live.
 
 | | |
 |---|---|
-| **Anthology spine** | Vol I *Derivation of Value* → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin*) → Vol III *Admitted or Refused* (open ledger) → Vol IV *Borrowed Hardness*. Complete and unchanged. |
+| **Anthology** | Vol I *Derivation of Value* → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin*) → Vol III *Admitted or Refused* (open ledger) → Vol IV *Borrowed Hardness* → **Vol V *What Cannot Be Helped*** |
 | **Framework** | *Combination Proofs* v0.3 |
-| **Whitepaper** | *Proof of Coherence* v0.3 |
-| **Technical papers** | *Gauge-Fixing*, *Gluing the Gates*, *The Multiplicity Freedom* v0.2, *No Global Section*, *Requisite Richness* |
+| **Whitepaper** | *Proof of Coherence* v0.4 |
+| **Papers** | *Gauge-Fixing*, *Gluing the Gates*, *The Multiplicity Freedom* v0.3, *No Global Section*, *Requisite Richness*, *Sign and Work* v0.2, *A Consistent Fiction*, *Coutility*, *Borrowed Again* |
 
-The spine did not move. Everything added is framework-level or technical — which
-was the right call each time, and is worth noticing as a pattern: the essayistic
-volumes name substrates, and the work that followed was all about *structure*
-rather than about new things to stake.
+Volume V is the structural event. It named **residue** — the line between what an
+action asserts and what it cannot help but leave — as the substrate the program had
+derived four times without noticing, then deflated its own claim: residue is
+*negentropy with its provenance fixed*, so the anthology has named more substrates
+than it has. The substrates differ; the attestation problem does not.
 
 ---
 
 ## 2. What is established, graded
 
-Grading matters more than listing. The program's ethic is that a claim which could
-have been refuted and was not is worth more than one never permitted to fail, and
-these are not all in the same condition.
+### Proved
 
-### Proved (derivation, verified numerically)
+**The Sybil bounds** (*Multiplicity Freedom* §§4–6, `sybil_bound.py`) — the only
+theorems the program has. T1: an adversary fields at most ⌊C/Γ⌋ rewarded identities.
+T2: Γ = γ(1 + (K−1)ι), so richness bounds Sybil resistance and Goodhart resistance
+alike, and buys *nothing* at ι = 0; under compounding recoverability the
+amplification saturates at 1/(1−ι). T3: the gate caps the fleet, but only convexity
+above it punishes splitting — concave rewards are strictly Sybil-*positive*, at
+2.83× for eight identities. **Now conditional on C1 and C2 (see §3).**
 
-**Sybil bounds** (*The Multiplicity Freedom* §§4–6, `sybil_bound.py`).
-T1: an adversary with budget C fields at most ⌊C/Γ⌋ rewarded identities.
-T2: Γ = γ(1 + (K−1)ι), so conjunction-gating amplifies the resource floor by a
-factor scaling with order, and by *nothing* when projections are redundant; under
-compounding recoverability the amplification saturates at 1/(1−ι).
-T3: the gate caps the fleet but only convexity above it punishes splitting —
-concave rewards are strictly Sybil-positive, at 2.83× for eight identities.
+**Equilibrium ≠ admissibility** (*Coutility* Prop 4.1). The compositionality of an
+equilibrium predicate does not imply the compositionality of an admissibility
+predicate. Counterexample is nearly trivial and that is the point.
 
-These are the only theorems in the program. They hold because Sybil cost is
-arithmetic where fake-cost is capability-laden.
+### Measured
 
-### Measured (numbers, converged, reproducible)
+| finding | value |
+|---|---|
+| ρ as fractional spectral dimension | d_s ≈ 1.61, converged n = 512→4096, R² ≈ 0.999, continuous in coupling across 1.26–2.23 |
+| fiction space of a coherent sheaf | **exactly d** — five consensus runs converge to five distinct perfectly-coherent worlds spanning the whole kernel |
+| structural coupling to close it | **d scalars, at one vertex, once** — and d per *component*, independent of network size |
+| H1 on the rank functional | holds under every credit rule (marginal, Shapley, both provenance forms) |
+| H1 on H⁰ | **fails** — scattered duplicates add d each: +3, +6, +12, +24 |
+| griefing spread across credit rules | 100% / 50% / 0% (marginal & literal provenance / Shapley / filtered provenance) |
+| trace gap τ, unconstrained H⁰ projection | **≈ 0** — the first τ measured, at the worst possible value |
+| price of derived hardness | SLH-DSA 7,856–49,856 bytes vs ML-DSA 2,420–4,595 |
 
-**ρ is a fractional spectral dimension.** d_s ≈ 1.61, converged across n = 512 →
-4096 with scatter falling 0.054 → 0.007, R² ≈ 0.999, and *continuous* in coupling
-density across 1.26–2.23. Integer richness is the measure-zero exception.
-Pipeline calibrated against known answers first (gasket 1.365 → 1.392; lattice
-2 → 2.098).
+### Refuted
 
-**H1 holds on coherence substrates, and no credit rule earns it.** All four
-schemes satisfy duplication-boundedness at every N tested. The reason is
-structural — the functional is a rank, a duplicate adds no rank.
+**The gap-hierarchy conjecture.** Gap hierarchy tracks exact *geometric*
+self-similarity, not nesting. **Gauge-Fixing §5's spectral-gap test stands,
+vindicated by the objection it survived.**
 
-**Griefing separates the schemes completely.** 100% loss under marginal removal
-and literal provenance, 50% under Shapley, 0% under filtered provenance.
+**Spectral dimension as an independent third projection.** ι ≈ 0 against a
+structure-aware adversary; faking the kernel delivers d_s free. Proposed, tested,
+withdrawn.
 
-**The coherent sheaf returns the bare complex's exponent** (1.614 vs 1.607),
-confirming gauge-equivalence and that d_s belongs to the substrate rather than the
-apparatus.
+**That H1 generalises from rank to H⁰** — my own claim, made and reversed the same
+day. The rank result was a property of §4.2's *simplification*, not of coherence
+substrates.
 
-### Refuted (predicted, tested, wrong)
+### Conjectured, untested, load-bearing
 
-**The gap-hierarchy conjecture.** Predicted that spectra of nested complexes carry
-gaps at every scale, so Gauge-Fixing §5's single measured spectral gap would price
-only the coarsest coalition. Gap hierarchy tracks *exact geometric* self-similarity,
-not nesting: the gasket shows 18 across 5 scales, the nested complex at most one.
-**The §5 test stands, vindicated by the objection it survived.**
+- **Conjecture 3.1** (*No Global Section*): the distributional presheaf transfers to
+  gate scenarios. **A published paper's quantitative content rests on this.**
+- **Claim 4.3** (*Gluing the Gates*): cohomological obstruction under affine gates —
+  and it detects failure without certifying safety.
+- **Prop 3.1** (*Requisite Richness*): ρ·h ≥ H(D), conditional on a per-projection
+  variety bound h that does not exist yet.
+- **Claim 3.1** (*Coutility*): coutility propagates a gate. A prescription, not a
+  theorem, until a Combination Proof is exhibited as an open game.
 
-**The spectral dimension as an independent third projection.** ι ≈ 0 at the
-operating threshold against a structure-aware adversary — faking the kernel
-delivers d_s for free. Proposed, tested, withdrawn. The cheap route to a
-higher-order Combination Proof is closed.
-
-### Conjectured (stated, untested, load-bearing)
-
-**Conjecture 3.1** (*No Global Section*): the presheaf-of-distributions
-construction transfers to gate scenarios, giving an obstruction without the affine
-hypothesis. The quantitative content of that paper rests on it.
-
-**Claim 4.3** (*Gluing the Gates*): the cohomological obstruction under affine
-gates — with the imported caveat that it detects failure and does not certify
-safety.
-
-**Proposition 3.1** (*Requisite Richness*): ρ·h ≥ H(D), conditional on a
-per-projection variety bound h that is not established. Without h it is analogy.
-
-### Inconclusive (attempted, failed, recorded)
+### Inconclusive
 
 **Is ι symmetric?** Two attack designs failed — sparsification shatters the complex
 and contaminates the kernel proxy with component count; degree-preserving rewiring
-stays connected but moves d_s only 8% of the way. ι(dim|ker) = 0.08 is solid;
-ι(ker|dim) is unmeasured. The metric-vs-divergence fork is open, and it is on the
-critical path.
+stays connected but moves d_s only 8%. ι(dim|ker) = 0.08 is solid; ι(ker|dim) is
+unmeasured. **On the critical path and unresolved.**
 
 ---
 
-## 3. Six self-corrections
+## 3. The two conditions
 
-The most instructive output of the session is not any result. It is that six
-claims were caught wrong before publication, and how.
+Worth its own section because it is the session's most transferable finding.
 
-1. **Degenerate eigenvalues counterfeit a gap hierarchy.** Local spacing collapses
-   inside a degenerate block, so any adjacent gap scores enormous. Inflated the
-   gasket to 74 spurious gaps and the coherent sheaf to 67 — the latter being
-   *exactly* its 3-fold stalk multiplicity, i.e. the apparatus reporting itself as
-   a property of the substrate.
-2. **Disconnection counterfeits kernel progress.** Sparsification produced "kernel
-   progress" of 6.6 and 13.6 — above the honest value, which is impossible. It was
-   measuring shattering.
-3. **§4.2's provenance formula does not work.** r × p leaves M₁ at zero, because
-   marginal removal has already zeroed r. 0 × 1 = 0.
-4. **H1 was mis-stated.** Written about individual earnings; the theorem needs
-   group totals. Not equivalent — Shapley violates the first and satisfies the
-   second.
-5. **The affine-gate hypothesis is violated by the program's own worked instance.**
-   A threshold on a spectral quantity is not affine.
-6. **Gluing the Gates claimed as novel a structure that is contextuality**, in
-   Abramsky and Brandenburger's exact sense. Caught by a prior-art check run after
-   the draft, and now a checklist item to run *before*.
+Duplication on H⁰ is unboundedly profitable unless:
 
-Four of the six were caught by the instrument contradicting itself — a number that
-was impossible rather than merely surprising. That is an argument for building the
-measurement even when the claim seems safe, and for preferring diagnostics that can
-return absurdities over ones that always return something plausible.
+- **C1 — participation.** Every scored vertex must be connected to the honest
+  complex. §3.1's construction implies it (a miner-task edge exists only if the
+  miner submitted), which is *why it went unnoticed*. But that is a modelling
+  convention, and an implementation admitting registered-but-inactive miners, or
+  scoring disjoint subnets in one eigendecomposition, reintroduces the attack.
+- **C2 — kernel tolerance below the spectral gap.** The score is always #{λ < ε},
+  never dim ker. **This is the same quantity the §5 test suite already demands be
+  measured** — so the gap measurement is not only a coalition-cost check, it is what
+  makes the kernel score well-defined. Two requirements that were one, unnoticed.
+
+Both read as numerical hygiene. **A condition that looks like hygiene and is
+load-bearing is the kind an implementation drops.** Neither is stated as a security
+condition anywhere in the framework.
 
 ---
 
-## 4. Through-lines
+## 4. Seven self-corrections
 
-### Everything points at ι
+The most transferable output of the session is not a result.
 
-The multiplication claim depends on it. Richness-as-packing-number needs it as a
-separation scale. Sybil amplification is a function of it, with a saturation
-ceiling of 1/(1−ι). Composition inherits it. Four independent routes to one
-quantity that has never been formalised and has now twice resisted measurement.
+1. Degenerate eigenvalues counterfeit a gap hierarchy — inflated the gasket to 74
+   spurious gaps and the coherent sheaf to 67, *exactly* its stalk multiplicity.
+2. Disconnection counterfeits kernel progress — 6.6 and 13.6, above the honest
+   maximum, which is impossible.
+3. §4.2's provenance formula never worked: r × p leaves M₁ at zero, because
+   marginal removal already zeroed r.
+4. H1 was stated about individual earnings; the theorem needs group totals.
+5. The affine-gate hypothesis is violated by the program's own worked instance.
+6. *Gluing the Gates* claimed as novel a structure that is contextuality.
+7. Five vectors reported as spanning five dimensions inside a three-dimensional
+   kernel — incomplete convergence counted as real directions.
 
-If the program has a single critical path, this is it, and the honest position is
-that it is *harder* than it looked in the morning.
+**Four of seven were caught because an instrument returned an *impossible* number
+rather than a merely surprising one.** Prefer diagnostics that can return
+absurdities over ones that always return something plausible. This is the single
+most reusable lesson here.
+
+---
+
+## 5. Through-lines
+
+### Formalisms relocate difficulties; they do not dissolve them
+
+Named in *Coutility* §5 after three instances. Residue relocates attestation, which
+is why *Sign and Work* had to define τ. The cohomological invariant detects failure
+and certifies nothing. Open games supply a composition operation that is well-typed
+and preserves the predicate the framework does not gate on. **Each import was worth
+making; each made the difficulty sharper; none made it smaller.** Expect the next
+import to do the same.
 
 ### The substrate keeps doing the work the mechanism was credited with
 
-H1 holds because the functional is a rank, not because of any credit rule.
-Richness lives in the coupling between holons, not in the holons. Harvestability
-is a property of the substrate, decided before any mechanism is designed.
-Sybil resistance is inherited from matroid structure.
-
+H1 holds on rank because rank is a matroid rank function. Richness lives in the
+coupling between holons, not the holons. Harvestability is decided before design.
 The framework's own doctrine — *design begins with the selection of substrates* —
-keeps being confirmed in ways it did not predict, and each confirmation removes
-credit from the mechanism designer.
+keeps being confirmed in ways it did not predict.
 
-### One distinction, derived four times
+### One distinction, now derived six times
 
-The outward/inward split found in Kar-Coin turned out to be: the oracle problem
-(attestation by report vs by residue), the harvestability problem (what a failed
-attack leaves behind), Sybil resistance (identities minted by claim vs by
-artifact), and — planned — stigmergy. Four derivations of one line. That is either
-a deep structural fact or the program has one idea; the session did not settle
-which, and the question deserves to be asked directly.
+Outward/inward (Kar-Coin) · harvestable/not (CP §4) · asserted/traced identity
+(Sybil) · marker/sematectonic (Sign and Work) · provenance/content (A Consistent
+Fiction) · structured/unstructured signatures (Borrowed Again). Volume V named it
+and then found it was negentropy-with-provenance. **The question of whether this is
+depth or monomania is now partly answered: it is one distinction, and Vol V's
+deflation is the honest form of saying so.**
 
-### Vanishing cohomology is weaker than it looks, twice
+### Everything points at ι
 
-Gauge-Fixing: H¹ = 0 certifies coherence, not truth. No Global Section: H¹ = 0
-does not even certify that levels compose. The pattern is now explicit —
-cohomology detects the obstructions it was built to detect, and silence from it is
-not evidence of absence.
+Five dependents: the multiplication claim, richness-as-packing-number, Sybil
+amplification, the amplification ceiling, and τ. No formalisation. Two failed
+measurements. **The critical path stalled silently this session while easier papers
+got written around it** — recorded in the plan as a thing not to repeat.
 
-### ρ became adversary-relative
+### The program keeps finding its operator already performed elsewhere
 
-Introduced as a property of the substrate alone. It now has a ceiling from the
-substrate (Def 5.1), a floor from the adversary's variety (Ashby), and a role in
-bounding the adversary's fleet (Sybil T2). A quantity that was intrinsic is now
-squeezed on both sides by facts about the opponent.
-
----
-
-## 5. Open problems, ranked by leverage
-
-1. **Formalise ι.** Four dependents. Resists measurement. Blocks the
-   information-geometry paper and the richness composition law.
-2. **H1 beyond rank.** The result was measured on the rank toy. The real
-   functional scores H⁰, and a duplicated stalk with consistent restriction maps
-   may *add* section space. If it does, duplication is profitable under the actual
-   mechanism while neutral under its simplification. **Cheap to test with existing
-   machinery, and it decides whether zero-duplication is load-bearing or tidy.**
-3. **Which recoverability model.** Linear and compounding diverge by a factor of
-   two at K = 8, and the framework gives no ground to choose.
-4. **Test Conjecture 3.1.** A computation, not a research programme, and the
-   quantitative content of a published paper depends on it.
-5. **Make h precise.** Without it *Requisite Richness* §§3–4 are analogy.
-6. **The build.** Gauge-Fixing §5's suite still has no respondent.
-7. **The security proof.** Shrunk by the Sybil fragment, not closed.
+Grassé's entomologists drew the assertion/residue line in 1959. NIST standardised a
+hash-only signature scheme in reserve for exactly the reason Vol IV gives, without
+the vocabulary. Abramsky characterised local-pass/global-fail fifteen years ago.
+**The operator is not the program's invention; its contribution is noticing that
+these are the same move.**
 
 ---
 
-## 6. What I would do next
+## 6. Open problems, ranked by leverage
 
-**Test H1 on the cohomological functional** (item 2). It is the cheapest item on
-the list, it uses machinery that already exists, and it decides a question that is
-currently load-bearing in two papers. It can also only produce a useful answer: if
-duplication is neutral under H⁰ the H1 result generalises and zero-duplication is
-a convenience; if it is profitable, zero-duplication becomes structural and the
-Sybil paper needs a caveat it does not have.
-
-**Then decide what ι is going to be.** Either find a third attack design, or write
-the information-geometry paper as an unresolved fork — the candidate, the two
-failed measurements, and the third design that would settle it. The critical path
-should not stall silently while easier papers get written around it.
-
-**Ask the four-derivations question directly.** Whether the outward/inward
-distinction recurring in four guises is structure or monomania is answerable, and
-the program is better off knowing. A paper that tried to *unify* the four and
-failed would be more valuable than a fifth derivation.
+1. **Test Conjecture 3.1.** A published paper's quantitative content depends on an
+   untested conjecture. Different in kind from every other debt here. *NGS §8.1.*
+2. **Formalise ι.** Five dependents, two failed measurements. Either find a third
+   attack design or write P6 as an honest unresolved fork.
+3. **State C1 and C2 as framework conditions.** Small work; without them the Sybil
+   bounds are conditional on unstated conventions. And the sharper question behind
+   it: *which other implicit conventions are load-bearing?*
+4. **Which recoverability model** — linear or compounding. They diverge 2× at K = 8.
+5. **Can measurement supply content without an oracle?** Decides whether autopoietic
+   closure is escapable at all. *ACF §8.2.*
+6. **Exhibit a Combination Proof as an open game.** *Coutility §7.1.*
+7. **Make h precise.** Without it *Requisite Richness* §§3–4 are analogy.
+8. **Is an unstructured delay function possible?** Otherwise both most-exposed
+   components re-base onto structure. *Borrowed Again §7.2.*
+9. **The build.** Gauge-Fixing §5 still has no respondent.
+10. **The security proof.** Shrunk by the Sybil fragment, not closed.
 
 ---
 
 ## 7. Honest summary
 
-The program is in better condition than it was, and its claims are smaller.
+The program is in much better condition than it was this morning, and its claims are
+smaller and more conditional.
 
 It gained its first theorems, its first refutations, its first adversarial
-experiment, and its first discharged conditional. It also discovered that its
-central independence assumption is harder to pin down than assumed, that one of
-its published test suites was right for a reason nobody had stated, that a
-correction in one whitepaper had never worked, and that a structure it thought was
-novel had a fifteen-year literature.
+experiment, its first two measured parameters with numbers attached, a fifth volume,
+and eight papers. It also discovered that its central independence assumption
+resists measurement; that one of its published test suites was right for a reason
+nobody had stated; that a correction in its whitepaper had never worked; that a
+structure it thought novel had a fifteen-year literature; that its neatest claim
+about the post-quantum migration was empirically wrong; and that a result it
+established in the morning did not survive being tested against the functional the
+mechanism actually uses.
 
-Nothing is built. The security proof is not closed. The one substrate the program
-most wants — civilisational capacity — remains the least verifiable, though it now
-has an axis on which it might become verifiable at all.
+Nothing is built. The security proof is not closed. And the substrate the program
+most wants remains the least verifiable — though the inward axis has now done four
+separate jobs, and may turn out to be the only form of structural coupling the
+program can have.
