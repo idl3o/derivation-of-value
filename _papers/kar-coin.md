@@ -5,12 +5,12 @@ subtitle: "Volume II"
 eyebrow: "An Anthology · Volume II"
 permalink: /anthology/kar-coin/
 anthology: "Derivation of Value"
-version: "v0.1"
-date: 2026-07-23
+version: "v0.2"
+date: 2026-07-30
 license: "CC BY 4.0"
 label: "Anthology · Volume II"
-blurb: "The civilizational-capacity derivation. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act. The grandest substrate in the program and the least intrinsically verifiable; where the anthology's durability question begins."
-status: "v0.1 · working draft"
+blurb: "The civilizational-capacity derivation. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act — and against Barrow's inward complement, the grain at which it can act. The outward ladder is attested by report and inherits the oracle; the inward ladder leaves artifacts that attest themselves. Capacity is the conjunction."
+status: "v0.2 · working draft"
 order: 8
 ---
 
@@ -48,6 +48,29 @@ The framework the program has built says the way out is not a better oracle but 
 Capacity is not one number. It is a vector of loosely independent competences: the power to capture energy, the power to process information, the power to coordinate large numbers of agents toward a single end, the power to persist across time. These are plausibly independent in the framework's exact sense — a people's capacity to harness energy is loosely uncorrelated with its capacity to coordinate, which is loosely uncorrelated with its capacity to compute — and independence is what the multiplication claim feeds on. A Combination Proof on civilizational capacity would gate reward on the conjunction of the whole vector, and the cost of faking it would be the product of the costs of faking each competence at once: cheaper to actually build the capacity than to counterfeit its every projection in concert. The richness of this substrate — its order, in the framework's terms — is presumably higher than any other the program has named, high enough that the ceiling on its security is set by how many genuinely distinct competences a civilization has, which is to say by the breadth of what it means to be able to act.
 
 But richness is a promise, not a mechanism, and the verifiability boundary is where the promise is tested. Each projection still needs an *intrinsic* verifier — a way for the chain to measure energy capture, or coordination depth, by virtue of being many witnesses checking each other, and not by asking a meter to be honest. This is the same frontier the negentropy volume reached and the anchoring paper worked: the substrate is unwitnessable in the naive reading, and the honest construction gauge-fixes around that silence rather than pretending it away. For capacity, that construction is not yet written. Its richness is the reason to write it; its unverifiability, as sketched, is the reason it has not yet been done. The substrate names the largest prize in the program and the largest unpaid debt.
+
+---
+
+*The Ladder That Runs Inward*
+{:.section-title}
+
+There is a second ladder, and the anthology has been climbing only the first.
+
+Kardashev's scale measures outward. Its rungs are magnitudes of energy commanded — a planet's, a star's, a galaxy's — and each is an answer to the question *how much*. Thirty-four years later John Barrow proposed the complement, and it runs the other way: not how much a civilization can command, but how *small* a thing it can command with intent. Barrow's rungs descend. A Type I-minus civilization manipulates objects on its own scale, stone and timber and iron; a Type II-minus manipulates genes; a Type III-minus, molecules; a Type IV-minus, individual atoms; a Type V-minus, the nucleus; a Type VI-minus, the elementary particles; and a Type Omega-minus, at the bottom of the descent, the structure of space and time itself. The observation Barrow attached to it was that the inward ladder is the more telling of the two, since it is by learning to hold the nucleus that a people comes to hold a star.
+
+Set the ladders side by side and the vector of the previous section acquires the coordinate it was missing. Energy capture, information throughput, coordination depth, longevity — every competence the sketch named is a quantity of the outward kind, a magnitude, a *how much*. Not one of them asks at what grain the civilization can act. That is not an oversight in the list. It is the reason the list could not be verified.
+
+Consider what checking a claim on either ladder requires. An outward claim is a claim about a flow: so many joules captured, so many operations performed, so many agents brought to a common end. A flow is invisible the moment it has passed. Nothing of the megawatt-hour remains to be examined; there is only the record of it, and a record is a report, and a report requires a reporter. Every rung of the outward ladder must therefore be attested by something standing outside the mechanism and asked to be honest — the meter, the inspector, the certificate, the form. The oracle is not a defect in how the coin was sketched. It is a property of the direction the ladder points.
+
+An inward claim is a claim of another kind, because the inward ladder is climbed by leaving things behind. A civilization that can place atoms has placed them, and what it placed is still there, and it can be measured by anyone holding an instrument fine enough to look. The claim to act at the scale of the individual atom is not certified by a signature on a form; it is certified by the lattice, which is its own witness, and which will return the same answer to every party that queries it, at any hour, without once being trusted. That is not a better oracle. It is the absence of one — which is exactly what the framework demands when it requires a verifier appealing to nothing outside the protocol's state, and exactly what the negentropy volume meant by many witnesses checking each other rather than one meter asked to be honest.
+
+So the two ladders fall on either side of a line this anthology has drawn before, and will draw again. Outward capacity is *borrowed* attestation: its truth is on loan from an institution, and it holds for precisely as long as the institution is honest and the boundary it draws is not redrawn to flatter the claim. Inward capacity is *derived* attestation: the artifact attests itself, and there is no institution to corrupt because there is no institution in the loop. Kar-coin, as first specified, was built wholly on the borrowed axis. Its unverifiability was not misfortune. It was the axis.
+
+This is why the substrate must be read across both ladders, and why the reading has to be a balance rather than a sum. A currency denominated on the outward ladder alone pays for magnitude irrespective of what the magnitude accomplishes — the flaw the first volume found in proof of work, restated at the scale of civilizations: a mechanism that rewards burning. A currency denominated on the inward ladder alone pays for a precision that may command nothing whatever. Neither is capacity. Capacity is the conjunction, and the conjunction is what the framework was built to gate on.
+
+And the two coordinates are independent in the framework's exact and demanding sense. A people can be vast and crude or exquisite and small, the record supplies both, and no monotone function carries either reading into the other. More to the point — since the multiplication claim feeds on the cost of faking and not on the elegance of the pair — the two attacks share no machinery. Everything an adversary learns about spoofing a meter is worthless toward counterfeiting an atomically specified structure, and everything learned about counterfeiting the structure is worthless toward the meter. The asymmetry runs deeper still, and it runs in the direction a mechanism wants: genuine mastery of the small does deliver command of the large, exactly as Barrow said, so a true inward claim implies an outward one — while a *faked* inward claim implies nothing at all, having never placed the atoms, and so cannot cash the implication. Real capacity propagates up the conjunction. Counterfeit capacity does not.
+
+None of this discharges the debt. It relocates it, which is the more useful of the two operations. The construction the previous section called unwritten is still unwritten — but it is no longer unwritten in the dark, because the projection that admits an intrinsic verifier now stands distinguished from the projection that does not, and the design problem has acquired a shape: how much of a civilization's outward magnitude can be made to *follow* from the artifacts it must leave behind, so that the coin reads the flow through its residue rather than through its report. That is a hard question. It is not the impossible one the sketch began with.
 
 ---
 

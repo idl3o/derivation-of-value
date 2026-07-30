@@ -5,12 +5,12 @@ subtitle: "Volume IV"
 eyebrow: "An Anthology · Volume IV"
 permalink: /anthology/borrowed-hardness/
 anthology: "Derivation of Value"
-version: "v0.1"
-date: 2026-07-23
+version: "v0.2"
+date: 2026-07-30
 license: "CC BY 4.0"
 label: "Anthology · Volume IV"
 blurb: "The durability volume. The quantum adversary does not pose a new problem — it reveals which of the program's hardnesses were borrowed. A substrate-by-substrate audit of what survives the machine, and the operator recovered one last time at the cryptographic layer."
-status: "v0.1 · working draft"
+status: "v0.2 · working draft"
 order: 10
 ---
 
@@ -53,7 +53,7 @@ So run the machine down the substrates and mark, in each, where it bites.
 
 *Omnium* is the cheapest crossing. Its kernel is conservation and a product space — pure arithmetic, invariant to its core — and its only cryptographic exposure is where it touches a chain: Merkle proofs that Grover merely taxes, transfer signatures a lattice scheme replaces. The value-vector depends on almost nothing that was borrowed, and so it carries across the threshold at almost no cost.
 
-*Kar-coin*, alone of the four, was built post-quantum from its first page — hybrid lattice-and-hash signatures, the migration its founding concern rather than an afterthought. And yet its durability gap is the widest of all, because it is not cryptographic. It is the oracle problem the capacity volume named: the spoofed meter, the relabelled joule, the institution asked to vouch. No quantum machine makes a false energy claim more or less true. Kar-coin hardened, with great care, the layer that was easy to see, and inherited whole the layer that was hard. That is its own kind of lesson about where durability is actually won.
+*Kar-coin*, alone of the four, was built post-quantum from its first page — hybrid lattice-and-hash signatures, the migration its founding concern rather than an afterthought. And yet its durability gap is the widest of all, because it is not cryptographic. It is the oracle problem the capacity volume named: the spoofed meter, the relabelled joule, the institution asked to vouch. No quantum machine makes a false energy claim more or less true. The capacity volume has since narrowed that gap without closing it, by separating the outward projections of capacity, which are attested by report and inherit the oracle entire, from the inward ones, which are attested by artifacts that persist and can be re-measured by anyone. What deserves marking in a durability audit is that the repair happens to be durable in this volume's own sense, and for this volume's own reason: measuring where an atom sits is physics, not cryptography, and a machine tuned to the structure of the integers has no purchase on it. The inward axis crosses the threshold for the same reason the astrophysical beacon does — it was never on loan. Kar-coin hardened, with great care, the layer that was easy to see, and inherited whole the layer that was hard; the hard layer is now half-named, and the named half turns out to need no hardening at all. That is its own kind of lesson about where durability is actually won.
 
 ---
 
