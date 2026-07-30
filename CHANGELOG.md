@@ -12,6 +12,22 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-07-30
 
+### Anthology, Volume V — *What Cannot Be Helped* — v0.1
+
+`order: 15`. Opens Volume V, which Vol IV's coda reserved for "the substrates the program has not yet learned to name." Named here: the line between what an action **asserts** and what it **cannot help but leave**.
+
+**Why now.** The program had drawn this line four times in four vocabularies without noticing it was one line. Kar-Coin: outward capacity is a flow that leaves nothing and needs a reporter, inward capacity is an artifact that stays. Combination Proofs §4: harvestable projections are those whose failed attempts leave residue of the same kind as honest work. The Multiplicity Freedom: identities asserted are free, identities that must leave a trace are not. Stigmergy (planned): coordination through the medium, the trace as the only message. Capacity, harvest, identity, coordination — four papers, one distinction.
+
+**The argument.** An assertion is separable from its action, which is what makes it forgeable and why every mechanism resting on assertion must find a voucher — and the voucher is the oracle. A residue is not a claim about an action but a part of the world the action changed; nobody vouches for it because there is nothing to vouch. The security content is a **biconditional**: no work without the trace (completeness — no gaps to hide in), and no trace without the work (soundness — the only route runs through the labour). Both halves are needed and they are different claims.
+
+**The deflation, which is the volume's real content.** A residue is a low-entropy structure that persists, so this is not a fifth substrate standing beside the others — **it is negentropy with its provenance fixed**. Gauge-Fixing's four anchors, read from here, were never a security patch bolted onto negentropy; they are the operation that turns a quantity of order into a trace by binding it to whose order it is and when it came to be. So **the anthology has named more substrates than it has**. The substrates genuinely differ (coherence is a relation among models, capacity a magnitude of action); the *attestation problem* does not. Residue is its general answer, which is why it surfaced in four papers that thought they were about four different things. A smaller claim than the volume began with, and a better one: the program gains not a substrate but the knowledge of what it has been solving.
+
+**Limits, in the volume's own section.** Most of what matters leaves nothing — a decision not taken, a message withheld, liveness. Residue answers forgery and says nothing about denial, and refusal is the older attack. The biconditional's second half is a **design obligation, not a gift**: a mechanism scoring a residue an adversary can lay down more cheaply than the labour it evidences has built a proxy and will watch it be eaten. And residues decay — grass grows back, lattices anneal — so staking residue is racing a clock one did not set.
+
+**The strangest consequence**, arrived at from the other direction in §4.3: a residue is involuntary and involuntariness does not distinguish intentions, so an adversary that fails leaves one too. On substrates of residue the adversary is not outside the system — it is a participant that has not consented, whose labour is as real as anyone's. The founding move performed on the opponent.
+
+Vol IV predicted this volume rather than being contradicted by it: its coda left the shapes beyond the spine undrawn while insisting they existed. Technical companion is the planned stigmergy paper (P4), whose brief now tightens to formalising the biconditional's cost gap.
+
 ### H1 settled — *Proof of Coherence* v0.3, *The Multiplicity Freedom* v0.2
 
 The copy-symmetry fork has stood in PoC §4.2 since v0.1.1, declared "not resolvable from the mechanism alone." Every theorem in the Sybil paper was conditional on it. It is now settled, and settling it required correcting the corpus in two places. Measurements reproducible from `code/h1_duplication.py`.

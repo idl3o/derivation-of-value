@@ -12,7 +12,7 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-Eleven documents, orders 1–11. The visible anthology spine (Vols I–IV) is complete;
+Fifteen documents, orders 1–15 (was eleven when this plan was written). The visible anthology spine (Vols I–IV) is complete;
 Vol III's ledger stays open by design; Vol V+ is unclaimed.
 
 **Open problems inherited, by reference:**
@@ -252,7 +252,18 @@ if none exists the claim degrades to an analogy and should be dropped.
 
 ---
 
-### P4 · Stigmergy — `order: 16` — *planned*
+### P4 · Stigmergy — `order: 16` — *planned* — **now Vol V's technical companion**
+
+*Volume V (*What Cannot Be Helped*, order 15) names residue as the general answer
+to the attestation problem, and per the program's convention each substrate gets a
+volume plus a paper. This is that paper. Its brief tightens accordingly: it must
+deliver the formal content the volume only names — in particular the biconditional
+(no work without the trace, no trace without the work), whose second half the
+volume explicitly calls a DESIGN OBLIGATION rather than a gift. A mechanism scoring
+a residue an adversary can lay down more cheaply than the labour it evidences has
+built a proxy. Formalising that cost gap is the paper's core.*
+
+*Original plan entry follows.*
 
 **Title** "What the Work Leaves" · **Subtitle** "Stigmergy, Residue, and the Formation of Interfaces"
 
