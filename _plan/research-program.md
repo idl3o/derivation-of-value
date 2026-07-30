@@ -162,7 +162,21 @@ Do **not** let the quantum connection become mystical; §6 is explicitly specula
 
 ---
 
-### P2 · Autopoiesis — `order: 17` — *planned*
+### P2 · Autopoiesis — `order: 17` — **v0.1 drafted** → `a-consistent-fiction.md`
+
+*Prior art clear: nothing on autopoiesis in mechanism design. Two results measured
+(`code/fiction_space.py`): the **fiction space** has dimension d — five consensus
+runs converge to five distinct perfectly-coherent worlds spanning the whole kernel
+— and **structural coupling costs d scalars once**, at a single vertex, scaling
+with components rather than network size. The turn: Gauge-Fixing's anchors all fix
+PROVENANCE, the fiction space is a freedom of CONTENT, so the program has chosen
+closure knowingly and never priced it. Vol V's residue does not rescue it either,
+being negentropy-with-provenance. Proposed escape (§6, conjecture): the inward
+axis attests by artifact, and measuring is not testimony — so it may be the
+program's only available structural coupling. §8.2 states what a construction
+would need.*
+
+*Original plan entry follows.*
 
 **Title** "A Consistent Fiction" · **Subtitle** "Organizational Closure and the Limit of Coherence-Based Attestation"
 
