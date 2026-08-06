@@ -19,6 +19,7 @@ code and named in the docstring rather than quietly repaired.
 | `independence.py` | Puts an adversary in the loop and measures conditional fake-cost between projections (Definition 2.5). |
 | `trace_gap.py` | Measures the trace gap τ = f/w (*Sign and Work* Def 3.3). Calibrates against two known answers, then puts a ceiling on τ for the coherence reading. |
 | `temporal_iota.py` | The third attack design. Builds the epochs this directory said would be needed, and measures ι and τ together against a temporal projection. |
+| `usage_coupling.py` | Tests whether usage supplies structural coupling under the service reframe. It does not. Also the first measurement of the operator recurring across scale. |
 
 ```
 pip install -r requirements.txt
@@ -26,6 +27,7 @@ python spectral_richness.py
 python independence.py
 python trace_gap.py
 python temporal_iota.py
+python usage_coupling.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -310,6 +312,71 @@ satisfy without doing coherence work. The static spectral dimension failed on ι
 inherited coherence's τ; the temporal projection passes ι and has no τ at all. If the
 tension is real, substrate selection is constrained on a third axis as well as the two
 that `trace_gap.py` found.
+
+## Does usage couple?
+
+`usage_coupling.py` tests the objection against the service reframe — that a mechanism
+which *delivers* tuned-coherent messaging rather than *paying* for coherence gets
+structural coupling for free, because recipients who stop consuming are external
+signal. *A Consistent Fiction* prices escape from closure at d scalars of contact and
+*Gauge-Fixing*'s anchors are forbidden to supply them; usage looked like contact the
+mechanism never had to anchor for.
+
+The objection: **a filter bubble is a closed system whose own metrics adore it.**
+
+**Satisfaction is maximised at exactly zero contact.**
+
+| anchored fraction | satisfaction | truth |
+|---|---|---|
+| 0.00 | **1.0000** | −0.15 |
+| 0.01 | 0.9924 | +0.09 |
+| 0.03 | 0.9856 | +0.55 |
+| 0.08 | 0.9881 | +0.91 |
+| 0.15 | 0.9832 | +0.95 |
+| 1.00 | 0.9278 | +0.93 |
+
+A network with nothing anchored agrees with itself perfectly — every recipient is
+served exactly what they already believe, so satisfaction is 1 by construction — while
+tracking nothing. **Usage does not couple.** Worse, there is *no barrier*: satisfaction
+declines monotonically as contact is added, so the gradient points at closure from
+every configuration. A valley would at least make coupled states locally stable once
+reached; a slope means every coupled state is under continuous pressure back.
+
+**Truth is cheap and satisfaction pays for it anyway.** Truth saturates by about a =
+0.08 — a twelfth of the population re-deriving from the world buys +0.91 of the +0.95
+available. That is the good design point and **a satisfaction-scored mechanism will
+never stop there**, because satisfaction keeps falling past it.
+
+**The recurrence holds across scale.** What full contact costs in satisfaction:
+
+| scope | 2 (bitchat) | 4 | 16 | 64 | 240 (world sim) |
+|---|---|---|---|---|---|
+| cost of contact | +0.1069 | +0.0896 | +0.0769 | +0.0735 | +0.0722 |
+
+Same sign and order of magnitude across two orders of magnitude of scope, declining
+with scale. This is the first evidence for Volume IV's coda — that the operator recurs
+at every layer — and it comes with a direction the coda does not have: **the cost of
+contact with the world is higher at small scale.** A bitchat pays more of its
+satisfaction for truth than a world sim does.
+
+**What this does and does not settle.** It refutes the *coupling* claim for the service
+reframe, not the reframe. A service mechanism need not score usage; if it scores
+coherence and merely delivers a service, the coupling problem is exactly as it was
+under the payment framing and the reframe's advantages lie elsewhere. What is refuted
+is that usage supplies contact for free.
+
+Read the a = 0 truth figures as noise about zero, not as anti-correlation: with nothing
+anchored the network settles on an attractor uncorrelated with a drifting world, and
+across scopes those values run −0.05 to −0.74. Truth is *absent* there, not inverted.
+
+**Two instrument failures, both kept.** The question was first posed as
+discrimination = satisfaction(honest) − satisfaction(bubble), and its calibration
+failed: at full anchoring the "bubble" is a coalition of truth-trackers whose consensus
+*is* the world, so there was no fiction to detect and comparing two networks at equal
+anchoring compared nothing. Second, the barrier detector took the global minimum and
+maximum of the tail, which reports a monotone decline as a valley — it would have
+manufactured the more interesting of the two available answers, and did, until the
+recovery was checked against seed spread and found inside it.
 
 ## Two disciplines this code tries to keep
 
