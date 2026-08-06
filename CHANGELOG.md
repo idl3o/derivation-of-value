@@ -42,6 +42,94 @@ Declined, additionally: that the §5.2 cost model is settled — it assumes reco
 
 **What §5.1 does *not* do**, declined explicitly: the suite has not been run — one fragment of one item has, and (ii), (iii), (iv) and the conjunction itself remain untouched. The ceiling does not refute the architecture; it prices the failure mode the architecture exists to prevent, under conditions where the architecture was deliberately disabled, which makes it favourable evidence for §4.3 and therefore *weak* evidence. §4.3 is shown **necessary**, not sufficient. And the measurement certifies nothing, being an upper bound throughout.
 
+### Corpus-wide propagation pass — eight documents
+
+The session's measurements reached documents beyond the five revised above. Every
+superseded version archived verbatim; every claim marked in place rather than rewritten
+around.
+
+**Volume V *What Cannot Be Helped* — v0.2.** Its central concession — that the
+biconditional's second half is a *design obligation* — was written as a caution, and a
+caution is a thing one imagines discharging. Measured, it cannot be discharged on the
+substrate this program has spent the most time on. The coda's line that the independence
+measure "has resisted two attempts to measure it" is replaced: it resisted a third and
+yielded to a fourth, and what it yielded was not what was wanted.
+
+**Volume IV *Borrowed Hardness* — v0.3.** The coda's claim that "the same single move
+recurs at every layer it examines" was a thing noticed, "which is a weaker act than it
+sounds, since a reader is entitled to ask whether the noticing was of the world or of
+the noticer." It has now been measured across two orders of magnitude of scope and
+survived — **with a direction the coda could not have known: the cost is larger at the
+small end.** The recurrence is a flow, not a symmetry.
+
+**Volume II *Kar-Coin* — v0.3.** The Kardashev/Barrow axis becomes a *dial* rather than
+a dichotomy once scope is the parameter — outward is the coarse limit, inward the fine
+one — and the measured cost runs smoothly between them, higher at the inward end. Set
+against Barrow's own claim that the inward ladder is the more telling: both may hold, in
+which case it is more telling *because* it is more expensive.
+
+**A Consistent Fiction — v0.2.** New §6.1, stating two things Proposition 5.2's d
+scalars do **not** buy. They buy no trace gap — one anchor is absorbed by gauge
+invariance, so the fiction space closes and the forgery cost does not move. And usage
+does not buy it either: satisfaction is maximised at *exactly* zero contact, with no
+barrier, so the gradient points at closure from every configuration. The uncomfortable
+corollary for the paper's central claim — the choice of closure is not merely unpriced
+but **rewarded**, and the mechanism's own users would be less satisfied if contact
+arrived.
+
+**Requisite Richness — v0.2.** New §7bis. The paper supplied ρ a floor from the
+adversary; a *second ceiling* now arrives from the same adversary along an unrelated
+route, since richness bought at the coupling knob is paid for in trace gap. ρ is
+squeezed from both sides by one opponent, by an information-theoretic argument and a
+cost-theoretic one that were built without reference to each other. New §8.0, promoted
+above 8.1 as prior to it: **is the interval non-empty?** If floor and ceiling can cross
+for a whole substrate class, no member admits a viable Combination Proof.
+
+**No Global Section — v0.2.** New §6.1. The speculative contextuality-as-resource
+section gains a concrete setting — a mechanism delivering coherence *per recipient* has
+no global-section requirement, so the obstruction stops being one when the deliverable
+is local. And half an answer, discouraging: the section asks whether such a projection
+would be *independent*, and independence has since been shown the less binding of two
+conditions. The question must be asked twice and the second asking is the hard one.
+
+**Gluing the Gates — v0.2.** New §8.6, from a prior-art check. **Singh, Castro, Druschel
+& Rowstron, *Eclipse Attacks on Overlay Networks* (INFOCOM 2006), establishes that
+defences against Sybil attacks do not prevent eclipse attacks** — bounding an
+adversary's *budget* does not bound its *position*, and every bound this corpus owns is
+of the first kind. Kademlia's literature adds that eclipse can succeed with as few as
+eight strategically placed nodes. Their defence is that nodes anonymously audit one
+another's connectivity — a structural check on a graph, reached independently. The open
+question: **is interface capture a cohomological condition?** If so, §4's invariant earns
+a use in a field solving the problem by other means.
+
+**Coutility — v0.2.** §7.1 is more tractable than v0.1 knew: a mechanism that *delivers*
+returns something to its environment by construction, so coutility is its output type
+rather than a quantity to be identified. The type-matching is no longer the hard part.
+
+### Prior-art check — and it caught the program a second time
+
+The rule that caught *Gluing the Gates* claiming contextuality as novel has now caught
+the planned capture-adversary paper claiming two results established in 2006. Recorded
+in `_plan/service-reframe.md` rather than absorbed: claims 1 and 2 are **imported and
+cited, not claimed**, and what survives as the paper's own contribution is narrower — a
+capture analogue of τ, whether the trace-gap ceilings transfer, and the cohomological
+question above. The corpus's contribution on the first two is a correction *to itself*,
+not a result about the world: *The Multiplicity Freedom*'s theorems read as though they
+bounded an adversary generally, and they bound one adversary class.
+
+### Cabinet — Timewave Zero exhibit verified, and its verdict corrected
+
+Sources checked. The half-twist objection is confirmed, including the software manual's
+own footnote conceding "the reason for this is not well understood at present." Watkins
+met McKenna in January 1994. **The correction matters and runs against the first
+draft's verdict:** McKenna could not recall the step's rationale, attempted a
+justification, had it refuted, and endorsed publication of the critique. His conduct was
+the opposite of closed. What routed around the refutation was the *community*. So the
+specimen is sharper than written — **closure is a property of the system, not the
+author, and here the author supplied the coupling and the system rejected it** — which
+is a better instance of autopoiesis than a man who would not listen. One thread
+(a revised timewave attributed to Sheliak) remains unverified and is marked so.
+
 ### Framework — *Combination Proofs* — v0.4
 
 **§6's independence claim is corrected in both halves**, and kept rather than deleted. It claimed the kernel and the spectral projection are approximately independent because "reproducing the spectral signature of genuine coherence requires reproducing the *dynamical structure* of an actually coherent system, which the cluster has no shortcut to compute."

@@ -144,22 +144,48 @@ identities buy reach rather than income, and none of the arithmetic transfers.
 reframe whose adversary model is absent is a reframe whose security claims are vacuous,
 and the corpus has spent nineteen documents earning the right not to do that.
 
-**Claims to establish.**
-1. Extraction and capture are different adversary classes, not the same one in different
-   units — extraction is bounded by budget, capture by *position*.
-2. The Sybil cap does not bound capture: N ≤ ⌊C/Γ⌋ limits identities, and capture may
-   need only one well-placed identity. Cf. *Gluing the Gates* — composition failures
-   live at interfaces, and routing is all interface.
-3. τ has a capture analogue and it is not the same ratio. Forging a trace to be paid is
-   priced against earning; forging a trace to be *routed through* is priced against
-   whatever a recipient would otherwise have received.
-4. Whether the trace-gap ceilings of *Sign and Work* §5 transfer. They are results about
-   a reading, so they should — but the reading changes.
+**PRIOR-ART CHECK RUN 2026-08-06, AND IT KILLED TWO OF THE FOUR CLAIMS.** This is the
+second time the rule has caught the program claiming an established result, after
+*Gluing the Gates* and contextuality. Recorded rather than quietly absorbed.
 
-**Prior art to check first.** Sybil resistance in DHTs and mesh routing (eclipse
-attacks, S/Kademlia), reputation systems, spam/adversarial-IR. This is a well-populated
-field and the program has touched none of it. **Run the check before claiming novelty**
-— the standing rule, and *Gluing the Gates* is why.
+Singh, Castro, Druschel & Rowstron, *Eclipse Attacks on Overlay Networks: Threats and
+Defenses*, INFOCOM 2006 (~380 citations), states the intended claims 1 and 2 outright:
+
+> "In an *Eclipse* attack, a set of malicious, colluding overlay nodes arranges for a
+> correct node to peer only with members of the coalition. If successful, the attacker
+> can mediate most or all communication to and from the victim."
+>
+> "Defenses against Sybil attacks **do not prevent** Eclipse attacks, because attackers
+> may manipulate the overlay maintenance algorithm to mount an Eclipse attack."
+
+That is *exactly* "Sybil bounds are extraction-shaped and do not bound capture." It has
+been known for twenty years. The Kademlia literature adds the quantitative form —
+eclipse succeeds with as few as **eight** strategically-placed nodes — which is the
+"capture needs position, not budget" claim with a number the program does not have.
+
+**Revised claims, after the check.**
+1. ~~Extraction and capture are different adversary classes.~~ **Established** (Singh et
+   al. 2006). Imported, cited, not claimed.
+2. ~~The Sybil cap does not bound capture.~~ **Established.** The program's contribution
+   is narrower and still worth making: *The Multiplicity Freedom*'s theorems are stated
+   as if they bounded an adversary generally, and they bound one adversary class. That
+   is a correction to this corpus, not a result about the world.
+3. **τ has a capture analogue, and it is a different ratio.** Forging a trace to be
+   *paid* is priced against earning; occupying a position to be *routed through* is
+   priced against whatever the recipient would otherwise have received. Open, and the
+   paper's likely real contribution.
+4. **Do the trace-gap ceilings transfer?** They are results about a *reading*, and the
+   reading changes under capture. Open.
+5. **New, and the most promising.** Singh et al.'s defence is that nodes *anonymously
+   audit each other's connectivity* — a structural check on the graph, which is what
+   this program's machinery already is. **Is the eclipse condition a cohomological
+   one?** If a coalition mediating all of a node's communication is detectable as an
+   obstruction rather than by a degree audit, the sheaf earns its place in the service
+   setting, and *Gluing the Gates*' claim that failures live at interfaces acquires a
+   worked instance in a field that has been attacking the problem by other means.
+
+**Further prior art still unchecked:** S/Kademlia's certified-ID approach, reputation
+systems, adversarial IR. Check before drafting.
 
 ### P7 gains an object
 

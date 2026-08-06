@@ -11,19 +11,28 @@ in the negative.
 
 ## 1. Shape
 
-**Nineteen documents, orders 1–19, all published.** Ten code modules, ~1,900 lines
-plus `trace_gap.py`. Fourteen archived versions, four of which never went live.
+**Nineteen documents, orders 1–19, all published. Thirteen revised this session.**
+Twelve code modules. Twenty-three archived versions, four of which never went live.
 
 | | |
 |---|---|
-| **Anthology** | Vol I *Derivation of Value* → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin*) → Vol III *Admitted or Refused* (open ledger) → Vol IV *Borrowed Hardness* → Vol V *What Cannot Be Helped* |
+| **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, **Kar-Coin v0.3**) → Vol III → **Vol IV *Borrowed Hardness* v0.3** → **Vol V *What Cannot Be Helped* v0.2** |
 | **Framework** | *Combination Proofs* **v0.4** |
-| **Whitepaper** | *Proof of Coherence* v0.4 |
-| **Papers** | *Gauge-Fixing* **v0.2**, *Gluing the Gates*, *The Multiplicity Freedom* **v0.4**, *No Global Section*, *Requisite Richness*, *Sign and Work* **v0.3**, *A Consistent Fiction*, *Coutility*, *Borrowed Again* |
+| **Whitepaper** | *Proof of Coherence* **v0.5** |
+| **Papers** | *Gauge-Fixing* **v0.2**, *Gluing the Gates* **v0.2**, *The Multiplicity Freedom* **v0.4**, *No Global Section* **v0.2**, *Requisite Richness* **v0.2**, *Sign and Work* **v0.3**, *A Consistent Fiction* **v0.2**, *Coutility* **v0.2**, *Borrowed Again* |
 
-Two working documents opened and not published: `_plan/ruliad.md` (the corpus as a
-rule-space indexed by imported formalism) and `_plan/gallery.md` (a cabinet of
-outside specimens, explicitly below its own publication bar).
+Left untouched, and defensibly: Vol I, *Omnium*, *Proof of Preservation*, *Admitted or
+Refused*, the *Onboarding*, *Borrowed Again*. A cross-reference that changes nothing is
+the import-without-contact failure the program forbids elsewhere, and six documents had
+nothing to absorb.
+
+Four working documents, none published: `_plan/ruliad.md` (the corpus as a rule-space
+indexed by imported formalism), `_plan/gallery.md` (a cabinet of outside specimens),
+`_plan/research-program.md`, and **`_plan/service-reframe.md`, a third line opened this
+session** — it varies what the mechanism *emits*, delivering coherence rather than
+paying for it, where the harvest line varies the imported formalism. It carries S1 (the
+reframe) and S2 (the capture adversary, probably prerequisite) and gives P7 its first
+measurable instance.
 
 ---
 
@@ -178,8 +187,26 @@ Seven from the previous session, plus one.
 8. **The τ calibration returned 2.74 on proof of work, whose answer is 1** — the
    attacker's cost measured on a single search against an honest mean over eight,
    where search length is geometric with standard deviation equal to its mean.
+9. **A usage-coupling test was posed as discrimination between an honest network and a
+   bubble, and its calibration failed** — at full anchoring the "bubble" is a coalition
+   of truth-trackers whose consensus *is* the world, so there was no fiction to detect
+   and the comparison compared nothing.
+10. **The barrier detector took the global minimum and maximum of a tail**, which
+    reports a monotone decline as a valley. It manufactured the more interesting of the
+    two available answers and held it until the recovery was checked against seed
+    spread and found inside it.
+11. **The capture-adversary paper's first two claims were established in 2006.** Singh,
+    Castro, Druschel & Rowstron, INFOCOM: Sybil defences do not prevent eclipse
+    attacks. Caught by the prior-art rule before drafting, as *Gluing the Gates* was.
 
-**Five of eight were caught because an instrument returned an *impossible* number.**
+**Corrections 9 and 10 happened in the same afternoon, on the same file, in opposite
+directions** — the first refused to return an answer, the second returned a better one
+than the data supported. And 11 is the second time the prior-art rule has caught the
+program claiming an established result as its own. Three of the four instruments built
+this session tried to tell the operator what he wanted; the fourth was the calibration
+object that stopped one of them.
+
+**Six of eleven were caught because an instrument returned an *impossible* number.**
 Correction 8 is the cleanest instance yet and the only one caught by a calibration
 object placed there deliberately for the purpose. The lesson is now stronger than
 "prefer diagnostics that can return absurdities": **build the specimen whose answer

@@ -124,24 +124,38 @@ closed, then coupled out.
 wrongly but by requiring unbounded free parameters. Fit is not coupling. This is the
 exhibit that shows closure is compatible with being right about a great deal.
 
-**Timewave Zero** ?
+**Timewave Zero** ✓ *(sources checked 2026-08-06; one substantive correction below)*
 σ = "novelty" — gestured at negentropy, neither measurable nor provenance-fixed ·
 **borrowed**, from the King Wen sequence · τ ≈ 0, every historical fit was retrofitted ·
-closed, with one documented coupling event.
+closed — but see the correction.
 *Verdict.* Organizational closure in the wild, unusually well documented: an internally
-elaborated criterion, a decade-plus run, and a datable structural-coupling event —
-Watkins' critique of the derivation, mid-1990s — which the system absorbed by revision
-rather than by refutation. *ACF* says contact is available at d scalars, once; this is
-a case where contact arrived and was paid in the wrong currency.
+elaborated criterion, a two-decade run, and a datable coupling event. Watkins met
+McKenna in January 1994 and the critique followed; its core is the **half-twist**, a
+step reversing the signs of half of the 64 numbers, for which the software manual's own
+footnote conceded "the reason for this is not well understood at present and is a
+question which awaits further research." Watkins showed the step *prevents* the
+geometric property McKenna offered to justify it, and that without it the wave stops
+showing the historical correlations claimed for it.
+
+**The correction, and it changes the verdict's target.** The first draft of this exhibit
+said the system "absorbed the critique by revision rather than refutation." That is
+unfair to McKenna and the sources say so. He could not recall the step's rationale after
+twenty years, attempted a justification, had it refuted, and **endorsed publication of
+the critique.** His own conduct was the opposite of closed. What routed around the
+refutation was the *community* — a defence literature persists, including material
+arguing the objection is not fatal. So the specimen is sharper than first written:
+**closure is a property of the system, not of the author, and here the author supplied
+the coupling and the system rejected it.** That is a better instance of autopoiesis than
+a man who would not listen, and *A Consistent Fiction*'s claim that closure is an
+attractor rather than a vice is what it illustrates.
+*(One thread remains unverified: a revised timewave attributed to John Sheliak is
+referenced in secondary sources but not in the primary document checked. Stated as
+uncertain rather than dropped.)*
 **The redeeming feature, and the reason it is an exhibit rather than a joke:** the
 zero-date was falsifiable and went red. By the program's own most-transferable rule —
 prefer diagnostics that can return absurdities — Timewave did the one thing a
 generative sim structurally struggles to do. A closed system with a terminal falsifiable
 prediction is a better specimen than one without.
-**Sources unverified.** Watkins' critique, the half-twist objection, McKenna's
-acknowledgement, and Sheliak's revision are all from memory and must be checked against
-the actual documents before this leaves `_plan/`. Checklist item 3 is not optional here
-and this is the exhibit most likely to embarrass the cabinet if it is wrong.
 
 ### Undiagnosed — the instrument returns nothing yet
 
