@@ -10,6 +10,50 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-08-06
+
+### Paper — *Sign and Work* — v0.3
+
+The trace gap is measured. v0.2 supplied the definition and one number, which came out at the worst possible value; §5 is new and supplies the instrument (`code/trace_gap.py`, seeded), a calibration, two ceiling results, and a conclusion neither was written to reach.
+
+**The direction of error governs everything.** Definition 3.2 makes *f* a **minimum over an attacker class**, so any instrument minimises only over strategies someone wrote down, and **measured τ ≥ true τ, always**. τ errs toward safety and cannot err against it: a low τ exhibits a forgery and settles the matter; a high τ is the absence of evidence. **τ detects and does not certify** — the same shape *No Global Section* found in the cohomological invariant, arrived at independently and for an unrelated reason. Consequence: **ceilings are what this quantity can establish**, and both results below are ceilings. v0.2's blanket decline that "τ is measurable" was too strong and the correction is stated in §7 rather than made quietly.
+
+**Calibration, including a failure worth keeping.** Proof of work has a known answer — no shortcut to the search, so forging costs what earning costs and τ = 1 — and the instrument returns **1.054** over four hundred trials. The first pass returned **2.74**, comparing the attacker's cost on a *single* search against the honest mean over eight; search length is geometric with standard deviation equal to its mean, so one draw is not an expectation. Recorded in the docstring rather than repaired silently, because **the calibration object is the only reason the bug was visible** — the same estimator would otherwise have produced every coherence number below with nothing to flag.
+
+**Ceiling 1, output anchors (Prop 5.1).** τ ≤ 1 − b₁/|E|, measured exactly across five cycle ranks. The cheapest non-truthful section is **free**: set every frame equal and the connection is the identity on every edge, perfectly coherent, full marks, nothing reconciled. Pinning *one* vertex changes nothing, because the connection is gauge-invariant under R_v ↦ R_v Q and the forger rotates the whole fiction to meet it. Pinning *every* vertex still fails, because a spanning tree meets every vertex constraint and the forger never pays for a cycle. Equality holds only at b₁ = 0, where the score is vacuous. **Against *A Consistent Fiction*: d scalars at one vertex closes the fiction space and opens no trace gap at all. Two jobs, two prices, and only the first had been costed.**
+
+**The principle the ceiling is a signature of.** *Satisfying a public constraint is constraint satisfaction, never work.* A gap derived from an **output** constraint is bounded by that constraint's satisfaction cost, which is unrelated to its generation cost. This is why more anchors never helped: wrong species, not wrong quantity.
+
+**Ceiling 2, generative anchors (Prop 5.2).** *Gauge-Fixing* §4.3 constrains **production**, not output. Modelled with an anchor rank and a per-section encoding cost, and predicted before measuring: **rank is a switch, not a dial.** τ is identical to four decimals for every rank ≥ 1 (0.0000, then 0.4874, 0.4874, 0.4874) — **one determined column at every vertex buys the entire available gap and further columns buy nothing**, because the global gauge dies the moment any column is pinned everywhere. Sweeping the encoding cost tracks n·E/(n·E + |E|·c) to four decimals and reaches 0.9959 without ever reaching 1.
+
+**The two results are one (§5.3).** **Coherence never contributes to the trace gap. Whatever gap a mechanism has is bought by its anchor; the coherence content enters only in the denominator.** τ ≥ 1 is reachable solely by driving that content to zero — the cycle rank, where the score stops meaning anything, or the cost share, where the mechanism is measuring its anchor and calling it coherence. **Volume V's soundness clause is unattainable for a coherence reading, not merely unmet.** Reaching it twice by unrelated routes is the reason it carries weight.
+
+**§5.4 — richness is paid for in trace gap.** One knob: the spectral dimension rises 1.255 → 2.281 across the coupling sweep while the ceiling falls 1.000 → 0.315, and Prop 5.2 gives the same monotonicity directly. By Prop 4.1 that is an adversary 3.2× larger than *The Multiplicity Freedom* assumes, at the dense end. *Requisite Richness* gives ρ a floor from the adversary; this gives it a **ceiling from the same adversary by an unrelated route**, and substrate selection is constrained from both sides.
+
+**Open problems restructured.** §8.1 and §8.2 are discharged in part and the residue is sharper: is there *any* coherence reading whose gap is not bought entirely by its anchor — a reading scoring cycle agreement directly, where restriction maps are measured at overlaps rather than induced by declared frames, is the one place a better gap could hide. §8.3 is new and uncomfortable: τ rises with the anchor's cost share, so soundness is approachable by making the anchor expensive, which is a **perverse** route to a target, and whether it has a non-perverse form decides whether the coherence layer should be priced as attestation or merely as coordination.
+
+Declined, additionally: that the §5.2 cost model is settled — it assumes reconciliation is genuine work *on top of* producing sections, and at full rank that is arguable; if double-counted, τ rises. Named as the load-bearing joint and the first place to attack. Also that §5 covers coherence readings in general (it covers one reading on one substrate family), and that the τ ≈ 1 regime is a model artefact (an attacker who has paid for every observation *did the work*, which is Cor 3.5 behaving as described).
+
+### Paper — *Gauge-Fixing the Section Space* — v0.2
+
+**The §5 test suite has its first respondent**, which open problem 9 recorded as missing since v0.1 in July. New §5.1 reports test (i) executed with the unique-encoding anchor §4.3 removed. It returns what §5 predicts — "generically it will admit them if any anchor is removed" — and adds a price the original had no way to state. Three features were not anticipated: the cheapest non-truthful section is **free** rather than cheap; **one anchor is absorbed rather than spent**, by gauge invariance; and pinning every vertex still leaves a ceiling strictly below soundness.
+
+**§4.4's prohibition turns out to be load-bearing.** "Forbidden from moonlighting as a certificate of order" reads as ascetic taste and is a security condition: an anchor cited as a certificate of order is an **output** constraint, output constraints are public, and satisfying a public constraint is constraint satisfaction rather than work — so no arrangement of such anchors reaches a sound trace gap. **This is the third occasion on which one of the program's stated conventions looked like hygiene and was structural**, after C1 and C2, and unlike those two it was written down and simply never costed.
+
+**What §5.1 does *not* do**, declined explicitly: the suite has not been run — one fragment of one item has, and (ii), (iii), (iv) and the conjunction itself remain untouched. The ceiling does not refute the architecture; it prices the failure mode the architecture exists to prevent, under conditions where the architecture was deliberately disabled, which makes it favourable evidence for §4.3 and therefore *weak* evidence. §4.3 is shown **necessary**, not sufficient. And the measurement certifies nothing, being an upper bound throughout.
+
+### Code — `trace_gap.py`
+
+New module, ~330 lines. Specimens are triples of work, reading rule, and attacker class — not substrates, since τ is a property of **the reading** (§4). Acceptance is always *measured* by an actual eigendecomposition rather than assumed, so a forgery that fails to score is dropped from *f* whatever it cost. Calibration objects first, per the discipline `spectral_richness.py` keeps with the Sierpiński gasket. `code/README.md` carries the full account including the corrected calibration.
+
+### Working documents — not published
+
+`_plan/ruliad.md` maps the corpus as a rule-space indexed by **imported formalism** rather than by substrate — the operator is fixed, the machinery varies. After Volume V's deflation the state space is one node instrumented eight ways, which reframes the depth-or-monomania question structurally without settling it. Its one contribution beyond bookkeeping: the "formalisms relocate difficulties" through-line restated as **Conjecture R**, a falsifiable claim with six confirmations and no adversary, together with the observation that every planned paper is selected for the problem it *closes* and none for the invariant it could *break*.
+
+`_plan/gallery.md` opens a cabinet of specimens — existing systems measured with the program's own instruments, as calibration for the conceptual instruments the way `code/` calibrates the numerical ones. Entry rule: an exhibit enters only if the instruments return a verdict that **could be wrong**. Ten specimens, four still marked unverified, and the document states it is below its own publication bar and why.
+
+---
+
 ## 2026-07-30
 
 ### Paper — *Borrowed Again* — v0.1
