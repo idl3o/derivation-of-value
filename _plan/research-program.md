@@ -2,6 +2,13 @@
 
 Working document. Not published to the site.
 
+**A second line opened 2026-08-06: see `_plan/service-reframe.md`.** Where this document
+varies the imported *formalism*, that one varies what the mechanism *emits* — delivering
+coherence as a service rather than paying for it. It carries two planned papers (S1 the
+reframe, S2 the capture adversary, probably prerequisite), supplies P7 its first
+measurable instance, and has one result already: usage does **not** supply structural
+coupling, because satisfaction is maximised at zero contact with the world.
+
 This plans the line opened by *Gluing the Gates*: **take an outside research topic
 that the program has been circling without naming, and harvest it into a paper.**
 Each entry below is specified far enough that drafting can begin from it directly.
