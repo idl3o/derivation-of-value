@@ -256,6 +256,56 @@ a:hover {
 }
 
 /* ============================================
+   Tracks (home page grouping)
+
+   Documents are grouped by genre rather than by `order`, which remains the
+   chronological record. Several documents are mutually dependent, so no
+   single linear sequence is the reading order.
+   ============================================ */
+
+.track {
+  margin-top: 4.5rem;
+}
+
+.track:first-of-type {
+  margin-top: 3rem;
+}
+
+.track-heading {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid var(--oxblood);
+}
+
+.track-note {
+  font-style: italic;
+  color: var(--ink-faint);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin-top: 1rem;
+  max-width: var(--measure);
+}
+
+/* Within a track the list rule is already carried by the track heading */
+.track .contents {
+  margin-top: 1.6rem;
+}
+
+.track .contents li:first-child {
+  border-top: none;
+}
+
+/* The track heading already names the genre; repeating it on every row is
+   noise. Keep the label only where it distinguishes items inside a track. */
+.track .contents .item-label {
+  color: var(--ink-faint);
+}
+
+/* ============================================
    Contents (home page document list)
    ============================================ */
 

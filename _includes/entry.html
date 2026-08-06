@@ -1,0 +1,6 @@
+<li>
+  <span class="item-label">{{ include.paper.label }}</span>
+  <a class="item-title" href="{{ include.paper.url | relative_url }}">{{ include.paper.short_title | default: include.paper.title }}</a>
+  <div class="item-meta">{{ include.paper.blurb }}</div>
+  <span class="item-status">{{ include.paper.status }}</span>
+</li>
