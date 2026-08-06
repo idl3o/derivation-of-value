@@ -42,6 +42,30 @@ Declined, additionally: that the §5.2 cost model is settled — it assumes reco
 
 **What §5.1 does *not* do**, declined explicitly: the suite has not been run — one fragment of one item has, and (ii), (iii), (iv) and the conjunction itself remain untouched. The ceiling does not refute the architecture; it prices the failure mode the architecture exists to prevent, under conditions where the architecture was deliberately disabled, which makes it favourable evidence for §4.3 and therefore *weak* evidence. §4.3 is shown **necessary**, not sufficient. And the measurement certifies nothing, being an upper bound throughout.
 
+### Framework — *Combination Proofs* — v0.4
+
+**§6's independence claim is corrected in both halves**, and kept rather than deleted. It claimed the kernel and the spectral projection are approximately independent because "reproducing the spectral signature of genuine coherence requires reproducing the *dynamical structure* of an actually coherent system, which the cluster has no shortcut to compute."
+
+*The static half is false.* Against a structure-aware coalition ι ≈ 0 at every depth tested: in a snapshot the spectral dimension measures the coherent *fraction* of the substrate and so does the kernel count. Two instruments, one quantity.
+
+*The temporal half is true and hollow.* Build the epochs the sentence invokes and ι(ker | persist) = **1.000** at every coalition size — genuinely independent. But "no shortcut to compute" is wrong, because the coalition computes nothing: it holds its restriction maps fixed and never agrees about anything, and since honest participants *update* their models, **the coalition that changes nothing outscores the honest one fivefold.** The shortcut to sustained structure is to stop.
+
+**§7.1 rewritten around the change of view.** ι is now measured in the direction that was missing — three attack designs, the third successful, the two failures kept in the code. It is **asymmetric at 0.277**, clearing the threshold, so the right object is a **divergence and not a metric**, and any Fisher-information formalisation must carry the asymmetry rather than quotient it. **ι may not be a scalar**: ι(persist | ker) returns 0.28 / 0.86 / 1.03 as attack intensity rises, which would mean the multiplication claim and *The Multiplicity Freedom*'s Γ are using a quantity not well-defined without naming an adversary. Suggestive on three points, not established.
+
+**And the headline correction: independence was never the binding constraint.** The temporal projection is independent *and free to forge*, so by *Sign and Work* Prop 4.1 it inflates the adversary's fleet without bound. A projection must clear **two** requirements and §7.1 has stated one. Conjectured on two data points: ι and τ **pull against each other**, since a projection coherence does not constrain is one an adversary satisfies without doing coherence work.
+
+### Paper — *The Multiplicity Freedom* — v0.4
+
+**Corollary 5.4 (independence is *not* the whole of it)**, which narrows Corollary 5.2's headline. *Sign and Work* Prop 4.1 replaces each projection's effective cost γᵢ with τᵢγᵢ, so a projection contributes to Γ **in proportion to its own trace gap**, whatever its independence. At τᵢ ≈ 0 it adds approximately nothing even at ιᵢ = 1. **There are two ways for richness to buy nothing** — redundancy, which Corollary 5.2 names, and forgeability, which nothing did.
+
+**The specimen has been measured.** The temporal persistence projection has ι(ker | persist) = 1.000 and τ ≈ 0: it satisfies Corollary 5.2's condition perfectly and contributes essentially nothing to Theorem 5.1's cap. It is also precisely the projection *Combination Proofs* §6 anticipated as the second half of its worked instance.
+
+**A caveat on ι reaching every result in the section.** Theorem 4.2 and everything downstream treat ι as a scalar constant; measured, it is not stable across attack intensity. The conservative repair is stated and recommended for any deployment: **read ι as an infimum over the attacker class rather than a value**, since the adversary picks the attack and will pick the one minimising it. Under that reading the bounds stand and are weaker than the point estimates suggest.
+
+### Code — `temporal_iota.py`
+
+The third attack design, and the first to succeed: both attacks move their own target and leave the other alone, which neither sparsification nor rewiring managed. Builds the epochs `independence.py` said would be required. π_persist is the overlap of consecutive bottom-k eigenspaces — basis-independent, always defined. Honest frames **drift**, so honest persistence sits below 1 by construction and a frozen coalition can score above it; that absurdity is the hypothesis under test rather than a bug to guard. Corrected in place: the first version froze the whole Laplacian rather than the coalition's own edges, handing the adversary the entire substrate, and the tell was that the result did not vary with coalition size.
+
 ### Code — `trace_gap.py`
 
 New module, ~330 lines. Specimens are triples of work, reading rule, and attacker class — not substrates, since τ is a property of **the reading** (§4). Acceptance is always *measured* by an actual eigendecomposition rather than assumed, so a forgery that fails to score is dropped from *f* whatever it cost. Calibration objects first, per the discipline `spectral_richness.py` keeps with the Sierpiński gasket. `code/README.md` carries the full account including the corrected calibration.

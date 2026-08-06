@@ -17,9 +17,9 @@ plus `trace_gap.py`. Fourteen archived versions, four of which never went live.
 | | |
 |---|---|
 | **Anthology** | Vol I *Derivation of Value* → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin*) → Vol III *Admitted or Refused* (open ledger) → Vol IV *Borrowed Hardness* → Vol V *What Cannot Be Helped* |
-| **Framework** | *Combination Proofs* v0.3 |
+| **Framework** | *Combination Proofs* **v0.4** |
 | **Whitepaper** | *Proof of Coherence* v0.4 |
-| **Papers** | *Gauge-Fixing* **v0.2**, *Gluing the Gates*, *The Multiplicity Freedom* v0.3, *No Global Section*, *Requisite Richness*, *Sign and Work* **v0.3**, *A Consistent Fiction*, *Coutility*, *Borrowed Again* |
+| **Papers** | *Gauge-Fixing* **v0.2**, *Gluing the Gates*, *The Multiplicity Freedom* **v0.4**, *No Global Section*, *Requisite Richness*, *Sign and Work* **v0.3**, *A Consistent Fiction*, *Coutility*, *Borrowed Again* |
 
 Two working documents opened and not published: `_plan/ruliad.md` (the corpus as a
 rule-space indexed by imported formalism) and `_plan/gallery.md` (a cabinet of
@@ -93,11 +93,51 @@ case is exactly the coherence content. Proposed, tested, answered against.
   change of formalism. Six confirmations, no adversary, and no paper is selected to
   break it.
 
-### Inconclusive
+### Inconclusive — but ι moved
 
-**Is ι symmetric?** Unchanged from 2026-07-30. Two attack designs failed.
-ι(dim\|ker) = 0.08 is solid; ι(ker\|dim) is unmeasured. **On the critical path and
-unresolved, for the second consecutive session.** See §6.
+**The third attack design succeeded.** `temporal_iota.py` builds the epochs
+`independence.py` said would be required, rather than attacking the snapshot harder,
+and both attacks move their own target while leaving the other alone — which neither
+sparsification nor rewiring managed.
+
+| | |
+|---|---|
+| ι(dim \| ker), static | ≈ 0.08 (unchanged) |
+| **ι(ker \| persist), temporal** | **1.000, at every coalition size** |
+| ι(persist \| ker) | 0.723 mean — but 0.28 / 0.86 / 1.03 across intensity |
+| asymmetry | **0.277**, above the 0.15 threshold |
+
+**Is ι symmetric? On this pair, no** — so the right object is a **divergence, not a
+metric**, and P6's Fisher route must carry the asymmetry rather than quotient it.
+
+**Is ι even a scalar? Now doubtful.** ι(persist \| ker) spreads three quarters across
+attack intensity. CP §7.1 types it as a function of substrate and projection pair; on
+this evidence it is also a function of the attack that measures it, which would leave
+Γ = γ(1 + (K−1)ι) undefined until an adversary is named. Three points with a monotone
+trend — suggestive, not established. The conservative repair, now recommended in
+*Multiplicity Freedom* v0.4: read ι as an **infimum over the attacker class**.
+
+**And the finding that reorders the problem: independence was never the binding
+constraint.** π_persist is maximally independent *and* free to forge — a coalition
+that never changes its restriction maps outscores honest participants who update
+theirs, by a factor of five. τ(π_persist) ≈ 0, so by *Sign and Work* Prop 4.1 it
+inflates the fleet without bound and contributes nothing to the Sybil cap. **CP §7.1
+has stated one of two requirements on a projection for the whole life of the
+framework.** *Multiplicity Freedom* v0.4 Cor 5.4 records the consequence: there are
+two ways for richness to buy nothing — redundancy and forgeability — and only the
+first was named.
+
+**Conjectured, on two data points and therefore weak: ι and τ pull against each
+other.** A projection independent of coherence is one coherence does not constrain,
+and one coherence does not constrain is one an adversary satisfies without coherence
+work. The static spectral projection failed on ι and inherited coherence's τ; the
+temporal projection passes ι and has no τ. Third such tension found this session,
+after ρ/τ.
+
+**Still unresolved:** ι has no formalisation, and the multiplication claim still rests
+on it. What changed is that the quantity now has a measured direction, an established
+asymmetry, a reason to doubt its type, and an argument that it was the wrong thing to
+optimise alone.
 
 ---
 
@@ -168,13 +208,15 @@ through-line has taken and the least comfortable.
 
 Unchanged. Vol V named it and found it was negentropy-with-provenance.
 
-### Everything still points at ι
+### ι moved, and pointed somewhere else
 
-Five dependents, no formalisation, two failed measurements, and **a second session in
-which the critical path did not move.** The previous state doc recorded this as a
-thing not to repeat. It repeated. The τ work has independent standing through Prop
-4.1 and was not avoidance in intent, but the outcome is the same and is recorded as
-such.
+Two sessions of ι sitting still ended with the third attack design. The result is not
+the formalisation — that is still absent — but a reordering: **the framework had been
+optimising one of two requirements.** A projection must be independent *and* expensive
+to forge, ι and τ appear to trade off, and the program's hardest open problem may have
+been the more tractable of the pair all along. The τ work of this session, which
+looked like writing around the critical path, turned out to supply the instrument that
+made the ι result legible. That is luck rather than method, and is recorded as luck.
 
 ### Anchors do two jobs and only one was costed
 
@@ -190,28 +232,38 @@ different prices, and the corpus had costed only the first.
 
 1. **Test Conjecture 3.1.** A published paper's quantitative content depends on an
    untested conjecture. Unchanged at the top, and untouched for two sessions. *NGS §8.1.*
-2. **Formalise ι.** Five dependents, two failed measurements. The route named by
-   `code/README.md` — that independence lives in temporal autocorrelations and
-   "nothing short of building them will do" — has not been built. **Next.**
-3. **Is any coherence reading's gap not bought by its anchor?** *S&W §8.1.* A reading
+2. **Is ι a scalar?** Promoted above "formalise ι", because it is prior to it: a
+   formalisation of a quantity that varies with the attack measuring it will
+   formalise the wrong object. Three data points and a monotone trend. Cheap to
+   settle — more intensities, more attack designs, on machinery that now exists.
+3. **Formalise ι.** Five dependents. The temporal route has now been built and the
+   measurement obtained, so what remains is the formalisation itself, under two new
+   constraints: it must be a **divergence** rather than a metric, and it must survive
+   whatever answer problem 2 returns.
+4. **Find a projection clearing ι *and* τ.** The reordered form of the framework's
+   central design problem, and new. Every projection the program has examined fails
+   one: the static spectral one fails ι, the temporal one fails τ. Whether the two
+   requirements are jointly satisfiable at all is not known, and a negative answer
+   would bound Combination Proofs of order K > 1 on coherence substrates.
+5. **Is any coherence reading's gap not bought by its anchor?** *S&W §8.1.* A reading
    scoring cycle agreement directly, with restriction maps measured at overlaps
    rather than induced by declared frames, is the one place a better gap could hide.
    If it does not hide there, coherence-based attestation is bounded in a way the
    framework has not admitted.
-4. **State C1, C2 and C3 as framework conditions**, and answer the question behind
+6. **State C1, C2 and C3 as framework conditions**, and answer the question behind
    them: which other stated conventions are load-bearing and unpriced.
-5. **Attack the §5.2 cost model.** Prop 5.2 assumes reconciliation is work *on top of*
+7. **Attack the §5.2 cost model.** Prop 5.2 assumes reconciliation is work *on top of*
    producing sections. At full rank that is arguable; if double-counted, τ rises and
    the strict inequality weakens. Cheap, and it bears on a just-published result.
-6. **Which recoverability model** — linear or compounding. They diverge 2× at K = 8.
-7. **Can measurement supply content without an oracle?** *ACF §8.2.*
-8. **Exhibit a Combination Proof as an open game.** *Coutility §7.1.*
-9. **Make h precise.** Without it *Requisite Richness* §§3–4 are analogy — and it now
-   has a ceiling as well as a floor to be commensurable with.
-10. **Select a paper to refute Conjecture R.** *`_plan/ruliad.md` §7.*
-11. **The build.** *Gauge-Fixing* §5 now has one respondent on one fragment of one
+8. **Which recoverability model** — linear or compounding. They diverge 2× at K = 8.
+9. **Can measurement supply content without an oracle?** *ACF §8.2.*
+10. **Exhibit a Combination Proof as an open game.** *Coutility §7.1.*
+11. **Make h precise.** Without it *Requisite Richness* §§3–4 are analogy — and it now
+    has a ceiling as well as a floor to be commensurable with.
+12. **Select a paper to refute Conjecture R.** *`_plan/ruliad.md` §7.*
+13. **The build.** *Gauge-Fixing* §5 now has one respondent on one fragment of one
     item. Tests (ii), (iii), (iv) and the conjunction remain.
-12. **The security proof.** Shrunk by the Sybil fragment, not closed.
+14. **The security proof.** Shrunk by the Sybil fragment, not closed.
 
 ---
 
@@ -231,9 +283,22 @@ the framework wants to maximise are in direct tension; and that the anchor purch
 *A Consistent Fiction* priced closes the fiction space while buying no trace gap at
 all.
 
-The Sybil bounds, the program's only theorems, are now conditional on three unstated
-or unpriced conditions and on a τ that cannot reach 1.
+It also, at the end, moved ι — after two sessions of not moving it — by building the
+epochs rather than attacking the snapshot a third time. The result is not a
+formalisation. It is a reordering: **a projection must be independent and expensive to
+forge, the framework has been stating only the first as an open problem, and on the
+evidence the two requirements pull against each other.** Every projection the program
+has examined fails one of them. Whether any projection clears both is now the central
+design question and has never been asked.
 
-Nothing is built. The security proof is not closed. ι did not move for a second
-session, and the plan has now recorded that failure twice, which is one more time than
-recording it is worth if it happens again.
+The Sybil bounds, the program's only theorems, are now conditional on three unstated
+or unpriced conditions, on a τ that cannot reach 1, and on an ι that may not be a
+constant.
+
+Nothing is built. The security proof is not closed. What the program gained this
+session is almost entirely negative results, which is the kind it has been best at
+producing and the kind its discipline is built to survive — but a corpus of nineteen
+documents in which the central mechanism has been shown to contribute nothing to
+forgery resistance, and the central parameter shown to be measuring the less binding
+of two constraints, is a corpus that should expect its next result to be a subtraction
+too.
