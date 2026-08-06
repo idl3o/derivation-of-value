@@ -18,12 +18,14 @@ code and named in the docstring rather than quietly repaired.
 | `spectral_richness.py` | Measures richness ρ as a spectral dimension. Tests two conjectures; admits one, refutes the other. |
 | `independence.py` | Puts an adversary in the loop and measures conditional fake-cost between projections (Definition 2.5). |
 | `trace_gap.py` | Measures the trace gap τ = f/w (*Sign and Work* Def 3.3). Calibrates against two known answers, then puts a ceiling on τ for the coherence reading. |
+| `temporal_iota.py` | The third attack design. Builds the epochs this directory said would be needed, and measures ι and τ together against a temporal projection. |
 
 ```
 pip install -r requirements.txt
 python spectral_richness.py
 python independence.py
 python trace_gap.py
+python temporal_iota.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -238,6 +240,76 @@ S&W §3's τ ≈ 1 regime behaving as described, not a failure of the model. One
 family throughout. And τ is a property of the *reading*: a mechanism scoring cycle
 agreement directly, rather than reading dim ker off a spectrum, is not covered by any
 of this and is the obvious place to look for a reading with a better gap.
+
+## The third attack design
+
+`independence.py` closed with a claim about what would be needed: independence, if it
+lives anywhere, lives in the temporal autocorrelations, "and nothing short of building
+them will do." `iota_asymmetry.py` then failed twice to move d_s on a static complex —
+sparsification shatters, rewiring is too weak. `temporal_iota.py` builds the epochs
+instead of attacking the snapshot harder, and it works: both attacks move their own
+target and leave the other alone, which is what neither previous design achieved.
+
+**The projections.** π_ker is the usual #{λ < ε}. **π_persist** is the overlap between
+the bottom-k eigenspaces of consecutive epochs — the normalised sum of squared cosines
+of the principal angles, so 1 for an unchanged subspace, basis-independent, and always
+defined. Honest frames *drift*, so honest persistence is below 1 by construction.
+
+**The attacks.** *C* makes a coalition coherent each epoch and redraws its frames every
+epoch: targets π_ker. *P* freezes the coalition's own restriction maps after the first
+epoch and never makes them coherent: targets π_persist. The coalition is never made
+coherent under *P* — it merely never changes its mind.
+
+| attack | f | π_ker | π_persist | ker prog | persist prog |
+|---|---|---|---|---|---|
+| C | 0.25 | 6.00 | 0.0594 | 0.333 | 0.240 |
+| C | 0.50 | 9.00 | 0.0408 | 0.500 | 0.070 |
+| C | 0.75 | 15.00 | 0.0308 | 0.833 | −0.022 |
+| P | 0.25 | 0.00 | 0.2158 | 0.000 | **1.672** |
+| P | 0.50 | 0.00 | 0.2944 | 0.000 | **2.391** |
+| P | 0.75 | 0.00 | 0.6096 | 0.000 | **5.277** |
+
+**ι(ker \| persist) = 1.000** at every coalition size. Faking persistence delivers
+*nothing* toward the kernel. This is the first solid measurement in this direction —
+the program had only ι(dim \| ker) = 0.08 — and it is the answer `independence.py`
+predicted would require epochs to obtain.
+
+**ι(persist \| ker) = 0.723**, but the samples run 0.28, 0.86, 1.03 across attack
+intensity, a spread of 0.75. **It is not a constant.** CP §7.1 treats ι as a scalar
+parameter and *The Multiplicity Freedom*'s T2 uses it as one in Γ = γ(1 + (K−1)ι); on
+three data points with a monotone trend that is suggestive rather than established, but
+it is the first evidence that ι may not be well-defined independently of the attack
+that measures it. The asymmetry, 0.277, clears the 0.15 threshold `iota_asymmetry.py`
+set: **on this pair the right object is a divergence, not a metric**, and P6's Fisher
+route must carry the asymmetry rather than quotient it away.
+
+**The absurdity fired, and it was built to.** Honest models update, so honest
+persistence is 0.1425; a coalition that changes nothing reaches 0.6096, which is
+**5.3× the honest progress**. Progress above the honest maximum is the same species of
+impossible number that caught the sparsification attack and the gap hierarchy — except
+here it is the hypothesis under test rather than a bug. A projection that rewards
+stasis is one an adversary wins by doing nothing.
+
+*(The first version of this attack froze the entire Laplacian rather than the
+coalition's own edges, handing the adversary the whole substrate. The tell was that the
+result did not vary with coalition size. Corrected in place and named in the
+docstring.)*
+
+**The finding is the conjunction, not either half.** π_persist is independent of the
+kernel *and* free to forge — τ(π_persist) ≈ 0, since holding still costs nothing and
+outscores honest updating. So:
+
+> **Independence was never the binding constraint.** CP §7.1 has been treated as the
+> hard part of admitting a third projection. On this evidence τ is the hard part, and
+> the search for a third projection has been running under one of the two requirements.
+
+The conjecture this suggests, on two data points and therefore weak: **ι and τ pull
+against each other.** A projection independent of coherence is one coherence does not
+constrain, and a projection coherence does not constrain is one an adversary can
+satisfy without doing coherence work. The static spectral dimension failed on ι and
+inherited coherence's τ; the temporal projection passes ι and has no τ at all. If the
+tension is real, substrate selection is constrained on a third axis as well as the two
+that `trace_gap.py` found.
 
 ## Two disciplines this code tries to keep
 
