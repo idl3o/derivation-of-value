@@ -12,6 +12,24 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-08-10
 
+### Paper — *The Wound Clock* — v0.1
+
+New paper. The question arrived from outside the program's vocabulary — how close to a *perpetual* mechanism a negentropy-attested measurement can be made — and the answer turned out to be an audit the corpus had not yet run: not a durability audit (what dissolves) but an **amortization audit** (what recurs).
+
+**The impossibility was already in the corpus.** A measuring mechanism that runs forever at no cost is Maxwell's demon, and *Proof of Preservation*'s One-Bit Engine section is the exorcism: the cycle costs *kT* log 2 per bit forgotten. The paper's contribution begins after the refusal, at the asymptote.
+
+**Perpetuity is redefined as an amortization property.** Reading Volume I's coda at a new layer — every borrowed scarcity borrows from an institution with a half-life — the paper defines a mechanism as asymptotically perpetual when every recurring cost is priced by a physical constant or paid by a reservoir the mechanism does not maintain, and every institutionally priced cost is paid a bounded number of times. Not zero cost; cost with no half-life.
+
+**The four anchors sort into four amortization classes.** *Sky-funded* (the beacon — recurring, but the universe pays, and the same anchor *Borrowed Hardness* clears without remainder); *genesis-paid* (the dissipation floor — once per identity, amortizing to zero, its §4.4 retirement provision read as the construction already treating this cost as one that stops); *constant-floor* (memory — append-only design defers the Landauer wage but cannot escape it, and the irreducible residue is priced by the one constant with no issuer); *wound* (the delay chain and unique encoding — sequential time spent freshly every epoch, the one input that neither amortizes nor arrives from the sky).
+
+**The finding is a convergence.** The class that must be paid forever is exactly the anchor *Borrowed Hardness* v0.3 marked as the program's most quantum-fragile load-bearing piece, and — in the corpus's one measurement, *Sign and Work* v0.3 §5 — exactly where the trace gap is bought: security per epoch is purchased with the coin that must be re-spent every epoch. The paper argues the coincidence is a consequence: sequential time is the single input no reservoir delivers and no constant prices, so it reaches the mechanism only through a primitive, and primitives are where the machine bites. The winding point and the wound are the same boundary — where the mechanism stops presenting physics and starts asserting it.
+
+Declined: that the sky is perpetual (it is prepaid — a pulsar is a flywheel spinning down, and the program does not exempt its favourite anchor from the law it stakes); that the floor's governance retirement is free (an institutional act, priced as one); that the Landauer floor is a price rather than a bound the mechanism approaches from orders of magnitude above; and that the winder is inside the mechanism (who pays for the delay chain's computation is circular at bootstrap in exactly the way §4.4 found stake to be, and the incentive design of the winding is unbuilt).
+
+Files added: `_papers/the-wound-clock.md` (order 20).
+
+---
+
 ### Register pass — the index and six volume documents
 
 A pass on register alone. No claim was changed and no version moved. The corpus had been written in two voices without the difference ever being named: the technical papers **report**, and the front matter of the volumes **solicits**. The second is the register of a text performing inquiry rather than conducting it, and it had collected in exactly two places — the index, and the opening paragraphs of the volumes.
