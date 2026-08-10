@@ -5,9 +5,9 @@ subtitle: "A working program in mechanism design"
 eyebrow: "An anthology in progress"
 ---
 
-Each protocol stakes something. Bitcoin stakes energy; proof of stake systems substitute capital; proof of useful work proposes work whose product is itself valuable. This program asks the question hiding inside all of them: *what must be at stake for a ledger to mean what it says?*
+Each protocol stakes something. Bitcoin stakes energy; proof of stake systems substitute capital; proof of useful work proposes work whose product is itself valuable. In each case the staked quantity is one the protocol did not derive — it is borrowed from a market, a regime, an institution with a half-life.
 
-The work below proposes that the next generation of consensus mechanisms will derive their staked quantity rather than borrow it — that the substrate of trust can be the structural agreement of many witnesses, the resistance of order to entropy, the dimensional integrity of value itself. The anthology takes up the derivations in turn. The worked example, *Proof of Coherence*, is in active development.
+This program follows the alternative: a staked quantity derived rather than borrowed — the structural agreement of many witnesses, the resistance of order to entropy, the dimensional integrity of value itself. Five volumes take up the derivations in turn; the papers close, or fail to close, the problems the volumes leave open. Every substrate named so far has met the same wall, and the wall was the attestation rather than the substrate. The worked example, *Proof of Coherence*, is where the derivation meets a machine.
 
 <!-- Generated from the _papers collection. To add a document, drop a file in
      _papers/ with the front matter below; set `hidden: true` to keep one off
@@ -24,7 +24,7 @@ The work below proposes that the next generation of consensus mechanisms will de
 
 <section class="track">
   <h2 class="track-heading">Start here</h2>
-  <p class="track-note">There are two doors. For the argument, begin with <em>Volume I</em> below and read the anthology in order. For the mechanism, begin here — this is the front door to the whitepaper, and it assumes nothing.</p>
+  <p class="track-note">The corpus has two entrances. The argument runs from <em>Volume I</em> below, in order. The mechanism starts here — the front door to the whitepaper, assuming nothing.</p>
   <ul class="contents">
   {% for paper in papers %}{% unless paper.hidden %}{% if paper.label == "Companion" %}
     {% include entry.html paper=paper %}
@@ -44,7 +44,7 @@ The work below proposes that the next generation of consensus mechanisms will de
 
 <section class="track">
   <h2 class="track-heading">The framework</h2>
-  <p class="track-note">The formal spine. Dense, and not the place to begin.</p>
+  <p class="track-note">The formal spine. Dense; it presumes the volumes.</p>
   <ul class="contents">
   {% for paper in papers %}{% unless paper.hidden %}{% if paper.label == "Framework" or paper.label == "Whitepaper" %}
     {% include entry.html paper=paper %}

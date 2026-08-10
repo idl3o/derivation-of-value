@@ -34,7 +34,7 @@ The asymmetry is the whole story. Shor devastates hardness that comes from *stru
 *Borrowed and Derived, Again*
 {:.section-title}
 
-The reader who has come this far will hear the operator turning underneath, because it is the same one, at a layer the anthology had not yet examined.
+The operator is turning underneath all of this — the same one, at a layer the anthology had not yet examined.
 
 Number-theoretic hardness is *borrowed* hardness. RSA is difficult because factoring is difficult, and factoring is difficult because of a structure — deep, elegant, and, as it turns out, exploitable by the right machine. The security was real, and it was on loan. It held for exactly as long as no one built the device that trades in that particular structure, and Shor is that device. This is, at the cryptographic layer, precisely the move the first volume diagnosed in proof of stake: a quantity whose value is borrowed from a market the protocol assumes will persist. Number-theoretic hardness borrows its difficulty from the assumption that the structure it rests on will never be efficiently inverted — and that assumption is a market that quantum computing has come to make.
 

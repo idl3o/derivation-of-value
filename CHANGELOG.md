@@ -2,11 +2,39 @@
 
 Versioning convention:
 
-- **Patch** (x.y.z) — typos, prose polish, single-paragraph clarifications, broken-citation fixes. No new claims, no structural change.
+- **Patch** — typos, prose polish, single-paragraph clarifications, broken-citation fixes. No new claims, no structural change. Recorded here under its date; the document's version does not move and nothing is archived.
 - **Minor** (x.y) — new sections, sharpened theorems, added worked examples, reframed claims that don't contradict the previous version.
 - **Major** (x.0) — the document graduates from working draft. Claims would be defended to a hostile reader.
 
-Each document carries its own version, tracked here and noted inside the document itself.
+Each document carries its own version, tracked here and noted inside the document itself. **The version is the unit the corpus cites by** — cross-references name a document and a version, as in *Sign and Work* v0.3 §5 — so it moves when a claim moves and not otherwise. Patch has no version string for that reason: a third component would put a distinction into the citation namespace that carries no claim, and would leave `_archive/`'s archive-on-supersession rule ambiguous about whether prose supersedes. It does not. The program versions claims, not sentences.
+
+---
+
+## 2026-08-10
+
+### Register pass — the index and six volume documents
+
+A pass on register alone. No claim was changed and no version moved. The corpus had been written in two voices without the difference ever being named: the technical papers **report**, and the front matter of the volumes **solicits**. The second is the register of a text performing inquiry rather than conducting it, and it had collected in exactly two places — the index, and the opening paragraphs of the volumes.
+
+**The diagnostic and what survived it.** Forty-seven lines across `index.md` and `_papers/` carried a question mark; forty-three do now. The four that changed were the ones the text answers within three paragraphs. Everything else was left untouched, and the distinction is worth recording because two quite different things wear the same punctuation. The §8 open-problem questions pass without amendment — nothing in the corpus answers them, which is the only test that matters, and *Sign and Work* §8.2, which strikes through a question that has since been answered and keeps the residue visible, is the convention working exactly as intended. So do the questions used as **names for what a bound does** rather than as address: *Requisite Richness* §2 on ceiling against floor, *Coutility* §4 on equilibrium against admissibility. There the question is the object under discussion. A question is interrogative when it is pointed at a reader, not when it is pointed at a problem.
+
+**The clearest instance.** *Omnium* §1 asked four questions — who earned this, how long is it held, whom does it belong among, where has it been — and the coordinate list two paragraphs later answered them in order: provenance, temporal, locality, provenance. The cluster was a table of contents in interrogative disguise, and its effect was to quiz the reader on material the text was about to hand over. Converted to a nominal list, which loses no item.
+
+**Highest density.** *Kar-Coin* §3 answered both of its questions inside their own sentences — *Who attests the megawatt-hour? A meter, and meters can be spoofed.* Now declarative, and the relocation attack gains the clause the question had been gesturing at without stating: **the meter reads the same either way.**
+
+**The founding question was posed twice and answered both times**, at the index and at *Derivation of Value* §1, where the paragraph immediately following it opens with the words "The answer that protocols give." Named rather than staged, in both places.
+
+**Reader-directed furniture removed** — the larger share of the drift, and carrying no question marks at all. Three imperative *Begin…* openings, two *Consider…*, one *This is the proper place to begin*, one *It is worth being precise about why*, and one *The reader who has come this far will hear*. The recurring ritual survives the change: *Begin, as the anthology always begins, by naming the operator* becomes *The anthology always begins by naming the operator*, which reports the practice instead of instructing in it.
+
+**Staged uncertainty converted to reported uncertainty.** *This volume asks what it would mean to stake the part that does not spend — and discovers, in the asking* becomes *What this volume stakes is the part that does not spend, and it arrives at an obstruction*. The second sentence is the more uncertain of the two and reads as the more confident, which is the whole of the distinction the pass turns on.
+
+**The index carries one claim it did not carry before.** The front page had a staged question and a forward-looking promise — *the next generation of consensus mechanisms will derive their staked quantity*. Both are gone, and Volume V's finding stands in their place, flat: every substrate named so far has met the same wall, and the wall was the attestation rather than the substrate. This is the only addition in the pass; everywhere else it removed or converted. Recorded here because the front page is the one page every reader reaches, and because a negative result promoted to the index is a different act from a negative result left in the volume that found it.
+
+**Volume V required no change.** *What Cannot Be Helped* opens on the desire path and closes its first section on *the wall was never the substrate, it was the attestation* — no question, no reader, no recuperative sentence following the negative result. It is the reference point the rest of the corpus was measured against.
+
+Declined: that the pass reached the technical papers, which were read and deliberately left alone; that register was the program's problem rather than one of its surfaces; and that the distinction is a matter of taste. It is not. A question the text answers is a claim the text declined to make in the declarative, and the declarative is the only mood in which a claim can be refuted.
+
+**No version changed and nothing was archived**, patch-level prose being the case the convention above covers and `_archive/` holding superseded versions rather than superseded sentences. Files touched: `index.md`, and the volumes *Derivation of Value*, *Omnium*, *Proof of Preservation*, *Kar-Coin*, *Admitted or Refused*, *Borrowed Hardness*.
 
 ---
 

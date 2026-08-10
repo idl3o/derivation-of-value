@@ -56,20 +56,50 @@ It ships with the source and never becomes a site page. The same holds for
 
 ## Contents
 
-| paper | archived | note |
-|---|---|---|
-| `admitted-or-refused` | v0.1 | published state, 2026-07-23 |
-| `borrowed-hardness` | v0.1 | published state, 2026-07-23 |
-| `combination-proofs` | v0.1, v0.2 | v0.2 never published — see below |
-| `kar-coin` | v0.1 | published state, 2026-07-23 |
-| `proof-of-coherence` | v0.2, v0.3 | v0.3 never published |
-| `sign-and-work` | v0.1 | never published |
-| `the-multiplicity-freedom` | v0.1, v0.2 | neither published |
+Current as of 2026-08-10. The `current` column is the version in `_papers/`; the
+lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gaps.
+
+| paper | archived | current | note |
+|---|---|---|---|
+| `a-consistent-fiction` | v0.1 | v0.2 | |
+| `admitted-or-refused` | v0.1 | v0.2 | v0.1 the published state, 2026-07-23 |
+| `borrowed-hardness` | v0.1, v0.2 | v0.3 | v0.1 the published state, 2026-07-23 |
+| `combination-proofs` | v0.1, v0.2, v0.3 | v0.4 | v0.2 never published — see below |
+| `coutility` | v0.1 | v0.2 | |
+| `gauge-fixing-the-section-space` | v0.1 | v0.2 | |
+| `gluing-the-gates` | v0.1 | v0.2 | |
+| `kar-coin` | v0.1, v0.2 | v0.3 | v0.1 the published state, 2026-07-23 |
+| `no-global-section` | v0.1 | v0.2 | |
+| `proof-of-coherence` | v0.2, v0.3, v0.4 | v0.5 | v0.3 never published; no v0.1 was archived |
+| `requisite-richness` | v0.1 | v0.2 | |
+| `sign-and-work` | v0.1, v0.2 | v0.3 | v0.1 never published |
+| `the-multiplicity-freedom` | v0.1, v0.2, v0.3 | v0.4 | v0.1 and v0.2 neither published |
+| `what-cannot-be-helped` | v0.1 | v0.2 | |
+
+An empty note is not a claim that a version was published — only that this file
+does not settle it. The changelog does.
+
+Five documents have no archive because nothing has superseded them:
+`borrowed-again`, `derivation-of-value-i`, `omnium`, `onboarding`, and
+`proof-of-preservation`.
+
+**This table drifted once and will again.** It was last correct at seven rows and
+had fallen seven papers behind before anyone looked. To check it against the
+tree rather than against memory:
+
+```sh
+for d in _archive/*/; do
+  slug=$(basename "$d")
+  printf '%s | %s | %s\n' "$slug" \
+    "$(ls "$d" | sed 's/\.md$//' | sort -V | paste -sd, -)" \
+    "$(grep -m1 '^version:' "_papers/$slug.md" | sed 's/version: *//;s/"//g')"
+done
+```
 
 The 2026-07-23 v0.1 files are the state the site carried before this session,
 recovered from git.
 
-**Four of these versions never went live**, and they are kept for exactly the
+**Five of these versions never went live**, across four papers, and they are kept for exactly the
 reason the convention exists. `combination-proofs` v0.2 was the Kardashev–Barrow
 and spectral-measurement revision, superseded by v0.3 within the hour.
 `proof-of-coherence` v0.3 settled the copy-symmetry fork on the rank toy and was

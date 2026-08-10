@@ -21,7 +21,7 @@ The first volume ended on a definition of what it had been doing. Mathematics, i
 *What a Test Is*
 {:.section-title}
 
-It is worth being precise about why a running mechanism is worth more, in this program, than another thousand words of derivation.
+A running mechanism is worth more, in this program, than another thousand words of derivation.
 
 The whole anthology is a set of claims about cost — the cost of faking a conjunction, the cost of counterfeiting a substrate's every projection at once, the cost the second law charges for erasing order. A claim about cost is not the kind of thing an essay can settle, because the essay is written by the one making the claim and read by no adversary. Cost is discovered only when someone actually tries to pay less — when a miner who understands the mechanism sets out to fake the reward, when a coalition attempts the consistent lie. A test suite is the arena in which trying becomes possible. It is the operator handed a machine and an opponent and told: now show me. Its dignity is exactly its falsifiability. An essay cannot be wrong in the way a failing assertion is wrong; a proof sketched in prose cannot surprise its author; but a test that could go red is a claim that has agreed, in advance, to be refuted if it is false. To build a working example is to volunteer for that refutation. It is the most honest act available to a research program, and until this volume the program had not performed it.
 

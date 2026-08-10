@@ -16,18 +16,18 @@ order: 7
 
 The paired volume derived value from physics — from the resistance of order to its own dispersal. This one derives it from an object closer to hand and stranger for being close: money itself. The claim is that money has always been a vector, and that the single number we call a price is not what money is but what we do to it — a projection onto one axis, performed so habitually that we mistook the shadow for the body. To derive value here is not to reach past a contingent quantity toward what it rests on, as the earlier derivations did. It is to un-collapse a quantity we already hold, and to find that it was never one-dimensional at all.
 
-Begin, as the anthology always begins, by naming the operator. The first volume passed omnium in a single line — money confessed at last to be a vector, scalarized only by the violence of accounting. The word *violence* was chosen with care. A scalar is not a neutral simplification of value; it is an act of forgetting, and the forgetting has a cost that is paid elsewhere, later, by someone. This volume is the accounting of what was forgotten, and the argument that a currency which remembers is not a richer currency but a truer one.
+The anthology always begins by naming the operator. The first volume passed omnium in a single line — money confessed at last to be a vector, scalarized only by the violence of accounting. The word *violence* was chosen with care. A scalar is not a neutral simplification of value; it is an act of forgetting, and the forgetting has a cost that is paid elsewhere, later, by someone. This volume is the accounting of what was forgotten, and the argument that a currency which remembers is not a richer currency but a truer one.
 
 ---
 
 *The Violence of Accounting*
 {:.section-title}
 
-Consider what a price destroys.
+A price destroys as much as it records.
 
 A number — *how much* — is a remarkable compression. It renders a debt owed to a neighbour and a coin handed to a stranger exchangeable, a wage and a gift and a ransom commensurable, an hour of labour and a barrel of oil and a vote comparable on a single line. This is the great convenience of scalar money and the reason it conquered every other kind. Fungibility is forgetting made into a virtue: a dollar is worth a dollar precisely because it has agreed to remember nothing about where it came from or what it is for.
 
-But the questions the scalar erases do not stop being real for having been erased. Who earned this, and by what? How long is it meant to be held — is it a thing to spend by nightfall or a thing to keep for a grandchild? Whom does it belong among; what was it promised to do; where has it been? Older monies answered these questions as a matter of course, because they were embedded in relations that carried the answers. The market's genius was to strip the answers away and let the number travel alone. The information did not vanish; it was pushed off the ledger and into externality, where it accrues as the unpriced cost of a system that cannot see what it has chosen not to record. A scalar currency is the degenerate case: magnitude, and no other information. It is money with amnesia, and it has been selling us the amnesia as freedom.
+But what the scalar erases does not stop being real for having been erased. Who earned the unit and by what; whether it is a thing to spend by nightfall or a thing to keep for a grandchild; whom it belongs among; what it was promised to do; where it has been. Older monies carried all of this as a matter of course, because they were embedded in relations that held it. The market's genius was to strip it away and let the number travel alone. The information did not vanish; it was pushed off the ledger and into externality, where it accrues as the unpriced cost of a system that cannot see what it has chosen not to record. A scalar currency is the degenerate case: magnitude, and no other information. It is money with amnesia, and it has been selling us the amnesia as freedom.
 
 ---
 

@@ -12,7 +12,7 @@ order: 1
 
 A blockchain burns electricity to remember what it has agreed upon. The fact that this works at all is the strangest economic discovery of the last fifty years; that it works *only* because the burning is real is stranger still. Take away the heat and the ledger forgets itself. Subtract the cost and the consensus dissolves. The flame is not incidental to the bookkeeping — it is what the bookkeeping is made of.
 
-This is the proper place to begin, because every subsequent proposal — proof of stake, proof of useful work, proof of coherence, proof of preservation — answers a question Bitcoin asked without quite knowing it was asking. The question is not *how do we secure a ledger?* but *what must be at stake for a ledger to mean what it says?*
+Every subsequent proposal — proof of stake, proof of useful work, proof of coherence, proof of preservation — answers a question Bitcoin asked without quite knowing it was asking. Not how a ledger is secured, but what must be at stake for a ledger to mean what it says.
 
 The answer that protocols give is always the same shape and always different in substance. Something must be put up that would be lost if a lie were attempted. The protocol is the form; the substance is what gets staked. Bitcoin stakes energy. Proof of stake systems substitute capital. Proof of useful work proposes work whose product is itself worth something. Proof of coherence — to which this volume will turn at length — stakes the structural agreement of many partial models of the world. Each is a derivation. Each names a substrate from which value is to be drawn, which is to say, secured against.
 

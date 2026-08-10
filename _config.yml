@@ -31,3 +31,9 @@ exclude:
   - code/
   - _archive/
   - _plan/
+  # The changelog is a working record, read alongside the source rather than
+  # served. Excluding it drops both outputs it used to produce: the rendered
+  # page at /CHANGELOG/ and the raw copy at /CHANGELOG.md. Nothing on the site
+  # links to either — the only link is in the repository README, which is
+  # itself excluded and resolves on GitHub.
+  - CHANGELOG.md
