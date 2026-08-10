@@ -12,6 +12,26 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-08-10
 
+### Paper — *What the Burn Buys* — v0.1
+
+New paper, answering a question put to the program in Bitcoin's vocabulary: whether the mining heat can be circumvented — by quantum search, by mining something else, or by metering joules directly. The answer reorganizes three of the corpus's instruments around one accounting insight.
+
+**The certificate mistaken for a tax.** Bitcoin's heat is its evidentiary content, not its exhaust — dissipation is the one physical quantity a proof can certify (*Gauge-Fixing* §1), and the pricing rule (*Sign and Work*: satisfying a public constraint is constraint satisfaction, never work) kills every bloodless substitute. What is not physics is the scaling law: mining is a parallel lottery, so security is proportional to total burn, and the planetary tax is the direct image of the threat model.
+
+**The unbundling.** The burn pays for four jobs in one currency — randomness, ordering, Sybil pricing, unforgeability — and the four anchors are those jobs re-let severally: the beacon takes randomness (sky-funded), the delay chain takes ordering (one processor against a race of order 10²⁰ guesses per second — a household appliance against a mid-sized nation's grid), the encoding takes individuation, and the thin dissipation floor keeps the flame for Sybil pricing alone, per identity rather than per block. Irreducible heat collapses from *proportional to security* to *Sybil floor × identity churn + one wound clock* — decoupled from the adversary's growth, which is answered by composition rather than outbidding.
+
+**The reversibility caveat, adopted as a respecification.** Landauer prices erasure, not computation; reversible and unitary machines can run under the floor, paying in space, time, and hardware. Proof of work therefore certifies *economic cost* and only contingently *heat* — Bitcoin's security survives the decoupling (outbidding was always denominated in cost), but any reading of proof of work as a joule meter does not. The program's dissipation floor is respecified in one line as a **cost floor**, "dissipation" being a description of present engineering rather than of the security claim. Grover, by contrast, is the expected answer and the short one: a tax, answered by a parameter.
+
+**The menu.** What may honestly be mined is the set of generative residues with law-pinned trace gaps: parallel expenditure (τ = 1, no seam), sequential time (τ = 1, cannot be parallelized), storage uniqueness (parameter-pinned, needs maintenance), fission flux (τ = 1 by the weak interaction — no known process but fission produces the spectrum, and light-years of lead cannot stop it). Useful work, stake, and reported joules are off the menu by the corpus's standing results. The first three entries verify with mathematics; the fourth verifies with hardware, and the difference is priced: the worked example — a mint denominated against reactor antineutrino flux, N independent detectors glued by the coherence layer, beacon-seeded, delay-chained — is unforgeable and **compressed-oracle**, not oracle-free.
+
+**The separation Bitcoin's bundle conceals.** Security (the unbundled anchors), denomination (the involuntary ledger's aggregate — a measurement, not a payment), and minting (the attribution ladder's bottom rung, where the oracle stands and where *what* is subsidized is policy) are three concerns that were one thing in Bitcoin only because the lottery happened to do all three. Minting against generation, however attested, is *Kar-Coin*'s named failure — a mechanism that rewards burning — made more efficient by better attestation, not less.
+
+Declined: that the heat is eliminated (re-let, plus embodied energy paid at the factory); that the unbundling is proven (the conjunction has one executed test fragment against Bitcoin's sixteen years of hostile uptime); that reversible mining is a present concern (the caveat's force is definitional); that the flux mint is oracle-free (compressed); that the menu is closed (four entries are what is known to qualify).
+
+Files added: `_papers/what-the-burn-buys.md` (order 22).
+
+---
+
 ### Paper — *The Involuntary Ledger* — v0.1, with working companion `_plan/planetary-meter.md`
 
 New paper, and the first payment on the debt *Kar-Coin* v0.3 named: making a civilization's outward magnitude follow from what it must leave behind, so the coin reads the flow through its residue rather than through its report. The coordinate paid on is the first and most legible — energy capture.
