@@ -12,6 +12,26 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ## 2026-08-10
 
+### Paper — *The Involuntary Ledger* — v0.1, with working companion `_plan/planetary-meter.md`
+
+New paper, and the first payment on the debt *Kar-Coin* v0.3 named: making a civilization's outward magnitude follow from what it must leave behind, so the coin reads the flow through its residue rather than through its report. The coordinate paid on is the first and most legible — energy capture.
+
+**The founding inversion.** Kardashev's scale was an astronomer's yardstick, built in 1964 for civilizations that could not be asked; the waste-heat searches that grew from it are an existing methodology of oracle-free civilizational energy metrology. The oracle entered the program's sketch only when the measurement moved indoors, to meters and forms. The governing principle: *measure the civilization as if it could not be asked.*
+
+**The arrow, walked around.** *Gauge-Fixing* §1 fixed that proofs certify spending, never making — the obstruction, for a substrate that wanted the making certified. The capacity substrate wants the spending certified, so the same arrow now points the mechanism's way: energy is the unique outward magnitude whose certifiable shadow (dissipation) *is* the substrate (throughput), up to a storage term the paper carries explicitly.
+
+**Four residue channels, one conjunction.** Thermal (complete by the second law, sound by the first; τ = 1 as an identity — faking a joule of heat costs a joule), chemical (combustion writes the atmosphere in double entry — carbon up, oxygen down, in fuel-specific stoichiometric ratios, radiocarbon depletion as the fossil provenance mark; calcination fails the oxygen book, sequestration hides the exhaust but never the intake), nuclear (antineutrino flux proportional to fission power, unshieldable, producible by nothing else), structural (the inward-axis artifact *Kar-Coin* already admitted — capacity, never throughput, the weak channel alone, disciplined only in conjunction). Read as a Combination Proof of order four with stoichiometric cross-checksums, publicity-positive because the honest generator's residues are emitted anyway — involuntarily, in Volume V's exact sense.
+
+**The architectural result is a split.** At the planetary aggregate the relocation attack dissolves — the planet is the control volume nobody drew and nobody can redraw, crossed by radiation and nothing else — so the *denominator* of a capacity currency is measurable now, from residues, without an oracle. Attribution below the aggregate reintroduces boundaries and remains partially oracle-bound: the oracle problem for energy was an attribution problem wearing a measurement problem's clothes. And the logarithmic rung forgives the linear error: σ_K ≈ 0.043·(σ_P/P), so a ten-percent planetary power measurement reads the Kardashev coordinate to ±0.004. The grand scale is the forgiving one.
+
+Declined, in the paper: that usefulness is measured (the failed useful-work derivation, refused again at planetary scale); that the best channel lasts (the chemical ledger covers the fossil fraction, which decarbonization exists to shrink — the meter's composition must migrate); that the permanent channel exists yet (anthropogenic dissipation is ~0.04 W/m² against radiative books accurate to ~1 W/m²; the aggregate thermal instrument is unbuilt); that the ledger's reading is oracle-free (the record is; the sink models that read it are community-refereed — checkable institutions, not absent ones); that residue answers concealment (it answers counterfeit; understatement deflates a denominator, the safer failure, recorded not proven).
+
+**The companion** (`_plan/planetary-meter.md`, working document, unpublished) carries the feasibility audit: instruments and error budgets per channel (the fossil ~80% of P readable today at ~±5–10% via flask networks, APO, and Δ¹⁴C; KamLAND's post-2011 reading of the Japanese reactor fleet as the strongest existing proof-of-concept; VIIRS Nightfire as an operational per-facility involuntary meter), the crossover schedule as coverage migrates off fossil, the attribution ladder (planet → nation → facility → agent, with the oracle surviving only at the bottom rung), a staged program from paper-grade Stage 0 to the thermal endgame, and five named falsifiers.
+
+Files added: `_papers/the-involuntary-ledger.md` (order 21), `_plan/planetary-meter.md`.
+
+---
+
 ### Paper — *The Wound Clock* — v0.1
 
 New paper. The question arrived from outside the program's vocabulary — how close to a *perpetual* mechanism a negentropy-attested measurement can be made — and the answer turned out to be an audit the corpus had not yet run: not a durability audit (what dissolves) but an **amortization audit** (what recurs).
