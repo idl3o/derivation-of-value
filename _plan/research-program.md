@@ -458,7 +458,36 @@ be worth having explicitly.*
 
 ---
 
-### P6 · Information geometry — `order: 20` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P13 · The exclusion — `order: 20` — **v0.1 drafted 2026-08-14** → `independent-and-expensive.md`
+
+*"Independent and Expensive" · "An Exclusion Principle for the Projections of One
+Substrate". Not on the map; jumped the queue because it is open problem 4 of the
+state doc — the reordered central question, assigned to no paper — and because
+either outcome publishes. Answered: within one substrate, no projection pair
+clears both requirements. Paid-DOF model: τ = size of a projection's claim on the
+paid pool, ι = disjointness of claims; Theorem 3.3 τ₁ + ι·τ₂ ≤ 1; Theorem 3.4
+Γ ≤ W at any K — **richness partitions the budget, nothing multiplies it**. PoW
+is the escape, not a counterexample: a second pool = an anchor; a Combination
+Proof of order K is K anchors wearing readings. Calibrated instrument
+(`code/exclusion.py`, zero deviation on designed specimens); sheaf measurement:
+the beacon-keyed generative anchor buys τ(persist) at exactly Prop 5.2's share
+while ι(ker|persist) falls 1.000 → 0.000 — the dial that buys τ spends ι.
+Unanticipated: stasis scores 9.1× honest persistence under the anchor, excluded
+by admissibility not price — the beacon eats the signal (new §8.4). Amends CP
+Prop 4.2(ii): strict publicity-positivity saturates at the pool. Conjecture R
+gains a mechanism: readings cannot create paid DOF; only anchors can.*
+
+**Consequences for the plan.** P6 inherits three constraints: ι must degenerate
+where claims vanish, carry asymmetry, and reduce to claim-disjointness in the
+set-model limit. P9's boundary is pre-drawn in §2 (Spence/Zahavi/Grafen/
+Holmström cited as ancestors, not claimed) — P9 remains open as the *equilibrium*
+harvest. New measurable next steps: the two-pool sheaf (§8.2, would exhibit the
+first independent-and-expensive pair, at explicit price) and the graded model
+(§8.1).
+
+---
+
+### P6 · Information geometry — `order: 21` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -484,7 +513,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 21` — *planned*
+### P7 · Renormalization — `order: 22` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 

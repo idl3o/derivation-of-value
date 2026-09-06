@@ -10,6 +10,32 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-08-14
+
+### Paper — *Independent and Expensive* — v0.1 (order 20)
+
+The reordered central question — open problem 4, *is any projection both independent and expensive to forge?* — asked as a theorem and answered as an exclusion principle. New paper, new module (`code/exclusion.py`), one amendment to *Combination Proofs*.
+
+**The model.** Decompose a substrate's state into **paid** degrees of freedom (admissible values cost work) and **free** ones (cost nothing). A projection's trace gap is the size of its *claim* on the paid pool; the independence of two projections is the *disjointness* of their claims. Both draw on one finite stock, and the rest is inclusion–exclusion: **Theorem 3.3**, τ₁ + ι(2|1)·τ₂ ≤ 1, equality exactly when the claims exhaust the pool; **Theorem 3.4**, the conjunction's fake-cost Γ = Σ ι_kτ_k·W never exceeds the substrate's work content at any K. **Richness partitions the budget; nothing multiplies it.** Two fully sound, fully independent projections of one substrate would need two units of a one-unit pool.
+
+**Proof of work is not a counterexample — it is the escape.** Its search is a second pool, i.e. an **anchor**. Independence between sound projections is bought by splitting paid work into disjoint pools, an anchor per projection, gaps summing to at most one — never by adding readings. Design consequence, inverting the framework's self-description: a Combination Proof of order K is K anchors wearing readings. The worked instance read one pool twice, which is what its measured ι ≈ 0 was.
+
+**Calibration before measurement.** The instrument is a brute-force attacker seeing acceptance behaviour only, pointed first at six designed specimens with answers known by construction: worst deviation **zero**, bound attained exactly on the exhaustive pairs. The free-rider specimen (empty claim: τ = 0, ι undefined) is the model's account of why measured ι moved with attack intensity — fractions of vanishing cost are the attacker's choice, and the infimum reading MF v0.4 recommends is the correct treatment of the degenerate corner.
+
+**The sheaf instance, predicted then measured.** The one dial that gives π_persist a price — *Gauge-Fixing* §4.3's generative anchor keyed to the epoch beacon — buys τ(persist) at exactly Prop 5.2's anchor share (0.187 / 0.479 / 0.786 / 0.936 across the En sweep, to three decimals) and drives ι(ker|persist) from its measured 1.000 to **0.000** at every En > 0, because the encodings that price persistence are the whole of the kernel's fake-cost. The dial that buys τ spends ι: the exclusion executed by one parameter on the program's own substrate.
+
+**The number nobody asked for.** Full stasis scores **9.135× honest persistence** under the anchor and is excluded by admissibility, not price: the beacon's own rotation dominates the eigenspace the projection reads, so the anchored π_persist mostly measures its anchor — *Sign and Work* §8.3's perverse route surfacing unbidden on the temporal axis. An anchored temporal reading must show its signal survives its anchor, and this one does not (new open problem 8.4).
+
+**Amendment to *Combination Proofs*.** Prop 4.2(ii)'s *strict* publicity-positivity saturates: the marginal fake-cost of a published projection is at most the unclaimed remainder of the pool, zero once claims exhaust it (Cor 3.6). The research literature is a security accumulator with a ceiling, and the ceiling is the substrate's work content.
+
+**Prior art, checked before drafting.** The qualitative core — an informative signal must be differentially costly — is Spence 1973, Zahavi 1975, Grafen 1990, Holmström 1979, Holmström–Milgrom 1991, and §2 says so; P9's harvest territory is cited, not claimed. What is new: the corpus's two quantities as claims on one budget, the partition law with equality conditions, and the measured trade on a cohomological substrate.
+
+**Conjecture R acquires a mechanism** (§6): formalism changes replace readings, and readings cannot create paid degrees of freedom — a refutation would have to *add paid work*, which is what an anchor does and a reading cannot.
+
+Declined: that the model is the mechanism (paid/free is a dichotomy where real costs are graded — §8.1); that the sheaf result is a derivation rather than one measured instance; that the ι operationalisations agree at the free corner; that the signalling literature is superseded; that the budget cannot grow (it can — by purchase); that P6 is discharged (constrained, not discharged).
+
+---
+
 ## 2026-08-10
 
 ### Register pass — the index and six volume documents
