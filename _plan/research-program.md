@@ -19,8 +19,8 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-**Twenty-one documents, orders 1–21** (eleven when this plan was written). Everything
-through order 20 is **published** as of 2026-09-06; order 21 is drafted. The spine is Vols I–V: Vol III's
+**Twenty-two documents, orders 1–22** (eleven when this plan was written). Everything
+through order 21 is **published** as of 2026-09-06; order 22 is drafted. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 
@@ -531,11 +531,58 @@ S&W §8.1 (a reading outside the induced-map class, restriction maps measured
 at overlaps) is now the one door on both axes. ACF §8.5 (two disciplines) is
 shown untested by two anchors of one discipline. Next: the budget across
 levels (I&E §8.3 / this paper §9.3) — each level carrying two receipts,
-GtG Prop 6.1 predicting the minimum.
+GtG Prop 6.1 predicting the minimum. *§9.1 and §9.5 discharged by P15; Second
+Pool → v0.2.*
 
 ---
 
-### P6 · Information geometry — `order: 22` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P15 · Evidencing — `order: 22` — **v0.1 drafted 2026-09-06** → `ones-own-anchor.md`
+
+*"One's Own Anchor" · "Evidencing as Independence, and the Overlap as a Copy
+Channel". Answers Second Pool §9.5 by subtraction: no third condition. In the
+paid-DOF model with P = A ⊔ N (anchor work, native work) and π_A the receipt
+check, a projection's native share is τ_N(π) = ι(π|π_A)·τ(π) (Prop 3.2) —
+independence from one's OWN anchor — and the idle projection is ι(π|π_A) = 0.
+CP Def 2.6 amended (Cor 3.3, CP → v0.6). Theorem 3.4: every declared-frame
+reading has τ_N = 0, for ANY function of the declared objects, because the
+honest configuration in that class costs exactly the anchor; Cor 3.5: a
+Combination Proof of such readings is its anchors, Γ = |A|. The through-line
+"the gap is bought entirely by the anchors" is now a property of the class.
+Then the one reading outside it (S&W §8.1): restriction maps FITTED at
+overlaps by Procrustes (Singer–Wu 2012 / Di Nino et al. 2024 — cited, not
+claimed), gated on every edge's residual; frame-invariant, so ι(π_fit|π_A) = 1
+by construction and the comparison is against the PUBLIC RECORD. Coalition
+with no world model: interior = fiction (free), boundary must fit honest
+data. Regime (a) public overlaps: the coalition copies its neighbours and
+their noise, boundary residual (σ/√k)√(1−1/b) BELOW honest at every size,
+zero with one source — the boundary is a subsidy (Waggoner–Chen 2014 in
+sheaf form). Regime (b) commit-before-compare: stale coalition fails at
+δ* = (σ/√k)√(tol²k/σ² − 1 − 1/b), measured 1.50 vs 1.58 and 1.75 vs 1.87;
+above it the cheapest passing strategy derives boundary prompts only, so
+e(C) = |∂C|/(2|E(C)| + |∂C|) (edge-local) or 1/|C| (shared), zero deviation.
+On the seed-7 complex block coalitions of 16/32/64/128 have 3/2/3/2 boundary
+edges (contiguous ranges 15–20); native cost per identity 12 → 1 vs honest
+186: the Sybil cap is NOT a cap on a modular substrate, and GF §2's
+spectral-gap target is measured failing on the program's own specimen
+(λ₂ = 0.0038). Rotational innovation is free: the measured map's own
+temporal gauge. What is evidenced: the world's innovation since the last
+public record — information, not effort (Bara arXiv:2609.01873, concurrent,
+five days old, cited). Instrument `code/evidencing.py`, 5 s, all six
+predictions held.*
+
+**Consequences for the plan.** The budget-across-levels paper (P16, next)
+inherits a geometry: a coalition presenting as a holon pays a level's
+boundary for a block's identities (MF §8.4, GtG "failures at interfaces"
+priced). New design curve: expansion vs richness (§9.4) — the first curve the
+residual reading makes measurable; raising λ₂ raises e(C) for every
+coalition at the richness cost S&W §5.4 measured. ACF §8.2/§8.5 (content
+anchoring) now has an instrument (§9.5). Peer prediction's multi-task repair
+vs commitment (§9.2) is the unasked cross-literature question. Conjecture R:
+eight.
+
+---
+
+### P6 · Information geometry — `order: 23` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -561,7 +608,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 23` — *planned*
+### P7 · Renormalization — `order: 24` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 

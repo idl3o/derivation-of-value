@@ -27,6 +27,7 @@ code and named in the docstring rather than quietly repaired.
 | `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
 | `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
 | `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
+| `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
 
 ```
 pip install -r requirements.txt
@@ -42,6 +43,7 @@ python fiction_space.py
 python iota_asymmetry.py
 python exclusion.py
 python two_pool.py
+python evidencing.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -439,6 +441,42 @@ Two first-pass errors are recorded in the docstring: honest's free parts were
 drawn twice, returning 0.1229 for a number `exclusion.py` had published as
 0.1391 — the mismatch was the tell — and the beacon-leak check tested epoch 0,
 where the follower starts from a random frame, and reported the leak absent.
+
+## Evidencing
+
+`evidencing.py` answers *The Second Pool*'s request for a third condition on
+projections by showing there is none to add. Split paid work into anchor work
+A and native work N and let π_A be the receipt check; a projection's native
+share — what a forger holding every receipt still pays — is exactly
+ι(π | π_A)·τ(π), its independence from its own anchor times its gap, checked
+on the brute-force attacker at zero deviation. Every reading built from
+declared restriction maps has native share zero as a theorem, because the
+honest configuration in that class costs exactly the anchor.
+
+The one reading outside the class fits restriction maps from data at overlaps
+(orthogonal Procrustes, Singer–Wu) and gates on every edge's residual. The fit
+absorbs every frame, so the anchor is invisible to it (residuals unchanged to
+6e-16 under rerandomised frames) and the comparison that matters is against
+the public record. A coalition with no model of the world fabricates its
+interior for free and must fit honest neighbours at its boundary:
+
+| regime | coalition boundary residual | honest | passes | native cost |
+|---|---|---|---|---|
+| public overlaps, edge-local prompts | 0.0000 | 0.20 | yes | 0 |
+| public overlaps, shared prompts | 0.145 | 0.20 | yes | 0 |
+| commit first, world innovation below δ* | ≈ honest | 0.20 | yes | 0 |
+| commit first, above δ* | fails; derives boundary only | 0.20 | yes | k·m·\|∂C\| |
+
+Publishing overlaps before commitment pays the coalition for having a
+boundary; committing first prices only the world's change since the last
+record, with the step at δ* = (σ/√k)√(tol²k/σ² − 1 − 1/b), measured at 1.50
+against a predicted 1.58. Above the step the coalition's share is
+\|∂C\|/(2\|E(C)\| + \|∂C\|), and on the seed-7 complex a block coalition of
+16, 32, 64 or 128 vertices has 3, 2, 3 or 2 boundary edges — native cost per
+identity 12 down to 1, against 186 for an honest vertex. The Sybil cap is not
+a cap on a modular substrate. A rotational innovation of the world is
+absorbed by the fit at any rate: the measured map has a temporal gauge of
+its own.
 
 ## Two disciplines this code tries to keep
 

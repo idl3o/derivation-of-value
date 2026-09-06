@@ -10,6 +10,36 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-06 (second pass)
+
+### Paper — *One's Own Anchor* — v0.1 (order 22)
+
+*The Second Pool* §9.5 asked for a third condition on projections. There is none to add. New paper, new module (`code/evidencing.py`), two revisions (*The Second Pool* v0.2, *Combination Proofs* v0.6).
+
+**Evidencing is independence from one's own anchor.** Split the paid pool into anchor work A and native work N and let π_A be the receipt check. A projection's native share — its marginal fake-cost for a forger holding every receipt, over the budget — is exactly ι(π|π_A)·τ(π) (Prop 3.2), checked on the brute-force attacker at zero deviation. The idle projection is ι(π|π_A) = 0. The framework had demanded independence against the other projections and never against the anchor that prices the reading; Definition 2.6 is amended (Cor 3.3).
+
+**Every declared-frame reading evidences nothing, as a theorem.** In that class the honest configuration costs exactly the anchor — free parts free, drift free, the reconciliation charge touching no declared object — so a forger holding the anchor reproduces honest's distribution and any function of the declared objects is idle (Thm 3.4). A Combination Proof of such readings is its anchors, Γ = |A| (Cor 3.5). The corpus's through-line becomes a property of the class; *Sign and Work* Prop 5.1 and *The Second Pool* Prop 5.3 / Cor 3.2 are instances.
+
+**The measured map, outside the class.** Restriction maps fitted at overlaps by orthogonal Procrustes (Singer–Wu 2012; Di Nino et al. 2024 — the construction is theirs), gated on every edge's residual, against a coalition with no model of the world. The fit is frame-invariant (residuals unchanged to 6e-16), so the anchor is invisible by construction and the comparison is against the *public record*. **Public overlaps are a subsidy:** the coalition copies its neighbours' data and their noise, boundary residual (σ/√k)√(1−1/b), below honest at every size, zero with one source — Waggoner–Chen's "agreement elicits common knowledge" in sheaf form. **Commitment prices the innovation:** the stale coalition fails exactly at δ* = (σ/√k)√(tol²k/σ² − 1 − 1/b), measured 1.50 vs predicted 1.58 (edge-local) and 1.75 vs 1.87 (shared); above it the cheapest passing strategy derives boundary prompts only, so e(C) = |∂C|/(2|E(C)| + |∂C|), zero deviation. Rotational innovation is free: the measured map's own temporal gauge (Second Pool §9.1 answered).
+
+**The boundary is at most four edges.** Block coalitions of 16/32/64/128 on the seed-7 complex have 3/2/3/2 boundary edges (contiguous ranges 15–20); native cost per identity 12 → 1 against 186 for an honest vertex. The Sybil cap of *The Multiplicity Freedom* is not a cap on a modular substrate, and *Gauge-Fixing* §2's spectral-gap target is measured failing on the program's own specimen (λ₂ = 0.0038). The same cut that bounds Sybil admission (SybilGuard/SybilLimit's attack edges) is the channel the world leaks through.
+
+**What is evidenced.** Information about the world not computable from the anchor and the public record — the change since the last reveal, not the work — and the paper says so. Bara, arXiv:2609.01873 (1 September 2026, concurrent), states the criterion as I(Θ; Z | R) = 0; cited, with the sheaf-valued theorem, the accounting and the measurements marked as what lies past it.
+
+**Prior art, checked before drafting.** Peer prediction (Waggoner–Chen 2014; Gao–Wright–Leyton-Brown 2019; Dasgupta–Ghosh 2013; Shnayder et al. 2016) owns the qualitative claim and its multi-task repair; Singer–Wu / Di Nino own the reading; SybilGuard/SybilLimit/Cheng–Friedman own the boundary bound; Proof-of-Learning (Jia et al. 2021) and its spoofing (Zhang 2022; Fang 2023) are the record of evidencing gradient descent; Liu–Yu–Steeves CCS 2024 show commitment reduces the copier's reward on Bittensor.
+
+Declined: that evidencing is new (Def 2.5, reconditioned); that the reading is new; that native work is measured as effort (it is priced as a noise level — quality of contact, not labour); that the step is a finding; that the boundary bound is new; that the world model is general (AR(1) is memoryless; momentum evidences less; rotation nothing); that strategies are exhaustive (measured e(C) ≥ true, always); that the frames are anchored here; that the concurrent work is superseded.
+
+### Paper — *The Second Pool* — v0.2
+
+§9.1 and §9.5 struck through with their answers. No claim changed. v0.1 archived.
+
+### Framework — *Combination Proofs* — v0.6
+
+Definition 2.6 amended in place: each projection must be approximately independent of its own anchor as well as pairwise, per *One's Own Anchor* Cor 3.3. Revision paragraph extended. Citations moved v0.5 → v0.6 (*Independent and Expensive*, *No Global Section*, *Proof of Coherence* ×2, `code/exclusion.py`). v0.5 archived. Two revisions in one day, both because a claim moved; the version is the unit the corpus cites by.
+
+---
+
 ## 2026-09-06
 
 ### Paper — *The Second Pool* — v0.1 (order 21)

@@ -64,7 +64,7 @@ lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gap
 | `a-consistent-fiction` | v0.1 | v0.2 | |
 | `admitted-or-refused` | v0.1 | v0.2 | v0.1 the published state, 2026-07-23 |
 | `borrowed-hardness` | v0.1, v0.2 | v0.3 | v0.1 the published state, 2026-07-23 |
-| `combination-proofs` | v0.1, v0.2, v0.3, v0.4 | v0.5 | v0.2 never published — see below |
+| `combination-proofs` | v0.1, v0.2, v0.3, v0.4, v0.5 | v0.6 | v0.2 never published — see below |
 | `coutility` | v0.1 | v0.2 | |
 | `gauge-fixing-the-section-space` | v0.1 | v0.2 | |
 | `gluing-the-gates` | v0.1 | v0.2 | |
@@ -74,6 +74,7 @@ lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gap
 | `proof-of-coherence` | v0.2, v0.3, v0.4 | v0.5 | v0.3 never published; no v0.1 was archived |
 | `requisite-richness` | v0.1 | v0.2 | |
 | `sign-and-work` | v0.1, v0.2 | v0.3 | v0.1 never published |
+| `the-second-pool` | v0.1 | v0.2 | |
 | `the-multiplicity-freedom` | v0.1, v0.2, v0.3 | v0.4 | v0.1 and v0.2 neither published |
 | `what-cannot-be-helped` | v0.1 | v0.2 | |
 
@@ -82,7 +83,7 @@ does not settle it. The changelog does.
 
 Six documents have no archive because nothing has superseded them:
 `borrowed-again`, `derivation-of-value-i`, `omnium`, `onboarding`,
-`proof-of-preservation`, and `the-second-pool`.
+`proof-of-preservation`, and `ones-own-anchor`.
 
 **This table drifted once and will again.** It was last correct at seven rows and
 had fallen seven papers behind before anyone looked. To check it against the
