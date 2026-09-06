@@ -1,7 +1,7 @@
 """
 The exclusion principle: independence and trace gap draw on one budget.
 
-Combination Proofs v0.4 §7.1 ends on a conjecture stated from two data points:
+Combination Proofs v0.5 §7.1 ends on a conjecture stated from two data points:
 a projection must be independent (iota) AND expensive to forge (tau), and the
 two appear to pull against each other. The static spectral projection failed
 iota and inherited coherence's tau; the temporal projection passes iota and has

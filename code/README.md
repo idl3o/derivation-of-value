@@ -20,6 +20,13 @@ code and named in the docstring rather than quietly repaired.
 | `trace_gap.py` | Measures the trace gap τ = f/w (*Sign and Work* Def 3.3). Calibrates against two known answers, then puts a ceiling on τ for the coherence reading. |
 | `temporal_iota.py` | The third attack design. Builds the epochs this directory said would be needed, and measures ι and τ together against a temporal projection. |
 | `usage_coupling.py` | Tests whether usage supplies structural coupling under the service reframe. It does not. Also the first measurement of the operator recurring across scale. |
+| `sybil_bound.py` | Numerical verification of *The Multiplicity Freedom*'s three Sybil theorems: the cap, the amplification under linear and compounding recoverability, and the convexity condition. |
+| `h1_duplication.py` | Does any reward scheme resist duplication on H⁰? Marginal removal, Shapley and provenance compared; the spread is 100% / 50% / 0%. |
+| `h1_cohomological.py` | H1 retested on the cohomological functional — it does not transfer from the rank. |
+| `fiction_space.py` | How much room a coherent network has to be consistently wrong: the fiction space has dimension d, and closing it costs d scalars at one vertex, once. |
+| `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
+| `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
+| `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
 
 ```
 pip install -r requirements.txt
@@ -28,6 +35,13 @@ python independence.py
 python trace_gap.py
 python temporal_iota.py
 python usage_coupling.py
+python sybil_bound.py
+python h1_duplication.py
+python h1_cohomological.py
+python fiction_space.py
+python iota_asymmetry.py
+python exclusion.py
+python two_pool.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -377,6 +391,54 @@ anchoring compared nothing. Second, the barrier detector took the global minimum
 maximum of the tail, which reports a monotone decline as a valley — it would have
 manufactured the more interesting of the two available answers, and did, until the
 recovery was checked against seed spread and found inside it.
+
+## The second pool
+
+`two_pool.py` runs the two open problems *Independent and Expensive* left in a
+stated order: first whether a temporal reading carries any signal that survives
+its own anchor, then whether persistence can be given a pool of its own.
+
+**The gate.** Under induced restriction maps the sheaf Laplacian is the graph
+Laplacian in the frame gauge, so the epoch-to-epoch motion of the eigenspace a
+persistence reading compares is the motion of the frames, and the reading is a
+graph-weighted measure of how *uniformly* the frames moved. Uniform motion is a
+time-dependent gauge: a network in which every participant rotates identically
+scores 1.000, exactly as stasis does (the `global_rotation` control). Paired on
+the same free parts across ten seeds, the honest participant's excess over the
+best static-only strategy is −0.046 on average with one seed positive — nothing
+survives — and pinning the beacon shows the anchor removes 88% of the drift
+signal. The naive number, using the weakest anchor-only strategy, is +1.131: a
+signal that "survives". It is printed beside the honest one on purpose.
+
+**The purchase.** The second pool is *Gauge-Fixing* §4.2's delay chain, modelled
+for the first time: a per-vertex per-transition map whose first column is this
+epoch's beacon in the participant's own previous frame, at cost E_t. The priced
+temporal reading is the gluing condition on the two-layer sheaf of consecutive
+epochs — it glues iff D_v = R_v(t)T_vR_v(t+1)ᵀ coincides at every vertex — not a
+read of the anchor's value.
+
+| En | E_t | τ(ker) | τ(persist) | ι both ways | sum | 1 − reconciliation share |
+|---|---|---|---|---|---|---|
+| 1 | 1 | 0.161 | 0.141 | 1.000 | 0.301 | 0.301 |
+| 4 | 4 | 0.338 | 0.295 | 1.000 | 0.633 | 0.633 |
+| 16 | 16 | 0.466 | 0.408 | 1.000 | 0.873 | 0.873 |
+
+Worst deviation from the designed values, zero — and the module says why that
+is not a finding: in the induced-map model every reading is free given its
+anchor, the chain even transports the static anchor's value for nothing (a
+follower carrying last epoch's frame along the chain arrives with this epoch's
+beacon column, unpaid), so both gates check receipts and the grid is the
+paid-DOF arithmetic executed. What is measured is *who clears which reading*:
+under the gluing condition the cheapest forger of persistence is that follower,
+who did no spatial work; under the overlap reading it is a frozen participant
+with a paid chain, admissible, at 9.13× honest. The gluing reading refuses the
+frozen participant on gluing grounds (smallest eigenvalue 0.183 against a
+tolerance of 0.05) and carries nothing but its anchor.
+
+Two first-pass errors are recorded in the docstring: honest's free parts were
+drawn twice, returning 0.1229 for a number `exclusion.py` had published as
+0.1391 — the mismatch was the tell — and the beacon-leak check tested epoch 0,
+where the follower starts from a random frame, and reported the leak absent.
 
 ## Two disciplines this code tries to keep
 

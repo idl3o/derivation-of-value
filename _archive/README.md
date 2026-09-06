@@ -56,7 +56,7 @@ It ships with the source and never becomes a site page. The same holds for
 
 ## Contents
 
-Current as of 2026-08-10. The `current` column is the version in `_papers/`; the
+Current as of 2026-09-06. The `current` column is the version in `_papers/`; the
 lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gaps.
 
 | paper | archived | current | note |
@@ -64,10 +64,11 @@ lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gap
 | `a-consistent-fiction` | v0.1 | v0.2 | |
 | `admitted-or-refused` | v0.1 | v0.2 | v0.1 the published state, 2026-07-23 |
 | `borrowed-hardness` | v0.1, v0.2 | v0.3 | v0.1 the published state, 2026-07-23 |
-| `combination-proofs` | v0.1, v0.2, v0.3 | v0.4 | v0.2 never published — see below |
+| `combination-proofs` | v0.1, v0.2, v0.3, v0.4 | v0.5 | v0.2 never published — see below |
 | `coutility` | v0.1 | v0.2 | |
 | `gauge-fixing-the-section-space` | v0.1 | v0.2 | |
 | `gluing-the-gates` | v0.1 | v0.2 | |
+| `independent-and-expensive` | v0.1 | v0.2 | |
 | `kar-coin` | v0.1, v0.2 | v0.3 | v0.1 the published state, 2026-07-23 |
 | `no-global-section` | v0.1 | v0.2 | |
 | `proof-of-coherence` | v0.2, v0.3, v0.4 | v0.5 | v0.3 never published; no v0.1 was archived |
@@ -79,9 +80,9 @@ lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gap
 An empty note is not a claim that a version was published — only that this file
 does not settle it. The changelog does.
 
-Five documents have no archive because nothing has superseded them:
-`borrowed-again`, `derivation-of-value-i`, `omnium`, `onboarding`, and
-`proof-of-preservation`.
+Six documents have no archive because nothing has superseded them:
+`borrowed-again`, `derivation-of-value-i`, `omnium`, `onboarding`,
+`proof-of-preservation`, and `the-second-pool`.
 
 **This table drifted once and will again.** It was last correct at seven rows and
 had fallen seven papers behind before anyone looked. To check it against the

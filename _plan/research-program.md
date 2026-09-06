@@ -19,8 +19,8 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-**Nineteen documents, orders 1–19** (eleven when this plan was written). Everything
-through order 19 is **published** as of 2026-07-30. The spine is Vols I–V: Vol III's
+**Twenty-one documents, orders 1–21** (eleven when this plan was written). Everything
+through order 20 is **published** as of 2026-09-06; order 21 is drafted. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 
@@ -483,11 +483,59 @@ set-model limit. P9's boundary is pre-drawn in §2 (Spence/Zahavi/Grafen/
 Holmström cited as ancestors, not claimed) — P9 remains open as the *equilibrium*
 harvest. New measurable next steps: the two-pool sheaf (§8.2, would exhibit the
 first independent-and-expensive pair, at explicit price) and the graded model
-(§8.1).
+(§8.1). *§8.2 and §8.4 discharged by P14; I&E → v0.2.*
 
 ---
 
-### P6 · Information geometry — `order: 21` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P14 · The second pool — `order: 21` — **v0.1 drafted 2026-09-06** → `the-second-pool.md`
+
+*"The Second Pool" · "An Anchor Per Projection, and Whether the Reading Survives
+It". The direct successor to P13: runs its §8.4 gate and then its §8.2 purchase,
+in that order. The gate is a gauge argument the 9.135 already contained — under
+induced maps the sheaf Laplacian is L_graph ⊗ I in the frame gauge, so an
+eigenspace-overlap persistence reading measures the UNIFORMITY of frame motion
+(Prop 3.1), and uniform motion is a time-dependent gauge (Cor 3.2): a network
+rotating identically scores 1.000, as stasis does, so coherent change and no
+change are one orbit. This closes PoC v0.5 §4.5's "score coherent change"
+requirement in the negative for the whole class. Measured: honest excess over
+the best anchor-only strategy, paired on the same free parts across ten seeds,
+mean −0.046, one seed positive — nothing survives; the pinned-beacon control
+shows the anchor removes 88% of the drift signal. The purchase: Gauge-Fixing
+§4.2's delay chain modelled for the first time as a per-transition encoding
+keyed to this epoch's beacon and the participant's own previous section; the
+priced temporal reading is the gluing condition on the two-layer sheaf of
+consecutive epochs (Prop 5.3: glues iff D_v = R_v(t)T_vR_v(t+1)ᵀ coincide), not
+a value read, so Gauge-Fixing test (iv) holds by construction. Result: ι = 1.000
+both ways at every positive (En, E_t), each τ its anchor's receipt share of the
+joint budget to every decimal, sum = 1 − reconciliation share (0.699 / 0.367 /
+0.127 at 1, 4, 16) — I&E §8.5's pool with a number. The chain LEAKS the beacon
+(Prop 5.4: a follower transporting last epoch's frame carries this epoch's
+beacon value free), so both gates are receipt-and-value and the grid is
+arithmetic executed, said plainly. Empirical content: the cheapest forger of
+the gluing reading is a follower who did no spatial work; of the overlap
+reading, a frozen participant with a paid chain, admissible, at 9.13× honest —
+the cult with a receipt. The gluing reading refuses the frozen participant on
+gluing grounds (λ_min 0.183 vs 0.05) and carries nothing but its anchor
+(S = 0 by construction). Prior art: PoSW/VDF/PoST/Filecoin/Chia cited as the
+anchor's ancestors; Ateniese et al. 2020 the closest structure; Baig–Pietrzak
+FC 2025 the same question qualitatively; Bittensor weight-copying the stasis
+premium deployed. New instrument `code/two_pool.py` (calibration miniature +
+seven sheaf checks, all pass; two first-pass errors recorded in its
+docstring). Also this pass: CP → v0.5 (Prop 4.2(ii) amended in place, the
+08-14 debt paid), I&E → v0.2.*
+
+**Consequences for the plan.** A third way for richness to buy nothing: the
+*idle* projection (ι = 1, τ > 0, evidences only its anchor) — MF Cor 5.4 gains
+a case and the framework may need a third condition, *evidencing* (§9.5).
+S&W §8.1 (a reading outside the induced-map class, restriction maps measured
+at overlaps) is now the one door on both axes. ACF §8.5 (two disciplines) is
+shown untested by two anchors of one discipline. Next: the budget across
+levels (I&E §8.3 / this paper §9.3) — each level carrying two receipts,
+GtG Prop 6.1 predicting the minimum.
+
+---
+
+### P6 · Information geometry — `order: 22` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -513,7 +561,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 22` — *planned*
+### P7 · Renormalization — `order: 23` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 

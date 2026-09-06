@@ -10,6 +10,40 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-06
+
+### Paper — *The Second Pool* — v0.1 (order 21)
+
+*Independent and Expensive*'s two open problems run in the order it prescribed: the §8.4 gate, then the §8.2 purchase. New paper, new module (`code/two_pool.py`), two revisions (*Independent and Expensive* v0.2, *Combination Proofs* v0.5).
+
+**The gate is a gauge argument.** Under induced restriction maps the sheaf Laplacian is the graph Laplacian in the frame gauge, so an eigenspace-overlap persistence reading measures the *uniformity* of the frames' motion across the network (Prop 3.1). Uniform motion is a time-dependent global gauge (Cor 3.2): a network in which every participant rotates identically scores 1.000, as full stasis does, measured on a control. Coherent change and no change are one orbit. This closes *Proof of Coherence* v0.5 §4.5's "score coherent change, not persistence" requirement in the negative for the whole class of readings, and derives the 9.135 rather than reporting it.
+
+**Nothing survives, measured properly.** Survival is defined as the honest excess over the *best* admissible anchor-only strategy (the supremum convention MF v0.4 adopted for ι). Paired on the same free parts across ten seeds: mean −0.046, range −0.099 to +0.055, one seed positive. Pinning the beacon with everything else honest gives 0.925, so the anchor removes 88% of the drift signal. The naive number, using the weakest anchor-only strategy, is +1.131 — printed beside the honest one so the trap is on record.
+
+**The purchase, made.** *Gauge-Fixing* §4.2's delay chain modelled for the first time: a per-vertex per-transition map T_v(t) whose first column is this epoch's beacon in the participant's own previous frame, cost E_t. The priced temporal reading is the gluing condition on the two-layer sheaf of consecutive epochs (Prop 5.3: glues iff D_v = R_v(t)T_vR_v(t+1)ᵀ coincides at every vertex), a value the mechanism never cites as a certificate of order — test (iv) by construction. Result: ι = 1.000 in both directions at every positive setting of the two dials, each τ its anchor's receipt share of the joint budget to every decimal, the two summing to 1 − the reconciliation share (0.699 / 0.367 / 0.127 at En = E_t = 1, 4, 16). The first independent-and-expensive pair on the program's substrate, at an explicit price, and I&E §8.5's unclaimed pool with a number attached.
+
+**Said plainly: the grid is arithmetic executed.** In the induced-map model every reading is free given its anchor, and the chain transports the beacon (Prop 5.4: a follower carrying last epoch's frame along the chain arrives with this epoch's beacon value, unpaid). So the two anchors are independent as *receipts* and not as *values*, both gates check receipt and value, and the τ/ι grid must match the designed numbers or the gate is broken — it did break once, returning a conjunction cheaper than a conjunct, which was the tell. The empirical content is who clears which reading: under gluing the cheapest persistence forger is the follower, who did no spatial work; under overlap it is the frozen participant with a paid chain, **admissible, at 9.13× honest** — the cult with a receipt. The gluing reading refuses the frozen participant on gluing grounds (λ_min 0.183 against 0.05) and carries nothing but its anchor: S = 0 by construction.
+
+**Calibration before measurement.** A three-pool miniature on the brute-force attacker (designed τ 0.375/0.375, ι 1/1, sum 0.750 — zero deviation) and seven sheaf facts the construction must reproduce, all reproduced. Two first-pass errors recorded in the docstring: honest's free parts drawn twice (0.1229 where `exclusion.py` had published 0.1391 — the mismatch was the tell), and the leak check testing epoch 0.
+
+**Prior art, checked before drafting.** The anchor is a proof of sequential work with a public beacon — Mahmoody–Moran–Vadhan, Cohen–Pietrzak, the VDFs, Moran–Orlov, Fisch, Filecoin's PoSt (beacon, no chain), Ateniese et al. 2020 (chain, no beacon), Chia (both). Baig–Pietrzak FC 2025 ask the paper's question qualitatively (a time component is *necessary* to stop space being reused). Minotaur treats resources as fungible — the additive reading the exclusion permits only for disjoint pools. Bittensor's weight-copying is the stasis premium deployed on the whitepaper's own substrate. The accounting has no antecedent found.
+
+**A third way for richness to buy nothing.** MF Cor 5.4 named redundancy (ι = 0) and forgeability (τ = 0). The purchased projection has ι = 1, τ > 0, and evidences only its anchor: *idle*. Whether the framework needs a third condition on projections, *evidencing*, is §9.5.
+
+Declined: that the model is the mechanism (receipts stand in for verifiable productions; Prop 5.4 is the stand-in's failure); that the transition anchor is new; that the grid is a finding; that the gate result reaches readings outside the induced-map class (S&W §8.1's door is unchanged, on both axes now); that survival was measured to be zero rather than indistinguishable from it; that the frozen participant is defeated (one reading refuses it, the other pays it); that ACF §8.5's two disciplines are tested by two anchors of one; that Prop 5.2's cost model is settled.
+
+### Paper — *Independent and Expensive* — v0.2
+
+§8.2 and §8.4 struck through with their answers, per the convention; blurb extended; *Combination Proofs* citation moved to v0.5. No claim changed. v0.1 archived.
+
+### Framework — *Combination Proofs* — v0.5
+
+Proposition 4.2(ii) amended in place, paying the 2026-08-14 entry's promise: strict publicity-positivity struck through and replaced — the attacker's fake-cost is non-decreasing in a published projection, with the marginal at most the *unclaimed remainder* of the substrate's paid work, zero once claims exhaust it (*Independent and Expensive* Cor 3.6). The revision paragraph, which opened `*v0.3 · working draft.*` while the document was v0.4, corrected and extended. Citations across the corpus moved from v0.4 to v0.5 (*No Global Section*, *Proof of Coherence* ×2, *Independent and Expensive*, `code/exclusion.py`); `_plan/ruliad.md`'s stale *Proof of Coherence* v0.4 and *Sign and Work* v0.2 citations fixed in passing. v0.4 archived.
+
+**Also in this pass.** `code/README.md` contents table repaired: six modules were on disk and unlisted (`sybil_bound`, `h1_duplication`, `h1_cohomological`, `fiction_space`, `iota_asymmetry`, `exclusion`); all added, with `two_pool` and a prose section for its result. `_archive/README.md` rows added for the two archived versions.
+
+---
+
 ## 2026-08-14
 
 ### Paper — *Independent and Expensive* — v0.1 (order 20)

@@ -72,7 +72,7 @@ load-bearing · **⨯** refuted · **▢** framing, no gradeable claim.
 |---|---|---|---|---|---|
 | 1 | Vol I *Derivation of Value* | value | — (native) | the operator, stated | ▢ |
 | 2 | *Combination Proofs* v0.3 | multi-projection score | mechanism design | ρ, ι, residue, harvestability | ○ |
-| 3 | *Proof of Coherence* v0.4 | coherence among models | sheaf cohomology | H¹ as the score | ○ |
+| 3 | *Proof of Coherence* v0.5 | coherence among models | sheaf cohomology | H¹ as the score | ○ |
 | 4 | *Onboarding* | — | exposition | — | ▢ |
 | 5 | Vol II *Proof of Preservation* | negentropy | thermodynamics | preservation as stakeable | ▢ |
 | 6 | *Gauge-Fixing* | the section space | gauge theory | four anchors; §5 test suite | ◐ |
@@ -85,7 +85,7 @@ load-bearing · **⨯** refuted · **▢** framing, no gradeable claim.
 | 13 | *No Global Section* | composition failure | contextuality | three grades; Conj 3.1 | ○ |
 | 14 | *Requisite Richness* | the richness floor | cybernetics | ρ·h ≥ H(D) | ○ |
 | 15 | Vol V *What Cannot Be Helped* | residue | — | the assertion/residue line, then its deflation | ▢ |
-| 16 | *Sign and Work* v0.2 | the trace | stigmergy | **τ = f/w**; τ inflates the Sybil cap by 1/τ | ◐ |
+| 16 | *Sign and Work* v0.3 | the trace | stigmergy | **τ = f/w**; τ inflates the Sybil cap by 1/τ | ◐ |
 | 17 | *A Consistent Fiction* | closure | autopoiesis | fiction space = d; coupling = d scalars, once | ◐ |
 | 18 | *Coutility* | the composition operation | open games | **Prop 4.1**: equilibrium ≠ admissibility | ● |
 | 19 | *Borrowed Again* | signatures | PQ cryptography | migration moves *between* structures | ◐ |
