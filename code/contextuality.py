@@ -108,7 +108,36 @@ missed. The obstruction needs the formal family to be forced through a
 bijection often enough that the Z-shaped cancellations of the Hardy
 family have no room.
 
-Run:  python contextuality.py     (exact arithmetic; seeded; ~40 s)
+SECOND PASS, PREDICTIONS STATED BEFORE RUNNING PART 5. On a cyclic cover
+the Čech system is flow conservation on the bundle diagram (nodes =
+(measurement, outcome), edges = local sections in layers), with the fixed
+context a unit source and sink. So:
+  6. gamma(s) = 0 iff head(s) and tail(s) are joined by an UNDIRECTED path
+     avoiding s's layer — on every section, and over any ring, which is
+     why Z and Q never differed; and s extends iff joined by a DIRECTED
+     path (the gate models orient every layer h -> h+1).
+  7. A walk from head to tail passes through the n − 2 holons not incident
+     to the layer, in order: the CHAIN. Undirected and directed reach
+     through a relation coincide iff the relation is a disjoint union of
+     complete bipartite blocks; a bijection (eps = 0) and the complete
+     relation (eps = 2) are, the eps = 1 relation is connected and not.
+     So a layer whose chain has no eps = 1 holon has no miss, and a layer
+     whose chain has one has every section vanishing.
+  8. Hence a logical model is seen iff some layer has an eps-1-free chain
+     with a non-extending section. On the triangle that is "some exact
+     holon"; on the square, "two adjacent exact holons". The run-of-open-
+     gates reading of Part 4 was the shadow of this on two cycles.
+
+WHAT CAME BACK, SECOND PASS. 6, 7 and 8 held on every count: undirected
+reachability equalled the vanishing of the obstruction on all 31,056
+sections and directed reachability equalled extension on all of them; the
+540 layers whose chain has no eps = 1 holon carried no miss, the 510
+layers whose chain has one carried no obstruction, and the model-level
+rule agreed on all 233 logically contextual models. The theorem is a
+two-line flow argument, and it makes the obstruction on a cyclic cover
+independent of the coefficient ring.
+
+Run:  python contextuality.py     (exact arithmetic; seeded; ~1 min)
 """
 import sys
 import itertools
@@ -553,11 +582,123 @@ def part_four_misses():
             rate = d["rate_n"] / d["rate_d"] if d["rate_d"] else float("nan")
             print(f"  {k:>12}{n:>8}{d['seen']:>6}{d['missed']:>8}"
                   f"{rate:>14.3f}")
-    print("  An exact gate makes its holon a bijection between its ports.")
-    print("  On the triangle one exact gate is enough to be seen; on the")
-    print("  square one is never enough and three always are. What the two")
-    print("  share is the longest run of open gates: two in a row is seen,")
-    print("  three in a row is missed.")
+    print("  Binned by exact gates the pattern reads as a run length; Part 5")
+    print("  says what it is: a layer is miss-free iff the chain of holons")
+    print("  not incident to it contains no eps = 1 holon.")
+
+
+# --------------------------------------- part 5: the theorem on cycles
+
+def section_graph(model):
+    """Cyclic covers only. Nodes (measurement, outcome); each local section
+    of a context is an edge from the context's first measurement's node to
+    its second's, kept in layers by context. This is the bundle diagram."""
+    layers = {}
+    for C in model.contexts:
+        assert len(C) == 2
+        layers[C] = [((C[0], t[0]), (C[1], t[1])) for t in sorted(model.S[C])]
+    return layers
+
+
+def reachable(layers, skip, start, directed):
+    """Nodes reachable from start without using the layer `skip`, along
+    edges in their direction (directed) or either way (undirected)."""
+    adj = {}
+    for C, es in layers.items():
+        if C == skip:
+            continue
+        for a, b in es:
+            adj.setdefault(a, []).append(b)
+            if not directed:
+                adj.setdefault(b, []).append(a)
+    seen, stack = {start}, [start]
+    while stack:
+        x = stack.pop()
+        for y in adj.get(x, ()):
+            if y not in seen:
+                seen.add(y)
+                stack.append(y)
+    return seen
+
+
+def chain_of(layer, n_holons):
+    """The holons NOT incident to a layer (u, u+1): the chain a walk from
+    the section's head to its tail must pass through, in cyclic order."""
+    u = layer[0]
+    return [(u + 2 + i) % n_holons for i in range(n_holons - 2)]
+
+
+def _layer_audit(model, holons, rows):
+    """Per layer: does undirected reachability equal the obstruction, does
+    directed reachability equal extension, is the chain free of eps = 1
+    holons, and how many sections do not extend / are obstructed / vanish."""
+    layers = section_graph(model)
+    n = len(holons)
+    out = []
+    for C in model.contexts:
+        chain_eps = [holons[h][1] for h in chain_of(C, n)]
+        d = {"C": C, "z_free": all(e != 1.0 for e in chain_eps),
+             "sections": 0, "no_ext": 0, "obs": 0, "und_ok": 0, "dir_ok": 0}
+        for r in rows:
+            if r["C"] != C:
+                continue
+            head, tail = (C[1], r["s"][1]), (C[0], r["s"][0])
+            und = tail in reachable(layers, C, head, directed=False)
+            dr = tail in reachable(layers, C, head, directed=True)
+            d["sections"] += 1
+            d["no_ext"] += not r["extends"]
+            d["obs"] += not r["vanish_Z"]
+            d["und_ok"] += (und == r["vanish_Z"])
+            d["dir_ok"] += (dr == r["extends"])
+        out.append(d)
+    return out
+
+
+def part_five_theorem():
+    print("\n" + "=" * 74)
+    print("PART 5 — THE THEOREM ON CYCLES: reachability, and the chain")
+    print("=" * 74)
+    for n_holons in (3, 4):
+        rng = np.random.default_rng(SEED + n_holons)
+        tot = {"sections": 0, "und_ok": 0, "dir_ok": 0,
+               "free_layers": 0, "free_miss": 0, "z_layers": 0, "z_obs": 0,
+               "logical": 0, "rule_ok": 0}
+        for _ in range(TRIALS):
+            holons, ifs = cycle_scenario(rng, n_holons, EPS_GRID)
+            model = gate_model(holons, ifs)
+            g, rows, _ = audit(model)
+            seen = any(not r["vanish_Z"] for r in rows if not r["extends"])
+            predicted_seen = False
+            for d in _layer_audit(model, holons, rows):
+                tot["sections"] += d["sections"]
+                tot["und_ok"] += d["und_ok"]
+                tot["dir_ok"] += d["dir_ok"]
+                if d["z_free"]:
+                    tot["free_layers"] += 1
+                    tot["free_miss"] += d["no_ext"] - d["obs"]
+                    predicted_seen |= d["no_ext"] > 0
+                else:
+                    tot["z_layers"] += 1
+                    tot["z_obs"] += d["obs"]
+            if g == "logical":
+                tot["logical"] += 1
+                tot["rule_ok"] += (seen == predicted_seen)
+        print(f"\n  {n_holons}-cycle: {tot['sections']} sections;"
+              f" undirected reach == obstruction vanishes on"
+              f" {tot['und_ok']}; directed reach == extends on"
+              f" {tot['dir_ok']}")
+        print(f"  layers whose chain has no eps = 1 holon:"
+              f" {tot['free_layers']} — non-extending sections not"
+              f" obstructed there: {tot['free_miss']}")
+        print(f"  layers whose chain has an eps = 1 holon: {tot['z_layers']}"
+              f" — sections obstructed there: {tot['z_obs']}")
+        print(f"  logical models: {tot['logical']}; seen iff some eps-1-free"
+              f" chain has a non-extending section: {tot['rule_ok']} agree")
+    print("  On a cyclic cover the obstruction is undirected reachability in")
+    print("  the bundle diagram with the section's layer removed, extension")
+    print("  is directed reachability, and the two differ only through a")
+    print("  relation in the chain that is connected without being a union")
+    print("  of complete bipartite blocks: here, exactly the eps = 1 holon.")
 
 
 # ------------------------------------------------------------------ main
@@ -569,3 +710,4 @@ if __name__ == "__main__":
     part_two_triangle()
     part_three_sweep()
     part_four_misses()
+    part_five_theorem()

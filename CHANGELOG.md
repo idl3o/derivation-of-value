@@ -10,6 +10,22 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-07 (fourth pass)
+
+### Paper — *The Obstruction, Computed* — v0.2
+
+The same day. v0.1's reading of what decides a miss — the longest run of open gates — was the shadow of a theorem on two cycles, and is struck.
+
+**Theorem 6.3.** On a cyclic cover the compatibility condition is flow conservation on the bundle diagram, so the obstruction of a section vanishes iff its two ends are joined by an *undirected* path avoiding its own layer — over any coefficient ring (Cor 6.4: this is why ℤ and ℚ never disagreed, the missed prediction corrected). A section extends iff joined by a *directed* path (Prop 6.5). A miss is a walk that reverses, and a reversal changes a junction value only through a relation in the chain of non-incident holons that is connected without being a disjoint union of complete bipartite blocks (Cor 6.6). On the specimen that is exactly the ε = 1 gate — the tolerance — a bijection and the complete relation being rectangular. Prop 6.7: a layer is miss-free iff its chain has no ε = 1 holon; a logical model is seen iff some such layer has a non-extending section.
+
+**Verified on everything.** Undirected reachability equals the vanishing of the obstruction on all 31,056 sections and on the answer key; directed reachability equals extension on all; 540 layers with ε-1-free chains carry no miss; 510 layers with an ε = 1 chain carry no obstruction; the rule agrees on all 233 logically contextual models. A design rule on cycles: no tolerance gate in any chain.
+
+**Prior art, checked before drafting the theorem.** The directed-path extension criterion is folklore (ABKLM's univocal closed path; Santos–Amaral 2021 on n-cycles). Carù 2018 reads a compatible family as a ±1 path in the bundle diagram and observes a Z-shape behind most known misses; Montanhano 2021 removes the negative coefficient by semi-fields; Mansfield 2013 proves completeness for chain Kochen–Specker models. None states the biconditional or the ring-independence, and Carù chooses ℤ₂ for his cyclic completeness and calls the ring crucial — Theorem 6.3 makes his Theorem 7.7 ring-independent as a statement. Declined: that the theorem is unanticipated; that it reaches non-cyclic covers.
+
+Also: `code/contextuality.py` Part 5 added; predictions 6–8 stated before running and held. v0.1 archived.
+
+---
+
 ## 2026-09-07 (third pass)
 
 ### Paper — *The Obstruction, Computed* — v0.1 (order 24)

@@ -13,7 +13,7 @@ has been replaced.
 ## 1. Shape
 
 **Twenty-four documents, orders 1–24, all published. Five papers added since the
-last journal, twelve revisions.** Sixteen code modules. Thirty-four archived
+last journal, thirteen revisions.** Sixteen code modules. Thirty-five archived
 versions, four of which never went live. Orders 23 and 24 were drafted after this
 journal was written and are folded in below where they move a grade.
 
@@ -22,7 +22,7 @@ journal was written and are folded in below where they move a grade.
 | **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
 | **Framework** | *Combination Proofs* **v0.6** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.3, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1**, ***The Obstruction, Computed* v0.1** |
+| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.3, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1**, ***The Obstruction, Computed* v0.2** |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -136,7 +136,9 @@ The sum-or-minimum question was asked of the wrong pool.
 | Čech obstruction, answer key (Bell / Hardy / PR / affine cycle) | 0 / **0 of 1** / 8 of 8 / 9 of 9 obstructed — the literature's miss reproduced |
 | logically contextual gate models invisible at every section | **97 of 233** (42%); section rates 0.714 / 0.604 |
 | strongly contextual gate models seen / seen at every section | 9 of 9 / 0.878 and 0.750 of sections |
-| ℤ against ℚ obstruction, 31,056 sections | **never differ** |
+| ℤ against ℚ obstruction, 31,056 sections | **never differ** — Cor 6.4, ring-independence on cycles |
+| undirected reachability = obstruction vanishes; directed = extends | **31,056 of 31,056**, both |
+| layers with no tolerance gate in the chain / misses there | 540 / **0**; with one: 510 layers / **0** obstructed |
 
 Every number reproduced from a designed specimen first: the escape specimen and
 five siblings at zero deviation (order 20), a three-pool miniature plus seven
@@ -182,9 +184,12 @@ has caught the program.
 - ~~**Conjecture 3.1** (*No Global Section*).~~ **Computed, the same day** — *The
   Obstruction, Computed* v0.1. It holds in the form stated; no distribution is
   chosen; gate models carry two grades, not three; the invariant sees every strong
-  model and misses two in five logical ones at every section; ℤ = ℚ throughout; a
-  miss is decided by the longest run of open gates. Four journals at the top of
-  the list, one afternoon to compute — the ranking was right and the delay was not.
+  model and misses two in five logical ones at every section. Then, v0.2 the same
+  day: **on a cyclic cover the obstruction is undirected reachability in the
+  bundle diagram** (Theorem 6.3, a flow argument, ring-independent — which is why
+  ℤ = ℚ), extension is directed reachability, and a miss needs a tolerance gate
+  in the chain. Four journals at the top of the list, one afternoon to compute —
+  the ranking was right and the delay was not.
 - **Claim 4.3** (*Gluing the Gates*), **Prop 3.1** (*Requisite Richness*), **Claim
   3.1** (*Coutility*). Unchanged.
 - **Prop 5.2's cost model** (*Sign and Work*). No longer merely declined — the
@@ -344,8 +349,9 @@ distinction with a cost attached.
 ## 6. Open problems, ranked by leverage
 
 1. ~~**Test Conjecture 3.1.**~~ **Done the same day** — *The Obstruction, Computed*
-   v0.1; see §2. Replaced by **Carù's cyclic refinement** on the program's cycles
-   (TOC §8.1) and the **run-of-open-gates rule** as a theorem (TOC §8.2).
+   v0.1–v0.2; see §2. The run-of-open-gates rule became Theorem 6.3 the same
+   afternoon. Replaced by the **non-cyclic case** (TOC §9.2: conservation on a
+   hypergraph) and the cost of Carù's refinement on cycles (TOC §9.1).
 2. ~~**The budget across levels.**~~ **Done the same day** — *The Budget Across
    Levels* v0.1. The dichotomy was asked of the wrong pool: receipts sum and are
    idle, interfaces nest, the minimum over levels is zero on the native side and

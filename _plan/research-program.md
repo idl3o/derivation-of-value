@@ -660,7 +660,15 @@ models 136 seen and 97 missed at every section; section rates 0.714 /
 direction). Unpredicted: a miss is decided by the longest run of OPEN
 gates — two in a row seen, three in a row missed — on both cycles (the
 first reading, "one exact gate suffices", was wrong on the square).
-Conjecture R ninth: the free module forgets the sign. Prior art: AB 2011,
+Conjecture R ninth: the free module forgets the sign. **v0.2, same day:
+the run-of-open-gates reading struck and replaced by Theorem 6.3 — on a
+cyclic cover the obstruction is undirected reachability in the bundle
+diagram with the section's layer removed (flow conservation; ring-
+independent, hence Z = Q), extension is directed reachability, and a miss
+needs a connected non-rectangular relation in the chain of non-incident
+holons: exactly the eps = 1 tolerance gate. Verified on all 31,056
+sections, 1,050 layers, 233 logical models. Design rule on cycles: no
+tolerance gate in any chain.** Prior art: AB 2011,
 AMB 2011, ABKLM 2015 (AvN ⇒ CSC; Z initial), Carù 2016/2018 (misses;
 cyclic completeness), Abramsky databases/CSP, Zeng–Zahn 2015 (choice
 theory, no cohomology), Ó Conghaile 2022, Felber et al. 2025, Hansen–Ghrist

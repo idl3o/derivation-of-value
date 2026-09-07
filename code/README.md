@@ -27,7 +27,7 @@ code and named in the docstring rather than quietly repaired.
 | `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
 | `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
 | `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
-| `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; a miss is decided by the longest run of open gates. |
+| `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; on a cyclic cover the obstruction is undirected reachability in the bundle diagram (a theorem, ring-independent) and a miss lives only in a chain with a tolerance gate. |
 | `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
 | `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
 
@@ -548,9 +548,17 @@ model is strong exactly when the composed rotation is not the identity and
 is then obstructed at every section (an orbit argument, stated before
 running). With looser gates: every strongly contextual model is seen, not
 at every section; of 233 logically contextual models 97 are invisible at
-every section (rates 0.714 and 0.604); ℤ and ℚ never disagree; and what
-decides a miss is the longest run of open gates around the cycle — two in
-a row seen, three missed. Zero false positives in 31,056 sections.
+every section (rates 0.714 and 0.604); ℤ and ℚ never disagree. Zero false
+positives in 31,056 sections.
+
+Part 5 is the theorem that explains both: on a cyclic cover the Čech
+system is flow conservation on the bundle diagram, so the obstruction of
+a section vanishes iff its ends are joined by an *undirected* path avoiding
+its layer — over any ring — while it extends iff joined by a *directed*
+one. A miss is a reversal, and a reversal needs a relation in the chain of
+non-incident holons that is connected but not a union of complete
+bipartite blocks: here exactly the ε = 1 gate. Verified on all 31,056
+sections, 1,050 layers and 233 logically contextual models.
 
 ## Two disciplines this code tries to keep
 
