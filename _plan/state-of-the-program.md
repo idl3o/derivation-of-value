@@ -12,9 +12,9 @@ has been replaced.
 
 ## 1. Shape
 
-**Twenty-five documents, orders 1–25, all published. Six papers added since the
-last journal, fourteen revisions.** Seventeen code modules. Thirty-six archived
-versions, four of which never went live. Orders 23 to 25 were drafted after this
+**Twenty-six documents, orders 1–26, all published. Seven papers added since the
+last journal, eighteen revisions.** Eighteen code modules. Forty archived
+versions, four of which never went live. Orders 23 to 26 were drafted after this
 journal was written and are folded in below where they move a grade.
 
 | | |
@@ -22,7 +22,7 @@ journal was written and are folded in below where they move a grade.
 | **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
 | **Framework** | *Combination Proofs* **v0.6** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.3, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1** |
+| **Papers** | *Gauge-Fixing* v0.4, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.4, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.3**, ***The Budget Across Levels* v0.2**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1**, ***Every Basis at Once* v0.1** |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -39,7 +39,7 @@ converted forty-seven reader-directed questions to four, across the index and
 six volume documents, and changed no claim.
 
 Four working documents, none published: `_plan/ruliad.md`, `_plan/gallery.md`,
-`_plan/research-program.md` (P0–P18, next entry P19), `_plan/service-reframe.md`
+`_plan/research-program.md` (P0–P19, next entry P20), `_plan/service-reframe.md`
 (S1/S2, untouched since it was opened).
 
 ---
@@ -143,6 +143,9 @@ The sum-or-minimum question was asked of the wrong pool.
 | ℤ against ℤ₂, ~60,000 sections on chorded covers | **never differ**; ℤ against ℚ: parity structures only |
 | logical-grade detection, no-signalling vs signalling, (3,3,2) / GHZ / PM covers | **0.074 / 0.049 / 0.012** vs **0.755 / 0.366 / 0.457** |
 | K4 holarchy with tolerance gates, non-extending sections obstructed | **7,056 of 7,056**; 81 of 81 logical models seen |
+| copiers on the redrawn cover: spread honest / averaging / adaptive | 0.000 / 0.000 / **0.267** — the adaptive copier signals and is refused; the averaging one passes below honest |
+| beacon-drawn cover, block of 128: boundary, per-identity cost | 2 → **191** (mixing lemma 186); 1 → **96** against honest 186 |
+| the curve in f: λ₂ (giant), spectral dimension | 0.0038 → 0.049 by f = 1/8 → 0.10; 1.68 → 2.56, R² 0.996 → 0.975 |
 
 Every number reproduced from a designed specimen first: the escape specimen and
 five siblings at zero deviation (order 20), a three-pool miniature plus seven
@@ -314,6 +317,18 @@ This is the through-line's terminal form for the induced class, and it is where
 the line stops being uncomfortable and starts being useful: it says exactly which
 readings not to build.
 
+### The cover is the lever
+
+New. Four papers today asked what a mechanism can choose after its participants
+commit, and the answer is not the reading and not the basis but the cover: who
+is compared with whom. A committed participant is non-contextual whatever the
+basis, so contextuality is a resource only against the copier who did not need
+to be defeated. A beacon-drawn cover, by contrast, makes a coalition's boundary
+a random cut and restores the cap that a modular substrate had let fall to
+nothing — at the price of the nesting the substrate was chosen for. Expansion
+and richness are one purchase with opposite signs, and the program now has the
+knob and three numbers on it.
+
 ### What survives is information, not work
 
 New, and the period's largest shift. The one reading with a native share — maps
@@ -365,9 +380,11 @@ distinction with a cost attached.
    Levels* v0.1. The dichotomy was asked of the wrong pool: receipts sum and are
    idle, interfaces nest, the minimum over levels is zero on the native side and
    the conjunction is one boundary counted once. MF §8.4 answered: the criterion is
-   correct and not a residual. Replaced by **beacon-assigned overlaps** (BAL §9.1):
-   sharding's remedy transposed, a random cut that grows with |C|, at the cost of
-   the substrate's own nesting. *I&E §8.3, Second Pool §9.3, OOA §9.3, MF §8.4.*
+   correct and not a residual. ~~Replaced by beacon-assigned overlaps~~ — **built
+   before evening** (*Every Basis at Once*): the redrawn cover restores the
+   per-identity cost to half of honest at the price of the spectral dimension.
+   Replaced by the **semantic cost** (EB §8.1): derivation cost as a function of
+   hierarchical distance, giving the curve a second axis and an optimum in f.
 3. **Formalise ι**, now one quantity with two uses and four constraints (§2).
    Five dependents, and P6 remains critical path. Named again rather than
    repeated, per the plan's own instruction.
@@ -442,6 +459,7 @@ was — three of them, in a line, each answering the one before, and a fourth th
 same day: nesting buys receipts, and receipts are idle. Then the debt at the top
 of the list for four journals was paid in an afternoon, and the answer was the
 corpus's usual shape: the invariant is a certificate and not a test, now with a
-rate. The program's
+rate. And the day ended with a positive result, which the corpus rarely has: a
+lever, the cover, with its price named in the program's own currency. The program's
 titles say *work*. Its one surviving instrument measures contact with a world,
 and what it evidences is the part of the world nobody has written down yet.

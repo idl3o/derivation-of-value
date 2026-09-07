@@ -10,6 +10,30 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-07 (sixth pass)
+
+### Paper — *Every Basis at Once* — v0.1 (order 26)
+
+The quantum-style-measurement-basis question taken literally. New paper, new module (`code/every_basis.py`), four revisions.
+
+**Commitment makes every participant non-contextual.** Prop 3.1 is Fine's theorem with a commitment as the hidden variable, and the single-prover compilers of Brakerski et al. and Kalai et al. are its cryptographic form. So contextuality can appear only without commitment, where it is the adaptive copier — each partner answered with that partner's data — signalling in the sense *The Ring and the Chord* measured. Measured on the redrawn cover: honest spread 0.000, adaptive 0.267 and refused by a self-consistency gate at no cost to honesty, averaging copier spread 0.000 and residual 0.08 below honest's 0.21, passing. Contextuality is a resource against exactly the adversary commitment already defeats. *No Global Section* §6 closed.
+
+**What the basis buys is the cover.** A beacon-drawn, degree-preserving redraw of the overlap graph each epoch makes a block coalition's boundary the random cut of the Alon–Chung mixing lemma: the block of 128 goes from 2 boundary edges to 191 against a formula value of 186, its per-identity native cost from 1 to 96 against honest's 186, and the residual reading run on the redrawn cover has the stale coalition failing every epoch and the deriving one paying the cut, e(C) = 0.518. The cap *One's Own Anchor* found missing on a modular substrate is a cap on a redrawn one.
+
+**The price is the spectral dimension.** Boundary linear in the fraction redrawn; λ₂ of the giant component thirteenfold by one edge in eight and then flat; spectral dimension 1.68 to 2.56 (n = 1024: 1.59 to 2.58), R² falling. Expansion and richness are one purchase with opposite signs; *Gauge-Fixing* §2's target is met at f = 1/8 and is a loose bound on the coalition's price, which is the cut. The semantic cost — a beacon-drawn overlap is a prompt a stranger's model has no reason to hold — is named and not modelled.
+
+**Two instrument errors recorded.** A uniform redraw disconnected the graph at f = 1/4 (λ₂ read zero); a swap-based rewiring left a third of the edges untouched at f = 1 (two thirds of the cut). Both in the docstring; the predictions stood.
+
+**Prior art, checked before drafting.** Fine 1982; Brakerski et al. 2018; Kalai et al. 2023; Toner–Bacon 2003; the memory loophole (Barrett et al. 2002); contextuality-by-default (human data signal by default — honest reporters are consistently connected because they report the world); Bruza et al.; Zeng–Zahn; SybilLimit, Mohaisen et al., Alvisi et al. (the diagnosis); Elastico, OmniLedger, RapidChain, Buterin; the cuckoo rule; Alon–Chung; Jecmen et al.; Watts–Strogatz, Kleinberg, Donetti et al., Lazer–Friedman, Fang et al. No antecedent found for no-signalling as a detector of copying between reporters of a shared world, nor for the cut–dimension coupling with spectral dimension as the currency.
+
+Declined: that Prop 3.1 is a finding; that the self-consistency gate is new; that the random-cut formula is exact for the degree-preserving redraw; that the cover can be redrawn in a deployment at no cost; that expansion is the right currency; that the spectral dimension is lost rather than changed; that the first two passes were findings.
+
+### Four revisions
+
+*The Budget Across Levels* → **v0.2** (§9.1 built), *One's Own Anchor* → **v0.3** (§9.4 measured), *No Global Section* → **v0.4** (§6.2 added: the answer), *Gauge-Fixing* → **v0.4** (§2's target met at a price, the gap a loose bound on the cut). All four archived.
+
+---
+
 ## 2026-09-07 (fifth pass)
 
 ### Paper — *The Ring and the Chord* — v0.1 (order 25)

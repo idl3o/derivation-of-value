@@ -27,6 +27,7 @@ code and named in the docstring rather than quietly repaired.
 | `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
 | `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
 | `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
+| `every_basis.py` | Every basis at once: commitment makes a participant non-contextual; the adaptive copier signals and a self-consistency gate refuses it; a beacon-drawn cover restores the per-identity cost to half of honest at the price of the spectral dimension. |
 | `covers.py` | The obstruction off the cycle, over ℤ, ℚ and ℤ₂: the square and GHZ vanish over the rationals; detection collapses on no-signalling chorded covers and recovers on signalling ones; a K4 holarchy with tolerance gates has no miss. |
 | `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; on a cyclic cover the obstruction is undirected reachability in the bundle diagram (a theorem, ring-independent) and a miss lives only in a chain with a tolerance gate. |
 | `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
@@ -50,6 +51,7 @@ python evidencing.py
 python holarchy.py
 python contextuality.py
 python covers.py
+python every_basis.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -588,6 +590,32 @@ non-extending section. A state absent from one interface's support is a
 node with no edges in that layer, and conservation there zeroes its sums
 everywhere — a route a formal family cannot use. Gate models signal, and
 signalling is what the invariant sees.
+
+## Every basis at once
+
+`every_basis.py` takes the quantum-style-basis question literally. A
+committed participant is non-contextual by construction (Fine's theorem
+with a commitment as hidden variable), so contextuality appears only
+without commitment, as the adaptive copier: measured, honest spread 0.000,
+adaptive 0.267 and refused by a self-consistency gate, averaging copier
+spread 0.000 and residual 0.08 below honest's 0.21, passing — the copier
+commitment was needed for. What the basis buys is the cover:
+
+| f redrawn | ∂ of block 128 | per identity | λ₂ (giant) | d_s | R² |
+|---|---|---|---|---|---|
+| 0 | 2.0 | 1.0 | 0.0038 | 1.68 | 0.996 |
+| 1/8 | 22.8 | 11.4 | 0.049 | 2.06 | 0.982 |
+| 1/4 | 49.0 | 24.5 | 0.083 | 2.28 | 0.977 |
+| 1/2 | 90.2 | 45.1 | 0.107 | 2.41 | 0.980 |
+| 1 | 191.0 | 95.5 | 0.102 | 2.56 | 0.975 |
+
+Honest cost per vertex is 186. A beacon-drawn, degree-preserving redraw
+makes the coalition's boundary the random cut (191 against the mixing
+lemma's 186), restores the per-identity cost from 1 to 96, and the residual
+reading run at f = 1 confirms it (stale fails every epoch, deriving pays,
+e(C) = 0.518). The boundary is linear in f, the gap saturates by f = 1/8,
+and the spectral dimension leaves 1.6 as the cover is redrawn: expansion
+and richness are one purchase with opposite signs.
 
 ## Two disciplines this code tries to keep
 

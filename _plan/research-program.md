@@ -19,8 +19,8 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-**Twenty-five documents, orders 1–25** (eleven when this plan was written). Everything
-through order 25 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
+**Twenty-six documents, orders 1–26** (eleven when this plan was written). Everything
+through order 26 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 
@@ -724,7 +724,55 @@ and should pause for the journal to catch up.
 
 ---
 
-### P6 · Information geometry — `order: 26` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P19 · Every basis at once — `order: 26` — **v0.1 drafted 2026-09-07** → `every-basis-at-once.md`
+
+*"Every Basis at Once" · "The World as Hidden Variable, and the Cover the
+Beacon Draws". Sam's question — a quantum-style measurement basis as the
+oracular basis, chosen after commitment so a fiction cannot be consistent
+in every basis — taken literally and divided. (a) Commitment makes every
+participant non-contextual (Prop 3.1 = Fine 1982 with a commitment as
+hidden variable; Brakerski et al. 2018 and Kalai et al. 2023 its
+cryptographic form). Contextuality appears only without commitment, as the
+ADAPTIVE copier (answers each partner with that partner's data) —
+signalling; a self-consistency gate refuses it at zero cost (measured:
+honest spread 0.000, adaptive 0.267 refused) and leaves the AVERAGING
+copier (spread 0, residual 0.08 < honest 0.21), the one commitment was
+needed for. NGS §6 closed: real, computable, dominated. (b) What the basis
+buys is the COVER: a beacon-drawn, degree-preserving redraw each epoch
+makes a block coalition's boundary the random cut (Alon–Chung mixing
+lemma): block of 128 from 2 to 191 edges (formula 186), per-identity cost
+1 → 96 against honest 186; the residual reading run at f = 1 confirms
+(stale fails every epoch, deriving pays, e(C) = 0.518). Curve in f ∈ {0,
+1/8, 1/4, 1/2, 1}: boundary linear; lambda_2 of the giant component
+0.0038 → 0.049 (13× by f = 1/8) → 0.10, saturating; spectral dimension
+1.68 → 2.06 → 2.56 (n = 1024: 1.59 → 2.02 → 2.58), R² 0.996 → 0.975.
+Expansion and richness are one purchase with opposite signs; GF §2's
+target is met at f = 1/8 and is a loose bound on the price (the cut). The
+semantic cost — a beacon-drawn overlap is a prompt the stranger's model
+has no reason to hold — named, not modelled. Two instrument errors
+recorded (uniform redraw disconnected the graph; swap-rewiring left a
+third untouched). Prior art: Fine; Kalai et al.; Toner–Bacon; the memory
+loophole; CbD (human data signal by default — honest reporters are
+consistently connected because they report the world); Elastico /
+OmniLedger / RapidChain / Buterin; cuckoo rule; Alon–Chung; Watts–Strogatz,
+Kleinberg, Donetti et al., Lazer–Friedman. No antecedent for no-signalling
+as a copying detector, nor for the cut–dimension coupling. Instrument
+`code/every_basis.py`, ~10 s. Revisions: BAL v0.2 (§9.1 built), OOA v0.3
+(§9.4 measured), NGS v0.4 (§6 closed), GF v0.4 (§2 target met at a
+price). Conjecture R eleventh.*
+
+**Consequences for the plan.** The design space now has a knob (f) with
+three numbers on it: cut linear, gap saturating, dimension leaving. Next:
+the semantic cost as a model (§8.1) — derivation cost as a function of
+hierarchical distance — which would give the curve a second axis and an
+optimum; keeping nesting for derivation and redrawing only comparison
+(§8.5). The contextuality line's positive residue is the spread as a
+reading where commitment is unavailable (§8.4). Four papers in one day on
+one line; the journal is now the next item, not another paper.
+
+---
+
+### P6 · Information geometry — `order: 27` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -750,7 +798,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 27` — *planned*
+### P7 · Renormalization — `order: 28` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -771,7 +819,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 28+`, all *planned*
+### C-tier — grounding papers, `order: 29+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|
