@@ -12,17 +12,17 @@ has been replaced.
 
 ## 1. Shape
 
-**Twenty-three documents, orders 1–23, all published. Four papers added since the
-last journal, eleven revisions.** Fifteen code modules. Thirty-three archived
-versions, four of which never went live. Order 23 was drafted after this journal
-was written and is folded in below where it moves a grade.
+**Twenty-four documents, orders 1–24, all published. Five papers added since the
+last journal, twelve revisions.** Sixteen code modules. Thirty-four archived
+versions, four of which never went live. Orders 23 and 24 were drafted after this
+journal was written and are folded in below where they move a grade.
 
 | | |
 |---|---|
 | **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
 | **Framework** | *Combination Proofs* **v0.6** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.2, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1** |
+| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.3, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1**, ***The Obstruction, Computed* v0.1** |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -39,7 +39,7 @@ converted forty-seven reader-directed questions to four, across the index and
 six volume documents, and changed no claim.
 
 Four working documents, none published: `_plan/ruliad.md`, `_plan/gallery.md`,
-`_plan/research-program.md` (P0–P16, next entry P17), `_plan/service-reframe.md`
+`_plan/research-program.md` (P0–P17, next entry P18), `_plan/service-reframe.md`
 (S1/S2, untouched since it was opened).
 
 ---
@@ -133,6 +133,10 @@ The sum-or-minimum question was asked of the wrong pool.
 | adversary picks a level, derivations | **0** at every coalition size |
 | per-level mean gate, blocks of 64 and 128 | 0.86 / 1.43 against the arithmetic's 1 / 2; nothing below 64 |
 | interior residual: naive fiction / honest / mimic at cost 0 | **0.000** / 0.203 / **0.199** — both sides controlled is not a residual |
+| Čech obstruction, answer key (Bell / Hardy / PR / affine cycle) | 0 / **0 of 1** / 8 of 8 / 9 of 9 obstructed — the literature's miss reproduced |
+| logically contextual gate models invisible at every section | **97 of 233** (42%); section rates 0.714 / 0.604 |
+| strongly contextual gate models seen / seen at every section | 9 of 9 / 0.878 and 0.750 of sections |
+| ℤ against ℚ obstruction, 31,056 sections | **never differ** |
 
 Every number reproduced from a designed specimen first: the escape specimen and
 five siblings at zero deviation (order 20), a three-pool miniature plus seven
@@ -175,10 +179,12 @@ has caught the program.
 
 ### Conjectured, untested, load-bearing
 
-- **Conjecture 3.1** (*No Global Section*). A published paper's quantitative
-  content rests on it. **Untouched for four sessions**, at the top of this list
-  throughout. Either it is tested next or it is demoted with a reason; leaving it
-  here a fifth time is not a ranking.
+- ~~**Conjecture 3.1** (*No Global Section*).~~ **Computed, the same day** — *The
+  Obstruction, Computed* v0.1. It holds in the form stated; no distribution is
+  chosen; gate models carry two grades, not three; the invariant sees every strong
+  model and misses two in five logical ones at every section; ℤ = ℚ throughout; a
+  miss is decided by the longest run of open gates. Four journals at the top of
+  the list, one afternoon to compute — the ranking was right and the delay was not.
 - **Claim 4.3** (*Gluing the Gates*), **Prop 3.1** (*Requisite Richness*), **Claim
   3.1** (*Coutility*). Unchanged.
 - **Prop 5.2's cost model** (*Sign and Work*). No longer merely declined — the
@@ -337,8 +343,9 @@ distinction with a cost attached.
 
 ## 6. Open problems, ranked by leverage
 
-1. **Test Conjecture 3.1.** Four sessions at the top, untouched. *NGS §8.1.* If
-   this is not done next it should be demoted with the reason written down.
+1. ~~**Test Conjecture 3.1.**~~ **Done the same day** — *The Obstruction, Computed*
+   v0.1; see §2. Replaced by **Carù's cyclic refinement** on the program's cycles
+   (TOC §8.1) and the **run-of-open-gates rule** as a theorem (TOC §8.2).
 2. ~~**The budget across levels.**~~ **Done the same day** — *The Budget Across
    Levels* v0.1. The dichotomy was asked of the wrong pool: receipts sum and are
    idle, interfaces nest, the minimum over levels is zero on the native side and
@@ -417,6 +424,9 @@ that is a finding about the program, not about the conjecture.
 Nothing is built. The security proof is further away than it was. The last
 journal said the corpus should expect its next result to be a subtraction, and it
 was — three of them, in a line, each answering the one before, and a fourth the
-same day: nesting buys receipts, and receipts are idle. The program's
+same day: nesting buys receipts, and receipts are idle. Then the debt at the top
+of the list for four journals was paid in an afternoon, and the answer was the
+corpus's usual shape: the invariant is a certificate and not a test, now with a
+rate. The program's
 titles say *work*. Its one surviving instrument measures contact with a world,
 and what it evidences is the part of the world nobody has written down yet.

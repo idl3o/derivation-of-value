@@ -19,8 +19,8 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-**Twenty-three documents, orders 1–23** (eleven when this plan was written). Everything
-through order 23 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
+**Twenty-four documents, orders 1–24** (eleven when this plan was written). Everything
+through order 24 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 
@@ -50,7 +50,7 @@ Admitted or Refused→v0.2, Borrowed Hardness→v0.2.
 
 | ref | problem | why it matters |
 |---|---|---|
-| NGS §8.1 | test Conjecture 3.1 (distributional presheaf) | a *published* paper's quantitative content rests on it |
+| NGS §8.1 | ~~test Conjecture 3.1 (distributional presheaf)~~ done, P17 | a *published* paper's quantitative content rested on it; it holds |
 | Sybil §8.2 | state C1 (participation) and C2 (tolerance ≤ spectral gap) as framework conditions | without them duplication on H⁰ is unbounded; both currently modelling conventions |
 | Sybil §8.1 | which recoverability model — linear or compounding | they diverge 2× at K=8 and the framework cannot choose |
 | Coutility §7.1 | exhibit a Combination Proof as an open game | Claim 3.1 is a prescription, not a theorem, until this exists |
@@ -634,7 +634,53 @@ curve (OOA §9.4) which §9.1 here sharpens.
 
 ---
 
-### P6 · Information geometry — `order: 24` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P17 · The obstruction — `order: 24` — **v0.1 drafted 2026-09-07** → `the-obstruction-computed.md`
+
+*"The Obstruction, Computed" · "Conjecture 3.1 on Gate Scenarios with
+Spectral Gates". NGS §8.1, the top-ranked open problem for four journals,
+done. The AMB obstruction is built on the SUPPORT of a model — free
+Z-module on the possible local sections, relative Čech H^1 — and a gate
+model IS a support: no distribution is chosen (Prop 3.1; NGS §8.2 confined
+to the probabilistic grade, which a gate model does not have — two grades,
+not three). The invariant is an integer linear system (Prop 3.2), solved
+exactly over Z (Smith normal form, batched RHS per context) and Q; the
+truth is brute-forced. Answer key first: Bell 14 sections / 0 obstructed;
+Hardy 13 / 1 non-extending / 0 obstructed (the literature's miss); PR box
+8/8/8; GtG Prop 4.2's affine cycle on a finite menu 9/9/9. Zero false
+positives in 31,056 sections. Spectral gates: R^2 stalks, four-vector
+menu, one internal edge per holon, Rayleigh-quotient gate at eps ∈ {0,1,2}
+on triangles and squares. Prop 4.1: exact gates ⇒ bijective interfaces ⇒
+strong iff composed rotation ≠ id ⇒ every section obstructed (orbit
+argument; the Specker triangle's four-state cousin) — held on 8/8 trials.
+Sweep (150 + 150): every strongly contextual model seen, not at every
+section (0.878 / 0.750 — cohomologically logically but not strongly
+contextual, Carù on the program's specimen); of 233 logically contextual
+models 136 seen and 97 missed at every section; section rates 0.714 /
+0.604. Z = Q on every section (prediction MISSED; ABKLM Prop 21 gives the
+direction). Unpredicted: a miss is decided by the longest run of OPEN
+gates — two in a row seen, three in a row missed — on both cycles (the
+first reading, "one exact gate suffices", was wrong on the square).
+Conjecture R ninth: the free module forgets the sign. Prior art: AB 2011,
+AMB 2011, ABKLM 2015 (AvN ⇒ CSC; Z initial), Carù 2016/2018 (misses;
+cyclic completeness), Abramsky databases/CSP, Zeng–Zahn 2015 (choice
+theory, no cohomology), Ó Conghaile 2022, Felber et al. 2025, Hansen–Ghrist
+— cited, not claimed. No mechanism-design antecedent found. Instrument
+`code/contextuality.py`, ~40 s, exact arithmetic. NGS → v0.3 (§3
+amended, §7 and §8.1 struck, §8.2 answered for the obstruction).*
+
+**Consequences for the plan.** The four-journal debt is paid, and the
+answer is the shape the corpus keeps finding: the invariant is a
+certificate, not a test, and now with a rate. Next tools: Carù's cyclic
+refinement (§8.1 of the paper) and a design rule "no three aggregate-gated
+holons in a row" if §8.2's pattern proves. GtG Claim 4.3's affine
+hypothesis is discharged in practice; not revised, since its hedge was the
+correct reading. The program's own mechanism (371 contexts, continuous
+stalks) is out of the instrument's reach and predicted seen wherever
+contextual, having no open gates.
+
+---
+
+### P6 · Information geometry — `order: 25` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -660,7 +706,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 25` — *planned*
+### P7 · Renormalization — `order: 26` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -681,7 +727,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 26+`, all *planned*
+### C-tier — grounding papers, `order: 27+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|

@@ -70,7 +70,7 @@ lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gap
 | `gluing-the-gates` | v0.1, v0.2 | v0.3 | |
 | `independent-and-expensive` | v0.1, v0.2 | v0.3 | |
 | `kar-coin` | v0.1, v0.2 | v0.3 | v0.1 the published state, 2026-07-23 |
-| `no-global-section` | v0.1 | v0.2 | |
+| `no-global-section` | v0.1, v0.2 | v0.3 | |
 | `ones-own-anchor` | v0.1 | v0.2 | |
 | `proof-of-coherence` | v0.2, v0.3, v0.4 | v0.5 | v0.3 never published; no v0.1 was archived |
 | `requisite-richness` | v0.1 | v0.2 | |
@@ -82,9 +82,9 @@ lineage is correct when `archived` runs v0.1 … v(N−1) against it with no gap
 An empty note is not a claim that a version was published — only that this file
 does not settle it. The changelog does.
 
-Six documents have no archive because nothing has superseded them:
+Seven documents have no archive because nothing has superseded them:
 `borrowed-again`, `derivation-of-value-i`, `omnium`, `onboarding`,
-`proof-of-preservation`, and `the-budget-across-levels`.
+`proof-of-preservation`, `the-budget-across-levels`, and `the-obstruction-computed`.
 
 **This table drifted once and will again.** It was last correct at seven rows and
 had fallen seven papers behind before anyone looked. To check it against the

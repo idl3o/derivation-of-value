@@ -27,6 +27,7 @@ code and named in the docstring rather than quietly repaired.
 | `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
 | `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
 | `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
+| `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; a miss is decided by the longest run of open gates. |
 | `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
 | `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
 
@@ -46,6 +47,7 @@ python exclusion.py
 python two_pool.py
 python evidencing.py
 python holarchy.py
+python contextuality.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -518,6 +520,37 @@ the coalition" and not a residual: the naive fiction glues at 0.000 against
 honest 0.203, a two-sided gate refuses that, and a fabrication of honest
 scale plus honest-level noise sits at 0.199 inside honest's spread, for
 nothing.
+
+## The obstruction, computed
+
+`contextuality.py` computes the Čech obstruction of Abramsky, Mansfield and
+Barbosa on gate scenarios — *No Global Section*'s Conjecture 3.1, untested
+for four journals. The obstruction is built on a model's *support*, the
+possible local sections at each context, and a gate model is a support:
+holons as measurements, interfaces as contexts, gate-admissible states as
+outcomes. No distribution is chosen. The invariant is an integer linear
+system, solved exactly over ℤ (Smith normal form, one matrix per context
+with every section as a right-hand side) and over ℚ; every section's truth
+is brute-forced, so a false positive would be a solver bug and is flagged.
+
+Calibrated first on the answer key the literature settled:
+
+| model | grade | sections | non-extending | obstructed |
+|---|---|---|---|---|
+| Bell/CHSH | non-contextual | 14 | 0 | 0 |
+| Hardy | logical | 13 | 1 | 0 — the literature's miss |
+| PR box | strong | 8 | 8 | 8 |
+| *Gluing the Gates* affine cycle | strong | 9 | 9 | 9 |
+
+Then holons with a Rayleigh-quotient gate — a threshold on a spectral
+quantity, not affine — on triangles and squares. With every gate exact the
+model is strong exactly when the composed rotation is not the identity and
+is then obstructed at every section (an orbit argument, stated before
+running). With looser gates: every strongly contextual model is seen, not
+at every section; of 233 logically contextual models 97 are invisible at
+every section (rates 0.714 and 0.604); ℤ and ℚ never disagree; and what
+decides a miss is the longest run of open gates around the cycle — two in
+a row seen, three missed. Zero false positives in 31,056 sections.
 
 ## Two disciplines this code tries to keep
 

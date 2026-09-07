@@ -10,6 +10,30 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-07 (third pass)
+
+### Paper — *The Obstruction, Computed* — v0.1 (order 24)
+
+Conjecture 3.1 of *No Global Section*, the top-ranked open problem for four journals, computed. New paper, new module (`code/contextuality.py`), one revision (*No Global Section* v0.3).
+
+**No distribution is chosen.** The obstruction of Abramsky, Mansfield and Barbosa is built on the *support* of a model — the free ℤ-module on the possible local sections, relative Čech H¹ — and a gate model is a support. It applies with no affine hypothesis and nothing chosen (Prop 3.1). The probabilistic grade needs frequencies a gate model does not have, so gate models carry two grades, not three; NGS §8.2's worry is confined to the grade that does not apply.
+
+**The invariant is an integer linear system** (Prop 3.2), solved exactly over ℤ by Smith normal form with every section of a context as a batched right-hand side, and over ℚ; the truth is brute-forced. Calibrated first on the literature's answer key: Bell nothing obstructed, Hardy's one non-extending section missed, the PR box obstructed at every section, *Gluing the Gates* Prop 4.2's affine cycle on a finite menu obstructed at every section. Zero false positives in 31,056 sections.
+
+**Spectral gates.** Holons with a Rayleigh-quotient gate on a declared internal connection, four-vector menu, triangles and squares. Prop 4.1: exact gates make every interface a bijection, the model is strong iff the composed rotation is not the identity, and every section is then obstructed — the coefficients must be constant on the orbits of a fixed-point-free permutation. Eight trials, no row against prediction.
+
+**The sweep.** Every strongly contextual model seen, not at every section (0.878, 0.750): cohomologically logically but not strongly contextual, Carù's gap on the program's specimen. Of 233 logically contextual models, 97 are invisible at every section; rates 0.714 on triangles, 0.604 on squares. *A vanishing class licenses nothing* now carries a rate: two in five. ℤ and ℚ never disagree — predicted otherwise, recorded as missed; ABKLM Prop 21 gives the direction. Unpredicted: what decides a miss is the longest run of open gates around the cycle, two in a row seen and three missed, on both cycles. The first reading, "one exact gate suffices", was wrong on the square and is recorded.
+
+**Prior art, checked before drafting.** AB 2011, AMB 2011 (the construction and the Hardy miss — their "false positive", glossed), ABKLM 2015 (AvN witnessed; ℤ most sensitive; Specker triangle), Carù 2016 and 2018 (the strong-grade miss; cyclic completeness), Abramsky on databases and CSP, Zeng–Zahn 2015 on revealed preference (contexts as budgets, no cohomology), Ó Conghaile 2022, Felber et al. 2025, Hansen–Ghrist. No application to mechanism design or nested admissibility found. Conjecture R a ninth time: the free module forgets the sign.
+
+Declined: that the construction is new; that the affine hypothesis was needed; that the run-of-open-gates rule is a theorem; that the instrument reaches the program's mechanism (371 contexts, continuous stalks); that ℤ = ℚ is a finding; that the probabilistic grade is meaningless for mechanisms; that contextuality is a resource.
+
+### Paper — *No Global Section* — v0.3
+
+§3's conjecture paragraph amended in place; §7's first decline struck; §8.1 struck; §8.2 answered for the obstruction and left open for the probabilistic grade; blurb extended. v0.2 archived.
+
+---
+
 ## 2026-09-07 (second pass)
 
 ### Paper — *The Budget Across Levels* — v0.1 (order 23)
