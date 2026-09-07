@@ -20,7 +20,7 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 ## 1. Where the corpus stands
 
 **Twenty-two documents, orders 1–22** (eleven when this plan was written). Everything
-through order 21 is **published** as of 2026-09-06; order 22 is drafted. The spine is Vols I–V: Vol III's
+through order 22 is **published** as of 2026-09-06. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 

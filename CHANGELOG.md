@@ -10,6 +10,22 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-07
+
+### Journal — `_plan/state-of-the-program.md` — rewritten
+
+Supersedes the 2026-08-06 journal, which predated the exclusion line. Not published to the site; no version moved.
+
+**Three open problems answered, one central question replaced.** Problem 4 (a projection clearing ι and τ) closed by *Independent and Expensive* — within one pool, never; across pools, purchasable. Problem 5 (a gap not bought by the anchor) closed by *One's Own Anchor* — yes, the measured map, and it lives on the coalition boundary alone. Problem 2 (is ι a scalar) downgraded: the spread was at the free corner where the quantity is undefined, and the infimum reading is the correct treatment of the degeneracy rather than a repair. The new central question is the budget across levels (P16).
+
+**Graded.** Five results promoted to *Proved* (the exclusion, the temporal gauge, the two-layer gluing condition, evidencing as ι against one's own anchor, the coalition's evidencing share); sixteen measurements tabulated; five refutations, the worst being that the Sybil cap is not a cap on a modular substrate. Two new conditions, C4 (receipt-and-value gates) and C5 (commit-before-compare), the first two priced on the day they were stated. Eight self-corrections added (12–19), five caught by impossible numbers and one by a new route — two instruments disagreeing on a number both compute.
+
+**Ranked, sixteen open problems.** Conjecture 3.1 stays at the top, untouched for four journals, with the instruction that it is tested next or demoted with a reason. *Gauge-Fixing* is named as a published paper now contradicted by measurement (λ₂ = 0.0038 against its own design target) and not yet revised.
+
+Also: `_plan/research-program.md` §1 no longer says order 22 is drafted.
+
+---
+
 ## 2026-09-06 (second pass)
 
 ### Paper — *One's Own Anchor* — v0.1 (order 22)
