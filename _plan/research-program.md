@@ -19,8 +19,8 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-**Twenty-four documents, orders 1–24** (eleven when this plan was written). Everything
-through order 24 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
+**Twenty-five documents, orders 1–25** (eleven when this plan was written). Everything
+through order 25 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 
@@ -656,7 +656,7 @@ Sweep (150 + 150): every strongly contextual model seen, not at every
 section (0.878 / 0.750 — cohomologically logically but not strongly
 contextual, Carù on the program's specimen); of 233 logically contextual
 models 136 seen and 97 missed at every section; section rates 0.714 /
-0.604. Z = Q on every section (prediction MISSED; ABKLM Prop 21 gives the
+0.604. Z = Q on every section (prediction MISSED; ABKLM Prop 20 gives the
 direction). Unpredicted: a miss is decided by the longest run of OPEN
 gates — two in a row seen, three in a row missed — on both cycles (the
 first reading, "one exact gate suffices", was wrong on the square).
@@ -688,7 +688,43 @@ contextual, having no open gates.
 
 ---
 
-### P6 · Information geometry — `order: 25` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P18 · The ring and the chord — `order: 25` — **v0.1 drafted 2026-09-07** → `the-ring-and-the-chord.md`
+
+*"The Ring and the Chord" · "The Obstruction Off the Cycle, and What It
+Sees There". TOC §9.2 measured. Three rings (Z by Smith normal form, Q by
+exact elimination, Z_2 by bit-packed elimination) on covers with chords.
+ANSWER KEY FAILED ON THE RING: Peres–Mermin (24/24) and GHZ (16/16) are
+obstructed over Z and Z_2 and VANISH over Q at every section — explicit
+families with coefficients ±1/2, confirmed by least squares at 1e-15. An
+AvN argument is a parity argument; the integer obstruction on such a model
+is 2-torsion; characteristic zero cannot see it (Prop 3.1). Random models
+(400 per cover × 2 conditions) on (3,3,2), GHZ and PM covers: Z = Z_2 on
+every one of ~60,000 sections (no odd torsion anywhere); Z ≠ Q only on
+three strong parity-like (3,3,2) sections. DETECTION: under the
+literature's NO-SIGNALLING condition the logical-grade rates are 0.074 /
+0.049 / 0.012 with 154/203, 203/225, 168/172 models invisible; WITHOUT it
+0.755 / 0.366 / 0.457 and every strong model seen — the mechanism (a node
+absent from one layer zeroes its sums everywhere) stated before that run.
+K4 HOLARCHY of four three-port star holons, binary menu, Rayleigh gate:
+exact gates ⇒ strong iff mod-2 holonomy fails (8/8), obstructed in every
+ring; with tolerance gates NO MISS — 7,056/7,056, 81/81 logical seen (the
+prediction that misses occur FAILED). Gate models signal, and signalling
+is what the invariant sees: the setting the invariant was built for is
+where it is weakest. Conjecture R tenth (the ring forgets the
+characteristic). Instrument `code/covers.py`, ~3 min, exact. TOC → v0.3
+(Cor 6.4 complemented; §9.2 answered).*
+
+**Consequences for the plan.** The program's mechanism (residual gates,
+chords everywhere) is predicted cohomologically transparent — the obstacle
+is size, not theory (§8.4). Designer's rule: compute over Z, never Q.
+Open: odd torsion (§8.1, a mod-3 model would separate Z from Z_2), the
+signalling theorem as a bound on the miss rate (§8.2), conservation on a
+hypergraph (§8.3). The contextuality line now has three papers in one day
+and should pause for the journal to catch up.
+
+---
+
+### P6 · Information geometry — `order: 26` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -714,7 +750,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 26` — *planned*
+### P7 · Renormalization — `order: 27` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -735,7 +771,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 27+`, all *planned*
+### C-tier — grounding papers, `order: 28+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|

@@ -10,6 +10,30 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-07 (fifth pass)
+
+### Paper — *The Ring and the Chord* — v0.1 (order 25)
+
+*The Obstruction, Computed* §9.2 taken off the cycle. New paper, new module (`code/covers.py`), one revision (*The Obstruction, Computed* v0.3).
+
+**The ring matters, on the answer key.** Peres–Mermin and GHZ are obstructed at every section over ℤ and ℤ₂ and vanish at every section over ℚ — explicit families with coefficients ±½, confirmed by a second solver. An all-versus-nothing argument is a parity argument, the integer obstruction on such a model is 2-torsion, and a field of characteristic zero cannot see it (Prop 3.1). The prediction that all three rings would agree there failed and is recorded.
+
+**Across some sixty thousand sections** on the (3,3,2), GHZ and Peres–Mermin covers and a K4 holarchy, ℤ and ℤ₂ never disagreed — no odd torsion anywhere, the literature's mod-2 checks exact both ways on every model here — and ℤ and ℚ disagreed only on parity structures.
+
+**Detection off the cycle is two numbers.** Under the literature's no-signalling condition the logical grade is seen at rates of 0.074, 0.049 and 0.012, with three models in four, nine in ten and forty in forty-one invisible at every section. Without it: 0.755, 0.366, 0.457, every strong model seen. The mechanism — a state absent from one context's support is a node with no edges in that layer, and conservation there zeroes its sums everywhere — was stated as a prediction before the measurement.
+
+**Four holons on K4.** The smallest holarchy with chords: three-port star holons, binary menu, Rayleigh gate. Exact gates make it strong exactly when the mod-2 holonomy fails on some cycle (8 of 8), obstructed at every section in every ring. With tolerance gates: no miss at all, 7,056 of 7,056 non-extending sections obstructed, 81 of 81 logical models seen — the prediction that misses would occur failed. Gate models signal, and signalling is what the invariant sees.
+
+**Prior art, checked before drafting.** Every published computation of these obstructions was mod 2, carried to ℤ by descent (AMB 2011); ABKLM 2015 Prop 20 carries vanishing along any ring map and never instantiates ℚ; Montanhano 2021 says real coefficients trivialise the obstruction, for the probability vector rather than a section and by way of AB 2011's signed measures, which live on the full outcome space; Carù's thesis records the only known non-cyclic miss and reduces the invariant to the nerve's one-skeleton. No source counts detection on chorded covers or names no-signalling as the variable. An independent rank computation in the sweep's report returned the same 0 of 16 and 0 of 24 over ℚ.
+
+Declined: that the rational vanishing is new as a fact; that ℤ = ℤ₂ is a theorem; that the covers are general; that the random generators are representative (the comparison is the finding); that signalling is a virtue; that the K4 result is a theorem; that the instrument reaches the program's mechanism.
+
+### Paper — *The Obstruction, Computed* — v0.3
+
+Corollary 6.4 given its complement off the cycle; §9.2 marked measured by *The Ring and the Chord*; blurb extended. v0.2 archived.
+
+---
+
 ## 2026-09-07 (fourth pass)
 
 ### Paper — *The Obstruction, Computed* — v0.2
@@ -38,7 +62,7 @@ Conjecture 3.1 of *No Global Section*, the top-ranked open problem for four jour
 
 **Spectral gates.** Holons with a Rayleigh-quotient gate on a declared internal connection, four-vector menu, triangles and squares. Prop 4.1: exact gates make every interface a bijection, the model is strong iff the composed rotation is not the identity, and every section is then obstructed — the coefficients must be constant on the orbits of a fixed-point-free permutation. Eight trials, no row against prediction.
 
-**The sweep.** Every strongly contextual model seen, not at every section (0.878, 0.750): cohomologically logically but not strongly contextual, Carù's gap on the program's specimen. Of 233 logically contextual models, 97 are invisible at every section; rates 0.714 on triangles, 0.604 on squares. *A vanishing class licenses nothing* now carries a rate: two in five. ℤ and ℚ never disagree — predicted otherwise, recorded as missed; ABKLM Prop 21 gives the direction. Unpredicted: what decides a miss is the longest run of open gates around the cycle, two in a row seen and three missed, on both cycles. The first reading, "one exact gate suffices", was wrong on the square and is recorded.
+**The sweep.** Every strongly contextual model seen, not at every section (0.878, 0.750): cohomologically logically but not strongly contextual, Carù's gap on the program's specimen. Of 233 logically contextual models, 97 are invisible at every section; rates 0.714 on triangles, 0.604 on squares. *A vanishing class licenses nothing* now carries a rate: two in five. ℤ and ℚ never disagree — predicted otherwise, recorded as missed; ABKLM Prop 20 gives the direction. Unpredicted: what decides a miss is the longest run of open gates around the cycle, two in a row seen and three missed, on both cycles. The first reading, "one exact gate suffices", was wrong on the square and is recorded.
 
 **Prior art, checked before drafting.** AB 2011, AMB 2011 (the construction and the Hardy miss — their "false positive", glossed), ABKLM 2015 (AvN witnessed; ℤ most sensitive; Specker triangle), Carù 2016 and 2018 (the strong-grade miss; cyclic completeness), Abramsky on databases and CSP, Zeng–Zahn 2015 on revealed preference (contexts as budgets, no cohomology), Ó Conghaile 2022, Felber et al. 2025, Hansen–Ghrist. No application to mechanism design or nested admissibility found. Conjecture R a ninth time: the free module forgets the sign.
 

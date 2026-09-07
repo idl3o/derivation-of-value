@@ -12,9 +12,9 @@ has been replaced.
 
 ## 1. Shape
 
-**Twenty-four documents, orders 1–24, all published. Five papers added since the
-last journal, thirteen revisions.** Sixteen code modules. Thirty-five archived
-versions, four of which never went live. Orders 23 and 24 were drafted after this
+**Twenty-five documents, orders 1–25, all published. Six papers added since the
+last journal, fourteen revisions.** Seventeen code modules. Thirty-six archived
+versions, four of which never went live. Orders 23 to 25 were drafted after this
 journal was written and are folded in below where they move a grade.
 
 | | |
@@ -22,7 +22,7 @@ journal was written and are folded in below where they move a grade.
 | **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
 | **Framework** | *Combination Proofs* **v0.6** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.3, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1**, ***The Obstruction, Computed* v0.2** |
+| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.3, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1** |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -39,7 +39,7 @@ converted forty-seven reader-directed questions to four, across the index and
 six volume documents, and changed no claim.
 
 Four working documents, none published: `_plan/ruliad.md`, `_plan/gallery.md`,
-`_plan/research-program.md` (P0–P17, next entry P18), `_plan/service-reframe.md`
+`_plan/research-program.md` (P0–P18, next entry P19), `_plan/service-reframe.md`
 (S1/S2, untouched since it was opened).
 
 ---
@@ -139,6 +139,10 @@ The sum-or-minimum question was asked of the wrong pool.
 | ℤ against ℚ obstruction, 31,056 sections | **never differ** — Cor 6.4, ring-independence on cycles |
 | undirected reachability = obstruction vanishes; directed = extends | **31,056 of 31,056**, both |
 | layers with no tolerance gate in the chain / misses there | 540 / **0**; with one: 510 layers / **0** obstructed |
+| Peres–Mermin and GHZ obstructed over ℤ / ℤ₂ / ℚ | 24 of 24 and 16 of 16 / same / **0 and 0** — parity is invisible in characteristic zero |
+| ℤ against ℤ₂, ~60,000 sections on chorded covers | **never differ**; ℤ against ℚ: parity structures only |
+| logical-grade detection, no-signalling vs signalling, (3,3,2) / GHZ / PM covers | **0.074 / 0.049 / 0.012** vs **0.755 / 0.366 / 0.457** |
+| K4 holarchy with tolerance gates, non-extending sections obstructed | **7,056 of 7,056**; 81 of 81 logical models seen |
 
 Every number reproduced from a designed specimen first: the escape specimen and
 five siblings at zero deviation (order 20), a three-pool miniature plus seven
@@ -188,8 +192,12 @@ has caught the program.
   day: **on a cyclic cover the obstruction is undirected reachability in the
   bundle diagram** (Theorem 6.3, a flow argument, ring-independent — which is why
   ℤ = ℚ), extension is directed reachability, and a miss needs a tolerance gate
-  in the chain. Four journals at the top of the list, one afternoon to compute —
-  the ranking was right and the delay was not.
+  in the chain. Then off the cycle (*The Ring and the Chord*): the ring matters —
+  the square and GHZ vanish over ℚ — and detection is two numbers: near zero on
+  the literature's no-signalling models, high on signalling ones, complete on a
+  K4 holarchy. **Gate models signal, and signalling is what the invariant sees.**
+  Four journals at the top of the list, one afternoon to compute — the ranking
+  was right and the delay was not.
 - **Claim 4.3** (*Gluing the Gates*), **Prop 3.1** (*Requisite Richness*), **Claim
   3.1** (*Coutility*). Unchanged.
 - **Prop 5.2's cost model** (*Sign and Work*). No longer merely declined — the
@@ -350,8 +358,9 @@ distinction with a cost attached.
 
 1. ~~**Test Conjecture 3.1.**~~ **Done the same day** — *The Obstruction, Computed*
    v0.1–v0.2; see §2. The run-of-open-gates rule became Theorem 6.3 the same
-   afternoon. Replaced by the **non-cyclic case** (TOC §9.2: conservation on a
-   hypergraph) and the cost of Carù's refinement on cycles (TOC §9.1).
+   afternoon, and the non-cyclic case was measured before evening (*The Ring and
+   the Chord*). What remains is **odd torsion** (RC §8.1), the **signalling bound**
+   (RC §8.2) and **conservation on a hypergraph** (RC §8.3).
 2. ~~**The budget across levels.**~~ **Done the same day** — *The Budget Across
    Levels* v0.1. The dichotomy was asked of the wrong pool: receipts sum and are
    idle, interfaces nest, the minimum over levels is zero on the native side and

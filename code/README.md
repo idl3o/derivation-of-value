@@ -27,6 +27,7 @@ code and named in the docstring rather than quietly repaired.
 | `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
 | `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
 | `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
+| `covers.py` | The obstruction off the cycle, over ℤ, ℚ and ℤ₂: the square and GHZ vanish over the rationals; detection collapses on no-signalling chorded covers and recovers on signalling ones; a K4 holarchy with tolerance gates has no miss. |
 | `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; on a cyclic cover the obstruction is undirected reachability in the bundle diagram (a theorem, ring-independent) and a miss lives only in a chain with a tolerance gate. |
 | `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
 | `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
@@ -48,6 +49,7 @@ python two_pool.py
 python evidencing.py
 python holarchy.py
 python contextuality.py
+python covers.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -559,6 +561,33 @@ one. A miss is a reversal, and a reversal needs a relation in the chain of
 non-incident holons that is connected but not a union of complete
 bipartite blocks: here exactly the ε = 1 gate. Verified on all 31,056
 sections, 1,050 layers and 233 logically contextual models.
+
+## The ring and the chord
+
+`covers.py` takes the obstruction off the cycle, over three rings. On the
+literature's own answer key the ring matters: the Peres–Mermin square and
+GHZ are obstructed at every section over ℤ and ℤ₂ and vanish at every
+section over ℚ, by explicit families with coefficients ±½ — an all-versus-
+nothing argument is a parity argument and characteristic zero cannot see
+it. Across some sixty thousand sections ℤ and ℤ₂ never disagreed.
+
+| cover, condition | logical rate | models missed | strong seen |
+|---|---|---|---|
+| (3,3,2), no-signalling | 0.074 | 154 / 203 | 5 / 8 |
+| (3,3,2), signalling | 0.755 | 15 / 58 | 170 / 170 |
+| GHZ cover, no-signalling | 0.049 | 203 / 225 | — |
+| GHZ cover, signalling | 0.366 | 124 / 227 | 12 / 12 |
+| PM cover, no-signalling | 0.012 | 168 / 172 | — |
+| PM cover, signalling | 0.457 | 64 / 202 | 9 / 9 |
+| K4 holarchy, tolerance gates | **1.000** | 0 / 81 | 7 / 7 |
+
+Under the no-signalling condition the invariant is nearly blind on chorded
+covers; without it, it sees most logically contextual models and every
+strong one; on a holarchy of four three-port holons on K4 it sees every
+non-extending section. A state absent from one interface's support is a
+node with no edges in that layer, and conservation there zeroes its sums
+everywhere — a route a formal family cannot use. Gate models signal, and
+signalling is what the invariant sees.
 
 ## Two disciplines this code tries to keep
 
