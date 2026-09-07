@@ -27,6 +27,7 @@ code and named in the docstring rather than quietly repaired.
 | `iota_asymmetry.py` | Is ι symmetric? Two attack designs; one recorded as broken (sparsification shatters the complex) rather than deleted. |
 | `exclusion.py` | The exclusion principle: independence and trace gap as claims on one budget. Six calibration specimens with known answers, then the encoding dial on the sheaf — the dial that buys τ spends ι. |
 | `two_pool.py` | The second pool. Runs *Independent and Expensive*'s §8.4 gate (nothing survives the anchor; the overlap reading is invariant under a temporal gauge) and then its §8.2 purchase (a transition anchor restores ι = 1 at an explicit price, and the purchased reading evidences its anchor). |
+| `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
 | `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
 
 ```
@@ -44,6 +45,7 @@ python iota_asymmetry.py
 python exclusion.py
 python two_pool.py
 python evidencing.py
+python holarchy.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -477,6 +479,45 @@ identity 12 down to 1, against 186 for an honest vertex. The Sybil cap is not
 a cap on a modular substrate. A rotational innovation of the world is
 absorbed by the fit at any rate: the measured map has a temporal gauge of
 its own.
+
+## The budget across levels
+
+`holarchy.py` answers the question three papers left at the same door — is
+a holarchy's budget the sum of its levels' or the minimum — and finds it was
+asked of the wrong pool. The hierarchical complex is a holarchy by
+construction: every edge was introduced by exactly one merge, so the edges
+partition by level (128, 117, 64, 32, 16, 8, 4, 2), and the interfaces
+between level-ℓ holons nest downward to the leaves (371, 243, 126, 62, 30,
+14, 6, 2). Receipts are disjoint per level and sum; native work nests, since
+one derivation serves every level that reads the edge. The compositional
+mechanism's evidencing budget is the finest level's, and a level-by-level
+sum overstates it by 2.30 on this complex. Checked on the brute-force
+attacker at zero deviation, including ι(Π_ℓ | Π₀) = the level's receipt
+share.
+
+A level-j block's boundary lies entirely above its own level and halves per
+level exactly — the blocks at a level share each higher edge between two of
+them — so the coalition *One's Own Anchor* priced has its whole boundary in
+the two or three levels above it. Twenty-six gates on the residual reading:
+
+| gate | \|C\| = 16 | 32 | 64 | 128 |
+|---|---|---|---|---|
+| every edge (derivations per epoch) | 3 | 2 | 3 | 2 |
+| AND over each level's own-merge gate | 3 | 2 | 3 | 2 |
+| OR over levels (adversary picks) | 0 | 0 | 0 | 0 |
+| between level-7 holons | 0 | 0 | 1 | 2 |
+| mean over the level just above | 0 | 0 | 0.86 | 1.43 |
+| mean over the network | 0 | 0 | 0 | 0 |
+
+The sum over levels is the every-edge gate to the edge; the minimum is zero,
+because every level at or below the coalition's own reads only its
+interior. The boundary does not move with the level of presentation; the
+receipts do, and receipts are idle. And *The Multiplicity Freedom* §8.4's
+criterion — both sides of an interface controlled — is exactly "interior to
+the coalition" and not a residual: the naive fiction glues at 0.000 against
+honest 0.203, a two-sided gate refuses that, and a fabrication of honest
+scale plus honest-level noise sits at 0.199 inside honest's spread, for
+nothing.
 
 ## Two disciplines this code tries to keep
 

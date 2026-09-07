@@ -12,16 +12,17 @@ has been replaced.
 
 ## 1. Shape
 
-**Twenty-two documents, orders 1–22, all published. Three papers added since the
-last journal, five revisions.** Fourteen code modules. Twenty-seven archived
-versions, four of which never went live.
+**Twenty-three documents, orders 1–23, all published. Four papers added since the
+last journal, eleven revisions.** Fifteen code modules. Thirty-three archived
+versions, four of which never went live. Order 23 was drafted after this journal
+was written and is folded in below where it moves a grade.
 
 | | |
 |---|---|
 | **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
 | **Framework** | *Combination Proofs* **v0.6** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.2, *Gluing the Gates* v0.2, *The Multiplicity Freedom* v0.4, *No Global Section* v0.2, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.2**, ***The Second Pool* v0.2**, ***One's Own Anchor* v0.1** |
+| **Papers** | *Gauge-Fixing* v0.3, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.2, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.2**, ***The Budget Across Levels* v0.1** |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -38,7 +39,7 @@ converted forty-seven reader-directed questions to four, across the index and
 six volume documents, and changed no claim.
 
 Four working documents, none published: `_plan/ruliad.md`, `_plan/gallery.md`,
-`_plan/research-program.md` (P0–P15, next entry P16), `_plan/service-reframe.md`
+`_plan/research-program.md` (P0–P16, next entry P17), `_plan/service-reframe.md`
 (S1/S2, untouched since it was opened).
 
 ---
@@ -99,6 +100,13 @@ commitment step, the cheapest passing strategy derives the boundary edges' promp
 and fabricates the interior, so e(C) = |∂C| / (2|E(C)| + |∂C|) (edge-local
 prompts) or 1/|C| (shared prompts). Zero deviation on the specimen.
 
+**The budget across levels** (*The Budget Across Levels* §§3–4, `holarchy.py`).
+Receipts are disjoint per level and sum; interfaces nest, so a holarchy's native
+budget is its finest level's and ι(Π_ℓ|Π₀) is the level's receipt share (Props
+3.1–3.3, zero deviation on the attacker). A level-j block's boundary lies entirely
+above its level and halves per level as a double-counting identity (Prop 4.1).
+The sum-or-minimum question was asked of the wrong pool.
+
 ### Measured
 
 | finding | value |
@@ -120,6 +128,11 @@ prompts) or 1/|C| (shared prompts). Zero deviation on the specimen.
 | native cost per identity, block coalition, 16 → 128 | **12 → 1**, against 186 for an honest vertex |
 | specimen's spectral gap λ₂ | **0.0038**; Cheeger bound on a 128-block 0.12 edges against a realised 2 |
 | rotational innovation of the world | free at any rate — the measured map's own temporal gauge |
+| level-by-level overcount of the native budget, Σ\|I_ℓ\|/\|E\| | **2.30** |
+| conjunction over levels vs every-edge gate, derivations per epoch | **3 / 2 / 3 / 2 both** — the sum is the every-edge gate |
+| adversary picks a level, derivations | **0** at every coalition size |
+| per-level mean gate, blocks of 64 and 128 | 0.86 / 1.43 against the arithmetic's 1 / 2; nothing below 64 |
+| interior residual: naive fiction / honest / mimic at cost 0 | **0.000** / 0.203 / **0.199** — both sides controlled is not a residual |
 
 Every number reproduced from a designed specimen first: the escape specimen and
 five siblings at zero deviation (order 20), a three-pool miniature plus seven
@@ -151,7 +164,8 @@ result and it is measured, not argued.
 spectral gap" was the whitepaper's one quantitative claim about the gluing layer.
 λ₂ = 0.0038; the cheapest coalition of any size has at most four boundary edges.
 *Requisite Richness* chose this family for its low spectral dimension. The target
-stands; the specimen fails it; *Gauge-Fixing* has not yet been revised to say so.
+stands; the specimen fails it; *Gauge-Fixing* v0.3 now says so, and records tests
+(iii) and (iv) of its own suite.
 
 **Two candidate novelties, refused before drafting.** The transition anchor is a
 proof of sequential work with a public beacon (Mahmoody–Moran–Vadhan, Cohen–Pietrzak,
@@ -325,18 +339,19 @@ distinction with a cost attached.
 
 1. **Test Conjecture 3.1.** Four sessions at the top, untouched. *NGS §8.1.* If
    this is not done next it should be demoted with the reason written down.
-2. **The budget across levels.** The queued paper (P16). Each holarchy level
-   carries two receipts and a boundary; *Gluing the Gates* Prop 6.1 predicts the
-   joint budget is the minimum over levels, not the sum. Inherits the geometry of
-   order 22 — a coalition presenting as a holon pays one level's boundary for a
-   block's identities — and decides *Multiplicity Freedom* §8.4. The specimen is
-   already a holarchy. *I&E §8.3, Second Pool §9.3, OOA §9.3.*
+2. ~~**The budget across levels.**~~ **Done the same day** — *The Budget Across
+   Levels* v0.1. The dichotomy was asked of the wrong pool: receipts sum and are
+   idle, interfaces nest, the minimum over levels is zero on the native side and
+   the conjunction is one boundary counted once. MF §8.4 answered: the criterion is
+   correct and not a residual. Replaced by **beacon-assigned overlaps** (BAL §9.1):
+   sharding's remedy transposed, a random cut that grows with |C|, at the cost of
+   the substrate's own nesting. *I&E §8.3, Second Pool §9.3, OOA §9.3, MF §8.4.*
 3. **Formalise ι**, now one quantity with two uses and four constraints (§2).
    Five dependents, and P6 remains critical path. Named again rather than
    repeated, per the plan's own instruction.
-4. **Revise *Gauge-Fixing* to say its target fails on the specimen.** A published
-   paper contradicted by measurement, and test (iii) of its own suite now has a
-   number. Fold into P16's propagation pass, which produces λ₂ per level.
+4. ~~**Revise *Gauge-Fixing* to say its target fails on the specimen.**~~ **Done** —
+   v0.3, §2 amended, §5.2 records tests (iii) and (iv). Tests (i), (ii) and the
+   conjunction remain (item 15).
 5. **The expansion-versus-richness curve.** *OOA §9.4.* Raising λ₂ raises e(C) for
    every coalition at a richness cost already measured. The first design curve
    the residual reading makes measurable. Needs a family of complexes with
@@ -401,6 +416,7 @@ that is a finding about the program, not about the conjecture.
 
 Nothing is built. The security proof is further away than it was. The last
 journal said the corpus should expect its next result to be a subtraction, and it
-was — three of them, in a line, each answering the one before. The program's
+was — three of them, in a line, each answering the one before, and a fourth the
+same day: nesting buys receipts, and receipts are idle. The program's
 titles say *work*. Its one surviving instrument measures contact with a world,
 and what it evidences is the part of the world nobody has written down yet.

@@ -10,6 +10,30 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-07 (second pass)
+
+### Paper — *The Budget Across Levels* — v0.1 (order 23)
+
+Three papers closed on one question — whether a holarchy's budget is the sum of its levels' or the minimum — and *Gluing the Gates* Prop 6.1 predicted the minimum. New paper, new module (`code/holarchy.py`), six revisions.
+
+**The dichotomy was asked of the wrong pool.** The hierarchical complex is a holarchy by construction: edges partition by the merge that introduced them, interfaces between level-ℓ holons nest downward to the leaves. Receipts are disjoint per level and sum (Prop 3.1), and every one is idle by *One's Own Anchor* Thm 3.4. Native pools nest (Prop 3.2): a coarser level reads a subset of the finest level's edges and one derivation serves every level that reads it, so the compositional mechanism's evidencing budget is the finest level's however many levels it has. A level-by-level accounting overstates the specimen's native budget by 2.30. Independence between a level's gate and the leaf gate is exactly the level's receipt share (Prop 3.3), zero deviation on the attacker.
+
+**The boundary halves per level, exactly.** A level-j block has no boundary at or below its own level and, averaged over blocks, 2^{j+2−ℓ} edges at level ℓ above it — a double-counting identity, not an expectation — totalling 4(1 − 2^{j−8}). The whole of a coalition's price sits in the two or three levels above it.
+
+**Prop 6.1, priced.** Twenty-six gates on the residual reading. The conjunction of every level's own-merge gate derives 3, 2, 3, 2 boundary edges — the every-edge gate and the predecessor's published 12, 4, 3, 1 per identity, reproduced. A mechanism the adversary satisfies at one level of its choosing is defeated at zero by every block coalition: it presents at or below its own level, where every gate reads only its interior. A level's mean gate prices only boundaries above ≈ 0.41 of the level — the two largest blocks at the top two levels, within one derivation of the arithmetic on marginal epochs — and the network mean prices nothing. The boundary does not move with the level of presentation; the receipts do.
+
+**Both sides controlled is not a residual.** MF §8.4's criterion is correct — it is exactly "interior to the coalition" — and the reading cannot see it: naive fiction glues at 0.000 against honest 0.203, a two-sided gate refuses that, and a fabrication of honest scale plus honest-level noise, at no cost, sits at 0.199 inside honest's spread. Checkable only by audit, which is an oracle by another name. First-pass finding recorded: the record-based fiction is zero on interior prompts, so the first mimic was noise against noise and the fit over-absorbed (0.172).
+
+**Prior art, checked before drafting.** The minimum over units is the single-shard takeover (Buterin, web-only; Hafid et al. 2020; OmniLedger 2018; Monoxide 2019) and Hirshleifer's weakest link (1983; Varian 2004); a group gate amortised over many identities is Douceur 2002 Lemma 3; many-as-one is collusion-proofness (Yokoo et al. 2004; Zhang–Tang 2023); cheap cuts in community-structured graphs are Viswanath et al. 2012, Alvisi et al. 2013, Conitzer et al. 2010; Rowe 2016 on layered attestation; Gaži–Kiayias–Zindros 2019 on firewalls. Claimed: the cross-level composition with per-level anchors, the nesting theorem, the level-resolved boundary, the measurements.
+
+Declined: that the minimum over levels is new; that receipts were modelled on the sheaf (idle, so on the attacker only); that the holarchy is general (binary, two cross-edges per merge — the constants are the tree's); that strategies are exhaustive; that the mean gate's shortfall is a finding; that the audit route is a defence; that the level of presentation is priced on the reward side; that the world model is general.
+
+### Six revisions
+
+*Independent and Expensive* → **v0.3** (§8.3 struck), *The Second Pool* → **v0.3** (§9.3 struck; *One's Own Anchor* citations moved to v0.2), *One's Own Anchor* → **v0.2** (§9.3 struck), *The Multiplicity Freedom* → **v0.5** (§8.4 struck, answered unkindly), *Gluing the Gates* → **v0.3** (Cor 6.2's product measured as one boundary, counted once; amendment after Cor 6.2), *Gauge-Fixing* → **v0.3** (§2's spectral-gap target measured failing on the program's own specimen, λ₂ = 0.0038; §5.2 records tests (iii) and (iv); abstract extended). All six archived. `code/README.md` gains the row and a prose section; `_archive/README.md` rows updated.
+
+---
+
 ## 2026-09-07
 
 ### Journal — `_plan/state-of-the-program.md` — rewritten

@@ -19,8 +19,8 @@ Status key — `planned` · `researched` (sources verified) · `drafting` · `v0
 
 ## 1. Where the corpus stands
 
-**Twenty-two documents, orders 1–22** (eleven when this plan was written). Everything
-through order 22 is **published** as of 2026-09-06. The spine is Vols I–V: Vol III's
+**Twenty-three documents, orders 1–23** (eleven when this plan was written). Everything
+through order 23 is **published** as of 2026-09-07. The spine is Vols I–V: Vol III's
 ledger stays open by design, and Vol V (*What Cannot Be Helped*, residue) was opened
 this session with *Sign and Work* as its technical companion.
 
@@ -582,7 +582,59 @@ eight.
 
 ---
 
-### P6 · Information geometry — `order: 23` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P16 · The budget across levels — `order: 23` — **v0.1 drafted 2026-09-07** → `the-budget-across-levels.md`
+
+*"The Budget Across Levels" · "Receipts Sum, Interfaces Nest, and the Adversary
+Picks the Level". Answers I&E §8.3, Second Pool §9.3 and OOA §9.3 together,
+and MF §8.4 with them. The hierarchical complex is a holarchy by construction:
+edges PARTITION by the merge that introduced them (|E_l| = 128, 117, 64, 32,
+16, 8, 4, 2) and the interfaces between level-l holons NEST, I_l = E_{>l}.
+Prop 3.1 receipts sum (disjoint pools per level); Prop 3.2 interfaces nest,
+so the compositional holarchic mechanism's native budget is the finest
+level's whatever the number of levels — a level-by-level sum overstates it
+by sum|I_l|/|E| = 2.30 on the specimen; Prop 3.3 iota(Pi_l|Pi_0) =
+|A_l|/(|A_l|+|I_l|), the receipt share. The sum-or-minimum dichotomy was
+asked of the wrong pool: SUM for the pool that evidences nothing, UNION for
+the pool that does. Prop 4.1: a level-j block's boundary lies entirely above
+its level and halves per level EXACTLY (sum over blocks = 2|E_l|, a
+double-counting identity), total 4(1 − 2^{j−8}). GtG Prop 6.1 priced on the
+sheaf with the residual reading, 26 gates: AND over own-merge gates = every-
+edge gate = 3, 2, 3, 2 (the published 12, 4, 3, 1 per identity reproduced);
+OR over levels = 0 at every size (the coalition presents at or below its own
+level); a level's MEAN gate prices only boundaries above theta ≈ 0.41 of the
+level — the two largest blocks at the top two levels, within one derivation
+of the arithmetic on marginal epochs — and the network mean prices nothing.
+The boundary does not move with the level of presentation; receipts do, and
+receipts are idle. MF §8.4's criterion (both sides controlled) is correct —
+it is exactly "interior to the coalition" — and NOT a residual: naive
+fiction glues at 0.000 against honest 0.203, a two-sided gate refuses it,
+and a fabrication of honest scale plus honest-level noise (cost 0) sits at
+0.199 inside honest's spread. Prior art: single-shard takeover (Buterin;
+Hafid et al.; OmniLedger; Monoxide), Hirshleifer's weakest link, Douceur
+Lemma 3, collusion-proofness (Yokoo; Zhang–Tang), cheap community cuts
+(Viswanath 2012; Alvisi 2013; Conitzer 2010), Rowe's layered attestation,
+Gaži–Kiayias–Zindros firewalls — cited, not claimed. New instrument
+`code/holarchy.py`, ~1 s, every prediction held; one first-pass error (the
+record-based fiction is zero on interior prompts, so the first mimic was
+noise against noise and the fit over-absorbed). Six revisions: I&E → v0.3,
+Second Pool → v0.3, OOA → v0.2, MF → v0.5, GtG → v0.3 (Cor 6.2's product
+measured as one boundary), Gauge-Fixing → v0.3 (§2 target measured failing;
+tests (iii) and (iv) recorded).*
+
+**Consequences for the plan.** The evidencing budget of a holarchy is one
+level's boundary; nesting buys receipts. Two design routes are now named and
+unbuilt: beacon-assigned overlaps (sharding's remedy transposed — a random
+cut grows with |C| and restores the cap, at the cost of the substrate's own
+nesting; §9.1) and the audit at a price (§9.4). Depth-versus-span (GtG §8.3)
+is a computation on a non-binary holarchy (§9.2). Reward across levels
+(§9.5) is MF Thm 6.1's convexity on the level axis. Conjecture R not
+invoked: no formalism was imported. Next by the journal's ranking:
+Conjecture 3.1 (four sessions untouched), then the expansion-vs-richness
+curve (OOA §9.4) which §9.1 here sharpens.
+
+---
+
+### P6 · Information geometry — `order: 24` — *planned* — **CRITICAL PATH, premise now OPEN**
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed
@@ -608,7 +660,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 24` — *planned*
+### P7 · Renormalization — `order: 25` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -629,7 +681,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 22+`, all *planned*
+### C-tier — grounding papers, `order: 26+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|
