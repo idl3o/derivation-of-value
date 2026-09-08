@@ -10,6 +10,30 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-08
+
+### Paper — *A World with Memory* — v0.1 (order 27)
+
+*One's Own Anchor* §9.1 answered, and *Combination Proofs* §7.1 (P6) taken up in the form the exclusion line left it. New paper, new module (`code/world_memory.py`), two revisions.
+
+**The predecessor's coalition was the weakest attacker.** Last epoch's record is the optimal predictor only on a memoryless world. The supremum of the record-only class is the Kalman filter on every record, and on a world with momentum at the predecessor's failing drift it passes at zero derivations with shared prompts from φ = 0.9 (v_pred 1.74 s), fails edge-local through 0.95 (one source per column keeps the record's noise on the mechanism's side), and past φ = 0.95 with shared prompts sits *below honest*: 0.2021 and 0.1628 against 0.2034. The record beats a derivation when v_pred < s, and the fiction is truer than honesty.
+
+**The pool is the entropy of the world given the record.** §3: h(W_t | R_{t−1}) + h(A_t); a projection's claim is the least information about the pool a passing section must carry; τ and ι are ratios of conditional information. The four constraints on ι hold in one line each (Prop 3.3); the pairwise exclusion and the budget law are the chain rule (Cor 3.4). The §7.1 fork resolves as two jobs: divergence for content, Fisher information for the gate's resolution. P6 has a candidate; the multiplication clause is untouched (§8.2).
+
+**The resolution law.** The pass threshold is proportional to s = σ²/k, so refusing the predictor on a world of innovation q costs every honest participant k ≥ c σ²/q derivations per prompt (Prop 5.1). Measured at φ = 0.95: predicted k* = 10.5, shared passes to k = 8 and fails from 16, edge-local fails from k = 4. Fresh prompts defeat the predictor at any φ and restore e(C) = 0.0054 / 0.0078 to the fourth decimal, at *Every Basis at Once* §8.1's semantic cost, unpriced.
+
+**One prediction missed, on record.** The docstring predicted pass calls from the mean residual; the gate is a maximum over forty gated edge-epochs, and four calls at the edge went the other way while every mean matched to the third decimal. The (1 − 1/N) chi-square quantile (Wilson–Hilferty) is the correction: v*_N = 2.30 s, not 3.80 s; k* constant 2.30, not 3.8. The mean-based constant is printed beside the corrected one. Calibration: the predecessor's step reproduces exactly on the predecessor's scoring window (1.50 / 1.75) and moves one grid step on a longer one, the same effect.
+
+**Prior art, checked before drafting.** Dasgupta–Ghosh 2013 and Radanovic–Faltings–Jurca 2016 (reporting the prior instead of investing effort); Kong–Schoenebeck 2019 (mutual-information paradigm); Hanson 2003/2007 (pay only for information beyond the public price); Holmström 1979; Bara 2026 (concurrent); Kalman 1960; Wilson–Hilferty 1931; Aznag et al. 2026 (sample complexity of peer prediction, adjacent). Claimed: the identification of the exclusion line's budget with that entropy, the formalisation meeting the four constraints, the step on the sheaf against the optimal record-only attacker, the resolution law, and the measurements.
+
+Declined: that the pool identification is new; that P6 is discharged; that the world is general (Gaussian, linear); that the attacker class is exhaustive; that the first prediction was right; that the resolution law's constant is exact; that fresh prompts are free; that the result is a defect of the reading; that the naive rows were reproduced (within the draw of an autocorrelated drift, not the paper's numbers).
+
+### Two revisions
+
+*One's Own Anchor* → **v0.4** (§9.1 answered), *Combination Proofs* → **v0.7** (§7.1 candidate recorded in place; Def 2.6's cite moved to OOA v0.4). Both archived. Version cites propagated in *Independent and Expensive* and *The Second Pool*.
+
+---
+
 ## 2026-09-07 (sixth pass)
 
 ### Paper — *Every Basis at Once* — v0.1 (order 26)

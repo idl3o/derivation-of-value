@@ -31,6 +31,7 @@ code and named in the docstring rather than quietly repaired.
 | `covers.py` | The obstruction off the cycle, over ℤ, ℚ and ℤ₂: the square and GHZ vanish over the rationals; detection collapses on no-signalling chorded covers and recovers on signalling ones; a K4 holarchy with tolerance gates has no miss. |
 | `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; on a cyclic cover the obstruction is undirected reachability in the bundle diagram (a theorem, ring-independent) and a miss lives only in a chain with a tolerance gate. |
 | `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
+| `world_memory.py` | A world with memory. The predecessor's coalition was the weakest record-only attacker; against the Kalman filter on the record the residual reading's price is a step in the world's innovation given the record, a world with momentum passes at zero derivations and, past a point, sits below honest; the gate's resolution is σ²/k, so k* = c σ²/q; fresh prompts restore the pool. First prediction's mean-vs-max miss recorded. |
 | `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
 
 ```
@@ -52,6 +53,7 @@ python holarchy.py
 python contextuality.py
 python covers.py
 python every_basis.py
+python world_memory.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -616,6 +618,37 @@ reading run at f = 1 confirms it (stale fails every epoch, deriving pays,
 e(C) = 0.518). The boundary is linear in f, the gap saturates by f = 1/8,
 and the spectral dimension leaves 1.6 as the cover is redrawn: expansion
 and richness are one purchase with opposite signs.
+
+## A world with memory
+
+`world_memory.py` takes the residual reading's world from memoryless to
+remembering. The coalition of `evidencing.py` used last epoch's record;
+the optimal record-only attacker is the Kalman filter on every record so
+far, and on a world with momentum — the same drift per epoch as the
+predecessor's failing row, a fraction φ² of it predictable — it passes at
+zero derivations once its one-step error v_pred falls below a threshold set
+by the gate:
+
+| prompts | φ | q / s | v_pred / s | coalition r | honest r | passes |
+|---|---|---|---|---|---|---|
+| shared | 0.80 | 3.24 | 3.27 | 0.2998 | 0.2036 | no |
+| shared | 0.90 | 1.71 | 1.74 | 0.2408 | 0.2035 | yes |
+| shared | 0.95 | 0.88 | 0.91 | **0.2021** | 0.2034 | yes |
+| shared | 0.99 | 0.18 | 0.21 | **0.1628** | 0.2034 | yes |
+| edge-local | 0.95 | 0.88 | 2.99 | 0.2917 | 0.2070 | no |
+| edge-local | 0.99 | 0.18 | 1.53 | 0.2322 | 0.2065 | yes |
+
+The threshold is v*_N = tol²/((1 − 1/m) c_N²) − s = 2.30 s, with c_N² the
+(1 − 1/N) chi-square quantile for the N = 40 gated edge-epochs; the first
+prediction used the mean (3.80 s) and missed four calls, all one way, and
+the miss is in the docstring. Past φ = 0.95 with shared prompts the
+predictor is below honest: the record is a better model of the world than
+a derivation. The threshold is proportional to s = σ²/k, so refusing the
+predictor on a world of innovation q costs every honest participant
+k ≥ c σ²/q derivations per prompt (measured: shared passes to k = 8, fails
+from 16, against a predicted 10.5). Fresh prompts — columns the record has
+never covered — defeat the predictor at any φ and restore the
+predecessor's boundary share to the fourth decimal.
 
 ## Two disciplines this code tries to keep
 

@@ -772,7 +772,65 @@ one line; the journal is now the next item, not another paper.
 
 ---
 
-### P6 · Information geometry — `order: 27` — *planned* — **CRITICAL PATH, premise now OPEN**
+### P20 · A world with memory — `order: 27` — **v0.1 drafted 2026-09-08** → `a-world-with-memory.md`
+
+*"A World with Memory" · "The Pool as Conditional Entropy, and the Resolution
+of the Gate". Answers OOA §9.1 and takes up CP §7.1 (P6) in the form the
+exclusion line left it. OOA's coalition (last record, decayed) was the
+WEAKEST record-only attacker, optimal only on a memoryless world; the
+supremum is the conditional mean given every record — the Kalman filter
+(1960, cited). World with momentum: G(t) = G(t−1) + Δ(t), Δ AR(1) with φ,
+one-step drift δ² at every φ, innovation given the exact past
+q = (1−φ²)δ²; at φ = 0 a random walk with the AR(1) world's one-step
+error, and the predecessor's step reproduces exactly (1.50 / 1.75) on the
+predecessor's window. §3: the pool is h(W_t | R_{t−1}) + h(A_t); the
+information claim I_min(π|Z) is the least information about the pool a
+passing section must carry; τ = I_min/h, ι(π|π′) = (I_min(π∧π′) −
+I_min(π′))/I_min(π). Prop 3.3: the four constraints on ι met in one line
+each; Cor 3.4: I&E Thms 3.3–3.4 are the chain rule. The §7.1 fork resolves
+as two jobs — divergence for content, Fisher information k/σ² for the
+gate's resolution. Prop 4.1: the predictor passes iff v_pred < v*_N =
+tol²/((1−1/m)c_N²) − s, c_N² the (1−1/N) χ² quantile (Wilson–Hilferty);
+on the specimen 2.30 s, not the mean-based 3.80 s — the first prediction
+used the mean, four calls missed, recorded. Measured at δ = 3√s (OOA's
+failing row), block of 128: shared prompts, the extrapolator and the
+filter pass at zero derivations from φ = 0.9 (v_pred 1.74 s); edge-local
+(b = 1) fails through 0.95 and passes at 0.99; e(C) is OOA's share or
+zero, nothing between. BELOW HONEST at shared φ ≥ 0.95: 0.2021 / 0.1628
+against honest 0.2034 — the record beats a derivation when v_pred < s.
+Prop 5.1: k* = c σ²/q — at φ = 0.95, q = 0.0197, predicted 10.5, the
+shared predictor passes to k = 8 and fails from 16, edge-local fails from
+k = 4 (the record's noise is on the mechanism's side). Fresh prompts
+(columns never recorded) defeat the predictor at any φ and restore
+e(C) = 0.0054 / 0.0078 to the fourth decimal, at EB §8.1's semantic cost,
+unpriced. Prior art: Dasgupta–Ghosh 2013, Radanovic–Faltings–Jurca 2016
+(effort vs prior), Kong–Schoenebeck 2019 (MI paradigm), Hanson 2003/2007
+(pay only for information beyond the public price), Holmström 1979, Bara
+2026, Kalman 1960, Aznag et al. 2026 (sample complexity, adjacent). Claimed:
+the pool identification, the formalisation against the four constraints,
+the step against the optimal record-only attacker on the sheaf, the
+resolution law, the measurements. Instrument `code/world_memory.py`, ~10 s,
+imports evidencing.py unchanged. Revisions: OOA v0.4 (§9.1 answered), CP
+v0.7 (§7.1 candidate recorded). Conjecture R twelfth.*
+
+**Consequences for the plan.** The surviving positive claim is now bounded
+by a property of the world the mechanism does not control. Three things
+follow. (1) P6 is no longer 'find the formalisation' but 'prove or refute
+the multiplication clause under it' (§8.2), which is the graded model
+(I&E §8.1) as one question. (2) The cover curve has a third axis: fresh
+prompts restore the pool at the same semantic cost that redrawing the cover
+pays (§8.3) — one price, two knobs. (3) The deployed world's q/s is
+measurable from a record alone (§8.4), and it decides whether the reading
+evidences anything on Bittensor; that is the empirical paper the corpus has
+never written. The recommended course after this paper (session of
+2026-09-08): if q/s is healthy on any real record, build; if not, Volume VI
+is the deflation and the inward axis is the only content channel left.
+
+---
+
+### P6 · Information geometry — ~~`order: 27`~~ — *candidate stated in P20* — **CRITICAL PATH; the multiplication clause remains**
+
+*2026-09-08: the formalisation this entry asked for is written down in *A World with Memory* §3 and checked against the four constraints; the metric-vs-divergence fork below resolves as two jobs (divergence for content, Fisher for resolution). What survives of this entry is the leading-order multiplication clause and the packing-number reading of Def 5.1, neither of which the candidate touches. The order number is released. Original entry follows.*
 
 *`code/iota_asymmetry.py` tried to settle whether ι is symmetric and could not.
 ι(dim|ker) ≈ 0.08 is solid; ι(ker|dim) is unmeasured — two attack designs failed

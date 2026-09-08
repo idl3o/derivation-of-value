@@ -12,17 +12,17 @@ has been replaced.
 
 ## 1. Shape
 
-**Twenty-six documents, orders 1–26, all published. Seven papers added since the
-last journal, eighteen revisions.** Eighteen code modules. Forty archived
-versions, four of which never went live. Orders 23 to 26 were drafted after this
+**Twenty-seven documents, orders 1–27, all published. Eight papers added since the
+last journal, twenty revisions.** Nineteen code modules. Forty-two archived
+versions, four of which never went live. Orders 23 to 27 were drafted after this
 journal was written and are folded in below where they move a grade.
 
 | | |
 |---|---|
 | **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
-| **Framework** | *Combination Proofs* **v0.6** |
+| **Framework** | *Combination Proofs* **v0.7** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.4, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.4, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.3**, ***The Budget Across Levels* v0.2**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1**, ***Every Basis at Once* v0.1** |
+| **Papers** | *Gauge-Fixing* v0.4, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.4, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.4**, ***The Budget Across Levels* v0.2**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1**, ***Every Basis at Once* v0.1**, ***A World with Memory* v0.1** |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -39,7 +39,7 @@ converted forty-seven reader-directed questions to four, across the index and
 six volume documents, and changed no claim.
 
 Four working documents, none published: `_plan/ruliad.md`, `_plan/gallery.md`,
-`_plan/research-program.md` (P0–P19, next entry P20), `_plan/service-reframe.md`
+`_plan/research-program.md` (P0–P20, next entry P21), `_plan/service-reframe.md`
 (S1/S2, untouched since it was opened).
 
 ---
@@ -107,6 +107,8 @@ budget is its finest level's and ι(Π_ℓ|Π₀) is the level's receipt share (
 above its level and halves per level as a double-counting identity (Prop 4.1).
 The sum-or-minimum question was asked of the wrong pool.
 
+**The pool as conditional entropy** (*A World with Memory* §3, `world_memory.py`). The paid pool of the exclusion line is h(W_t | R_{t−1}) + h(A_t): the entropy of the world given the public record plus the anchors' own. A projection's claim is the least information about that pool a passing section must carry; τ is the claim over the pool, ι(π|π′) the fraction of π's claim π′ does not extract. Prop 3.3: the four constraints on ι (degenerate where claims vanish, asymmetric, claim-disjointness in the set model, native share against the anchor) hold in one line each; Cor 3.4: the pairwise exclusion and the budget law are the chain rule. Prop 4.1: against the optimal record-only attacker (the Kalman filter on the record) the residual reading's price is a step in the innovation given the record, threshold v*_N = tol²/((1−1/m)c_N²) − s with c_N² the (1 − 1/N) chi-square quantile — the mean-based constant was the first prediction and missed four calls, on record. Prop 5.1: k* = c σ²/q — refusing the predictor costs every honest participant derivations in inverse proportion to the world's innovation. Candidate for P6; the multiplication clause is not addressed.
+
 ### Measured
 
 | finding | value |
@@ -146,6 +148,13 @@ The sum-or-minimum question was asked of the wrong pool.
 | copiers on the redrawn cover: spread honest / averaging / adaptive | 0.000 / 0.000 / **0.267** — the adaptive copier signals and is refused; the averaging one passes below honest |
 | beacon-drawn cover, block of 128: boundary, per-identity cost | 2 → **191** (mixing lemma 186); 1 → **96** against honest 186 |
 | the curve in f: λ₂ (giant), spectral dimension | 0.0038 → 0.049 by f = 1/8 → 0.10; 1.68 → 2.56, R² 0.996 → 0.975 |
+| predecessor's step reproduced on its window (edge-local / shared) | 1.50 / 1.75, exact |
+| optimal predictor at the predecessor's failing drift, φ = 0.9, shared | passes at **zero** derivations, v_pred 1.74 s |
+| the same, edge-local (one source per column) | fails, v_pred 4.13 s against v*_N 2.30 s |
+| pass threshold: mean-based / max over 40 gated edge-epochs | 3.80 s / **2.30 s** — four calls moved, all one way |
+| predictor below honest, shared prompts, φ = 0.95 / 0.99 | **0.2021 / 0.1628 against 0.2034** — the record beats a derivation |
+| k* at φ = 0.95 (q = 0.0197): predicted / shared passes to / edge-local fails from | 10.5 / k = 8 / k = 4 |
+| fresh prompts, predictor error, any φ | 4.8–6.1 against tol 0.318; e(C) restored to 0.0054 / 0.0078 exactly |
 
 Every number reproduced from a designed specimen first: the escape specimen and
 five siblings at zero deviation (order 20), a three-pool miniature plus seven
@@ -179,6 +188,8 @@ spectral gap" was the whitepaper's one quantitative claim about the gluing layer
 *Requisite Richness* chose this family for its low spectral dimension. The target
 stands; the specimen fails it; *Gauge-Fixing* v0.3 now says so, and records tests
 (iii) and (iv) of its own suite.
+
+**That the surviving reading's price is what *One's Own Anchor* measured.** It is a ceiling. Its coalition was the weakest record-only attacker, optimal only on a memoryless world; against the filter, a world with momentum at the same drift passes at zero derivations with shared prompts from φ = 0.9, and below φ-dependent thresholds the record is a better model of the world than a derivation. The supremum rule, applied to the world.
 
 **Two candidate novelties, refused before drafting.** The transition anchor is a
 proof of sequential work with a public beacon (Mahmoody–Moran–Vadhan, Cohen–Pietrzak,
@@ -230,6 +241,8 @@ P6 now formalises one quantity with two uses, under four constraints: degenerate
 where claims vanish; asymmetric; reduce to claim-disjointness in the set model;
 and, against the anchor, coincide with the native share when multiplied by τ.
 
+**2026-09-08: a candidate.** *A World with Memory* §3 writes it down as a ratio of conditional informations on a pool that is the entropy of the world given the record plus the anchors' entropy, and meets the four constraints in one line each. The fork *Combination Proofs* §7.1 posed — metric or divergence — resolves as two jobs: the divergence prices content, Fisher information prices the gate's resolution. What the candidate does not do is the multiplication clause, and no instrument computes the infimum directly; P6 is open with a candidate in it, not discharged.
+
 ---
 
 ## 3. The conditions that look like hygiene
@@ -259,7 +272,7 @@ strategy that exploits its absence and watch the instrument return an absurdity.
 
 ## 4. Self-corrections
 
-Eleven from the previous journals, plus eight.
+Eleven from the previous journals, plus nine.
 
 12. **Naive survival was +1.131.** Measured against the *weakest* anchor-only
     strategy. Against the best, paired, it is −0.046. The supremum-over-attackers
@@ -285,6 +298,12 @@ Eleven from the previous journals, plus eight.
     coalition passed at the network level with a residual it would have failed on
     every one of its boundary edges. Gate every edge; the network-level number is
     an average and averages are where coalitions hide.
+20. **The pass threshold was predicted from the mean residual where the gate
+    takes the maximum over forty gated edge-epochs.** Four calls at the edge
+    went the same way; every mean matched to the third decimal. The
+    chi-square quantile is the correction, the mean-based constant is
+    printed beside it, and the calibration line shows the same effect as a
+    one-step shift on a longer window.
 
 **Five of eight were caught by an impossible number** (12, 13, 15, 18, 19), and
 13 is a new kind: not an absurdity but a *disagreement with a prior instrument*,
@@ -387,7 +406,9 @@ distinction with a cost attached.
    hierarchical distance, giving the curve a second axis and an optimum in f.
 3. **Formalise ι**, now one quantity with two uses and four constraints (§2).
    Five dependents, and P6 remains critical path. Named again rather than
-   repeated, per the plan's own instruction.
+   repeated, per the plan's own instruction. **Candidate, 2026-09-08** — *A World
+   with Memory* §3 meets the four constraints; the multiplication clause
+   remains (its §8.2).
 4. ~~**Revise *Gauge-Fixing* to say its target fails on the specimen.**~~ **Done** —
    v0.3, §2 amended, §5.2 records tests (iii) and (iv). Tests (i), (ii) and the
    conjunction remain (item 15).
@@ -398,9 +419,15 @@ distinction with a cost attached.
 6. **Attack the §5.2 cost model.** Promoted: the reconciliation share — up to two
    thirds of the honest budget — is that model's number. *S&W §7.*
 7. **State C1–C5 as framework conditions**, and run the audit behind them.
-8. **A world with memory.** The native share is bounded by the entropy rate of
-   the world conditional on everything public. One theorem; belongs in an *OOA*
-   v0.2. *OOA §9.1.*
+8. ~~**A world with memory.**~~ **Done, 2026-09-08** — *A World with Memory*
+   v0.1. The pool is h(W_t | R_{t−1}) + h(A_t); the price is a step in the
+   innovation given the record against the optimal predictor; the gate's
+   resolution is σ²/k, so k* = c σ²/q. Replaced by the **nonlinear world**
+   (its §8.1), the **prompt schedule** as a third axis of the cover curve
+   (§8.3), and the **deployed world's innovation**, q/s measurable from a
+   record alone (§8.4). *Original statement follows.* The native share is
+   bounded by the entropy rate of the world conditional on everything
+   public. One theorem; belongs in an *OOA* v0.2. *OOA §9.1.*
 9. **Two disciplines.** *ACF §8.5*, still untested — two anchors of one discipline
    are not the test (*Second Pool* Prop 5.4). *ACF §8.2* now has an instrument
    (*OOA §9.5*).
@@ -463,3 +490,5 @@ rate. And the day ended with a positive result, which the corpus rarely has: a
 lever, the cover, with its price named in the program's own currency. The program's
 titles say *work*. Its one surviving instrument measures contact with a world,
 and what it evidences is the part of the world nobody has written down yet.
+
+**2026-09-08.** The next leg was the one this journal ranked eighth and the breakdown ranked first: what a world with memory does to the surviving reading. It does what was feared. The price is a step in the innovation given the record, the coalition the predecessor wrote down was the weakest in its class, and on a world that remembers, the record beats a derivation and the fiction is truer than honesty. What was gained is the currency: the exclusion line's pool is the entropy of the world given the record, ι and τ are ratios of conditional information, and P6 has a candidate that meets its four constraints. What was priced is the resolution: every honest participant pays k of order σ²/q to refuse a predictor on a world of innovation q, so a predictable world is expensive to evidence in proportion to how little there is to evidence. Fresh prompts restore the pool, at the cover line's semantic cost. One prediction missed by using a mean where the gate uses a max, four calls moved, and the correction is on record. The surviving positive claim is now bounded by a property of the world the mechanism does not control, and measured on a world the mechanism does not have.
