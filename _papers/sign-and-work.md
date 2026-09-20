@@ -2,15 +2,15 @@
 layout: document
 title: "Sign and Work"
 subtitle: "Stigmergy, Sematectonic Traces, and the Cost of Forging a Residue"
-eyebrow: "An Anthology · Paper · v0.3"
+eyebrow: "An Anthology · Paper · v0.4"
 permalink: /sign-and-work/
 anthology: "Derivation of Value"
-version: "v0.3"
+version: "v0.4"
 date: 2026-08-06
 license: "CC BY 4.0"
 label: "Anthology · Paper"
-blurb: "Volume V named residue and left one half of its security argument as a design obligation it could not discharge. This is the discharge. Grassé's word for coordination-by-trace splits along exactly the line the volume drew — stigma against ergon, sign against work — and the seam has a price: the trace gap τ, the ratio of forging a residue to earning it. v0.3 measures it. Two ceilings, reached by unrelated routes, agree: coherence never contributes to the trace gap. Whatever τ a mechanism has comes from its anchor, and the coherence term appears only in the denominator."
-status: "v0.3 · working draft"
+blurb: "Volume V named residue and left one half of its security argument as a design obligation it could not discharge. This is the discharge. Grassé's word for coordination-by-trace splits along exactly the line the volume drew — stigma against ergon, sign against work — and the seam has a price: the trace gap τ, the ratio of forging a residue to earning it. v0.3 measures it. Two ceilings, reached by unrelated routes, agree: coherence never contributes to the trace gap. Whatever τ a mechanism has comes from its anchor, and the coherence term appears only in the denominator. v0.4 records that §8.2 has a specimen above one, and that it is a free ride."
+status: "v0.4 · working draft"
 order: 16
 ---
 
@@ -228,7 +228,7 @@ Note finally that the architectural vocabulary for ledger-mediated stigmergy alr
 
 **8.1. ~~Measure τ for more projections.~~ Partly discharged; the residue is sharper.** The previous version's open problem asked for τ on the spectral projection and on a participation-constrained H⁰. §5 supplies the second and a ceiling covering both, and what remains is narrower and harder: **is there a coherence reading whose trace gap is not bought entirely by its anchor?** §5.3's conclusion is established for dim ker of a declared connection. A reading that scores cycle agreement directly — where the restriction maps are measured at overlaps rather than induced by declared frames — is not covered by Proposition 5.1's telescoping argument, and is the one place a better gap could hide. If it does not hide there, the conclusion generalises and coherence-based attestation is bounded in a way the framework has not admitted.
 
-**8.2. ~~Is τ ≥ 1 attainable, or only approachable?~~ Answered for coherence readings: only approachable.** Propositions 5.1 and 5.2 both put 1 out of reach except in the degenerate limits, and the shortfall is the coherence content in each case. The question survives *outside* the coherence setting, and its interesting form is now Volume V's: does any substrate admit a reading with τ > 1, or is every trace at best as expensive to forge as to earn? Proof of work sits at exactly 1 and the program has no specimen above it.
+**8.2. ~~Is τ ≥ 1 attainable, or only approachable?~~ Answered for coherence readings: only approachable.** Propositions 5.1 and 5.2 both put 1 out of reach except in the degenerate limits, and the shortfall is the coherence content in each case. The question survives *outside* the coherence setting, and its interesting form is now Volume V's: does any substrate admit a reading with τ > 1, or is every trace at best as expensive to forge as to earn? Proof of work sits at exactly 1 and the program has no specimen above it. **A specimen now exists — *The Barrowverse* v0.1 §7.3 — and it is not the one this problem hoped for.** The depth of an artefact under a proof-of-work mound evidences priority and grades at d/κ for its owner, κ the owner's fee in block rewards, against a forger below half the hashrate: ten thousand per block on that paper's specimen. It is above one because the earning is shared and the forging is not. Against the whole mound the gap is one again, and summed over every artefact beneath it the gap is the reciprocal of what they paid towards it. No work there costs more to forge than to do. What survives of this problem is whether any reading above one evidences *work* rather than priority, which that paper carries as its §11.1.
 
 **8.3. What raises the encoding's share honestly?** Proposition 5.2 says τ rises with E/c, so a mechanism can approach soundness by making its anchor expensive relative to its coherence work. This is a *perverse* route to a target — the mechanism ends up measuring its anchor — and the question is whether it has a non-perverse form. If not, the design consequence is stark: the coherence layer should be priced as a coordination device rather than an attestation one.
 

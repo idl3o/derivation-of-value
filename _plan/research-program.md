@@ -828,6 +828,60 @@ is the deflation and the inward axis is the only content channel left.
 
 ---
 
+### P21 · The barrow — `order: 28` — **v0.1 drafted 2026-09-20** → `the-barrowverse.md`
+
+*"The Barrowverse" · "Meme Artefacts, the Mound of Work, and a Reading Above
+One". Not on the map; opened on a user prompt (a web3 paper, then "an NFT
+memecoin marketplace thesis", then "from a BTC-favourable point of view", then
+"full scope"). The favourable position is adopted in advance and recorded as
+adopted; the corpus already held it at one measured point (S&W §5: PoW at
+τ = 1.054, "no specimen above it") and the anchor through-line (S&W §5.3, I&E
+Rem 3.7, OOA Thm 3.4) says the rest. Object: the null specimen — a marketplace
+of assets whose world is their own record. Three kinds of reading graded on
+one instrument. MARKET (volume, holders, floor): τ = fee − reward, 0.025 to
+−0.010; BELOW ZERO flagged — the reading pays its forger (La Morgia et al.
+2023 measured it on LooksRare). FEE: declared is a sign (a miner pays itself;
+τ = τ(clearing)/k; Roughgarden's Key Takeaway 5 in these units); at the
+block's clearing rate 0.89–1.02, ≤ 1 for a fractional packer, within a
+heuristic grain otherwise, VACUOUS in a non-full block; the burn is 1.0000
+and idle. DEPTH: the race costs E[orphans]/P(win) rewards relative to honest
+mining (closed form + tridiagonal solve, checked by a walk), exponential
+below q = 1/2, d(d+1)/3 at it, zero above (Budish 2025 Thm 2, Gans–Halaburda
+2024 — cited); the eclipse costs d rewards at ANY q and binds from d = 1 or
+3. τ(depth) = d/κ = 10,000 per block at κ = 1e-4: the first reading above
+one. It is Auer's free ride from the rider's seat: social gap 1, owner's gap
+1/(owner's share), aggregate gap 1/(artefacts' share of the reward) — 1.083
+in block 840,000 — → 1 as the subsidy ends. Four breaks in the position:
+fee field is a sign (Ethereum wins at the protocol layer); the switch at 1/2,
+whose location is attested by pool tags (signed claims; 43.7% for the top two
+by tag, more by template); flow vs stock (Budish); and the reader (an
+indexer's API is a signed claim) with the artefact's identity (indexer
+convention; cursed inscriptions, the jubilee at 824,544, BRC-20's "off-chain
+balance states"). Four predictions missed (ratio bound on Nakamoto's
+approximation; the 10% artefact; slope at q = 0.45; linear at 1/2 — it is
+quadratic) and one forger too weak (prefix packer returned τ(clearing) > 1;
+first-fit is the correction). Calibrated on three published numbers: the
+1.054, Nakamoto's table, Rosenfeld's Table 1. Instrument `code/barrow.py`,
+~20 s, imports trace_gap.pow_specimen unchanged. Revisions: Kar-Coin v0.4
+(second later note), S&W v0.4 (§8.2). Volume I's "escapes the first two
+derivations" recorded as unsupported, NOT revised.*
+
+**Consequences for the plan.** (1) S&W §8.2 is answered in a form that
+sharpens it: the only reading above one is a shared earning against an
+unshared forgery, and its cargo is priority. Whether any reading above one
+evidences work or contact is the successor (§11.1). (2) The null specimen can
+be *measured*: a memecoin's price record is free and public, and AWM §8.4's
+q/s is fittable from a record alone — the cheapest route to the corpus's
+first contact with a deployed record, and it decides the build-or-Volume-VI
+fork the 2026-09-08 session left open (§11.2). (3) The mound as the corpus's
+dissipation floor AND beacon (GF §4; Bonneau–Clark–Goldfeder's p/(1−p) bias
+cost; The Second Pool's receipt/value separation) is an open question with
+an instrument half-built (§11.4). (4) Volume I now has a sentence the corpus
+itself does not support; that is Volume VI's material, not a patch.
+(5) P7's provisional order moves to 29.
+
+---
+
 ### P6 · Information geometry — ~~`order: 27`~~ — *candidate stated in P20* — **CRITICAL PATH; the multiplication clause remains**
 
 *2026-09-08: the formalisation this entry asked for is written down in *A World with Memory* §3 and checked against the four constraints; the metric-vs-divergence fork below resolves as two jobs (divergence for content, Fisher for resolution). What survives of this entry is the leading-order multiplication clause and the packing-number reading of Def 5.1, neither of which the candidate touches. The order number is released. Original entry follows.*
@@ -856,7 +910,7 @@ This tension is the paper's central problem, not an obstacle to it.
 
 ---
 
-### P7 · Renormalization — `order: 28` — *planned*
+### P7 · Renormalization — ~~`order: 28`~~ `order: 29` — *planned*
 
 **Title** "The Same Move at Every Scale" · **Subtitle** "Renormalization and the Program's Self-Similarity"
 
@@ -877,7 +931,7 @@ mechanism generating baby Mandelbrot sets. Both threads belong in this paper.
 
 ---
 
-### C-tier — grounding papers, `order: 29+`, all *planned*
+### C-tier — grounding papers, `order: 30+`, all *planned*
 
 | # | title | thesis | note |
 |---|---|---|---|

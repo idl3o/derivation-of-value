@@ -19,10 +19,10 @@ journal was written and are folded in below where they move a grade.
 
 | | |
 |---|---|
-| **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.3) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
+| **Anthology** | Vol I → Vol II ×3 (*Preservation*, *Omnium*, *Kar-Coin* v0.4) → Vol III → Vol IV *Borrowed Hardness* v0.3 → Vol V *What Cannot Be Helped* v0.2 |
 | **Framework** | *Combination Proofs* **v0.7** |
 | **Whitepaper** | *Proof of Coherence* v0.5 |
-| **Papers** | *Gauge-Fixing* v0.4, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.4, *Requisite Richness* v0.2, *Sign and Work* v0.3, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.4**, ***The Budget Across Levels* v0.2**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1**, ***Every Basis at Once* v0.1**, ***A World with Memory* v0.1** |
+| **Papers** | *Gauge-Fixing* v0.4, *Gluing the Gates* v0.3, *The Multiplicity Freedom* v0.5, *No Global Section* v0.4, *Requisite Richness* v0.2, *Sign and Work* v0.4, *A Consistent Fiction* v0.2, *Coutility* v0.2, *Borrowed Again* v0.1, ***Independent and Expensive* v0.3**, ***The Second Pool* v0.3**, ***One's Own Anchor* v0.4**, ***The Budget Across Levels* v0.2**, ***The Obstruction, Computed* v0.3**, ***The Ring and the Chord* v0.1**, ***Every Basis at Once* v0.1**, ***A World with Memory* v0.1**, ***The Barrowverse* v0.1** (order 28, drafted 2026-09-20) |
 
 The three new papers are one line, the **exclusion line**, and each answered the
 open problem the previous one closed on. Order 20 proved that within one substrate
@@ -39,7 +39,7 @@ converted forty-seven reader-directed questions to four, across the index and
 six volume documents, and changed no claim.
 
 Four working documents, none published: `_plan/ruliad.md`, `_plan/gallery.md`,
-`_plan/research-program.md` (P0–P20, next entry P21), `_plan/service-reframe.md`
+`_plan/research-program.md` (P0–P21, next entry P22), `_plan/service-reframe.md`
 (S1/S2, untouched since it was opened).
 
 ---
@@ -492,3 +492,5 @@ titles say *work*. Its one surviving instrument measures contact with a world,
 and what it evidences is the part of the world nobody has written down yet.
 
 **2026-09-08.** The next leg was the one this journal ranked eighth and the breakdown ranked first: what a world with memory does to the surviving reading. It does what was feared. The price is a step in the innovation given the record, the coalition the predecessor wrote down was the weakest in its class, and on a world that remembers, the record beats a derivation and the fiction is truer than honesty. What was gained is the currency: the exclusion line's pool is the entropy of the world given the record, ι and τ are ratios of conditional information, and P6 has a candidate that meets its four constraints. What was priced is the resolution: every honest participant pays k of order σ²/q to refuse a predictor on a world of innovation q, so a predictable world is expensive to evidence in proportion to how little there is to evidence. Fresh prompts restore the pool, at the cover line's semantic cost. One prediction missed by using a mean where the gate uses a max, four calls moved, and the correction is on record. The surviving positive claim is now bounded by a property of the world the mechanism does not control, and measured on a world the mechanism does not have.
+
+**2026-09-20.** Order 28, *The Barrowverse* v0.1, drafted on a prompt from outside the map: the favourable position on Bitcoin taken at full scope, against a marketplace of meme artefacts as the null specimen. Two grades move. *Sign and Work* §8.2 — "the program has no specimen above it" — has one: depth under a proof-of-work mound, τ = d/κ, ten thousand per block at κ = 10⁻⁴, against any forger below half the hashrate; and it is a free ride, the social gap being one and the aggregate gap the reciprocal of what artefacts pay towards the reward. *Kar-Coin*'s claim that nothing of a flow remains to be examined has had a counterexample in Volume I since the start, and is amended (v0.4). The favourable position broke in four places — the fee field is a sign; the mound is free to move above one half (Budish, Gans–Halaburda) and the location of one half is attested by signed claims; the distance to it is a flow while what is buried is a stock; the reader and the artefact's identity are conventions — and the zero-cost majority, the non-rival anchor and the burn's rationale were all someone else's before drafting began. Four predictions missed; one forger was too weak and had returned the welcome number. Volume I's "escapes the first two derivations" is recorded as supported by no result and left for a volume. Unpublished until pushed.

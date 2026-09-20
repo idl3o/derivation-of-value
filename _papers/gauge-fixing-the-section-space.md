@@ -89,7 +89,7 @@ The security claim is a conjunction. An adversary must simultaneously predict un
 
 ### 5.1 Test (i), executed, with §4.3 removed
 
-The suite has had its first respondent (`code/trace_gap.py`; *Sign and Work* v0.3 §5). What was run is not the full conjunction but its most informative fragment: the sheaf anchored by fixed frames alone, with unique encoding absent, priced by the trace gap τ = f/w of *Sign and Work* — the ratio of forging a trace to earning it, where soundness is τ ≥ 1.
+The suite has had its first respondent (`code/trace_gap.py`; *Sign and Work* v0.4 §5). What was run is not the full conjunction but its most informative fragment: the sheaf anchored by fixed frames alone, with unique encoding absent, priced by the trace gap τ = f/w of *Sign and Work* — the ratio of forging a trace to earning it, where soundness is τ ≥ 1.
 
 The prediction above is "generically it will admit them if any anchor is removed." It does, and three features of *how* it does were not anticipated here.
 

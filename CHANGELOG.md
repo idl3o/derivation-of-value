@@ -10,6 +10,34 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-09-20
+
+### Paper — *The Barrowverse* — v0.1 (order 28)
+
+*Sign and Work* §8.2 answered outside the coherence setting, and the second ladder of *Kar-Coin* amended. New paper, new module (`code/barrow.py`), two revisions.
+
+**A position adopted, not found.** The corpus has been favourable to Bitcoin since *Sign and Work* v0.3 in the only way it allows itself — proof of work is the calibration object at τ = 1 and "the program has no specimen above it" — and the through-line since (*S&W* §5.3, *I&E* Remark 3.7, *OOA* Thm 3.4) is that every gap is bought by an anchor. The paper takes the favourable position at full scope, records it as adopted in advance, and points it at the null specimen: a marketplace of meme artefacts, whose world is their own record. It breaks in four places and the breaks are the result.
+
+**The market's readings are signs.** τ(volume) = fee − reward, 0.0250 to −0.0100 on four stylised venues; τ(holders) = 0.0023; τ(floor) = fee − reward by a self-sale, 0 by a listing. BELOW ZERO is flagged, not clipped: the reading pays its forger. La Morgia et al. measured it on LooksRare before the corpus had the symbol.
+
+**The fee is two readings.** Declared, it is a sign — a miner pays itself and loses only what it displaced, τ = τ(clearing)/k, 0.0089–0.0102 at 100× — and in the other direction too (out-of-band fees). Valued at the block's clearing rate it grades 0.89–1.02, exactly ≤ 1 for a fractional packer and within a heuristic packing grain otherwise, and is VACUOUS in a block that is not full. The burn is 1.0000 against a miner as against anyone and builds nothing. First break: Ethereum's base-fee burn is natively at one (Roughgarden); Bitcoin's repair is at the venue.
+
+**The mound.** Forging depth d by a public race costs E[orphaned blocks]/P(win) rewards relative to honest mining — exact, by a closed form and a tridiagonal solve, checked by a simulated walk — exponential in d below half the hashrate, d(d+1)/3 at half, zero above (Budish 2025 Thm 2, Gans–Halaburda 2024; cited, not claimed). By an eclipse it costs d rewards whatever the forger's share, and below one half that binds from the first or third block. **τ(depth) = d/κ: 10,000 per block at κ = 10⁻⁴, the first reading above one in the corpus.** It is a free ride (Auer's tragedy of the common chain, from the rider's seat): the social gap is one, the owner's gap is one over the owner's share of the mound, and over all artefacts it is the reciprocal of their share of the reward — 1.083 in block 840,000 if every fee was an artefact's — returning to one as the subsidy ends. Not predicted: below one half the price of forging depth does not depend on the forger's share; the exponential is the price of moving the mound for everyone. Second break: the mound is free to move above one half, and where one half is is attested only by pool tags, which are signed claims (43.7% for the top two by tag in the month to 2026-09-20; more by template). Third: the distance to it is a flow while what is buried is a stock (Budish). Fourth: a venue reading through an indexer's interface has a signed claim, and what counts as an artefact is indexer convention.
+
+**Four predictions missed and one forger too weak, on record.** The bound on exact-over-Poisson in Nakamoto's model (predicted < 1.5; came back 1.95 / 6.33 / 1.11 / 1.56 — Rosenfeld's correction, and Grunspan–Pérez-Marco's tables print the exact column to seven decimals). The 10% artefact (predicted ≤ 0.9; 0.926–0.971). The log-slope at q = 0.45 (1.94× ln(p/q): the law is asymptotic). Linear growth at q = 1/2 (it is quadratic). And the first run's prefix packer returned τ(clearing) = 1.0167 / 1.0390 / 1.0212 — a headline, and a forger weaker than its class; first-fit packing is the correction and the first column is printed beside the right one.
+
+**Prior art, checked while drafting.** Nakamoto 2008; Rosenfeld 2014; Grunspan–Pérez-Marco 2018; Budish 2025 (the 2018 working paper lacks Theorem 2); Gans–Halaburda 2024; Moroz et al. 2020; Auer 2019; Bonneau 2016; Sompolinsky–Zohar 2016; Gervais et al. 2016; Eyal–Sirer 2014; Heilman et al. 2015; Haber–Stornetta 1991; Todd 2016; Roughgarden 2020; Karantias–Kiayias–Zindros 2020; Counterparty 2014 (2,124.63 BTC burned); La Morgia et al. 2023; Niu et al. 2024; von Wachter et al. 2023; Cong et al. 2023; Bertucci 2024; Szabo 2002/2005; Spence, Zahavi, Grafen. Claimed: the grading on one instrument in one unit; the clearing-rate reading; the private forgery binding below one half, independent of share; the reading above one as the free ride measured from inside, with the social and aggregate gaps; the amendment.
+
+Declined: that the position was found; that Bitcoin's value is derived (τ grades attestation, not worth); that τ(depth) > 1 certifies anything; that the reading above one is a gift; that the cost model is the paper's or settled; that the switch's location is known; that the mempool or venues are empirical; that Ethereum loses; that inscriptions are a good use of blockspace; that the marketplace is not extractive; that the conjunction's independence was measured; that anything is built.
+
+### Two revisions
+
+*Kar-Coin* → **v0.4** (a second later note: the outward ladder has one rung that attests itself — the hash is the residue of a flow — and the essay's closing design question has one solved instance; "rewards burning" stands, with what the burning buys added). *Sign and Work* → **v0.4** (§8.2: a specimen above one exists and is a free ride; what survives is whether any reading above one evidences work). Both archived. Version cites propagated in *A Consistent Fiction*, *Gauge-Fixing*, *Proof of Coherence* and *Requisite Richness*.
+
+**Not revised.** Volume I's "this is the move that escapes the first two derivations" is recorded in the new paper's §9 as supported by no result. Volume I carries no version and has never been amended; the restatement is left for a volume.
+
+---
+
 ## 2026-09-08
 
 ### Paper — *A World with Memory* — v0.1 (order 27)

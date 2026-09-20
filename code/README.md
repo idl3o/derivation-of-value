@@ -32,6 +32,7 @@ code and named in the docstring rather than quietly repaired.
 | `contextuality.py` | Conjecture 3.1 computed: the AMB Čech obstruction on gate scenarios with spectral gates, exact over ℤ and ℚ, calibrated on Bell / Hardy / PR. Every strong model seen; two in five logical ones invisible; on a cyclic cover the obstruction is undirected reachability in the bundle diagram (a theorem, ring-independent) and a miss lives only in a chain with a tolerance gate. |
 | `holarchy.py` | The budget across levels. Receipts sum, interfaces nest: a holarchy's evidencing budget is its finest level's; the minimum over levels is zero for a block coalition and the conjunction is one boundary counted once; the both-sides-controlled criterion is not a residual. |
 | `world_memory.py` | A world with memory. The predecessor's coalition was the weakest record-only attacker; against the Kalman filter on the record the residual reading's price is a step in the world's innovation given the record, a world with momentum passes at zero derivations and, past a point, sits below honest; the gate's resolution is σ²/k, so k* = c σ²/q; fresh prompts restore the pool. First prediction's mean-vs-max miss recorded. |
+| `barrow.py` | The barrow. A meme marketplace's readings graded by trace gap: volume, holders and floor are signs (τ = fee − reward, below zero where rewards exceed fees); the declared fee is a sign and the same space at the block's clearing rate is not; forging depth costs the revenue of orphaned blocks over the chance of winning in public and d rewards in private, so τ(depth) = d/κ below half the hashrate — the first reading above one — and zero above it. Calibrated on the published 1.054, Nakamoto's table and Rosenfeld's. |
 | `evidencing.py` | Evidencing is independence from one's own anchor. The identity τ_N = ι(π\|π_A)·τ on the attacker; then the one reading outside the declared-frame class — maps fitted at overlaps — against a coalition: public overlaps are a subsidy, commitment prices the world's innovation, and the cost falls on a boundary that is at most four edges on the program's own complex. |
 
 ```
@@ -54,6 +55,7 @@ python contextuality.py
 python covers.py
 python every_basis.py
 python world_memory.py
+python barrow.py
 ```
 
 Pure NumPy, no GPU, a few minutes on a laptop. Every figure is seeded, so the
@@ -649,6 +651,54 @@ k ≥ c σ²/q derivations per prompt (measured: shared passes to k = 8, fails
 from 16, against a predicted 10.5). Fresh prompts — columns the record has
 never covered — defeat the predictor at any φ and restore the
 predecessor's boundary share to the fourth decimal.
+
+## The barrow
+
+`barrow.py` grades what a marketplace of meme artefacts on a proof-of-work
+chain can read. It imports `trace_gap.pow_specimen` unchanged and reproduces
+the published **1.054** first, then four cells of Nakamoto's 2008 table to
+seven decimals by his formula, and the exact (negative-binomial) form of the
+same model against Rosenfeld's Table 1 and a two-million-trial race.
+
+**Market readings are signs.** One owner on both sides of a trade is out of
+pocket the fee and in pocket the reward: τ(volume) = 0.0250, 0.0050,
+**−0.0100**, **−0.0100** on four stylised venues. A negative gap is flagged
+`BELOW ZERO — the reading pays its forger` and not clipped.
+
+**The fee is two readings.** A miner including its own artefact pays the
+declared fee to itself and loses the revenue it displaced, so the declared
+reading falls as 1/declaration (0.0089–0.0102 at 100× the clearing rate)
+while the same space valued at the block's clearing rate grades 0.89–1.02 and
+is `VACUOUS` in a block that is not full. A burn returns 1.0000. The first
+run packed blocks by prefix and returned a clearing reading **above one** at
+three cells — a forger weaker than its class. First-fit packing is the
+correction; the prefix packer's column is printed beside it.
+
+**Forging depth.** Relative to mining honestly, a public rewrite costs the
+revenue of the blocks it orphans over its chance of winning, minimised over
+the give-up rule (closed form and a tridiagonal solve; a simulated walk is
+the check). In block rewards, at depths 1 / 3 / 6 / 12:
+
+| q | race | binding forgery |
+|---|---|---|
+| 0.1 | 8.9 / 918 / 6.7e5 / 3.6e11 | eclipse from d = 1 |
+| 0.3 | 2.07 / 29.3 / 477 / 8.0e4 | eclipse from d = 1 |
+| 0.45 | 0.893 / 6.54 / 31 / 217 | eclipse from d = 3 |
+| 0.5 | 0.667 / 4 / 14 / 52 = d(d+1)/3 | eclipse from d = 3 |
+| 0.55 | ~1e-20 | race — `SWITCH` |
+
+The eclipse — d blocks mined in private for one isolated reader — costs d
+rewards whatever the forger's share, so below one half τ(depth) = d/κ:
+**10,000 per block at κ = 1e-4**, the first reading above one in this
+directory, and a free ride: against the whole mound the gap is one. Above
+one half the race is free under Budish's conditions and τ is zero.
+
+Seven flags print on every run and are meant to: three cells where the
+docstring bounded Nakamoto's approximation error by 1.5 (it is 1.95, 6.33,
+1.56), three where it put a 10%-of-a-block artefact under 0.9 (0.926–0.971),
+and the log-slope at q = 0.45 (1.94× ln(p/q); the geometric law is
+asymptotic). A fourth miss, linear growth at q = 1/2, is in the docstring —
+the cost is quadratic.
 
 ## Two disciplines this code tries to keep
 

@@ -5,12 +5,12 @@ subtitle: "Volume II"
 eyebrow: "An Anthology · Volume II"
 permalink: /anthology/kar-coin/
 anthology: "Derivation of Value"
-version: "v0.3"
+version: "v0.4"
 date: 2026-08-06
 license: "CC BY 4.0"
 label: "Anthology · Volume II"
-blurb: "The civilizational-capacity derivation. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act — and against Barrow's inward complement, the grain at which it can act. The outward ladder is attested by report and inherits the oracle; the inward ladder leaves artifacts that attest themselves. Capacity is the conjunction."
-status: "v0.3 · working draft"
+blurb: "The civilizational-capacity derivation. Value denominated against a people's position on the Kardashev scale — the order of magnitude at which it can act — and against Barrow's inward complement, the grain at which it can act. The outward ladder is attested by report and inherits the oracle; the inward ladder leaves artifacts that attest themselves. Capacity is the conjunction. v0.4 notes the one outward rung that attests itself."
+status: "v0.4 · working draft"
 order: 8
 ---
 
@@ -73,6 +73,8 @@ This is why the substrate must be read across both ladders, and why the reading 
 And the two coordinates are independent in the framework's exact and demanding sense. A people can be vast and crude or exquisite and small, the record supplies both, and no monotone function carries either reading into the other. More to the point — since the multiplication claim feeds on the cost of faking and not on the elegance of the pair — the two attacks share no machinery. Everything an adversary learns about spoofing a meter is worthless toward counterfeiting an atomically specified structure, and everything learned about counterfeiting the structure is worthless toward the meter. The asymmetry runs deeper still, and it runs in the direction a mechanism wants: genuine mastery of the small does deliver command of the large, exactly as Barrow said, so a true inward claim implies an outward one — while a *faked* inward claim implies nothing at all, having never placed the atoms, and so cannot cash the implication. Real capacity propagates up the conjunction. Counterfeit capacity does not.
 
 None of this discharges the debt. It relocates it, which is the more useful of the two operations. The construction the previous section called unwritten is still unwritten — but it is no longer unwritten in the dark, because the projection that admits an intrinsic verifier now stands distinguished from the projection that does not, and the design problem has acquired a shape: how much of a civilization's outward magnitude can be made to *follow* from the artifacts it must leave behind, so that the coin reads the flow through its residue rather than through its report. That is a hard question. It is not the impossible one the sketch began with.
+
+A second later note, because one sentence above was too strong and the first volume had already said why. That a flow is invisible the moment it has passed is true of the megawatt-hour and false of one flow the anthology has known since its first page. The energy a proof-of-work chain burns leaves a residue — a hash beneath a target — which anyone may check with an instrument that costs almost nothing, and which returns the same answer to every party that checks it. The residue attests a count of operations exactly, and a quantity of energy only through the efficiency of the best machine yet built, so it is a floor and not a meter; but it is a floor with no reporter in it. The outward ladder therefore has one rung that attests itself, and the hard question this section closes on — how much of a magnitude can be made to follow from what it leaves behind — has one solved instance, which is the oldest mechanism in the program. A measurement taken since finds what that residue is worth to those who bury things beneath it: a reading of their priority that costs them a fee and costs a forger the mound, and which, summed over everyone beneath the mound, is worth exactly what the mound cost. The phrase above, that a currency on the outward ladder alone rewards burning, stands. What it left out is that the burning buys something, that what it buys is shared, and that the anthology's own anchors have been standing on it. The matter is taken up in the working paper on the barrow.
 
 ---
 
