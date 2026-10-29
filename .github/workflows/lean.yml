@@ -1,0 +1,29 @@
+# Machine-checked proofs under lean/ must build with no `sorry` before anything
+# touching them lands on main (push = live for the site; this is the gate the
+# repository did not have). Actions are pinned by commit SHA; the tag is a comment.
+name: lean
+
+on:
+  push:
+    branches: [main]
+    paths: ['lean/**', '.github/workflows/lean.yml']
+  pull_request:
+    paths: ['lean/**', '.github/workflows/lean.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: leanprover/lean-action@fe408643ea7367d8c0404a8be3975bb145f5fb64 # v1.7.0
+        with:
+          lake-package-directory: lean
+      - name: No sorry in the development
+        run: |
+          if grep -rn --include='*.lean' -w sorry lean/DerivationOfValue lean/DerivationOfValue.lean; then
+            echo "sorry found" >&2
+            exit 1
+          fi

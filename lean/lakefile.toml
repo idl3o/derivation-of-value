@@ -1,0 +1,13 @@
+name = "DerivationOfValue"
+version = "0.1.0"
+defaultTargets = ["DerivationOfValue"]
+
+# Mathlib pinned to the release tag matching lean-toolchain. Bumping both
+# together is a decision; lake-manifest.json records the resolved commit.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "DerivationOfValue"

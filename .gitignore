@@ -11,3 +11,6 @@ Gemfile.lock
 # Python working examples
 __pycache__/
 *.pyc
+
+# Lean build artefacts
+lean/.lake/

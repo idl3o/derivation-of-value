@@ -31,6 +31,9 @@ exclude:
   - code/
   - _archive/
   - _plan/
+  # Machine-checked proofs (Lean 4 + Mathlib) are source, not pages; the
+  # build tree under lean/.lake is gitignored.
+  - lean/
   # The changelog is a working record, read alongside the source rather than
   # served. Excluding it drops both outputs it used to produce: the rendered
   # page at /CHANGELOG/ and the raw copy at /CHANGELOG.md. Nothing on the site

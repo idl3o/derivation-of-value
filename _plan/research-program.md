@@ -686,6 +686,8 @@ correct reading. The program's own mechanism (371 contexts, continuous
 stalks) is out of the instrument's reach and predicted seen wherever
 contextual, having no open gates.
 
+**v0.4, 2026-10-29.** Theorem 6.3 and Corollary 6.4 machine-checked in Lean 4 against Mathlib (`lean/DerivationOfValue/Cyclic/`): no commutativity needed, the empty-overlap equations derived from conservation (`total_succ`), the cycle load-bearing only in reading the Čech system as a flow. Prop 3.2's identification with the Čech class cited, not formalised; Props 6.5–6.7 not formalised; no scenario instantiated. First CI gate in the repository (`.github/workflows/lean.yml`).
+
 ---
 
 ### P18 · The ring and the chord — `order: 25` — **v0.1 drafted 2026-09-07** → `the-ring-and-the-chord.md`

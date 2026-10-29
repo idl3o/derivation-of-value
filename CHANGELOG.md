@@ -10,6 +10,24 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-10-29
+
+### Paper — *The Obstruction, Computed* — v0.4
+
+Theorem 6.3 and Corollary 6.4 machine-checked in Lean 4 against Mathlib (`lean/DerivationOfValue/Cyclic/`). No new claim; §6 records what the checking changed, §8 what it does not reach; blurb and closing line extended. v0.3 archived.
+
+**What moved, and none of it a truth value.** The ring need not be commutative — a ring with 1 ≠ 0 is the hypothesis, negation for edges traversed against their orientation and 1 ≠ 0 used once, at the close of the converse. "Non-consecutive contexts share nothing and impose nothing" is now a lemma: the empty overlap's cochain group is R and its equation an equality of two layers' totals, which conservation at one overlap already forces (`total_succ`, `isCechCompatible_iff`) — also why `cech_system` may skip disjoint pairs. The cyclic hypothesis does no work below the reading of the Čech system as a flow; the reachability theorem is about any finite layered multigraph, and the cycle lives where §8 already placed it. Two of the three were stated before the first build; the third was not.
+
+**Declined.** Proposition 3.2's identification with the relative Čech class ([2] Proposition 4.3) is cited, not formalised; no measurement scenario is instantiated; Proposition 6.5 and Corollaries 6.6–6.7 are not formalised; parallel edges collapse into a simple graph.
+
+**Why this theorem and not the ledger.** The exclusion line's theorems are set arithmetic whose risk was never the arithmetic; the cost-model theorems formalise to hypothesis ⇒ trivial; *A World with Memory* §3 needs differential entropy, which Mathlib lacks. This is the one theorem in the corpus whose proof is an argument, and the one headed for a hostile reader.
+
+### Repository
+
+`lean/`: a Lake project pinned to Lean `v4.35.0` and Mathlib's `v4.35.0` tag (exact commit in `lake-manifest.json`); builds with no `sorry`, depending on `propext`, `Classical.choice` and `Quot.sound` only. `.github/workflows/lean.yml`: the repository's first CI — `leanprover/lean-action` and `actions/checkout` pinned by commit SHA, run on pushes touching `lean/`, failing on any `sorry`. `_config.yml` excludes `lean/` from the site; `.gitignore` drops `lean/.lake/`.
+
+---
+
 ## 2026-09-20
 
 ### Paper — *The Barrowverse* — v0.1 (order 28)
