@@ -10,6 +10,89 @@ Each document carries its own version, tracked here and noted inside the documen
 
 ---
 
+## 2026-11-07
+
+### Working documents — `_plan/house-rules.md` new; the index's papers-track note
+
+Recovered work. On 2026-10-03 a house-rules document and a revised `index.md` were drafted and never committed — the connector was read-only — and the files were lost. `_plan/house-rules.md` is rewritten from the record of the decision and supersedes `research-program.md` §4 "Drafting conventions", which stays as history. The decision, in one line each: every published piece stands alone and belongs to one universe; body text names other papers by title, never by section number, section references living in `_plan/` and here; a borrowed result is restated where it is used; What Is Declined is mandatory, Open Problems are numbered, Neighbours is optional; each paper carries a governing figure that opens and closes it; orders 1–28 are grandfathered and conformed only when next revised. The three papers admitted below, written 2026-08-10, are grandfathered with them.
+
+`index.md`'s note on the papers track now reads: "Technical papers set in one world. Each is complete in itself, shares the anthology's vocabulary and its objects, and can be opened first. Listed in the order they were written." No claim moved; no version moved.
+
+### Admitted — *The Wound Clock*, *The Involuntary Ledger*, *What the Burn Buys* — v0.1 each (orders 29, 30, 31)
+
+Three complete v0.1 papers dated 2026-08-10, with the working companion `_plan/planetary-meter.md`, sat on the branch `claude/dov-perpetual-mechanism-3vapba` and never reached `main`. They are admitted here by cherry-pick of the four files.
+
+**Orders.** On the branch they were 20, 21 and 22. `main` has since given those numbers to *Independent and Expensive*, *The Second Pool* and *One's Own Anchor*, so they are renumbered 29, 30 and 31. Their `date` fields keep 2026-08-10. `order` is the write-sequence and `date` records when a paper was written; the orders record that these are being admitted now, after *The Barrowverse* (28, 2026-09-20), and the dates record that they were written before *Independent and Expensive* (2026-08-14). Both facts are true and the two fields carry one each.
+
+**Version citations refreshed, claims checked.** The papers cited *Sign and Work* v0.3, *Gauge-Fixing the Section Space* v0.2, *Borrowed Hardness* v0.3 and *Kar-Coin* v0.3; `main` is at v0.4, v0.4, v0.3 and v0.4. Each cited claim was read against the current version. *Sign and Work* §5 is unchanged between v0.3 and v0.4 to the character — v0.4 touched §8.2 only — so *The Wound Clock*'s reading of Propositions 5.1 and 5.2 stands as written. *Gauge-Fixing*'s section numbering is unchanged from v0.2 to v0.4 (v0.3 added §5.2 and nothing moved); §1, §2, §4.1–4.4, the §4.4 provision that governance may retire the floor, and §6's declines all stand. *Borrowed Hardness* v0.3 still calls the delay chain the single most quantum-fragile load-bearing piece. Two claims no longer stand as written and are corrected in place, struck, with the pointer:
+
+- *The Involuntary Ledger* called itself "the first payment" on *Kar-Coin*'s debt. *Kar-Coin* v0.4 (2026-09-20, per *The Barrowverse*) records an earlier payment the corpus had held since Volume I: the hash residue of proof of work is a self-attesting outward rung, the one solved instance of the essay's closing question. The abstract's sentence is struck and restated; the blurb's "The first payment" is now "A payment".
+- *What the Burn Buys* §8 said the itemised alternative "has a test suite with one executed fragment". *Gauge-Fixing* v0.3 executed tests (iii) and (iv), so three of four now have numbers. Struck and restated; the conjunction is still unassembled, which was the sentence's point.
+
+**Not revised against what came after.** Both are flagged rather than fixed, because fixing them would be rewriting the arguments, which this admission does not do. The three papers predate *Independent and Expensive* (order 20), *The Second Pool*, *One's Own Anchor* and everything on the exclusion line. In particular: *The Involuntary Ledger* §6 and *What the Burn Buys* §3 both say a conjunction's fake-cost is "multiplicative" across channels or anchors "in the Combination-Proof manner". *Independent and Expensive* Theorem 3.4 says that within one pool richness partitions the budget and nothing multiplies it, and *One's Own Anchor* Corollary 3.5 says a conjunction of anchor-priced readings has Γ equal to its anchor work — a sum of receipts. Four residue channels on four different physics are four pools, so the sum-of-anchors reading is the one the later corpus supports; neither paper has been rewritten to say so. *The Wound Clock* reads the four anchors as four amortisation classes without the later finding that an anchor's receipt and its value are separable (*The Second Pool* Proposition 5.4) or that the anchors are, in the limit, keys (*Key and Census*, order 33, pending). The *Combination Proofs* amendments of v0.5–v0.7 postdate all three.
+
+**The stale branch.** `claude/derivation-value-rebuild-gso9as` held one file, `_plan/rebuild.md`, at commit `826b5ab` on top of `a9b105f` — a snapshot of a rebuild charter, nothing of it carried forward. Deleted; the commit hash is recorded here so it can be restored from the reflog or a fork if that judgement is wrong.
+
+The branch's own changelog entries follow as written on 2026-08-10, with only the order numbers annotated.
+
+#### Paper — *What the Burn Buys* — v0.1
+
+New paper, answering a question put to the program in Bitcoin's vocabulary: whether the mining heat can be circumvented — by quantum search, by mining something else, or by metering joules directly. The answer reorganizes three of the corpus's instruments around one accounting insight.
+
+**The certificate mistaken for a tax.** Bitcoin's heat is its evidentiary content, not its exhaust — dissipation is the one physical quantity a proof can certify (*Gauge-Fixing* §1), and the pricing rule (*Sign and Work*: satisfying a public constraint is constraint satisfaction, never work) kills every bloodless substitute. What is not physics is the scaling law: mining is a parallel lottery, so security is proportional to total burn, and the planetary tax is the direct image of the threat model.
+
+**The unbundling.** The burn pays for four jobs in one currency — randomness, ordering, Sybil pricing, unforgeability — and the four anchors are those jobs re-let severally: the beacon takes randomness (sky-funded), the delay chain takes ordering (one processor against a race of order 10²⁰ guesses per second — a household appliance against a mid-sized nation's grid), the encoding takes individuation, and the thin dissipation floor keeps the flame for Sybil pricing alone, per identity rather than per block. Irreducible heat collapses from *proportional to security* to *Sybil floor × identity churn + one wound clock* — decoupled from the adversary's growth, which is answered by composition rather than outbidding.
+
+**The reversibility caveat, adopted as a respecification.** Landauer prices erasure, not computation; reversible and unitary machines can run under the floor, paying in space, time, and hardware. Proof of work therefore certifies *economic cost* and only contingently *heat* — Bitcoin's security survives the decoupling (outbidding was always denominated in cost), but any reading of proof of work as a joule meter does not. The program's dissipation floor is respecified in one line as a **cost floor**, "dissipation" being a description of present engineering rather than of the security claim. Grover, by contrast, is the expected answer and the short one: a tax, answered by a parameter.
+
+**The menu.** What may honestly be mined is the set of generative residues with law-pinned trace gaps: parallel expenditure (τ = 1, no seam), sequential time (τ = 1, cannot be parallelized), storage uniqueness (parameter-pinned, needs maintenance), fission flux (τ = 1 by the weak interaction — no known process but fission produces the spectrum, and light-years of lead cannot stop it). Useful work, stake, and reported joules are off the menu by the corpus's standing results. The first three entries verify with mathematics; the fourth verifies with hardware, and the difference is priced: the worked example — a mint denominated against reactor antineutrino flux, N independent detectors glued by the coherence layer, beacon-seeded, delay-chained — is unforgeable and **compressed-oracle**, not oracle-free.
+
+**The separation Bitcoin's bundle conceals.** Security (the unbundled anchors), denomination (the involuntary ledger's aggregate — a measurement, not a payment), and minting (the attribution ladder's bottom rung, where the oracle stands and where *what* is subsidized is policy) are three concerns that were one thing in Bitcoin only because the lottery happened to do all three. Minting against generation, however attested, is *Kar-Coin*'s named failure — a mechanism that rewards burning — made more efficient by better attestation, not less.
+
+Declined: that the heat is eliminated (re-let, plus embodied energy paid at the factory); that the unbundling is proven (the conjunction has one executed test fragment against Bitcoin's sixteen years of hostile uptime); that reversible mining is a present concern (the caveat's force is definitional); that the flux mint is oracle-free (compressed); that the menu is closed (four entries are what is known to qualify).
+
+Files added: `_papers/what-the-burn-buys.md` (order 31; order 22 on the branch).
+
+---
+
+#### Paper — *The Involuntary Ledger* — v0.1, with working companion `_plan/planetary-meter.md`
+
+New paper, and the first payment on the debt *Kar-Coin* v0.3 named: making a civilization's outward magnitude follow from what it must leave behind, so the coin reads the flow through its residue rather than through its report. The coordinate paid on is the first and most legible — energy capture.
+
+**The founding inversion.** Kardashev's scale was an astronomer's yardstick, built in 1964 for civilizations that could not be asked; the waste-heat searches that grew from it are an existing methodology of oracle-free civilizational energy metrology. The oracle entered the program's sketch only when the measurement moved indoors, to meters and forms. The governing principle: *measure the civilization as if it could not be asked.*
+
+**The arrow, walked around.** *Gauge-Fixing* §1 fixed that proofs certify spending, never making — the obstruction, for a substrate that wanted the making certified. The capacity substrate wants the spending certified, so the same arrow now points the mechanism's way: energy is the unique outward magnitude whose certifiable shadow (dissipation) *is* the substrate (throughput), up to a storage term the paper carries explicitly.
+
+**Four residue channels, one conjunction.** Thermal (complete by the second law, sound by the first; τ = 1 as an identity — faking a joule of heat costs a joule), chemical (combustion writes the atmosphere in double entry — carbon up, oxygen down, in fuel-specific stoichiometric ratios, radiocarbon depletion as the fossil provenance mark; calcination fails the oxygen book, sequestration hides the exhaust but never the intake), nuclear (antineutrino flux proportional to fission power, unshieldable, producible by nothing else), structural (the inward-axis artifact *Kar-Coin* already admitted — capacity, never throughput, the weak channel alone, disciplined only in conjunction). Read as a Combination Proof of order four with stoichiometric cross-checksums, publicity-positive because the honest generator's residues are emitted anyway — involuntarily, in Volume V's exact sense.
+
+**The architectural result is a split.** At the planetary aggregate the relocation attack dissolves — the planet is the control volume nobody drew and nobody can redraw, crossed by radiation and nothing else — so the *denominator* of a capacity currency is measurable now, from residues, without an oracle. Attribution below the aggregate reintroduces boundaries and remains partially oracle-bound: the oracle problem for energy was an attribution problem wearing a measurement problem's clothes. And the logarithmic rung forgives the linear error: σ_K ≈ 0.043·(σ_P/P), so a ten-percent planetary power measurement reads the Kardashev coordinate to ±0.004. The grand scale is the forgiving one.
+
+Declined, in the paper: that usefulness is measured (the failed useful-work derivation, refused again at planetary scale); that the best channel lasts (the chemical ledger covers the fossil fraction, which decarbonization exists to shrink — the meter's composition must migrate); that the permanent channel exists yet (anthropogenic dissipation is ~0.04 W/m² against radiative books accurate to ~1 W/m²; the aggregate thermal instrument is unbuilt); that the ledger's reading is oracle-free (the record is; the sink models that read it are community-refereed — checkable institutions, not absent ones); that residue answers concealment (it answers counterfeit; understatement deflates a denominator, the safer failure, recorded not proven).
+
+**The companion** (`_plan/planetary-meter.md`, working document, unpublished) carries the feasibility audit: instruments and error budgets per channel (the fossil ~80% of P readable today at ~±5–10% via flask networks, APO, and Δ¹⁴C; KamLAND's post-2011 reading of the Japanese reactor fleet as the strongest existing proof-of-concept; VIIRS Nightfire as an operational per-facility involuntary meter), the crossover schedule as coverage migrates off fossil, the attribution ladder (planet → nation → facility → agent, with the oracle surviving only at the bottom rung), a staged program from paper-grade Stage 0 to the thermal endgame, and five named falsifiers.
+
+Files added: `_papers/the-involuntary-ledger.md` (order 30; order 21 on the branch), `_plan/planetary-meter.md`.
+
+---
+
+#### Paper — *The Wound Clock* — v0.1
+
+New paper. The question arrived from outside the program's vocabulary — how close to a *perpetual* mechanism a negentropy-attested measurement can be made — and the answer turned out to be an audit the corpus had not yet run: not a durability audit (what dissolves) but an **amortization audit** (what recurs).
+
+**The impossibility was already in the corpus.** A measuring mechanism that runs forever at no cost is Maxwell's demon, and *Proof of Preservation*'s One-Bit Engine section is the exorcism: the cycle costs *kT* log 2 per bit forgotten. The paper's contribution begins after the refusal, at the asymptote.
+
+**Perpetuity is redefined as an amortization property.** Reading Volume I's coda at a new layer — every borrowed scarcity borrows from an institution with a half-life — the paper defines a mechanism as asymptotically perpetual when every recurring cost is priced by a physical constant or paid by a reservoir the mechanism does not maintain, and every institutionally priced cost is paid a bounded number of times. Not zero cost; cost with no half-life.
+
+**The four anchors sort into four amortization classes.** *Sky-funded* (the beacon — recurring, but the universe pays, and the same anchor *Borrowed Hardness* clears without remainder); *genesis-paid* (the dissipation floor — once per identity, amortizing to zero, its §4.4 retirement provision read as the construction already treating this cost as one that stops); *constant-floor* (memory — append-only design defers the Landauer wage but cannot escape it, and the irreducible residue is priced by the one constant with no issuer); *wound* (the delay chain and unique encoding — sequential time spent freshly every epoch, the one input that neither amortizes nor arrives from the sky).
+
+**The finding is a convergence.** The class that must be paid forever is exactly the anchor *Borrowed Hardness* v0.3 marked as the program's most quantum-fragile load-bearing piece, and — in the corpus's one measurement, *Sign and Work* v0.3 §5 — exactly where the trace gap is bought: security per epoch is purchased with the coin that must be re-spent every epoch. The paper argues the coincidence is a consequence: sequential time is the single input no reservoir delivers and no constant prices, so it reaches the mechanism only through a primitive, and primitives are where the machine bites. The winding point and the wound are the same boundary — where the mechanism stops presenting physics and starts asserting it.
+
+Declined: that the sky is perpetual (it is prepaid — a pulsar is a flywheel spinning down, and the program does not exempt its favourite anchor from the law it stakes); that the floor's governance retirement is free (an institutional act, priced as one); that the Landauer floor is a price rather than a bound the mechanism approaches from orders of magnitude above; and that the winder is inside the mechanism (who pays for the delay chain's computation is circular at bootstrap in exactly the way §4.4 found stake to be, and the incentive design of the winding is unbuilt).
+
+Files added: `_papers/the-wound-clock.md` (order 29; order 20 on the branch).
+
+---
+
 ## 2026-10-29
 
 ### Paper — *The Obstruction, Computed* — v0.4
