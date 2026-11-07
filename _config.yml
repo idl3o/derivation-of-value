@@ -1,9 +1,31 @@
 title: "Derivation of Value"
 description: "A working program in mechanism design and the philosophy of value."
+author:
+  name: "S. Lavi"
+  uri: "https://github.com/idl3o"
+lang: en
 
 # Project-page hosting at idl3o.github.io/derivation-of-value requires the
 # baseurl prefix. If switching to a custom domain or user/org page, set to "".
+# `url` is needed for the absolute links in the feed, the sitemap, papers.json
+# and the JSON-LD; `repository` lets a local build run without PAGES_REPO_NWO.
+url: "https://idl3o.github.io"
 baseurl: "/derivation-of-value"
+repository: idl3o/derivation-of-value
+
+# Machine legibility. Both plugins are on the GitHub Pages whitelist.
+# jekyll-feed always emits a feed for `posts`; this site has none, so that
+# empty feed is parked at /feed/posts.xml and the papers collection takes the
+# conventional /feed.xml. jekyll-sitemap reads every page and document.
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+feed:
+  path: "/feed/posts.xml"
+  posts_limit: 100
+  collections:
+    papers:
+      path: "/feed.xml"
 
 # Every document lives in _papers/. Add a file there and it appears on the
 # home page (sorted by `order`) and gets its own page — no other edits needed.

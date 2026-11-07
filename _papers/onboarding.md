@@ -4,6 +4,10 @@ title: "Proof of Coherence"
 subtitle: "An Onboarding"
 eyebrow: "Companion · v0.1 · working draft"
 permalink: /onboarding/
+anthology: "Derivation of Value"
+version: "v0.1"
+date: 2026-05-12
+license: "CC BY 4.0"
 label: "Companion"
 short_title: "Onboarding"
 blurb: "A reader's guide to the whitepaper. Intuitions, motivations, and the path through the formalism."

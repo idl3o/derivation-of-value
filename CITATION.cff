@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: >-
+  If you use this anthology, cite the document you used by its title and
+  version. The version is the unit the corpus cites by, and each document
+  carries its own (see CHANGELOG.md). The entry below is for the collection.
+title: "Derivation of Value"
+abstract: >-
+  A working program in mechanism design and the philosophy of value, published
+  as an open anthology: five volumes, a framework, a whitepaper, and technical
+  papers that close, or fail to close, the problems the volumes leave open.
+authors:
+  - family-names: Lavi
+    given-names: S.
+    alias: idl3o
+license: CC-BY-4.0
+repository-code: "https://github.com/idl3o/derivation-of-value"
+url: "https://idl3o.github.io/derivation-of-value/"
+keywords:
+  - mechanism design
+  - philosophy of value
+  - sheaf cohomology
+  - Sybil resistance
+  - Goodhart's law
+  - proof of work
+preferred-citation:
+  type: generic
+  title: "Derivation of Value: a working program in mechanism design and the philosophy of value"
+  authors:
+    - family-names: Lavi
+      given-names: S.
+  year: 2026
+  url: "https://idl3o.github.io/derivation-of-value/"
+  license: CC-BY-4.0
+  notes: "Working drafts; cite individual documents by title and version."

@@ -4,7 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="description" content="{{ page.blurb | default: page.description | default: site.description | strip_html | normalize_whitespace | xml_escape }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — papers" href="{{ '/feed.xml' | absolute_url }}">
+  <link rel="alternate" type="application/json" title="{{ site.title }} — papers.json" href="{{ '/papers.json' | absolute_url }}">
+  <link rel="author" href="{{ site.author.uri }}">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  {%- if page.collection == "papers" %}
+  {%- comment %} Highwire Press tags, the set Google Scholar reads. Dates are YYYY/MM/DD. {% endcomment %}
+  <meta name="citation_title" content="{{ page.title | xml_escape }}{% if page.subtitle %}: {{ page.subtitle | xml_escape }}{% endif %}">
+  <meta name="citation_author" content="Lavi, S.">
+  {%- if page.date %}
+  <meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  <meta name="citation_online_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  {%- endif %}
+  <meta name="citation_public_url" content="{{ page.url | absolute_url }}">
+  <meta name="citation_abstract_html_url" content="{{ page.url | absolute_url }}">
+  <meta name="citation_language" content="en">
+  {%- if page.version %}
+  <meta name="citation_technical_report_number" content="{{ page.version }}">
+  {%- endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": {{ page.title | jsonify }},
+    {%- if page.subtitle %}
+    "alternativeHeadline": {{ page.subtitle | jsonify }},
+    {%- endif %}
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.blurb | default: site.description | jsonify }},
+    "url": {{ page.url | absolute_url | jsonify }},
+    "inLanguage": "en",
+    {%- if page.date %}
+    "datePublished": {{ page.date | date: '%Y-%m-%d' | jsonify }},
+    {%- endif %}
+    {%- if page.version %}
+    "version": {{ page.version | jsonify }},
+    {%- endif %}
+    "creativeWorkStatus": {{ page.status | jsonify }},
+    "genre": {{ page.label | jsonify }},
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {"@type": "Person", "name": "S. Lavi", "url": "https://github.com/idl3o"},
+    "isPartOf": {"@type": "CreativeWorkSeries", "name": {{ site.title | jsonify }}, "url": {{ '/' | absolute_url | jsonify }}},
+    "isAccessibleForFree": true
+  }
+  </script>
+  {%- else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "url": {{ '/' | absolute_url | jsonify }},
+    "inLanguage": "en",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {"@type": "Person", "name": "S. Lavi", "url": "https://github.com/idl3o"}
+  }
+  </script>
+  {%- endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">

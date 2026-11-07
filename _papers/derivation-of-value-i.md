@@ -4,6 +4,9 @@ title: "Derivation of Value"
 subtitle: "Volume I"
 eyebrow: "An Anthology · Volume I"
 permalink: /anthology/derivation-of-value-i/
+anthology: "Derivation of Value"
+date: 2026-05-11
+license: "CC BY 4.0"
 label: "Anthology · Volume I"
 blurb: "Naming the operator the series turns around — the move from staking contingent quantities to staking what such quantities are derived from."
 status: "Working draft"

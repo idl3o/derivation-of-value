@@ -4,6 +4,10 @@ title: "Combination Proofs"
 subtitle: "A Framework for Goodhart-Asymptotic Mechanism Design"
 eyebrow: "Framework · v0.7"
 permalink: /combination-proofs/
+anthology: "Derivation of Value"
+version: "v0.7"
+date: 2026-05-12
+license: "CC BY 4.0"
 label: "Framework"
 blurb: "A framework for Goodhart-asymptotic mechanism design. Reward gated on the conjunction of verifiably independent projections of a structural substrate. v0.4 reports that independence was never the binding constraint: a projection can be perfectly independent of the kernel and still free to forge, and §7.1 has been stating one of two requirements. v0.5 records the amendment *Independent and Expensive* made to Proposition 4.2: publicity-positivity is non-decreasing always and strict only while unclaimed paid work remains. v0.6 amends Definition 2.6 per *One's Own Anchor*: each projection must be approximately independent of its own anchor as well as of the others, or the mechanism is its anchors. v0.7 records the candidate formalisation of ι in *A World with Memory* §3: ι and τ as ratios of conditional information on a pool that is the entropy of the world given the public record plus the anchors' own, meeting the four constraints the corpus had accumulated; §7.1's fork resolves as a divergence for content and Fisher information for the gate's resolution."
 status: "v0.7 · working draft"
