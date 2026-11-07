@@ -1,5 +1,7 @@
 # State of the program — 2026-09-07
 
+**Succeeded by *Where We Stand*** (`_papers/where-we-stand.md`, order 35, dated 2026-11-06, a published companion). It covers the corpus through order 34 and carries the open-problems list forward. This journal stays as the record of 2026-09-07 and is not updated further.
+
 Working document. Not published to the site. Written to be read cold, by someone
 who wants to know what is actually established.
 
