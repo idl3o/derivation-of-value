@@ -54,7 +54,7 @@ This program follows the alternative: a staked quantity derived rather than borr
 
 <section class="track">
   <h2 class="track-heading">The papers</h2>
-  <p class="track-note">Technical papers, each closing an open problem named elsewhere in the corpus — or failing to, and saying so. Listed in the order they were written, which is not the order they depend on each other: <em>Sign and Work</em> is cited by more of the corpus than any other document and was written sixteenth.</p>
+  <p class="track-note">Technical papers set in one world. Each is complete in itself, shares the anthology's vocabulary and its objects, and can be opened first. Listed in the order they were written.</p>
   <ul class="contents">
   {% for paper in papers %}{% unless paper.hidden %}{% if paper.label contains "Paper" and paper.label != "Whitepaper" %}
     {% include entry.html paper=paper %}
