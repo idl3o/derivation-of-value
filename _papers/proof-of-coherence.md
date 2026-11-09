@@ -4,6 +4,10 @@ title: "Proof of Coherence"
 subtitle: "A Sheaf-Theoretic Mechanism for Goodhart-Asymptotic Incentivization of Distributed Intelligence"
 eyebrow: "Whitepaper · v0.5 · working draft"
 permalink: /whitepaper/
+anthology: "Derivation of Value"
+version: "v0.5"
+date: 2026-05-12
+license: "CC BY 4.0"
 label: "Whitepaper"
 blurb: "A Goodhart-asymptotic incentive mechanism for decentralized inference. Sheaf-theoretic, with a spectral extension via Proof by Resonance. v0.5 absorbs three measurements against the spectral layer: its static form is redundant with the kernel, its temporal form is independent but free to forge, and the autopoietic-cult defence is inverted — a cluster that has stopped scores five times an honest network that has not."
 status: "v0.5 · working draft"

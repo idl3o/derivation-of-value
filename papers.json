@@ -1,0 +1,35 @@
+---
+permalink: /papers.json
+sitemap: false
+---
+{%- assign papers = site.papers | sort: "order" -%}
+{
+  "title": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "repository": {{ site.repository | prepend: "https://github.com/" | jsonify }},
+  "author": {"name": "S. Lavi", "url": "https://github.com/idl3o"},
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "generated": {{ site.time | date_to_xmlschema | jsonify }},
+  "count": {{ papers | size }},
+  "order_note": "order is the sequence in which documents were written, not a reading order; several documents are mutually dependent.",
+  "papers": [
+{%- for p in papers %}
+    {
+      "order": {{ p.order | jsonify }},
+      "title": {{ p.title | jsonify }},
+      "subtitle": {{ p.subtitle | jsonify }},
+      "label": {{ p.label | jsonify }},
+      "version": {{ p.version | jsonify }},
+      "status": {{ p.status | jsonify }},
+      "date": {% if p.date %}{{ p.date | date: "%Y-%m-%d" | jsonify }}{% else %}null{% endif %},
+      "url": {{ p.url | absolute_url | jsonify }},
+      "source": {{ p.relative_path | jsonify }},
+      "license": {{ p.license | default: "CC BY 4.0" | jsonify }},
+      "hidden": {{ p.hidden | default: false | jsonify }},
+      "blurb": {{ p.blurb | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ]
+}

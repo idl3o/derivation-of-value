@@ -1,0 +1,38 @@
+---
+permalink: /llms.txt
+sitemap: false
+---
+{%- assign papers = site.papers | sort: "order" -%}
+# {{ site.title }}
+
+> {{ site.description }} Open anthology by S. Lavi (github.com/idl3o), licensed CC BY 4.0. {{ papers | size }} documents, each a working draft carrying its own version; the version is the unit the corpus cites by.
+
+Every document is a page on this site and a Markdown file under `_papers/` in the repository (https://github.com/{{ site.repository }}). Documents are grouped here by track. Within a track the `order` field is the sequence in which things were written, not the order they depend on each other. Mathematics is set in Unicode. Each technical paper closes with a mandatory "What Is Declined" section naming the readings it refuses, numbered "Open Problems", and the `code/` module that reproduces its measurements where it has any.
+
+## Start here
+{% for p in papers %}{% unless p.hidden %}{% if p.label == "Companion" %}
+- [{{ p.title }}{% if p.subtitle %} — {{ p.subtitle }}{% endif %}]({{ p.url | absolute_url }}): {{ p.status }}{% if p.date %}, {{ p.date | date: "%Y-%m-%d" }}{% endif %}. {{ p.blurb | strip_html | normalize_whitespace }}
+{%- endif %}{% endunless %}{% endfor %}
+
+## The anthology
+{% for p in papers %}{% unless p.hidden %}{% if p.label contains "Volume" %}
+- [{{ p.title }}{% if p.subtitle %} — {{ p.subtitle }}{% endif %}]({{ p.url | absolute_url }}): {{ p.status }}{% if p.date %}, {{ p.date | date: "%Y-%m-%d" }}{% endif %}. {{ p.blurb | strip_html | normalize_whitespace }}
+{%- endif %}{% endunless %}{% endfor %}
+
+## The framework
+{% for p in papers %}{% unless p.hidden %}{% if p.label == "Framework" or p.label == "Whitepaper" %}
+- [{{ p.title }}{% if p.subtitle %} — {{ p.subtitle }}{% endif %}]({{ p.url | absolute_url }}): {{ p.status }}{% if p.date %}, {{ p.date | date: "%Y-%m-%d" }}{% endif %}. {{ p.blurb | strip_html | normalize_whitespace }}
+{%- endif %}{% endunless %}{% endfor %}
+
+## The papers
+{% for p in papers %}{% unless p.hidden %}{% if p.label contains "Paper" and p.label != "Whitepaper" %}
+- [{{ p.title }}{% if p.subtitle %} — {{ p.subtitle }}{% endif %}]({{ p.url | absolute_url }}): {{ p.status }}{% if p.date %}, {{ p.date | date: "%Y-%m-%d" }}{% endif %}. {{ p.blurb | strip_html | normalize_whitespace }}
+{%- endif %}{% endunless %}{% endfor %}
+
+## Machine-readable
+- [papers.json]({{ '/papers.json' | absolute_url }}): every document's front matter as JSON, sorted by order.
+- [Atom feed]({{ '/feed.xml' | absolute_url }}): the papers collection, newest first by date.
+- [Sitemap]({{ '/sitemap.xml' | absolute_url }}).
+- [CITATION.cff](https://github.com/{{ site.repository }}/blob/main/CITATION.cff): how to cite the collection.
+- [Changelog](https://github.com/{{ site.repository }}/blob/main/CHANGELOG.md): per-document versions and what moved.
+- [Source](https://github.com/{{ site.repository }}): `_papers/` (current versions), `_archive/` (superseded versions), `code/` (instruments), `lean/` (machine-checked proofs).
